@@ -5,7 +5,7 @@ function Skills() {
   return (
     <div className = "skillsScreen">
         <h1 className = "subTitle">
-            My Skills
+            My Skills:
         </h1>
 
         <div className = "skillsContainer">
