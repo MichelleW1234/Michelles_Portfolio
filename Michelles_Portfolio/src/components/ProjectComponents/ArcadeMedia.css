@@ -95,8 +95,8 @@
     width: 17vw;
 
     border-left: 0.5vh solid rgb(110, 0, 200); 
-    border-bottom: 0.5vh solid rgb(110, 0, 200);  
-    border-right: 0.5vh solid rgb(110, 0, 200);  
+    border-bottom: 0.5vh solid rgb(200, 0, 187); 
+    border-right: 0.5vh solid rgb(200, 0, 187); 
     border-top: 0.5vh solid rgb(110, 0, 200);   
 
 }
@@ -116,5 +116,61 @@
 
     font-size: clamp(1.5rem, 4vh, 2.5rem);
     font-weight: bold;
+
+}
+
+
+@media (max-width: 1000px) {
+
+    .ArcadeMediaContentBox{
+
+        background-color: rgb(143, 234, 255);
+        padding: 3vh;
+        
+        border-radius: 1vh;
+        border-left: 0.8vh solid black;
+        border-bottom: 0.8vh solid black;
+        border-top: 0.3vh solid black;
+        border-right: 0.3vh solid black;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 3vh;
+
+    }
+
+    .ArcadeVideoContainer {
+
+        min-width: 50vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        border-radius: 1vh;
+        border-left: 0.8vh solid black;
+        border-bottom: 0.8vh solid black;
+        border-top: 0.3vh solid black;
+        border-right: 0.3vh solid black;
+
+        background-color: rgb(221, 176, 255);
+        padding: 2vh;
+
+        gap: 2vh;
+
+    }
+
+    .ArcadeImage{
+
+        width: 50vw;
+
+        border-left: 0.5vh solid rgb(110, 0, 200); 
+        border-bottom: 0.5vh solid rgb(200, 0, 187);  
+        border-right: 0.5vh solid rgb(200, 0, 187);  
+        border-top: 0.5vh solid rgb(110, 0, 200);   
+
+    }
+
 
 }
