@@ -28,7 +28,7 @@ function Projects() {
                         Media:
                     </h1>
                     <div className = "projectMediaContainer">
-                        <a className = "projectButton" href="https://github.com/MichelleW1234/Arcade.git" target="_blank" rel="noopener noreferrer"> GitHub Repository </a>
+                        <a className = "projectButton" href="https://github.com/MichelleW1234/Arcade.git" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
                         <a className = "projectButton" href="https://github.com/MichelleW1234/Arcade/releases/download/v1.0.0/Arcade_1.0.0.dmg"> Download Arcade 1.0.0</a>
                         <button className = "projectButton" onClick = {() => setArcadeMediaFlag(true)}> View Video Content </button>
                     </div>
@@ -62,7 +62,7 @@ function Projects() {
                         Media:
                     </h1>
                     <div className = "projectMediaContainer">
-                        <a className = "projectButton" href="https://github.com/MichelleW1234/CSE-110-Project.git" target="_blank" rel="noopener noreferrer"> GitHub Repository </a>
+                        <a className = "projectButton" href="https://github.com/MichelleW1234/CSE-110-Project.git" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
                         <a className = "projectButton" href="https://drive.google.com/file/d/1bjoVWfcJ89o7ha2sFHtFunMhr9dIxjtt/view" target="_blank" rel="noopener noreferrer"> Watch Demo Video </a>
                     </div>
                 </div> 

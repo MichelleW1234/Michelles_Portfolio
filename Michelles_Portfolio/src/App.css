@@ -67,7 +67,7 @@ a:hover{
   align-items: center;
 
   color: rgb(0, 24, 68);
-  background-color: rgb(216, 174, 255);
+  background-color: rgb(220, 183, 255);
   width: 100%;
 
   animation: glowing-shadow-subtitle 3s infinite;
@@ -126,6 +126,29 @@ a:hover{
     0 0 0.5vh 0.2vh rgb(70, 143, 253),
     0 0 1vh 0.4vh rgb(117, 79, 252),
     0 0 1.5vh 0.6vh rgb(153, 80, 254);
+}
+
+}
+
+@keyframes glowing-shadow-components {
+
+0% {
+  box-shadow: 
+    0 0 1vh 0.5vh rgb(70, 143, 253),
+    0 0 1.5vh 1vh rgb(117, 79, 252),
+    0 0 2vh 1.5vh rgb(153, 80, 254);
+}
+50% {
+  box-shadow: 
+    0 0 1vh 0.5vh rgba(70, 143, 253, 0.383),
+    0 0 1.5vh 1vh rgba(116, 79, 252, 0.335),
+    0 0 2vh 1.5vh rgba(152, 80, 254, 0.373);
+}
+100% {
+  box-shadow:
+     0 0 1vh 0.5vh rgb(70, 143, 253),
+    0 0 1.5vh 1vh rgb(117, 79, 252),
+    0 0 2vh 1.5vh rgb(153, 80, 254);
 }
 
 }
