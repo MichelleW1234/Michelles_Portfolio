@@ -9,15 +9,15 @@
 
 .introText{
 
-  font-size: 3vh;
   color: white;
+  font-size: clamp(1rem, 2.5vh, 2rem);
 
 }
 
 .resumeButton{
 
   background-color: rgb(111, 255, 255);
-  font-size: 3vh;
+  font-size: 1.8rem;
   padding: 2vh;
 
   border-left: 0.8vh solid black;

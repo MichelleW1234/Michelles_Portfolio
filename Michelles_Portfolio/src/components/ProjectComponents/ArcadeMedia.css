@@ -6,7 +6,6 @@
     width: 100vw;
     height: 100vh;
     text-align: center;
-    font-weight: bold;
     z-index: 1;     
     background-color: rgba(115, 0, 255, 0.541);
 
@@ -73,7 +72,7 @@
 
     background-color: rgb(216, 100, 255);
     padding: 1vh;
-    font-size: 3vh;
+    font-size: clamp(1.2rem, 3vh, 2rem);
 
     border-left: 0.5vh solid black; 
     border-bottom: 0.5vh solid black; 
@@ -104,7 +103,7 @@
 
 .closeButton{
 
-    font-size: 3vh;
+    font-size: clamp(1.2rem, 3vh, 2rem);
     background-color: rgb(194, 109, 255);
     padding: 1vh;
 
@@ -115,6 +114,7 @@
 
 .ArcadeMediaText{
 
-    font-size: 4vh;
+    font-size: clamp(1.5rem, 4vh, 2.5rem);
+    font-weight: bold;
 
 }
