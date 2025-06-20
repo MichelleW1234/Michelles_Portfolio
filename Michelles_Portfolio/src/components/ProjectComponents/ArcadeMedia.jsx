@@ -11,7 +11,7 @@ function ArcadeMedia({setArcadeMediaFlag}) {
   return (
     <div className = "ArcadeMediaContainer">
         <div className = "ArcadeMediaContentBox">
-            <h1 className="subTitle">
+            <h1 className="ArcadeMediaText">
                 Here are videos of mini games that I recorded:
             </h1>
 

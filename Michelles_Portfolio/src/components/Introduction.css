@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 100px;
+    gap: 20px;
 
 }
 
@@ -13,5 +14,34 @@
     flex-direction: row;
     align-items: center;
     gap: 50px;
+
+}
+
+.introText{
+
+    font-size: 25px;
+    color: white;
+
+}
+
+.resumeButton{
+
+    background-color: rgb(111, 255, 255);
+    font-size: 30px;
+    padding: 20px;
+
+    border-left: 8px solid black;
+    border-bottom: 8px solid black;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+
+    animation: glowing-shadow-subtitle 3s infinite;
+
+}
+
+.resumeButton:hover{
+
+    background-color: rgb(82, 93, 255);
+    color: white;
 
 }

@@ -19,7 +19,7 @@
 
 .ArcadeMediaContentBox{
 
-    background-color: rgb(143, 225, 255);
+    background-color: rgb(143, 234, 255);
     padding: 50px;
     
     border-radius: 10px;
@@ -40,7 +40,6 @@
 .ArcadeVideoOuterContainer {
     
     width: 900px;
-    height: 400px;
     display: flex;
     flex-direction: row;
     gap: 30px;
@@ -106,5 +105,11 @@
 
     border-left: 7px solid black; 
     border-bottom: 7px solid black; 
+
+}
+
+.ArcadeMediaText{
+
+    font-size: 40px;
 
 }

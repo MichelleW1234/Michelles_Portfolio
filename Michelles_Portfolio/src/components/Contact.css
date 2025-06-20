@@ -28,6 +28,8 @@
     border-top: 2px solid black;
     border-right: 2px solid black;
 
+    animation: glowing-shadow-body 4s infinite;
+
 }
 
 .contactBox:hover{

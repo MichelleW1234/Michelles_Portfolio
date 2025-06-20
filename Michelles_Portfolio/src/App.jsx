@@ -9,8 +9,11 @@ function App() {
   return (
     <div>
       <Introduction/>
+      <div className="extraSpace"></div>
       <Projects/>
+      <div className="extraSpace"></div>
       <Skills/>
+      <div className="extraSpace"></div>
       <Contact/>
     </div>
   )
