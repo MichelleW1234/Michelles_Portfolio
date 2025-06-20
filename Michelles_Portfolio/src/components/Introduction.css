@@ -1,47 +1,42 @@
-.introContainer{
-  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
-    gap: 20px;
-
+.introContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10vh;
+  gap: 2vh;
+  padding: 0 5vw;
 }
 
-.linkContainer{
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 50px;
-
+.linkContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4vw;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.introText{
-
-    font-size: 25px;
-    color: white;
-
+.introText {
+  font-size: 2vw;
+  color: white;
+  text-align: center;
 }
 
-.resumeButton{
+.resumeButton {
+  background-color: rgb(111, 255, 255);
+  font-size: 1.8vw;
+  padding: 1.5vw 3vw;
 
-    background-color: rgb(111, 255, 255);
-    font-size: 30px;
-    padding: 20px;
+  border-left: 0.8vw solid black;
+  border-bottom: 0.8vw solid black;
+  border-top: 0.2vw solid black;
+  border-right: 0.2vw solid black;
 
-    border-left: 8px solid black;
-    border-bottom: 8px solid black;
-    border-top: 2px solid black;
-    border-right: 2px solid black;
-
-    animation: glowing-shadow-subtitle 3s infinite;
-
+  animation: glowing-shadow-subtitle 3s infinite;
+  cursor: pointer;
 }
 
-.resumeButton:hover{
-
-    background-color: rgb(82, 93, 255);
-    color: white;
-
+.resumeButton:hover {
+  background-color: rgb(82, 93, 255);
+  color: white;
 }

@@ -1,115 +1,104 @@
-.ArcadeMediaContainer{
+.ArcadeMediaContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-weight: bold;
+  z-index: 1;
+  background-color: rgba(115, 0, 255, 0.541);
 
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    font-weight: bold;
-    z-index: 1;     
-    background-color: rgba(115, 0, 255, 0.541);
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5vw;
 }
 
-.ArcadeMediaContentBox{
+.ArcadeMediaContentBox {
+  background-color: rgb(143, 234, 255);
+  padding: 4vw;
+  border-radius: 1vw;
 
-    background-color: rgb(143, 234, 255);
-    padding: 50px;
-    
-    border-radius: 10px;
-    border-left: 8px solid black;
-    border-bottom: 8px solid black;
-    border-top: 3px solid black;
-    border-right: 3px solid black;
+  border-left: 0.8vw solid black;
+  border-bottom: 0.8vw solid black;
+  border-top: 0.3vw solid black;
+  border-right: 0.3vw solid black;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    gap: 30px;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vw;
+  max-width: 90vw;
+  width: 100%;
 }
-
 
 .ArcadeVideoOuterContainer {
-    
-    width: 900px;
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    overflow-x: auto;
-    padding: 30px;
-
+  width: 100%;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+  overflow-x: auto;
+  padding: 2vw;
 }
 
 .ArcadeVideoContainer {
+  min-width: 250px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1vw;
 
-    min-width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  border-left: 0.8vw solid black;
+  border-bottom: 0.8vw solid black;
+  border-top: 0.3vw solid black;
+  border-right: 0.3vw solid black;
 
-    border-radius: 10px;
-    border-left: 8px solid black;
-    border-bottom: 8px solid black;
-    border-top: 3px solid black;
-    border-right: 3px solid black;
-
-    background-color: rgb(237, 213, 255);
-    padding: 20px;
-
-    gap: 20px;
-
+  background-color: rgb(237, 213, 255);
+  padding: 2vw;
+  gap: 2vw;
 }
 
+.viewVideoButton {
+  background-color: rgb(216, 100, 255);
+  padding: 1vw 2vw;
+  font-size: 1.8vw;
 
-.viewVideoButton{
-
-    background-color: rgb(216, 100, 255);
-    padding: 10px;
-    font-size: 30px;
-
-    border-left: 5px solid black; 
-    border-bottom: 5px solid black; 
-
+  border-left: 0.5vw solid black;
+  border-bottom: 0.5vw solid black;
+  cursor: pointer;
 }
 
-.viewVideoButton:hover{
+.viewVideoButton:hover {
+  background-color: rgb(148, 54, 255);
 
-    background-color: rgb(148, 54, 255);
-
-    border-left: 7px solid black; 
-    border-bottom: 7px solid black; 
-    border-right: 2px solid black; 
-    border-top: 2px solid black; 
-    
+  border-left: 0.7vw solid black;
+  border-bottom: 0.7vw solid black;
+  border-right: 0.2vw solid black;
+  border-top: 0.2vw solid black;
 }
 
-.ArcadeImage{
-
-    width: 300px;
-
+.ArcadeImage {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
 }
 
-.closeButton{
+.closeButton {
+  font-size: 2vw;
+  background-color: rgb(194, 109, 255);
+  padding: 1vw 2vw;
 
-    font-size: 30px;
-    background-color: rgb(194, 109, 255);
-    padding: 10px;
-
-    border-left: 7px solid black; 
-    border-bottom: 7px solid black; 
-
+  border-left: 0.7vw solid black;
+  border-bottom: 0.7vw solid black;
+  cursor: pointer;
 }
 
-.ArcadeMediaText{
-
-    font-size: 40px;
-
+.ArcadeMediaText {
+  font-size: 3vw;
+  text-align: center;
+  word-wrap: break-word;
 }
