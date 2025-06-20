@@ -1,10 +1,6 @@
 .projectOuterContainer{
 
-    background-color: rgb(161, 53, 255);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3vw;
-    padding: 5vh;
+    background-color: rgb(184, 103, 255);
 
     border-left: 1vh solid black;
     border-bottom: 1vh solid black;
@@ -12,13 +8,26 @@
     border-right: 0.5vh solid black;
 
     border-radius: 2vw;
+    padding: 3vh;
 
 }
 
+.projectInnerContainer {
+
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 3vw;
+    padding: 5vh;
+
+}
+
+
 .projectContainer{
 
-    background-color: rgb(158, 250, 255);
-    padding: 3vh;
+    background-color: rgb(184, 225, 254);
+    min-width: 30vw;
+    padding: 4vh;
     display: flex;
     flex-direction: column;
     gap: 1vh;
@@ -57,9 +66,11 @@
 
 .projectMediaContainer{
 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1vh;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+
+    gap: 2vh;
 
 }
 

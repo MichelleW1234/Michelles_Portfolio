@@ -1,6 +1,7 @@
 body{
 
   background: linear-gradient(rgb(26, 0, 155), rgb(120, 0, 147));
+  background: linear-gradient(rgb(22, 0, 133), rgb(96, 0, 118));
   padding-left: 5vw;
   padding-right: 5vw;
   padding-bottom: 10vh;
@@ -66,7 +67,7 @@ a:hover{
   align-items: center;
 
   color: rgb(0, 24, 68);
-  background-color: rgb(200, 153, 244);
+  background-color: rgb(216, 174, 255);
   width: 100%;
 
   animation: glowing-shadow-subtitle 3s infinite;
