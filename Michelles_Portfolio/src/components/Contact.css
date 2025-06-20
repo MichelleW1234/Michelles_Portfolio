@@ -1,40 +1,45 @@
-.contactContainer {
-  display: flex;
-  flex-wrap: wrap; /* Allow boxes to wrap on smaller screens */
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 3vw;
-  padding: 2vw;
+.contactContainer{
+
+    display: grid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    gap: 4vh;
+
+
 }
 
-.contactBox {
-  width: 28vw;
-  min-width: 250px;
-  height: 25vh;
-  background-color: rgb(76, 253, 253);
+.contactBox{
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    width: 30vw;
+    background-color: rgb(76, 253, 253);
+    height: 30vh;
 
-  font-size: 2.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-  border-left: 0.8vw solid black;
-  border-bottom: 0.8vw solid black;
-  border-top: 0.2vw solid black;
-  border-right: 0.2vw solid black;
+    font-size: 5vh;
 
-  animation: glowing-shadow-body 4s infinite;
-  transition: all 0.3s ease;
+    border-left: 0.9vh solid black;
+    border-bottom: 0.9vh solid black;
+    border-top: 0.2vh solid black;
+    border-right: 0.2vh solid black;
+
+    animation: glowing-shadow-body 4s infinite;
+
 }
 
-.contactBox:hover {
-  background-color: rgb(58, 201, 201);
+.contactBox:hover{
 
-  border-left: 1.3vw solid black;
-  border-bottom: 1.3vw solid black;
-  border-top: 0.3vw solid black;
-  border-right: 0.3vw solid black;
+    background-color: rgb(58, 201, 201);
+
+    border-left: 1.3vh solid black;
+    border-bottom: 1.3vh solid black;
+    border-top: 0.3vh solid black;
+    border-right: 0.3vh solid black;
+
+
 }

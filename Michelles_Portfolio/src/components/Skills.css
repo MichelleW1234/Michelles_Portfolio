@@ -1,18 +1,20 @@
-.skillsScreen {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2vw;
+.skillsScreen{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
-.skillsContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+.skillsContainer{
 
-  font-size: 2vw; /* Responsive font size */
-  gap: 3vw;        /* Responsive gap */
-  color: white;
-  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    font-size: 3vh;
+    gap: 3vw;
+
+    color: white;
+
 }
