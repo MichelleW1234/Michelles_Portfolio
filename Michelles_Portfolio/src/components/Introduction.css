@@ -10,7 +10,7 @@
 .introText{
 
   color: white;
-  font-size: clamp(1rem, 2.5vh, 2rem);
+  font-size: clamp(1rem, 3vh, 2rem);
 
 }
 
@@ -33,5 +33,33 @@
 
   background-color: rgb(82, 93, 255);
   color: white;
+
+}
+
+
+/* Mobile adjustments */
+@media (max-width: 1000px) {
+
+  .introText{
+
+    color: white;
+    font-size: clamp(1rem, 1vh, 2rem);
+
+  }
+
+  .resumeButton{
+
+    background-color: rgb(111, 255, 255);
+    font-size: clamp(1rem, 1vw, 1.8rem);
+    padding: 1.5vh;
+
+    border-left: 0.5vh solid black;
+    border-bottom: 0.5vh solid black;
+    border-top: 0.1vh solid black;
+    border-right: 0.1vh solid black;
+
+    animation: glowing-shadow-subtitle 3s infinite;
+
+  }
 
 }

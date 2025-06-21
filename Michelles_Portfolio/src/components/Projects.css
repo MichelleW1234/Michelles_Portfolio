@@ -97,6 +97,15 @@
 
 /* Mobile adjustments */
 @media (max-width: 1000px) {
+
+    .projectOuterContainer {
+        border-left: 0.5vh solid black;
+        border-bottom: 0.5vh solid black;
+        border-top: 0.3vh solid black;
+        border-right: 0.3vh solid black;
+        padding: 0.5vh;
+        border-radius: 3vw;
+    }
     
     .projectInnerContainer {
         display: flex;
@@ -105,23 +114,14 @@
         padding: 5vh 5vw;
     }
 
-    .projectOuterContainer {
-        border-left: 0.5vh solid black;
-        border-bottom: 0.5vh solid black;
-        border-top: 0.3vh solid black;
-        border-right: 0.3vh solid black;
-        padding: 1vh;
-        border-radius: 3vw;
-    }
-
     .projectContainer{
 
         background-color: rgb(184, 225, 254);
         min-width: 30vw;
-        padding: 4vh;
+        padding: 2vh;
         display: flex;
         flex-direction: column;
-        gap: 1vh;
+        gap: 0vh;
 
         border-left: 0.8vh solid black;
         border-bottom: 0.8vh solid black;
@@ -145,23 +145,33 @@
 
     .projectText{
 
-        font-size: clamp(1rem, 2vh, 1.5rem);
+        font-size: clamp(0.7rem, 1vh, 1.5rem);
         color: rgb(3, 0, 47);
         
     }
 
     .projectButton{
 
-        font-size: clamp(1rem, 2vh, 1.75rem);
-        padding: 1.5vh;
+        font-size: clamp(0.5rem, 1vh, 1.75rem);
+        padding: 1vh;
 
         background-color: rgb(0, 179, 255);
 
-        border-left: 0.6vh solid black;
-        border-bottom: 0.6vh solid black;
+        border-left: 0.4vh solid black;
+        border-bottom: 0.4vh solid black;
         border-top: 0vh solid black;
         border-right: 0vh solid black;
 
     }
+
+    .projectButton:hover{
+
+        border-left: 0.6vh solid black;
+        border-bottom: 0.6vh solid black;
+        border-top: 0.1vh solid black;
+        border-right: 0.1vh solid black;
+
+    }
+
 
 }

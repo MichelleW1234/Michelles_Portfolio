@@ -25,11 +25,23 @@
 @media (max-width: 1000px) {
     
   .skillsContainer {
-    flex-direction: column;    /* stack vertically on narrow screens */
+   /* stack vertically on narrow screens */
     gap: 2vh;                  /* vertical spacing between items */
-    font-size: clamp(1rem, 2.5vh, 1.5rem); /* slightly smaller font */
+    font-size: clamp(1rem, 2vh, 1rem); /* slightly smaller font */
     width: 100%;
-    max-width: 70vw;
+    margin: 0 auto;
+
+  }
+}
+
+@media (max-width: 600px) {
+    
+  .skillsContainer {
+   flex-direction: column;/* stack vertically on narrow screens */
+    gap: 2vh;                  /* vertical spacing between items */
+    font-size: clamp(0.75rem, 1.5vh, 0.95rem); /* slightly smaller font */
+    width: 100%;
+    max-width: 80vw;
     margin: 0 auto;
 
   }
