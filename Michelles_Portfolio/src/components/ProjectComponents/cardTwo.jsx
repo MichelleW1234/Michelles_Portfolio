@@ -8,6 +8,8 @@ function cardTwo() {
         <h1 className = "projectTitle">
             TritonTurnUp
         </h1>
+        <div className="horizontalLineProject"></div>
+        <br/>
         <img className= "projectImage" src={TritonTurnup}/>
         <h1 className = "projectText">
             Description:

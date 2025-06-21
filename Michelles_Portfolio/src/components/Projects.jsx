@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import ArcadeMedia from "./ProjectComponents/ArcadeMedia.jsx";
 import "./Projects.css"
 
 import CardOne from "./ProjectComponents/cardOne.jsx";
@@ -9,7 +8,6 @@ function Projects() {
 
     const numProjects = 2;
 
-    const [ArcadeMediaFlag, setArcadeMediaFlag] = useState(false);
     const [ProjectNumber, setProjectNumber] = useState(1);
 
     const nextClicked = () => {
@@ -73,19 +71,6 @@ function Projects() {
             </div>
 
         </div>
-
-        {ArcadeMediaFlag === true ? (
-
-            <ArcadeMedia
-                setArcadeMediaFlag = {setArcadeMediaFlag}
-            />
-
-        ) : (
-
-            null
-
-        )}
-
 
     </div>
 
