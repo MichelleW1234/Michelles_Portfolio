@@ -7,7 +7,7 @@ import GitHub from "../images/GitHub.svg";
 function Contact() {
 
   return (
-    <div className = "">
+    <div className = "contactSection">
        <h1 className = "subTitle">
             Let's Connect!
         </h1>

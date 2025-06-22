@@ -7,23 +7,23 @@ body{
   padding-top: 10vh;
   margin: 2vw;
 
-  animation: glowing-shadow-body 3s infinite;
-
   font-family: monospace;
+  animation: glowing-shadow-body 3s infinite;
 
 }
 
 button{
 
-  font-family: monospace;
   color: rgb(85, 0, 149);
+
   font-weight: bold;
+  font-family: monospace;
 
 }
 
 button:hover{
 
-  color: rgb(36, 0, 64);
+  color: rgb(22, 0, 39);
 
 }
 
@@ -36,6 +36,7 @@ a {
 }
 
 a:visited {
+
   color: rgb(110, 0, 194);
   font-weight: bold;
 
@@ -50,30 +51,32 @@ a:hover{
 .title{
 
   font-size: clamp(3rem, 9vh, 5rem);
+
   color: rgb(212, 0, 255);
   
   text-shadow: 
     0.3vw -0.25vh 0px rgb(0, 179, 255),
     0vw 0.2vh 0px rgb(255, 0, 234);
 
+  max-width: 100%;
 
 }
 
 .subTitle{
 
-  font-size: clamp(1.8rem, 5vh, 3rem);
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  font-size: clamp(1.8rem, 5vh, 3rem);
   color: rgb(0, 24, 68);
   background-color: rgb(220, 183, 255);
   width: 100%;
+  max-width: 100%;
+
+  padding: 1vh;
 
   animation: glowing-shadow-subtitle 3s infinite;
-
-  padding-top: 1vh;
-  padding-bottom: 1vh;
 
 }
 
@@ -230,47 +233,29 @@ a:hover{
 
   body{
 
-    background: linear-gradient(rgb(22, 0, 133), rgb(96, 0, 118));
-    padding-left: 5vw;
-    padding-right: 5vw;
-    padding-bottom: 10vh;
-    padding-top: 10vh;
     margin: 3vw;
 
     animation: glowing-shadow-body-mobile 3s infinite;
-
-    font-family: monospace;
 
   }
 
   .title{
 
     font-size: clamp(2.5rem, 6vh, 4.5rem);
-
-    color: rgb(212, 0, 255);
     
     text-shadow: 
-        0.4vw -0.25vh 0px rgb(0, 179, 255),
-        0vw 0.2vh 0px rgb(255, 0, 234);
-
+      0.4vw -0.25vh 0px rgb(0, 179, 255),
+      0vw 0.2vh 0px rgb(255, 0, 234);
 
   }
 
   .subTitle{
 
     font-size: clamp(1.8rem, 3.5vh, 3rem);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-    color: rgb(0, 24, 68);
     background-color: rgb(220, 183, 255);
-    width: 100%;
 
     animation: glowing-shadow-subtitle-mobile 3s infinite;
-
-    padding-top: 1vh;
-    padding-bottom: 1vh;
 
   }
 
@@ -279,8 +264,5 @@ a:hover{
     height: 3vh;
 
   }
-
-
-
 
 }

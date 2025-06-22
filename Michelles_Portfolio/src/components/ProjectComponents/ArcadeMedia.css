@@ -18,81 +18,94 @@
 
 .ArcadeMediaContentBox{
 
-    background-color: rgb(143, 234, 255);
-    padding: 5vh;
-    
-    border-radius: 1vh;
-    border-left: 0.8vh solid black;
-    border-bottom: 0.8vh solid black;
-    border-top: 0.3vh solid black;
-    border-right: 0.3vh solid black;
-
     display: flex;
     flex-direction: column;
     align-items: center;
 
+    padding: 5vh;
     gap: 3vh;
+
+    background-color: rgb(147, 194, 251);
+    
+    border-radius: 1vh;
+    border-left: 0.8vh solid rgb(40, 55, 74);
+    border-bottom: 0.8vh solid rgb(40, 55, 74);
+    border-top: 0.3vh solid rgb(40, 55, 74);
+    border-right: 0.3vh solid rgb(40, 55, 74);
+
+    width: 70%;
+
+    box-shadow: 0 0 2vh 1vh rgb(63, 173, 233);
 
 }
 
 
 .ArcadeVideoOuterContainer {
     
-    width: 50vw;
     display: flex;
     flex-direction: row;
-    gap: 3vw;
+    justify-content: start;
     overflow-x: auto;
+
+    width: 90%;
+    gap: 3vw;
     padding: 3vh;
 
 }
 
 .ArcadeVideoContainer {
 
-    min-width: 20vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 
+    min-width: 20vw;
+    max-width: 100%;
+    padding: 2vh;
+    gap: 2vh;
+
     border-radius: 1vh;
-    border-left: 0.8vh solid black;
-    border-bottom: 0.8vh solid black;
-    border-top: 0.3vh solid black;
-    border-right: 0.3vh solid black;
 
     background-color: rgb(221, 176, 255);
-    padding: 2vh;
 
-    gap: 2vh;
+    border-left: 0.8vh solid rgb(100, 79, 117);
+    border-bottom: 0.8vh solid rgb(100, 79, 117);
+    border-top: 0.3vh solid rgb(100, 79, 117);
+    border-right: 0.3vh solid rgb(100, 79, 117);
 
 }
 
-
 .viewVideoButton{
 
-    background-color: rgb(216, 100, 255);
     padding: 1vh;
+
     font-size: clamp(1.2rem, 3vh, 2rem);
 
-    border-left: 0.5vh solid black; 
-    border-bottom: 0.5vh solid black; 
+    background-color: rgb(216, 100, 255);
+
+    border-left: 0.5vh solid rgb(105, 50, 121);
+    border-bottom: 0.5vh solid rgb(105, 50, 121);
+    border-top: 0.1vh solid rgb(105, 50, 121);
+    border-right: 0.1vh solid rgb(105, 50, 121);
 
 }
 
 .viewVideoButton:hover{
 
     background-color: rgb(148, 54, 255);
+    color: white;
 
-    border-left: 0.7vh solid black; 
-    border-bottom: 0.7vh solid black; 
-    border-right: 0.2vh solid black; 
-    border-top: 0.2vh solid black; 
+    border-left: 0.7vh solid rgb(78, 29, 134);
+    border-bottom: 0.7vh solid rgb(78, 29, 134);
+    border-right: 0.2vh solid rgb(78, 29, 134);
+    border-top: 0.2vh solid rgb(78, 29, 134);
 
 }
 
 .ArcadeImage{
 
     width: 17vw;
+    max-width: 100%;
 
     border-left: 0.5vh solid rgb(110, 0, 200); 
     border-bottom: 0.5vh solid rgb(200, 0, 187); 
@@ -103,16 +116,34 @@
 
 .closeButton{
 
-    font-size: clamp(1.2rem, 3vh, 2rem);
-    background-color: rgb(194, 109, 255);
     padding: 1vh;
 
-    border-left: 0.7vh solid black; 
-    border-bottom: 0.7vh solid black; 
+    font-size: clamp(1.2rem, 3vh, 2rem);
+
+    background-color: rgb(194, 109, 255);
+
+    border-left: 0.7vh solid rgb(102, 55, 136);
+    border-bottom: 0.7vh solid rgb(102, 55, 136);
+    border-top: 0.1vh solid rgb(102, 55, 136);
+    border-right: 0.1vh solid rgb(102, 55, 136);
+
+}
+
+.closeButton:hover{
+
+    background-color: rgb(79, 0, 121);
+    color: white;
+
+    border-left: 0.7vh solid rgb(21, 0, 32);
+    border-bottom: 0.7vh solid rgb(21, 0, 32);
+    border-top: 0.1vh solid rgb(21, 0, 32);
+    border-right: 0.1vh solid rgb(21, 0, 32);
 
 }
 
 .ArcadeMediaText{
+
+    max-width: 100%;
 
     font-size: clamp(1.5rem, 4vh, 2.5rem);
     font-weight: bold;
@@ -124,40 +155,18 @@
 
     .ArcadeMediaContentBox{
 
-        background-color: rgb(143, 234, 255);
         padding: 3vh;
-        
-        border-radius: 1vh;
-        border-left: 0.8vh solid black;
-        border-bottom: 0.8vh solid black;
-        border-top: 0.3vh solid black;
-        border-right: 0.3vh solid black;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        gap: 3vh;
+        width: 80%;
 
     }
 
     .ArcadeVideoContainer {
 
-        min-width: 50vw;
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        border-radius: 1vh;
-        border-left: 0.8vh solid black;
-        border-bottom: 0.8vh solid black;
-        border-top: 0.3vh solid black;
-        border-right: 0.3vh solid black;
-
-        background-color: rgb(221, 176, 255);
-        padding: 2vh;
-
-        gap: 2vh;
+        min-width: 50vw;
 
     }
 
@@ -169,6 +178,12 @@
         border-bottom: 0.5vh solid rgb(200, 0, 187);  
         border-right: 0.5vh solid rgb(200, 0, 187);  
         border-top: 0.5vh solid rgb(110, 0, 200);   
+
+    }
+
+    .ArcadeMediaText{
+
+        font-size: clamp(1.3rem, 3.5vh, 2.2rem);
 
     }
 

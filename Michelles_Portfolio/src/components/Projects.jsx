@@ -42,11 +42,12 @@ function Projects() {
     
 
   return (
-    <div>
+    <div className = "projectOuterContainer">
+        
         <h1 className = "subTitle">
             My Projects:
         </h1>
-        <div className = "projectOuterContainer">
+        <div className = "projectsInnerContainer">
 
             {ProjectNumber == 1 ? (
 
