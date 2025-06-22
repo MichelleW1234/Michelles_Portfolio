@@ -10,6 +10,7 @@ body{
   font-family: monospace;
   animation: glowing-shadow-body 3s infinite;
   overflow-x: hidden;
+  max-width: 100vw;
 
 }
 
