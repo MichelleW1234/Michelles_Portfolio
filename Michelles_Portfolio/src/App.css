@@ -9,6 +9,7 @@ body{
 
   font-family: monospace;
   animation: glowing-shadow-body 3s infinite;
+  overflow-x: hidden;
 
 }
 
@@ -50,6 +51,9 @@ a:hover{
 
 .title{
 
+  /*overflow-wrap: break-word;*/
+  text-align: center;
+
   font-size: clamp(3rem, 9vh, 5rem);
 
   color: rgb(212, 0, 255);
@@ -64,15 +68,14 @@ a:hover{
 
 .subTitle{
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  /*overflow-wrap: break-word;*/
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
 
   font-size: clamp(1.8rem, 5vh, 3rem);
   color: rgb(0, 24, 68);
   background-color: rgb(220, 183, 255);
-  width: 100%;
-  max-width: 100%;
 
   padding: 1vh;
 
@@ -241,7 +244,7 @@ a:hover{
 
   .title{
 
-    font-size: clamp(2.5rem, 6vh, 4.5rem);
+    font-size: clamp(2rem, 6vh, 4rem);
     
     text-shadow: 
       0.4vw -0.25vh 0px rgb(0, 179, 255),
