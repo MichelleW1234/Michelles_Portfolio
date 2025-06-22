@@ -9,8 +9,6 @@ body{
 
   font-family: monospace;
   animation: glowing-shadow-body 3s infinite;
-  overflow-x: hidden;
-  max-width: 100vw;
 
 }
 
@@ -65,11 +63,18 @@ a:hover{
 
   max-width: 100%;
 
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+
 }
 
 .subTitle{
 
-  /*overflow-wrap: break-word;*/
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  
   text-align: center;
   width: 100%;
   max-width: 100%;
