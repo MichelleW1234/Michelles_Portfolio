@@ -8,6 +8,10 @@
 
 .skillsContainer{
 
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+
   display: flex;
   flex-direction: row;
   gap: 3vw;
@@ -16,10 +20,6 @@
   font-size: clamp(1.2rem, 3vh, 2rem);
 
   color: white;
-
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  white-space: normal;
 
 }
 

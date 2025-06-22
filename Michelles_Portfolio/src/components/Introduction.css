@@ -10,6 +10,10 @@
 
 .introText{
 
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+
   color: white;
   font-size: clamp(1rem, 3vh, 2rem);
   max-width: 100%;
@@ -17,6 +21,10 @@
 }
 
 .resumeButton{
+
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
 
   background-color: rgb(111, 255, 255);
   font-size: 1.8rem;

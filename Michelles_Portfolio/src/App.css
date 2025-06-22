@@ -14,6 +14,10 @@ body{
 
 button{
 
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+
   color: rgb(85, 0, 149);
 
   font-weight: bold;
@@ -28,6 +32,10 @@ button:hover{
 }
 
 a {
+
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
 
   text-decoration: none;
   color: rgb(110, 0, 194);
@@ -50,7 +58,10 @@ a:hover{
 
 .title{
 
-  /*overflow-wrap: break-word;*/
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+
   text-align: center;
 
   font-size: clamp(3rem, 9vh, 5rem);
@@ -63,10 +74,6 @@ a:hover{
 
   max-width: 100%;
 
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  white-space: normal;
-
 }
 
 .subTitle{
@@ -74,7 +81,7 @@ a:hover{
   word-wrap: break-word;
   overflow-wrap: break-word;
   white-space: normal;
-  
+
   text-align: center;
   width: 100%;
   max-width: 100%;
