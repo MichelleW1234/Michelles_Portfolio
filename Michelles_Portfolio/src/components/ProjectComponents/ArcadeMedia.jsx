@@ -5,6 +5,7 @@ import TTT from "../../images/TTT.svg";
 import SNK from "../../images/SNK.svg";
 import SPIM2 from "../../images/SPIM2.svg";
 import SPIM4 from "../../images/SPIM4.svg";
+import ORB from "../../images/ORB.svg";
 
 function ArcadeMedia({setArcadeMediaFlag}) {
 
@@ -41,6 +42,12 @@ function ArcadeMedia({setArcadeMediaFlag}) {
                     <h1 className = "just_text"> Space Invasion (Boss Fight) </h1>
                     <img src={SPIM4} className = "ArcadeImage"/>
                     <a className = "viewVideoButton" href="https://drive.google.com/file/d/1AYX0f0KXGJNhV-vsqafiWKIdAATluYZy/view" target="_blank" rel="noopener noreferrer"> View </a>
+                </div>
+
+                <div className = "ArcadeVideoContainer">
+                    <h1 className = "just_text"> Orbit </h1>
+                    <img src={ORB} className = "ArcadeImage"/>
+                    <a className = "viewVideoButton" href="https://drive.google.com/file/d/1zvz9bapvO7VCz57EJpUU6M0G3XkMaTRg/view" target="_blank" rel="noopener noreferrer"> View </a>
                 </div>
             </div>
 
