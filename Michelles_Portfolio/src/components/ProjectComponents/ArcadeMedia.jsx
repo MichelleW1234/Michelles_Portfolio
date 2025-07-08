@@ -6,6 +6,7 @@ import SNK from "../../images/SNK.svg";
 import SPIM2 from "../../images/SPIM2.svg";
 import SPIM4 from "../../images/SPIM4.svg";
 import ORB from "../../images/ORB.svg";
+import CBL from "../../images/CBL.svg";
 
 function ArcadeMedia({setArcadeMediaFlag}) {
 
@@ -48,6 +49,12 @@ function ArcadeMedia({setArcadeMediaFlag}) {
                     <h1 className = "just_text"> Orbit </h1>
                     <img src={ORB} className = "ArcadeImage"/>
                     <a className = "viewVideoButton" href="https://drive.google.com/file/d/1zvz9bapvO7VCz57EJpUU6M0G3XkMaTRg/view" target="_blank" rel="noopener noreferrer"> View </a>
+                </div>
+
+                <div className = "ArcadeVideoContainer">
+                    <h1 className = "just_text"> Color Blast </h1>
+                    <img src={CBL} className = "ArcadeImage"/>
+                    <a className = "viewVideoButton" href="https://drive.google.com/file/d/1Kjjpa7alUlvhrKfUlVKoDVFlYM0Bdhru/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
                 </div>
             </div>
 
