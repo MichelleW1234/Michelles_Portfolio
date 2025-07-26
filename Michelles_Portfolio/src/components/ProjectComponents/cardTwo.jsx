@@ -24,9 +24,9 @@ function cardTwo() {
             My Role:
         </h1>
         <p className = "projectText">
-            - Contributed to UI/UX and front-end in an Agile team using GitHub <br/>
-            - Conducted user research and testing to improve engagement <br/>
-            - Mentored by professor with extensive software development experience <br/>
+            &bull; Contributed to UI/UX and front-end in an Agile team using GitHub <br/>
+            &bull; Conducted user research and testing to improve engagement <br/>
+            &bull; Mentored by professor with extensive software development experience <br/>
 
         </p>
         <h1 className = "projectText">

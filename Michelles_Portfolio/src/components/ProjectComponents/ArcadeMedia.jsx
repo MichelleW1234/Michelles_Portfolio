@@ -7,6 +7,10 @@ import SPIM2 from "../../images/SPIM2.svg";
 import SPIM4 from "../../images/SPIM4.svg";
 import ORB from "../../images/ORB.svg";
 import CBL from "../../images/CBL.svg";
+import BFR from "../../images/BFR.svg";
+import CWMSpace from "../../images/CWMSpace.svg";
+
+
 
 function ArcadeMedia({setArcadeMediaFlag}) {
 
@@ -55,6 +59,18 @@ function ArcadeMedia({setArcadeMediaFlag}) {
                     <h1 className = "just_text"> Color Blast </h1>
                     <img src={CBL} className = "ArcadeImage"/>
                     <a className = "viewVideoButton" href="https://drive.google.com/file/d/1Kjjpa7alUlvhrKfUlVKoDVFlYM0Bdhru/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
+                </div>
+
+                <div className = "ArcadeVideoContainer">
+                    <h1 className = "just_text"> Claw Machine (Space) </h1>
+                    <img src={CWMSpace} className = "ArcadeImage"/>
+                    <a className = "viewVideoButton" href="https://drive.google.com/file/d/1_6mlQawc2_qW5ykNacaGuVQYiYEqETYp/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
+                </div>
+
+                <div className = "ArcadeVideoContainer">
+                    <h1 className = "just_text"> Balloon Frenzy </h1>
+                    <img src={BFR} className = "ArcadeImage"/>
+                    <a className = "viewVideoButton" href="https://drive.google.com/file/d/1I3y5USoBHMHJS4NJMdKq36Jwc0dhkYSf/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
                 </div>
             </div>
 
