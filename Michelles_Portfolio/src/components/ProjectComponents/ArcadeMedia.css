@@ -22,8 +22,10 @@
     flex-direction: column;
     align-items: center;
 
-    padding: 5vh;
-    gap: 3vh;
+    width: 70vw;
+
+    padding: 4rem;
+    gap: 2rem;
 
     background-color: rgb(147, 194, 251);
     
@@ -32,8 +34,6 @@
     border-bottom: 0.8vh solid rgb(40, 55, 74);
     border-top: 0.3vh solid rgb(40, 55, 74);
     border-right: 0.3vh solid rgb(40, 55, 74);
-
-    width: 70%;
 
     box-shadow: 0 0 2vh 1vh rgb(63, 173, 233);
 
@@ -48,8 +48,8 @@
     overflow-x: auto;
 
     width: 90%;
-    gap: 3vw;
-    padding: 3vh;
+    gap: 3rem;
+    padding: 3rem;
 
 }
 
@@ -58,13 +58,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
-    min-width: 20vw;
-    max-width: 100%;
-    padding: 2vh;
-    gap: 2vh;
+    padding: 5rem;
+    gap: 2rem;
 
-    border-radius: 1vh;
+    border-radius: 2rem;
 
     background-color: rgb(221, 176, 255);
 
@@ -77,9 +76,8 @@
 
 .viewVideoButton{
 
-    padding: 1vh;
-
-    font-size: clamp(1.2rem, 3vh, 2rem);
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
 
     background-color: rgb(216, 100, 255);
 
@@ -104,9 +102,7 @@
 
 .ArcadeImage{
 
-    width: 70%;
-    max-width: 100%;
-    height: auto;
+    width: 10vw;
 
     border-left: 0.5vh solid rgb(110, 0, 200); 
     border-bottom: 0.5vh solid rgb(200, 0, 187); 
@@ -119,9 +115,8 @@
 
 .closeButton{
 
-    padding: 1vh;
-
-    font-size: clamp(1.2rem, 3vh, 2rem);
+    padding: 1rem 1.5rem;
+    font-size: 3rem;
 
     background-color: rgb(194, 109, 255);
 
@@ -148,7 +143,7 @@
 
     width: 100%;
 
-    font-size: clamp(1.5rem, 4vh, 2.5rem);
+    font-size: 3rem;
     font-weight: bold;
 
 }
@@ -158,10 +153,13 @@
 
     .ArcadeMediaContentBox{
 
-        padding: 3vh;
+        padding: 3rem;
+        gap: 1rem;
         width: 80%;
 
+        background-color: blue;
     }
+
 
     .ArcadeVideoContainer {
 
@@ -169,7 +167,7 @@
         flex-direction: column;
         align-items: center;
 
-        width: 50vw;
+        width: 60vw;
 
     }
 
@@ -186,7 +184,7 @@
 
     .ArcadeMediaText{
 
-        font-size: clamp(1.3rem, 3.5vh, 2.2rem);
+        font-size: 2.5rem;
 
     }
 
