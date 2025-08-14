@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100vh; 
     text-align: center;
     z-index: 1;     
     background-color: rgba(115, 0, 255, 0.541);
@@ -16,6 +16,7 @@
 
 }
 
+
 .ArcadeMediaContentBox{
 
     display: flex;
@@ -23,9 +24,8 @@
     align-items: center;
 
     width: 70vw;
-
-    padding: 4rem;
-    gap: 2rem;
+    padding: 2vw;
+    gap: 2vh;
 
     background-color: rgb(147, 194, 251);
     
@@ -40,6 +40,7 @@
 }
 
 
+
 .ArcadeVideoOuterContainer {
     
     display: flex;
@@ -48,10 +49,11 @@
     overflow-x: auto;
 
     width: 90%;
-    gap: 3rem;
-    padding: 3rem;
+    gap: 3vw;
+    padding: 2vw;
 
 }
+
 
 .ArcadeVideoContainer {
 
@@ -60,10 +62,11 @@
     align-items: center;
     justify-content: center;
 
-    padding: 5rem;
-    gap: 2rem;
+    padding: 3vw;
+    gap: 2vw;
+    border-radius: 2vw;
 
-    border-radius: 2rem;
+    font-size: 1vh;
 
     background-color: rgb(221, 176, 255);
 
@@ -76,8 +79,8 @@
 
 .viewVideoButton{
 
-    padding: 1rem 1.5rem;
-    font-size: 2rem;
+    padding: 1vh 1.5vh;
+    font-size: 2.5vh;
 
     background-color: rgb(216, 100, 255);
 
@@ -115,8 +118,8 @@
 
 .closeButton{
 
-    padding: 1rem 1.5rem;
-    font-size: 3rem;
+    padding: 0.5vw 1vw;
+    font-size: 3vh;
 
     background-color: rgb(194, 109, 255);
 
@@ -143,7 +146,7 @@
 
     width: 100%;
 
-    font-size: 3rem;
+    font-size: 3vh;
     font-weight: bold;
 
 }
@@ -153,39 +156,133 @@
 
     .ArcadeMediaContentBox{
 
-        padding: 3rem;
-        gap: 1rem;
-        width: 80%;
-
-    }
-
-
-    .ArcadeVideoContainer {
-
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        width: 60vw;
+        width: 70vw;
+        padding: 8vw;
+        gap: 5vw;
+
+        background-color: rgb(147, 194, 251);
+        
+        border-radius: 1vh;
+        border-left: 0.8vh solid rgb(40, 55, 74);
+        border-bottom: 0.8vh solid rgb(40, 55, 74);
+        border-top: 0.3vh solid rgb(40, 55, 74);
+        border-right: 0.3vh solid rgb(40, 55, 74);
+
+        box-shadow: 0 0 2vh 1vh rgb(63, 173, 233);
+
+    }
+
+    .ArcadeVideoOuterContainer {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        overflow-x: auto;
+
+        width: 90%;
+        gap: 3vw;
+        padding: 5vw;
+
+    }
+
+    .ArcadeVideoContainer {
+
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        padding: 5vw;
+        gap: 4vw;
+        border-radius: 2vw;
+
+        font-size: 0.8vh;
+
+        background-color: rgb(221, 176, 255);
+
+        border-left: 0.5vh solid rgb(100, 79, 117);
+        border-bottom: 0.5vh solid rgb(100, 79, 117);
+        border-top: 0.1vh solid rgb(100, 79, 117);
+        border-right: 0.1vh solid rgb(100, 79, 117);
 
     }
 
     .ArcadeImage{
 
-        width: 50vw;
+        width: 30vw;
 
-        border-left: 0.5vh solid rgb(110, 0, 200); 
-        border-bottom: 0.5vh solid rgb(200, 0, 187);  
-        border-right: 0.5vh solid rgb(200, 0, 187);  
-        border-top: 0.5vh solid rgb(110, 0, 200);   
+        border-left: 0.3vh solid rgb(110, 0, 200); 
+        border-bottom: 0.3vh solid rgb(200, 0, 187);  
+        border-right: 0.3vh solid rgb(200, 0, 187);  
+        border-top: 0.3vh solid rgb(110, 0, 200);   
 
     }
 
     .ArcadeMediaText{
 
-        font-size: 2.5rem;
+        width: 100%;
+
+        font-size: 2vh;
+        font-weight: bold;
 
     }
 
+    .viewVideoButton{
+
+        padding: 0.5vw 1vw;
+        font-size: 1.5vh;
+
+        background-color: rgb(216, 100, 255);
+
+        border-left: 0.3vh solid rgb(105, 50, 121);
+        border-bottom: 0.3vh solid rgb(105, 50, 121);
+        border-top: 0.1vh solid rgb(105, 50, 121);
+        border-right: 0.1vh solid rgb(105, 50, 121);
+
+    }
+
+    .viewVideoButton:hover{
+
+        background-color: rgb(148, 54, 255);
+        color: white;
+
+        border-left: 0.3vh solid rgb(78, 29, 134);
+        border-bottom: 0.3vh solid rgb(78, 29, 134);
+        border-right: 0.1vh solid rgb(78, 29, 134);
+        border-top: 0.1vh solid rgb(78, 29, 134);
+
+    }
+
+
+    .closeButton{
+
+        padding: 0.5vw 1vw;
+        font-size: 2vh;
+
+        background-color: rgb(194, 109, 255);
+
+        border-left: 0.4vh solid rgb(102, 55, 136);
+        border-bottom: 0.4vh solid rgb(102, 55, 136);
+        border-top: 0.1vh solid rgb(102, 55, 136);
+        border-right: 0.1vh solid rgb(102, 55, 136);
+
+    }
+
+    .closeButton:hover{
+
+        background-color: rgb(79, 0, 121);
+        color: white;
+
+        border-left: 0.4vh solid rgb(21, 0, 32);
+        border-bottom: 0.4vh solid rgb(21, 0, 32);
+        border-top: 0.1vh solid rgb(21, 0, 32);
+        border-right: 0.1vh solid rgb(21, 0, 32);
+
+    }
 
 }

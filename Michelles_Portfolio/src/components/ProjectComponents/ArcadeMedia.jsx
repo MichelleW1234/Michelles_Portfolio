@@ -24,58 +24,58 @@ function ArcadeMedia({setArcadeMediaFlag}) {
 
             <div className = "ArcadeVideoOuterContainer">
                 <div className = "ArcadeVideoContainer">
-                    <h1 className = "just_text"> Rock-Paper-Scissors </h1>
+                    <h1> Rock-Paper-Scissors </h1>
                     <img src={RPS} className = "ArcadeImage"/>
                     <a className = "viewVideoButton" href="https://drive.google.com/file/d/1itT-r8qzOpxL8ycP68o_mTaR5r3df0_5/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
                 </div>
                 <div className = "ArcadeVideoContainer">
-                    <h1 className = "just_text"> Tic-Tac-Toe </h1>
+                    <h1> Tic-Tac-Toe </h1>
                     <img src={TTT} className = "ArcadeImage"/>
                     <a className = "viewVideoButton" href="https://drive.google.com/file/d/1G1-qQOsNCnR1fLcU90JUTU1YSATrHiS4/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
                 </div>
                 <div className = "ArcadeVideoContainer">
-                    <h1 className = "just_text"> Snake </h1>
+                    <h1> Snake </h1>
                     <img src={SNK} className = "ArcadeImage"/>
                     <a className = "viewVideoButton" href="https://drive.google.com/file/d/1bJyr6_9ppj_n-CZUc6Mfu_QvU9LKVDFF/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
                 </div>
                 <div className = "ArcadeVideoContainer">
-                    <h1 className = "just_text"> Space Invasion (Mission 2) </h1>
+                    <h1> Space Invasion (Mission 2) </h1>
                     <img src={SPIM2} className = "ArcadeImage"/>
                     <a className = "viewVideoButton" href="https://drive.google.com/file/d/1PMqYoAfn5KjCgzxA8GleJkhOpkEiduIA/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
                 </div>
 
                 <div className = "ArcadeVideoContainer">
-                    <h1 className = "just_text"> Space Invasion (Mission 4) </h1>
+                    <h1> Space Invasion (Mission 4) </h1>
                     <img src={SPIM4} className = "ArcadeImage"/>
                     <a className = "viewVideoButton" href="https://drive.google.com/file/d/1uvP1URcV-x81uS1pL7QuaeocgXQI8IrS/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
                 </div>
 
                 <div className = "ArcadeVideoContainer">
-                    <h1 className = "just_text"> Orbit </h1>
+                    <h1> Orbit </h1>
                     <img src={ORB} className = "ArcadeImage"/>
                     <a className = "viewVideoButton" href="https://drive.google.com/file/d/1tl4Ftc8BPBBZ43agDoBaMzcHdz-AzBXZ/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
                 </div>
 
                 <div className = "ArcadeVideoContainer">
-                    <h1 className = "just_text"> Color Blast </h1>
+                    <h1> Color Blast </h1>
                     <img src={CBL} className = "ArcadeImage"/>
                     <a className = "viewVideoButton" href="https://drive.google.com/file/d/18aBmvXzR2ZxT-DHt1Ub5zUeEGhncZvrP/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
                 </div>
 
                 <div className = "ArcadeVideoContainer">
-                    <h1 className = "just_text"> Cat Claw Machine </h1>
+                    <h1> Cat Claw Machine </h1>
                     <img src={CWMCat} className = "ArcadeImage"/>
                     <a className = "viewVideoButton" href="https://drive.google.com/file/d/1QdOkZ2Cbgo2ADlFZQEhdspETOF3pvFOq/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
                 </div>
 
                 <div className = "ArcadeVideoContainer">
-                    <h1 className = "just_text"> Balloon Frenzy </h1>
+                    <h1> Balloon Frenzy </h1>
                     <img src={BFR} className = "ArcadeImage"/>
                     <a className = "viewVideoButton" href="https://drive.google.com/file/d/1DnQAkTpYU_WVV8fz-hDg8cp7eefU0glK/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
                 </div>
 
                 <div className = "ArcadeVideoContainer">
-                    <h1 className = "just_text"> Sky Maze </h1>
+                    <h1> Sky Maze </h1>
                     <img src={SMZ} className = "ArcadeImage"/>
                     <a className = "viewVideoButton" href="https://drive.google.com/file/d/13KZEZOFC3_hgTR6Rm7JOVH5W1sfypzL2/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
                 </div>
