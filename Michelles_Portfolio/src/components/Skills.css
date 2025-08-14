@@ -15,24 +15,29 @@
   display: flex;
   flex-direction: row;
   gap: 3vw;
-  max-width: 100%;
 
-  font-size: clamp(1.2rem, 3vh, 2rem);
+  font-size: 2.5vh;
 
   color: white;
 
 }
 
 
-@media (max-width: 1000px) {
+@media (max-device-width: 1024px) and (orientation: portrait) and (hover: none){
     
   .skillsContainer {
 
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+
     display: flex;
     flex-direction: column;
-    gap: 2vh;    
+    gap: 2vh;   
+
+    color: white;
       
-    font-size: clamp(0.75rem, 1.5vh, 0.95rem);
+    font-size: 2vh;
 
   }
 }

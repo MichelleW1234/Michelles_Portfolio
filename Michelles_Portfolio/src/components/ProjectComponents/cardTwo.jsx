@@ -11,7 +11,7 @@ function cardTwo() {
         <div className="horizontalLineProject"></div>
         <br/>
         <img className= "projectImage" src={TritonTurnup}/>
-        <h1 className = "projectText">
+        <h1>
             Description:
         </h1>
         <p className = "projectText">
@@ -20,7 +20,7 @@ function cardTwo() {
             schedule availability, promoting socialization and stress relief by raising awareness of fun and engaging events 
             within the Triton community.
         </p>
-        <h1 className = "projectText">
+        <h1>
             My Role:
         </h1>
         <p className = "projectText">
@@ -29,7 +29,7 @@ function cardTwo() {
             &bull; Mentored by professor with extensive software development experience <br/>
 
         </p>
-        <h1 className = "projectText">
+        <h1>
             Media:
         </h1>
         <div className = "projectMediaContainer">

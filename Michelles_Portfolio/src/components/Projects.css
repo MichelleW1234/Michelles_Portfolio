@@ -4,30 +4,14 @@
     flex-direction: column;
     align-items: center;
     gap: 5vh;
-    max-width: 100%;
 
 }
 
 .projectsInnerContainer{
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    max-width: 80%;
-
-    background-color: rgb(176, 118, 253);
-
-    border-left: 1vh solid rgb(77, 50, 116);
-    border-bottom: 1vh solid rgb(77, 50, 116);
-    border-top: 0.5vh solid rgb(77, 50, 116);
-    border-right: 0.5vh solid rgb(77, 50, 116);
-
-    box-shadow: 0 0 2vh 1vh rgb(207, 70, 253);
-
-    border-radius: 2vw;
-    padding: 5vh 5vw;
-    gap: 3vh;
+    padding: 3vh 3vw;
+    width: 60%;
+    box-shadow: 0 0 2vh 1vh rgb(205, 53, 255);
 
 }
 
@@ -38,7 +22,7 @@
     flex-direction: row;
     flex-wrap: wrap; 
 
-    gap: 5vw;
+    gap: 3vw;
     max-width: 100%;
 
 }
@@ -49,10 +33,10 @@
     overflow-wrap: break-word;
     white-space: normal;
 
-    font-size: clamp(1.7rem, 5vh, 3rem);
-    padding: 1.5vh;
+    font-size: 3vh;
+    padding: 1.5vh 1.5vw;
 
-    background-color: aqua;
+    background-color: rgb(28, 255, 255);
 
     border-left: 0.5vh solid rgb(0, 118, 118);
     border-bottom: 0.5vh solid rgb(0, 118, 118);
@@ -85,9 +69,10 @@
     align-items: center;
 
     background-color: rgb(184, 225, 254);
-    padding: 3vh;
+    padding: 3vh 3vw;
     gap: 1vh;
-    max-width: 100%;
+
+    font-size: 1.3vh;
 
     animation: glowing-shadow-components 3s infinite;
 
@@ -100,9 +85,8 @@
     overflow-wrap: break-word;
     white-space: normal;
 
-    font-size: clamp(1.6rem, 4.25vh, 2.75rem);
+    font-size: 4vh;
     color: rgb(3, 0, 47);
-    max-width: 100%;
 
 }
 
@@ -116,18 +100,16 @@
 
 .projectImage {
 
-    width: 15vw;
-    max-width: 100%;
+    width: 10vw;
 
-    border-left: 0.6vh solid rgb(153, 0, 255);
-    border-bottom: 0.6vh solid rgb(153, 0, 255);
-    border-top: 0.6vh solid rgb(225, 0, 255);
-    border-right: 0.6vh solid rgb(225, 0, 255);
+    border-left: 0.4vh solid rgb(153, 0, 255);
+    border-bottom: 0.4vh solid rgb(153, 0, 255);
+    border-top: 0.4vh solid rgb(225, 0, 255);
+    border-right: 0.4vh solid rgb(225, 0, 255);
 
-    padding: 1vw;
+    padding: 0.5vh 0.5vw;
 
 }
-
 
 .projectText{
 
@@ -135,9 +117,12 @@
     overflow-wrap: break-word;
     white-space: normal;
 
-    font-size: clamp(1rem, 2.5vh, 1.5rem);
+    font-size: 2vh;
     color: rgb(3, 0, 47);
-    max-width: 100%;
+    padding: 2vh 2vw;
+    border-radius: 1vw;
+
+    box-shadow: 0 0 1vh 0.35vh rgb(76, 0, 255);
     
 }
 
@@ -148,8 +133,10 @@
     flex-direction: row;
     flex-wrap: wrap;  
     gap: 2vh;
+    border-radius: 1vw;
 
-    max-width: 100%;
+    box-shadow: 0 0 1vh 0.35vh rgb(128, 0, 255);
+    padding: 1.5vh 1.5vw;
 
 }
 
@@ -160,32 +147,42 @@
     overflow-wrap: break-word;
     white-space: normal;
 
-    font-size: clamp(1rem, 2.5vh, 1.75rem);
-    padding: 1.5vh;
+    font-size: 2vh;
+    padding: 1.5vh 1.5vw;
+
+    border-radius: 0.2vw;
 
     background-color: rgb(0, 179, 255);
 
-    border-left: 0.6vh solid rgb(0, 91, 130);
-    border-bottom: 0.6vh solid rgb(0, 91, 130);
-    border-top: 0vh solid rgb(0, 91, 130);
-    border-right: 0vh solid rgb(0, 91, 130);
-
-}
-
-.projectButton:hover{
-
-    border-left: 0.9vh solid rgb(0, 91, 130);
-    border-bottom: 0.9vh solid rgb(0, 91, 130);
+    border-left: 0.5vh solid rgb(0, 91, 130);
+    border-bottom: 0.5vh solid rgb(0, 91, 130);
     border-top: 0.2vh solid rgb(0, 91, 130);
     border-right: 0.2vh solid rgb(0, 91, 130);
 
 }
 
+.projectButton:hover{
+
+    color: white;
+
+    background-color: rgb(0, 47, 255);
+
+    border-left: 0.5vh solid rgb(0, 24, 130);
+    border-bottom: 0.5vh solid rgb(0, 24, 130);
+    border-top: 0.2vh solid rgb(0, 24, 130);
+    border-right: 0.2vh solid rgb(0, 24, 130);
+    
+}
+
 
 /* Mobile adjustments */
-@media (max-width: 1000px) {
+@media (max-device-width: 1024px) and (orientation: portrait) and (hover: none) {
 
     .projectOuterContainer{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         gap: 3vh;
 
@@ -193,21 +190,23 @@
 
     .projectsInnerContainer {
 
-        padding: 2.5vh 5.5vw;
-        
-        border-left: 0.6vh solid rgb(77, 50, 116);
-        border-bottom: 0.6vh solid rgb(77, 50, 116);
-        border-top: 0.2vh solid rgb(77, 50, 116);
-        border-right: 0.2vh solid rgb(77, 50, 116);
-        
-        box-shadow: 0 0 1vh 0.5vh rgb(207, 70, 253);
+        padding: 2vw 2vh;
+        width: 85%;
+        box-shadow: 0 0 2vh 1vh rgb(205, 53, 255);
 
     }
     
     .projectContainer{
 
-        padding: 2vh;
-        gap:1vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        background-color: rgb(184, 225, 254);
+
+        font-size: 1.3vh;
+        padding: 5vw 1vh;
+        gap: 1vh;
 
         animation: glowing-shadow-components-mobile 3s infinite;
 
@@ -215,30 +214,46 @@
 
     .projectTitle{
 
-        font-size: clamp(1.5rem, 3vh, 2.5rem);
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
+
+        font-size: 3vh;
+        color: rgb(3, 0, 47);
 
     }
 
     .projectImage {
 
-        width: 30vw;
+        width: 25vw;
         
-        border-left: 0.5vh solid rgb(153, 0, 255);
-        border-bottom: 0.5vh solid rgb(153, 0, 255);
-        border-top: 0.5vh solid rgb(225, 0, 255);
-        border-right: 0.5vh solid rgb(225, 0, 255);
+        border-left: 0.3vh solid rgb(153, 0, 255);
+        border-bottom: 0.3vh solid rgb(153, 0, 255);
+        border-top: 0.3vh solid rgb(225, 0, 255);
+        border-right: 0.3vh solid rgb(225, 0, 255);
+
+        padding: 1vw 1vh;
 
     }
 
     .horizontalLineProject{
 
         height: 0.15vh;
+        background-color: #000322;
+        width: 80%;
 
     }
 
     .projectText{
 
-        font-size: clamp(0.7rem, 1vh, 1.5rem);
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
+
+        font-size: 1.7vh;
+        color: rgb(3, 0, 47);
+
+        box-shadow: none;
         
     }
 
@@ -247,41 +262,89 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 1vh;
+
+        gap: 2vh;   
+
+        box-shadow: none;
 
     }
 
+        
     .projectButton{
 
-        font-size: clamp(0.5rem, 1vh, 1.75rem);
-        padding: 1vh;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
 
-        border-left: 0.4vh solid rgb(0, 91, 130);
-        border-bottom: 0.4vh solid rgb(0, 91, 130);
-        border-top: 0vh solid rgb(0, 91, 130);
-        border-right: 0vh solid rgb(0, 91, 130);
+        font-size: 2vh;
+        padding: 1.5vw 1.5vh;
+
+        border-radius: 0.2vw;
+
+        background-color: rgb(0, 179, 255);
+
+        border-left: 0.35vh solid rgb(0, 91, 130);
+        border-bottom: 0.35vh solid rgb(0, 91, 130);
+        border-top: 0.1vh solid rgb(0, 91, 130);
+        border-right: 0.1vh solid rgb(0, 91, 130);
 
     }
 
     .projectButton:hover{
 
-        border-left: 0.6vh solid rgb(0, 91, 130);
-        border-bottom: 0.6vh solid rgb(0, 91, 130);
-        border-top: 0.2vh solid rgb(0, 91, 130);
-        border-right: 0.2vh solid rgb(0, 91, 130);
+        color: white;
+
+        background-color: rgb(0, 47, 255);
+
+        border-left: 0.35vh solid rgb(0, 24, 130);
+        border-bottom: 0.35vh solid rgb(0, 24, 130);
+        border-top: 0.1vh solid rgb(0, 24, 130);
+        border-right: 0.1vh solid rgb(0, 24, 130);
+        
+    }
+
+    .cardCarouselButtonContainer{
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+
+        gap: 8vw;
 
     }
 
     .cardCarouselButton{
 
-        font-size: clamp(1rem, 3vh, 1.5rem);
-        padding: 1vh;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
 
-        border-left: 0.5vh solid rgb(0, 118, 118);
-        border-bottom: 0.5vh solid rgb(0, 118, 118);
+        font-size: 3vh;
+        padding: 1.5vw 1.5vh;
+
+        background-color: rgb(28, 255, 255);
+
+        border-left: 0.4vh solid rgb(0, 118, 118);
+        border-bottom: 0.4vh solid rgb(0, 118, 118);
         border-top: 0.1vh solid rgb(0, 118, 118);
         border-right: 0.1vh solid rgb(0, 118, 118);
+
+        box-shadow: 0 0 1vh 0.5vh rgb(70, 247, 253);
         
+    }
+
+    .cardCarouselButton:hover{
+
+        background-color: rgb(0, 81, 255);
+        color: white;
+
+        border-left: 0.4vh solid rgb(0, 30, 94);
+        border-bottom: 0.4vh solid rgb(0, 30, 94);
+        border-top: 0.1vh solid rgb(0, 30, 94);
+        border-right: 0.1vh solid rgb(0, 30, 94);
+
+        box-shadow: 0 0 1vh 0.5vh rgb(0, 81, 255);
+
     }
 
 }

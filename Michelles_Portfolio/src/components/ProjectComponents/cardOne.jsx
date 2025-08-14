@@ -14,12 +14,15 @@ function cardOne() {
         <div className="horizontalLineProject"></div>
         <br/>
         <img className= "projectImage" src={Arcade}/>
+        <h1>
+            Description:
+        </h1>
         <p className = "projectText">
             &bull; A retro-style browser game with interactive mini-games and dynamic scoring. <br/>
             &bull; Used React, Vite, and Router DOM for logic, state, and animation control. <br/>
             &bull; Designed custom visuals, sound, and packaged as macOS desktop app with Tauri and then with Electron. <br/>
         </p>
-        <h1 className = "projectText">
+        <h1>
             Media:
         </h1>
         <div className = "projectMediaContainer">

@@ -3,9 +3,9 @@ body{
   background: linear-gradient(rgb(22, 0, 133), rgb(96, 0, 118));
   padding-left: 5vw;
   padding-right: 5vw;
-  padding-bottom: 10vh;
-  padding-top: 10vh;
-  margin: 2vw;
+  padding-bottom: 5vh;
+  padding-top: 5vh;
+  margin: 5vh 5vw;
 
   font-family: monospace;
   animation: glowing-shadow-body 3s infinite;
@@ -64,15 +64,13 @@ a:hover{
 
   text-align: center;
 
-  font-size: clamp(3rem, 9vh, 5rem);
+  font-size: 7vh;
 
   color: rgb(212, 0, 255);
   
   text-shadow: 
     0.3vw -0.25vh 0px rgb(0, 179, 255),
     0vw 0.2vh 0px rgb(255, 0, 234);
-
-  max-width: 100%;
 
 }
 
@@ -84,9 +82,8 @@ a:hover{
 
   text-align: center;
   width: 100%;
-  max-width: 100%;
 
-  font-size: clamp(1.8rem, 5vh, 3rem);
+  font-size: 4vh;
   color: rgb(0, 24, 68);
   background-color: rgb(220, 183, 255);
 
@@ -98,7 +95,7 @@ a:hover{
 
 .extraSpace {
 
-  height: 10vh;
+  height: 8vh;
 
 }
 
@@ -262,11 +259,19 @@ a:hover{
 
 
 /* Mobile adjustments */
-@media (max-width: 1000px) {
+@media (max-device-width: 1024px) and (orientation: portrait) and (hover: none) {
 
   body{
 
-    margin: 3vw;
+    background: linear-gradient(rgb(22, 0, 133), rgb(96, 0, 118));
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+
+    font-family: monospace;
+
+    margin: 3vh 3vw;
 
     animation: glowing-shadow-body-mobile 3s infinite;
 
@@ -274,7 +279,15 @@ a:hover{
 
   .title{
 
-    font-size: clamp(2rem, 6vh, 4rem);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+
+    text-align: center;
+
+    color: rgb(212, 0, 255);
+
+    font-size: 5vh;
     
     text-shadow: 
       0.4vw -0.25vh 0px rgb(0, 179, 255),
@@ -284,7 +297,15 @@ a:hover{
 
   .subTitle{
 
-    font-size: clamp(1.8rem, 3.5vh, 3rem);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    text-align: center;
+
+    width: 100%;
+    padding: 1vh;
+    font-size: 3vh;
+    color: rgb(0, 24, 68);
 
     background-color: rgb(220, 183, 255);
 

@@ -60,18 +60,19 @@ function Projects() {
 
             )}
 
-            <div className = "cardCarouselButtonContainer">
-                <button className = "cardCarouselButton" onClick={backClicked}>
-                    Back
-                </button>
+        </div>
 
-                <button className = "cardCarouselButton" onClick={nextClicked}>
-                    Next
-                </button>
+         <div className = "cardCarouselButtonContainer">
+            <button className = "cardCarouselButton" onClick={backClicked}>
+                Back
+            </button>
 
-            </div>
+            <button className = "cardCarouselButton" onClick={nextClicked}>
+                Next
+            </button>
 
         </div>
+
 
     </div>
 
