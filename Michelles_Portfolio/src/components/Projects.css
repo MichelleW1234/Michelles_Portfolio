@@ -191,8 +191,10 @@
     .projectsInnerContainer {
 
         padding: 2vw 2vh;
-        width: 85%;
-        box-shadow: 0 0 2vh 1vh rgb(205, 53, 255);
+        width: 90%;
+        /*box-shadow: 0 0 2vh 1vh rgb(205, 53, 255);*/
+        padding: 0;
+        box-shadow: none;
 
     }
     
@@ -202,14 +204,14 @@
         flex-direction: column;
         align-items: center;
 
-        background-color: rgb(184, 225, 254);
-
         font-size: 1.3vh;
         padding: 5vw 1vh;
         gap: 1vh;
 
-        animation: glowing-shadow-components-mobile 3s infinite;
-
+        background-color: rgb(184, 225, 254);
+        box-shadow: 0 0 2vh 1vh rgb(205, 53, 255);
+        animation: none;
+        
     }
 
     .projectTitle{
