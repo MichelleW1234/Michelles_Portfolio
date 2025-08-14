@@ -242,6 +242,23 @@ a:hover{
 }
 
 
+@keyframes pulse-glow {
+  0% {
+    filter: 
+      drop-shadow(0 0 0.3125rem rgba(21, 0, 255, 0.8)) 
+      drop-shadow(0 0 0.625rem rgba(21, 0, 255, 0.6))  
+      drop-shadow(0 0 1.25rem rgba(21, 0, 255, 0.4));   
+  }
+  100% {
+    filter: 
+      drop-shadow(0 0 0.3125rem rgba(255, 0, 247, 0.8))
+      drop-shadow(0 0 0.625rem rgba(255, 0, 247, 0.6))
+      drop-shadow(0 0 1.25rem rgba(255, 0, 247, 0.4));
+  }
+}
+
+
+
 
 
 /* Mobile adjustments */

@@ -104,13 +104,16 @@
 
 .ArcadeImage{
 
-    width: 17vw;
+    width: 70%;
     max-width: 100%;
+    height: auto;
 
     border-left: 0.5vh solid rgb(110, 0, 200); 
     border-bottom: 0.5vh solid rgb(200, 0, 187); 
     border-right: 0.5vh solid rgb(200, 0, 187); 
     border-top: 0.5vh solid rgb(110, 0, 200);   
+
+    animation: pulse-glow 3s infinite alternate;
 
 }
 
@@ -143,7 +146,7 @@
 
 .ArcadeMediaText{
 
-    max-width: 100%;
+    width: 100%;
 
     font-size: clamp(1.5rem, 4vh, 2.5rem);
     font-weight: bold;
@@ -166,7 +169,7 @@
         flex-direction: column;
         align-items: center;
 
-        min-width: 50vw;
+        width: 50vw;
 
     }
 
