@@ -97,10 +97,10 @@
     background-color: rgb(148, 54, 255);
     color: white;
 
-    border-left: 0.7vh solid rgb(78, 29, 134);
-    border-bottom: 0.7vh solid rgb(78, 29, 134);
-    border-right: 0.2vh solid rgb(78, 29, 134);
-    border-top: 0.2vh solid rgb(78, 29, 134);
+    border-left: 0.5vh solid rgb(78, 29, 134);
+    border-bottom: 0.5vh solid rgb(78, 29, 134);
+    border-right: 0.1vh solid rgb(78, 29, 134);
+    border-top: 0.1vh solid rgb(78, 29, 134);
 
 }
 

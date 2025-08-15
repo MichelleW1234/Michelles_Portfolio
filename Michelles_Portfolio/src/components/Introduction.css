@@ -74,6 +74,12 @@
 
   .resumeButton{
 
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+
+    background-color: rgb(111, 255, 255);
+
     font-size: 2.5vh;
     padding: 1.5vw 1.5vh;
 
@@ -81,6 +87,8 @@
     border-bottom: 0.5vh solid rgb(0, 104, 104);
     border-top: 0.1vh solid rgb(0, 104, 104);
     border-right: 0.1vh solid rgb(0, 104, 104);
+
+    animation: glowing-shadow-subtitle 3s infinite;
 
   }
 

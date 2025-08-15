@@ -26,40 +26,40 @@ function ArcadeMedia({setArcadeMediaFlag}) {
                 <div className = "ArcadeVideoContainer">
                     <h1> Rock-Paper-Scissors </h1>
                     <img src={RPS} className = "ArcadeImage"/>
-                    <a className = "viewVideoButton" href="https://drive.google.com/file/d/1itT-r8qzOpxL8ycP68o_mTaR5r3df0_5/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
+                    <a className = "viewVideoButton" href="https://drive.google.com/file/d/1o-giQdhc61DFY08yz82H1VEzi8UfUZsJ/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
                 </div>
                 <div className = "ArcadeVideoContainer">
                     <h1> Tic-Tac-Toe </h1>
                     <img src={TTT} className = "ArcadeImage"/>
-                    <a className = "viewVideoButton" href="https://drive.google.com/file/d/1G1-qQOsNCnR1fLcU90JUTU1YSATrHiS4/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
+                    <a className = "viewVideoButton" href="https://drive.google.com/file/d/1UyKZxbinUKE2X8pM_fFvlVjTZvpsVyJI/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
                 </div>
                 <div className = "ArcadeVideoContainer">
                     <h1> Snake </h1>
                     <img src={SNK} className = "ArcadeImage"/>
-                    <a className = "viewVideoButton" href="https://drive.google.com/file/d/1bJyr6_9ppj_n-CZUc6Mfu_QvU9LKVDFF/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
+                    <a className = "viewVideoButton" href="https://drive.google.com/file/d/1oam-uHepIa7zWA7EvH7w5v0HfKAxOosk/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
                 </div>
                 <div className = "ArcadeVideoContainer">
                     <h1> Space Invasion (Mission 2) </h1>
                     <img src={SPIM2} className = "ArcadeImage"/>
-                    <a className = "viewVideoButton" href="https://drive.google.com/file/d/1PMqYoAfn5KjCgzxA8GleJkhOpkEiduIA/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
+                    <a className = "viewVideoButton" href="https://drive.google.com/file/d/1tXgaclA4WkAWpsFbV5lvgFitexaQeLJF/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
                 </div>
 
                 <div className = "ArcadeVideoContainer">
                     <h1> Space Invasion (Mission 4) </h1>
                     <img src={SPIM4} className = "ArcadeImage"/>
-                    <a className = "viewVideoButton" href="https://drive.google.com/file/d/1uvP1URcV-x81uS1pL7QuaeocgXQI8IrS/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
+                    <a className = "viewVideoButton" href="https://drive.google.com/file/d/1RpXGuRXFRX5zm5Haaed6UYuHYLuS1Syy/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
                 </div>
 
                 <div className = "ArcadeVideoContainer">
                     <h1> Orbit </h1>
                     <img src={ORB} className = "ArcadeImage"/>
-                    <a className = "viewVideoButton" href="https://drive.google.com/file/d/1tl4Ftc8BPBBZ43agDoBaMzcHdz-AzBXZ/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
+                    <a className = "viewVideoButton" href="https://drive.google.com/file/d/1-BV0zDa3cVebM82fRSUpcK7bm0u56aJv/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
                 </div>
 
                 <div className = "ArcadeVideoContainer">
                     <h1> Color Blast </h1>
                     <img src={CBL} className = "ArcadeImage"/>
-                    <a className = "viewVideoButton" href="https://drive.google.com/file/d/18aBmvXzR2ZxT-DHt1Ub5zUeEGhncZvrP/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
+                    <a className = "viewVideoButton" href="https://drive.google.com/file/d/1eFq1fzGNcROu9m8OMUnDwbjL_Xd9xFI-/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
                 </div>
 
                 <div className = "ArcadeVideoContainer">
@@ -71,13 +71,13 @@ function ArcadeMedia({setArcadeMediaFlag}) {
                 <div className = "ArcadeVideoContainer">
                     <h1> Balloon Frenzy </h1>
                     <img src={BFR} className = "ArcadeImage"/>
-                    <a className = "viewVideoButton" href="https://drive.google.com/file/d/1DnQAkTpYU_WVV8fz-hDg8cp7eefU0glK/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
+                    <a className = "viewVideoButton" href="https://drive.google.com/file/d/18LMqMI-O7pHjnbYh39AqosJstiT6CBLG/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
                 </div>
 
                 <div className = "ArcadeVideoContainer">
                     <h1> Sky Maze </h1>
                     <img src={SMZ} className = "ArcadeImage"/>
-                    <a className = "viewVideoButton" href="https://drive.google.com/file/d/13KZEZOFC3_hgTR6Rm7JOVH5W1sfypzL2/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
+                    <a className = "viewVideoButton" href="https://drive.google.com/file/d/1p1rTGx6sZHUntdlewUWeI9DlxS38QHm9/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
                 </div>
             </div>
 
