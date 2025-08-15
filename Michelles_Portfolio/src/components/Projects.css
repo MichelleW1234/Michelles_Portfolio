@@ -76,7 +76,7 @@
 
     font-size: 1.3vh;
 
-    animation: glowing-shadow-components 3s infinite;
+    animation: glowing-shadow-subtitle 3s infinite;
 
 }
 
@@ -330,7 +330,7 @@
 
         box-shadow: 0 0 1vh 0.5vh rgb(70, 247, 253);
 
-        animation: glowing-shadow-components-mobile 4s infinite;
+        animation: glowing-shadow-subtitle-mobile 4s infinite;
         
     }
 
