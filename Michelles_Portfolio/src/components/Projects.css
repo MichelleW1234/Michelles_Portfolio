@@ -44,6 +44,8 @@
     border-right: 0.1vh solid rgb(0, 118, 118);
 
     box-shadow: 0 0 1vh 0.5vh rgb(70, 247, 253);
+
+    animation: glowing-shadow-components 4s infinite;
     
 }
 
@@ -150,8 +152,6 @@
     font-size: 2vh;
     padding: 1.5vh 1.5vw;
 
-    border-radius: 0.2vw;
-
     background-color: rgb(0, 179, 255);
 
     border-left: 0.5vh solid rgb(0, 91, 130);
@@ -192,7 +192,6 @@
 
         padding: 2vw 2vh;
         width: 90%;
-        /*box-shadow: 0 0 2vh 1vh rgb(205, 53, 255);*/
         padding: 0;
         box-shadow: none;
 
@@ -281,8 +280,6 @@
         font-size: 2vh;
         padding: 1.5vw 1.5vh;
 
-        border-radius: 0.2vw;
-
         background-color: rgb(0, 179, 255);
 
         border-left: 0.35vh solid rgb(0, 91, 130);
@@ -332,6 +329,8 @@
         border-right: 0.1vh solid rgb(0, 118, 118);
 
         box-shadow: 0 0 1vh 0.5vh rgb(70, 247, 253);
+
+        animation: glowing-shadow-components-mobile 4s infinite;
         
     }
 

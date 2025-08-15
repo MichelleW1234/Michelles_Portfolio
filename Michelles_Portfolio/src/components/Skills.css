@@ -23,7 +23,7 @@
 }
 
 
-@media (max-device-width: 1024px) and (orientation: portrait) and (hover: none){
+@media (max-width: 1024px){
     
   .skillsContainer {
 
