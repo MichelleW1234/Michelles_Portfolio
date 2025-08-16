@@ -27,9 +27,8 @@ function cardOne() {
         </h1>
         <div className = "projectMediaContainer">
             <a className = "projectButton" href="https://github.com/MichelleW1234/Arcade.git" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
-            <a className = "projectButton" href="https://github.com/MichelleW1234/Arcade/releases/tag/v1.0.2" target="_blank" rel="noopener noreferrer"> Go to Arcade v1.0.2</a>
-            <a className = "projectButton" href="https://github.com/MichelleW1234/Arcade/releases/tag/v1.0.1" target="_blank" rel="noopener noreferrer"> Go to Arcade v1.0.1</a>
-            <a className = "projectButton" href="https://github.com/MichelleW1234/Arcade/releases/tag/v1.0.0" target="_blank" rel="noopener noreferrer"> Go to Arcade v1.0.0</a>
+            <a className = "projectButton" href="https://github.com/MichelleW1234/Arcade/releases/tag/v1.0.3" target="_blank" rel="noopener noreferrer"> Go to Arcade v1.0.3 </a>
+            <a className = "projectButton" href="https://github.com/MichelleW1234/Arcade/releases" target="_blank" rel="noopener noreferrer"> Go to All Arcade Releases</a>
             <button className = "projectButton" onClick = {() => setArcadeMediaFlag(true)}> View Video Content </button>
         </div>
 
