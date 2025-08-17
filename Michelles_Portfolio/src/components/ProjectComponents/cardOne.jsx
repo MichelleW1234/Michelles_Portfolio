@@ -18,9 +18,11 @@ function cardOne() {
             Description:
         </h1>
         <p className = "projectText">
-            &bull; A retro-style browser game with interactive mini-games and dynamic scoring. <br/>
-            &bull; Used React, Vite, and Router DOM for logic, state, and animation control. <br/>
-            &bull; Designed custom visuals, sound, and packaged as macOS desktop app with Tauri and then with Electron. <br/>
+            &bull; Developed an interactive macOs retro-style game with web tech (React (JavaScript), HTML, CSS, Electron) <br/> <br/>
+            &bull; Controlled animation flow by syncing React component states with gameplay logic, triggering re-renders and animating game elements in response to user actions <br/> <br/>
+            &bull; Designed an engaging user interface with hand-drawn visual assets, CSS animations, background music, and sound effects to enhance the player experience <br/> <br/>
+            &bull; Implemented game logic and dynamic outcomes based on user input, with real-time feedback <br/> <br/>
+            &bull; Enabled keyboard navigation within the game interface by mapping key events to UI actions <br/>
         </p>
         <h1>
             Media:
