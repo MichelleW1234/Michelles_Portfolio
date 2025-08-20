@@ -11,33 +11,34 @@
   word-wrap: break-word;
   overflow-wrap: break-word;
   white-space: normal;
+  text-align: center;
 
-  display: flex;
-  flex-direction: row;
-  gap: 3vw;
-
+  margin-top: 5vh;
   font-size: 2.5vh;
+  padding: 8vh 8vw;
+
 
   color: white;
+  box-shadow: 0 0 1vh 0.75vh rgb(63, 173, 233);
 
 }
 
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) and (orientation: portrait) and (hover: none){
     
   .skillsContainer {
 
     word-wrap: break-word;
     overflow-wrap: break-word;
     white-space: normal;
+    text-align: center;
 
-    display: flex;
-    flex-direction: column;
-    gap: 2vh;   
+    margin-top: 3vh;
+    font-size: 2vh;
+    padding: 5vw 5vh;
 
     color: white;
-      
-    font-size: 2vh;
+    box-shadow: 0 0 1vh 0.75vh rgb(63, 173, 233);
 
   }
 }

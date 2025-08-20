@@ -76,7 +76,7 @@
 
     font-size: 1.3vh;
 
-    animation: glowing-shadow-subtitle 3s infinite;
+    animation: glowing-shadow-components 3s infinite;
 
 }
 
@@ -109,7 +109,9 @@
     border-top: 0.4vh solid rgb(225, 0, 255);
     border-right: 0.4vh solid rgb(225, 0, 255);
 
-    padding: 0.5vh 0.5vw;
+    padding: 1vh 1vw;
+
+    box-shadow: 0 0 1vh 0.35vh rgb(191, 0, 255);
 
 }
 

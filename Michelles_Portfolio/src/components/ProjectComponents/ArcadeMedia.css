@@ -111,9 +111,9 @@
     border-left: 0.5vh solid rgb(110, 0, 200); 
     border-bottom: 0.5vh solid rgb(200, 0, 187); 
     border-right: 0.5vh solid rgb(200, 0, 187); 
-    border-top: 0.5vh solid rgb(110, 0, 200);   
+    border-top: 0.5vh solid rgb(110, 0, 200);  
 
-    animation: pulse-glow 3s infinite alternate;
+    box-shadow: 0 0 1vh 0.5vh rgb(159, 63, 233);
 
 }
 
@@ -239,6 +239,8 @@
         border-bottom: 0.3vh solid rgb(200, 0, 187);  
         border-right: 0.3vh solid rgb(200, 0, 187);  
         border-top: 0.3vh solid rgb(110, 0, 200);   
+
+        box-shadow: 0 0 1vh 0.5vh rgb(159, 63, 233);
 
     }
 
