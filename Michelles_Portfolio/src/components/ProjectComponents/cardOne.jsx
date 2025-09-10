@@ -22,14 +22,15 @@ function cardOne() {
             &bull; Controlled animation flow by syncing React component states with gameplay logic, triggering re-renders and animating game elements in response to user actions <br/> <br/>
             &bull; Designed an engaging user interface with hand-drawn visual assets, CSS animations, background music, and sound effects to enhance the player experience <br/> <br/>
             &bull; Implemented game logic and dynamic outcomes based on user input, with real-time feedback <br/> <br/>
-            &bull; Enabled keyboard navigation within the game interface by mapping key events to UI actions <br/>
+            &bull; Enabled keyboard navigation within the game interface by mapping key events to UI actions <br/> <br/>
+            &bull; Implemented persistent data storage using Electron Store to save and restore user progress across app sessions.
         </p>
         <h1>
             Media:
         </h1>
         <div className = "projectMediaContainer">
             <a className = "projectButton" href="https://github.com/MichelleW1234/Arcade.git" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
-            <a className = "projectButton" href="https://github.com/MichelleW1234/Arcade/releases/tag/v1.0.3" target="_blank" rel="noopener noreferrer"> Go to Arcade v1.0.3 </a>
+            <a className = "projectButton" href="https://github.com/MichelleW1234/Arcade/releases/tag/v1.0.4" target="_blank" rel="noopener noreferrer"> Go to Arcade v1.0.4 </a>
             <a className = "projectButton" href="https://github.com/MichelleW1234/Arcade/releases" target="_blank" rel="noopener noreferrer"> Go to All Arcade Releases</a>
             <button className = "projectButton" onClick = {() => setArcadeMediaFlag(true)}> View Video Content </button>
         </div>
