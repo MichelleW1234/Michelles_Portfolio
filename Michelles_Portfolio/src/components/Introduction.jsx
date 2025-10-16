@@ -17,7 +17,7 @@ function Introduction() {
           software development and machine learning throughout my time in college. In the future, I hope to contribute to innovative software 
           solutions that harness the power of AI and machine learning to improve people’s lives and to impact the world.
       </p>
-      <a className = "resumeButton" href="https://docs.google.com/document/d/1yxwJvILbZGjwvqFF6PGSkCUXcnz6qH2YGJsIg52HeIo/edit?tab=t.0" target="_blank" rel="noopener noreferrer"> View My Resume </a>
+      <a className = "resumeButton" href="https://docs.google.com/document/d/1yxwJvILbZGjwvqFF6PGSkCUXcnz6qH2YGJsIg52HeIo/preview" target="_blank" rel="noopener noreferrer"> View My Resume </a>
     </div>
 
   )
