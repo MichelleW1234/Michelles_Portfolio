@@ -17,14 +17,14 @@ function cardOne() {
         <h1>
             Description:
         </h1>
-        <p className = "projectText">
-            &bull; Developed an interactive macOs retro-style game with web tech (React (JavaScript), HTML, CSS, Electron) <br/> <br/>
-            &bull; Controlled animation flow by syncing React component states with gameplay logic, triggering re-renders and animating game elements in response to user actions <br/> <br/>
-            &bull; Designed an engaging user interface with hand-drawn visual assets, CSS animations, background music, and sound effects to enhance the player experience <br/> <br/>
-            &bull; Implemented game logic and dynamic outcomes based on user input, with real-time feedback <br/> <br/>
-            &bull; Enabled keyboard navigation within the game interface by mapping key events to UI actions <br/> <br/>
-            &bull; Implemented persistent data storage using Electron Store to save and restore user progress across app sessions.
-        </p>
+        <ul className = "projectText">
+            <li>Developed an interactive macOs retro-style game with web tech (React (JavaScript), HTML, CSS, Electron)</li>
+            <li>Controlled animation flow by syncing React component states with gameplay logic, triggering re-renders and animating game elements in response to user actions</li>
+            <li>Designed an engaging user interface with hand-drawn visual assets, CSS animations, background music, and sound effects to enhance the player experience</li>
+            <li>Implemented game logic and dynamic outcomes based on user input, with real-time feedback</li>
+            <li>Enabled keyboard navigation within the game interface by mapping key events to UI actions</li>
+            <li>Implemented persistent data storage using Electron Store to save and restore user progress across app sessions.</li>
+        </ul>
         <h1>
             Media:
         </h1>

@@ -117,13 +117,17 @@
 
 .projectText{
 
+    display: flex;
+    flex-direction: column;
+
     word-wrap: break-word;
     overflow-wrap: break-word;
     white-space: normal;
 
+    gap: 1.5em;
     font-size: 2vh;
     color: rgb(3, 0, 47);
-    padding: 2vh 2vw;
+    padding: 3vh 4vw;
     border-radius: 1vw;
 
     box-shadow: 0 0 1vh 0.35vh rgb(76, 0, 255);

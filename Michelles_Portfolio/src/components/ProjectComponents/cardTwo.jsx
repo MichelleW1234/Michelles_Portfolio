@@ -23,11 +23,11 @@ function cardTwo() {
         <h1>
             My Role:
         </h1>
-        <p className = "projectText">
-            &bull; Contributed to UI/UX and front-end in an Agile team using GitHub <br/> <br/>
-            &bull; Conducted user research and testing to improve engagement <br/> <br/>
-            &bull; Mentored by professor with extensive software development experience
-        </p>
+            <ul className = "projectText">
+                <li>Contributed to UI/UX and front-end in an Agile team using GitHub</li>
+                <li>Conducted user research and testing to improve engagement</li>
+                <li>Mentored by professor with extensive software development experience</li>
+            </ul>
         <h1>
             Media:
         </h1>

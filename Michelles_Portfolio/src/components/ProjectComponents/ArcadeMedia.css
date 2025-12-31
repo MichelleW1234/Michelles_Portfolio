@@ -61,20 +61,22 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex: none;
 
-    padding: 3vh 3vw;
-    gap: 1.5vw;
-    border-radius: 1vw;
+    width: 20em;
+    padding: 3em;
+    gap: 2em;
+    border-radius: 1em;
 
     font-size: 1vh;
     font-weight: bold;
 
     background-color: rgb(221, 176, 255);
 
-    border-left: 0.8vh solid rgb(100, 79, 117);
-    border-bottom: 0.8vh solid rgb(100, 79, 117);
-    border-top: 0.3vh solid rgb(100, 79, 117);
-    border-right: 0.3vh solid rgb(100, 79, 117);
+    border-left: 0.8em solid rgb(100, 79, 117);
+    border-bottom: 0.8em solid rgb(100, 79, 117);
+    border-top: 0.3em solid rgb(100, 79, 117);
+    border-right: 0.3em solid rgb(100, 79, 117);
 
 }
 
@@ -106,7 +108,7 @@
 
 .ArcadeImage{
 
-    width: 10vw;
+    width: 80%;
 
     border-left: 0.5vh solid rgb(110, 0, 200); 
     border-bottom: 0.5vh solid rgb(200, 0, 187); 

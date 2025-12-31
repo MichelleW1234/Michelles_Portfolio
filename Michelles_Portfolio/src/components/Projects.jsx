@@ -3,16 +3,17 @@ import "./Projects.css"
 
 import CardOne from "./ProjectComponents/cardOne.jsx";
 import CardTwo from "./ProjectComponents/cardTwo.jsx";
+import CardThree from "./ProjectComponents/cardThree.jsx";
 
 function Projects() {
 
-    const numProjects = 2;
+    const numProjects = 3;
 
     const [ProjectNumber, setProjectNumber] = useState(1);
 
     const nextClicked = () => {
 
-        if (ProjectNumber == numProjects){
+        if (ProjectNumber === numProjects){
 
             setProjectNumber(1);
 
@@ -49,14 +50,17 @@ function Projects() {
         </h1>
         <div className = "projectsInnerContainer">
 
-            {ProjectNumber == 1 ? (
+            {ProjectNumber === 1 ? (
 
                 <CardOne/>
 
-            ) : (
+            ) : ProjectNumber === 2 ? (
 
                 <CardTwo/>
 
+            ) : (
+                
+                <CardThree/>
 
             )}
 
