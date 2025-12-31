@@ -28,7 +28,7 @@ function cardThree() {
         <div className = "projectMediaContainer">
             <a className = "projectButton" href="https://github.com/MichelleW1234/Scripta" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
             <a className = "projectButton" href="https://github.com/MichelleW1234/Scripta/releases/tag/v.1.0.0" target="_blank" rel="noopener noreferrer"> Go to Scripta v1.0.0 </a>
-            <a className = "projectButton" href="https://drive.google.com/file/d/1Idf8O6S8DC1xWKb0DYWFejBivVLup5pa/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> Watch Demo Video</a>
+            <a className = "projectButton" href="https://drive.google.com/file/d/18kaJoc-IkkRINIQjO2polFLivxWjDAy5/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> Watch Demo Video</a>
         </div>
 
         {ArcadeMediaFlag === true ? (

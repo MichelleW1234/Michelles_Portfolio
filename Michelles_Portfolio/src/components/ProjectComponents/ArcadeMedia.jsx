@@ -84,7 +84,7 @@ function ArcadeMedia({setArcadeMediaFlag}) {
                 <div className = "ArcadeVideoContainer">
                     <h1> Chicken Crossing </h1>
                     <img src={CHC} className = "ArcadeImage"/>
-                    <a className = "viewVideoButton" href="https://drive.google.com/file/d/1SHa7hE9hJK2H53ZF5OWjO3HWp8SuR9yw/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
+                    <a className = "viewVideoButton" href="https://drive.google.com/file/d/1TPUmVp_TV3V_aWHpYJbx7BRTzsoLE8d7/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
                 </div>
             </div>
 
