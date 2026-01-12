@@ -8,20 +8,59 @@
 
 .skillsContainer{
 
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  white-space: normal;
-  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 3rem;
+
 
   margin-top: 5vh;
   font-size: 2.5vh;
   padding: 8vh 8vw;
 
-
   color: white;
   box-shadow: 0 0 1vh 0.75vh rgb(63, 173, 233);
 
 }
+
+.skill{
+
+  width: 30%;
+  padding: 3rem;
+
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  text-align: center;
+
+  box-shadow: 0 0 1vh 0.75vh rgb(216, 63, 233);
+
+  transition: transform 0.25s ease;
+
+}
+
+
+.skill:hover{
+
+  transform: scale(1.1);
+
+  box-shadow: 0 0 1vh 0.75vh rgb(252, 160, 255);
+
+}
+
+
+.skillExpanded{
+  
+  height: 30rem;
+  width: 30rem;
+
+  background-color: aqua;
+
+}
+
 
 
 @media (max-width: 1024px) and (orientation: portrait) and (hover: none){

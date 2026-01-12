@@ -12,10 +12,10 @@ function Introduction() {
         About Me:
       </h1>
       <p className = "introText">
-          Hi, I'm Michelle, an incoming fourth-year attending the University of California San Diego, majoring in Computer Science with a 
-          minor in Cognitive Science. I am passionate about building intelligent software solutions and have gained hands-on experience in 
-          software development and machine learning throughout my time in college. In the future, I hope to contribute to innovative software 
-          solutions that harness the power of AI and machine learning to improve people’s lives and to impact the world.
+        Hi, I'm Michelle, and welcome to my project portfolio! Throughout my time at UCSD working with diverse software and core computer science concepts, I've gained a lot of my skills through projects, 
+        from working in academic teams to tinkering for fun on my own time. Each of these projects has challenged me in ways that have been integral to my growth as both a student and a person, whether 
+        it was learning a new library, like React, or pushing me to bring an idea, like Arcade, to life. While these projects have had many meaningful takeaways, the most significant one to me is seeing in 
+        real time what I can do to create "something"s from "nothing"s, which, in itself, has been incredible to experience firsthand.
       </p>
       <a className = "resumeButton" href="https://docs.google.com/document/d/1yxwJvILbZGjwvqFF6PGSkCUXcnz6qH2YGJsIg52HeIo/preview" target="_blank" rel="noopener noreferrer"> View My Resume </a>
     </div>
