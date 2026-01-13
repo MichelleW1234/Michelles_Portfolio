@@ -12,11 +12,15 @@ body{
 
 }
 
-button{
+* {
 
   word-wrap: break-word;
   overflow-wrap: break-word;
   white-space: normal;
+
+}
+
+button{
 
   color: rgb(59, 0, 104);
 
@@ -272,10 +276,6 @@ a:hover{
 
   .title{
 
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    white-space: normal;
-
     text-align: center;
 
     color: rgb(212, 0, 255);
@@ -289,10 +289,7 @@ a:hover{
   }
 
   .subTitle{
-
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    white-space: normal;
+    
     text-align: center;
 
     width: 100%;
