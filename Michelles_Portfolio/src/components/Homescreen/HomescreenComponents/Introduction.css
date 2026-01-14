@@ -1,0 +1,15 @@
+.introText{
+
+  color: white;
+  text-align: center;
+
+}
+
+
+
+/* Mobile adjustments */
+@media (max-device-width: 1024px) and (orientation: portrait) and (hover: none) {
+
+
+
+}

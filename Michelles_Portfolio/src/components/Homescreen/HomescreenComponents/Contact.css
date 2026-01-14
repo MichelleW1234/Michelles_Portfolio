@@ -1,0 +1,96 @@
+.contactSection{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contactContainer {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;  
+
+    gap: 3rem;
+    padding: 5vh 5vw;
+    
+}
+
+.contactBox{
+
+    width: 10em;
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    padding: 1em;
+
+    background-color: rgb(101, 255, 255);
+    border-left: 0.6vh solid rgb(42, 82, 82);
+    border-bottom: 0.6vh solid rgb(42, 82, 82);
+    border-top: 0.15vh solid rgb(42, 82, 82);
+    border-right: 0.15vh solid rgb(42, 82, 82);
+
+    animation: glowing-shadow-components 4s infinite;
+
+}
+
+.contactBox:hover{
+
+    background-color: rgb(44, 147, 147);
+    border-left: 0.6vh solid rgb(19, 72, 72);
+    border-bottom: 0.6vh solid rgb(19, 72, 72);
+    border-top: 0.15vh solid rgb(19, 72, 72);
+    border-right: 0.15vh solid rgb(19, 72, 72);
+
+}
+
+.contactImage{
+
+    width: 55%;
+
+}
+
+
+@media (max-device-width: 1024px) and (orientation: portrait) and (hover: none){
+
+    .contactContainer{
+            
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 5vh;
+        padding: 5vh 5vw;
+
+    }
+
+    .contactBox{
+
+        width: 8em;
+        height: 8em;
+
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        padding: 1rem 4rem;
+
+        animation: glowing-shadow-components-mobile 4s infinite;
+
+    }
+
+    .contactImage{
+
+        max-width: 70%;
+
+    }
+
+}

@@ -25,7 +25,7 @@ function ArcadeMedia({setArcadeMediaFlag}) {
 
             <div className = "ArcadeVideoOuterContainer">
                 <div className = "ArcadeVideoContainer">
-                    <h1> Rock-Paper-Scissors </h1>
+                    <b> Rock-Paper-Scissors </b>
                     <img src={RPS} className = "ArcadeImage"/>
                     <a className = "viewVideoButton" href="https://drive.google.com/file/d/1PKd1yokX2N8gwBfoBmrSXMd78LamrNe4/view?usp=drive_link" target="_blank" rel="noopener noreferrer"> View </a>
                 </div>

@@ -1,0 +1,114 @@
+.projectsContainer{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 3rem;
+
+}
+
+.projectContainer {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 5rem;
+
+}
+
+.projectCard{
+
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1.5em 2em;
+    gap: 0.5em;
+
+    color: rgb(4, 0, 60);
+    background-color: rgb(184, 225, 254);
+
+    animation: glowing-shadow-components 3s infinite;
+
+}
+
+.projectHorizontalLine{
+
+    width: 85%;
+    height: 0.20vh;
+
+    background-color: #000322;
+
+}
+
+.projectIntroContainer {
+
+    display: flex;
+    flex-direction: row;
+
+    gap: 4em; 
+    padding: 1em;
+
+}
+
+
+
+.projectImage {
+
+    width: 8em;
+
+    border-left: 0.4vh solid rgb(153, 0, 255);
+    border-bottom: 0.4vh solid rgb(153, 0, 255);
+    border-top: 0.4vh solid rgb(225, 0, 255);
+    border-right: 0.4vh solid rgb(225, 0, 255);
+
+    padding: 1rem;
+
+    box-shadow: 0 0 1vh 0.35vh rgb(191, 0, 255);
+
+}
+
+
+
+
+
+
+
+/* Mobile adjustments */
+@media (max-device-width: 1024px) and (orientation: portrait) and (hover: none) {
+
+    .projectContainer{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 3em;
+
+        animation: none;
+        
+    }
+
+    .projectImage {
+
+        width: 25vw;
+        
+        border-left: 0.3vh solid rgb(153, 0, 255);
+        border-bottom: 0.3vh solid rgb(153, 0, 255);
+        border-top: 0.3vh solid rgb(225, 0, 255);
+        border-right: 0.3vh solid rgb(225, 0, 255);
+
+        padding: 1vw 1vh;
+
+    }
+
+}

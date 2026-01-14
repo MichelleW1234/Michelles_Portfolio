@@ -1,6 +1,6 @@
 import {useState} from "react";
 
-import SkillsExpandedCard from "./SkillsExpandedCard";
+import SkillsExpandedCard from "./SkillsComponents/SkillsExpandedCard.jsx";
 
 import "./Skills.css";
 
@@ -20,11 +20,9 @@ function Skills() {
 
 
   return (
-    <div className = "skillsScreen">
+    <div className = "sectionContainer">
 
-      <h1 className = "subTitle">
-        My Skills:
-      </h1>
+      <h2 className = "subTitle"> My Skills: </h2>
       <div className = "skillsContainer">
 
         {activeSkill !== -1 && 
@@ -36,13 +34,13 @@ function Skills() {
 
         {skillsList.map((item, index) => (
 
-          <div 
+          <button
             key = {index} 
             className="skill"
             onClick={() => hoveredSkill(index)}
           >
             {item}
-          </div>
+          </button>
 
         ))}
 

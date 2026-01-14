@@ -1,0 +1,79 @@
+.subTitle{
+
+  width: 100%;
+  text-align: center;
+
+  padding: 0.5rem;
+
+  color: rgb(0, 24, 68);
+  background-color: rgb(220, 183, 255);
+
+  animation: glowing-shadow-subtitle 3s infinite;
+
+}
+
+.sectionSwipeButtonContainer{
+
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  flex-wrap: wrap;
+
+  gap: 3rem;
+
+}
+
+.sectionSwipeButton {
+
+  padding: 1.5rem 2rem;
+
+  border-radius: 0.5em;
+
+  background-color: rgb(217, 151, 255);
+  border-left: 0.6vh solid rgb(99, 0, 156);
+  border-bottom: 0.6vh solid rgb(99, 0, 156);
+  border-top: 0.2vh solid rgb(99, 0, 156);
+  border-right: 0.2vh solid rgb(99, 0, 156);
+
+  animation: glowing-shadow-subtitle 3s infinite;
+
+}
+
+.sectionSwipeButton:hover {
+
+  color: white;
+  background-color: rgb(130, 0, 170);
+  border-left: 0.6vh solid rgb(56, 0, 68);
+  border-bottom: 0.6vh solid rgb(56, 0, 68);
+  border-top: 0.2vh solid rgb(56, 0, 68);
+  border-right: 0.2vh solid rgb(56, 0, 68);
+
+}
+
+
+.sectionContainer {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    
+  gap: 2rem;
+
+}
+
+
+
+
+
+
+/* Mobile adjustments */
+@media (max-device-width: 1024px) and (orientation: portrait) and (hover: none) {
+
+  .subTitle{
+
+    animation: glowing-shadow-subtitle-mobile 3s infinite;
+
+  }
+
+}

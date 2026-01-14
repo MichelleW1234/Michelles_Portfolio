@@ -1,21 +1,28 @@
+import {HashRouter, Routes, Route} from "react-router-dom";
+
+import Homescreen from "./components/Homescreen/Homescreen.jsx";
+import Arcadescreen from "./components/ProjectScreens/Arcadescreen.jsx";
+import TritonTurnUpscreen from "./components/ProjectScreens/TritonTurnUpscreen.jsx";
+import Scriptascreen from "./components/ProjectScreens/Scriptascreen.jsx";
+
 import './App.css';
-import Introduction from "./components/Introduction.jsx";
-import Projects from "./components/Projects.jsx";
-import Skills from "./components/Skills.jsx";
-import Contact from "./components/Contact.jsx";
 
 function App() {
 
   return (
-    <div>
-      <Introduction/>
-      <div className="extraSpace"></div>
-      <Projects/>
-      <div className="extraSpace"></div>
-      <Skills/>
-      <div className="extraSpace"></div>
-      <Contact/>
-    </div>
+
+    <HashRouter>
+      <Routes>
+        <Route index element={<Homescreen/>}/>
+          
+        <Route path="/home" element={<Homescreen />}/>
+        <Route path="/arcade" element={<Arcadescreen/>}/>
+        <Route path="/tritonturnup" element={<TritonTurnUpscreen/>}/>
+        <Route path="/scripta" element={<Scriptascreen/>}/>
+
+      </Routes>
+    </HashRouter>
+
   )
 }
 
