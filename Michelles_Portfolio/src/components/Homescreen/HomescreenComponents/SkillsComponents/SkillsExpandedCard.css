@@ -24,13 +24,8 @@
     padding: 2rem 1rem;
     gap: 2rem;
 
-    background-color: rgb(230, 147, 255);
-    border-left: 0.8vh solid rgb(40, 55, 74);
-    border-bottom: 0.8vh solid rgb(40, 55, 74);
-    border-top: 0.3vh solid rgb(40, 55, 74);
-    border-right: 0.3vh solid rgb(40, 55, 74);
-
-    box-shadow: 0 0 1vh 0.5vh rgb(254, 203, 255);
+    background-color: rgba(13, 0, 39, 0.65);
+    box-shadow: 0 0 1rem 0.25rem rgb(169, 163, 255);
 
 }
 
@@ -42,7 +37,7 @@
     
     font-weight: bold;
 
-    color: black;
+    color: rgb(228, 220, 255);
 
 }
 
@@ -51,8 +46,8 @@
     padding: 1rem 1.5rem;
     border-radius: 0.5rem;
 
-    color: black;
-    background-color: rgb(137, 210, 255);
+    color: rgb(14, 0, 104);
+    background-color: rgb(158, 227, 255);
     border-left: 0.3rem solid rgb(40, 55, 74);
     border-bottom: 0.3rem solid rgb(40, 55, 74);
     border-top: 0.1rem solid rgb(40, 55, 74);

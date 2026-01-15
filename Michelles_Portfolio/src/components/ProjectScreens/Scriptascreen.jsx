@@ -10,8 +10,7 @@ function Scriptascreen() {
 
   return (
 
-    <div className = "portfolioContentScreen">
-
+    <>
         <div className="heading">
             <div className="projectTitleIconContainer">
                 <img className= "projectTitleImage" src={Scripta}/>
@@ -51,7 +50,7 @@ function Scriptascreen() {
 
         </div>
 
-    </div>
+    </>
 
   )
 }

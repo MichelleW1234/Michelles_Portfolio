@@ -10,7 +10,7 @@ function TritonTurnUpscreen() {
 
   return (
 
-    <div className = "portfolioContentScreen">
+    <>
 
         <div className="heading">
             <div className="projectTitleIconContainer">
@@ -54,7 +54,7 @@ function TritonTurnUpscreen() {
 
         </div>
 
-    </div>
+    </>
 
   )
 }

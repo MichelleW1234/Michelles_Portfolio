@@ -39,8 +39,7 @@ function Arcadescreen() {
  
     return (
 
-        <div className = "portfolioContentScreen">
-
+        <>
             <div className="heading">
                 <div className="projectTitleIconContainer">
                     <img className= "projectTitleImage" src={Arcade}/>
@@ -116,10 +115,9 @@ function Arcadescreen() {
                     <a className = "projectButton" href="https://github.com/MichelleW1234/Arcade/releases/tag/v1.0.5" target="_blank" rel="noopener noreferrer"> Go to Arcade v1.0.5 </a>
                     <a className = "projectButton" href="https://github.com/MichelleW1234/Arcade/releases" target="_blank" rel="noopener noreferrer"> Go to All Arcade Releases</a>
                 </div>
-
-            </div>
     
         </div>
+        </>
 
     )
 

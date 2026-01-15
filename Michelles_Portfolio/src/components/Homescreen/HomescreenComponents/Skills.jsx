@@ -8,7 +8,7 @@ function Skills() {
 
   const [activeSkill, setActiveSkill] = useState(-1);
 
-  const skillsList = ["React (JavaScript)", "CSS", "Figma", "Web Application Development", "Agile & Software Development", "Game development"]; 
+  const skillsList = ["React (JavaScript)", "CSS", "Figma", "Web Application Development", "Agile & Software Development", "Game Development"]; 
 
 
   const hoveredSkill = (skillIndex) => {

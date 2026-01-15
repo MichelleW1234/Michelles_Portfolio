@@ -43,35 +43,40 @@ function Homescreen() {
 
   return (
 
-    <div className = "portfolioContentScreen">
-
+    <>
       <div className="heading">
         <h1 className = "title"> Michelle Wee </h1>
         <div className="horizontalLine"></div>
       </div>
 
-      <div className="sectionSwipeButtonContainer">
-        <button className="sectionSwipeButton" onClick = {() => prevSection()}> &lt; prev</button>
-        <button className = "sectionSwipeButton" onClick = {() => nextSection()}> next &gt; </button>
+    <div className = "portfolioContentScreen">
+
+      <div className="swipingContentScreen">
+        <div className="sectionSwipeButtonContainer">
+          <button className="sectionSwipeButton" onClick = {() => prevSection()}> &lt; Prev Section</button>
+          <button className = "sectionSwipeButton" onClick = {() => nextSection()}> Next Section &gt; </button>
+        </div>
+
+        {ActiveSection === 0 ? (
+
+          <Introduction/>
+
+        ) : ActiveSection === 1 ?(
+
+          <Projects/>
+
+        ) : ActiveSection === 2 ?(
+
+          <Skills/>
+
+        ) : null}
+
       </div>
-
-      {ActiveSection === 0 ? (
-
-        <Introduction/>
-
-      ) : ActiveSection === 1 ?(
-
-        <Projects/>
-
-      ) : ActiveSection === 2 ?(
-
-        <Skills/>
-
-      ) : null}
 
       <Contact/>
       
     </div>
+    </>
   )
 }
 

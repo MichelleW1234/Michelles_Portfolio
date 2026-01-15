@@ -85,16 +85,6 @@ p, button, a {
 
 /* Custom tags: */
 
-.portfolioContentScreen {
-
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-
-  gap: 5rem;
-
-}
-
 
 .heading{
 
