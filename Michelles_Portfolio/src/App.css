@@ -117,34 +117,6 @@ p, button, a {
 
 }
 
-.projectSectionButton {
-
-  padding: 1.5rem 2rem;
-
-  border-radius: 0.5rem;
-
-  background-color: rgb(111, 255, 255);
-  border-left: 0.8vh solid rgb(0, 104, 104);
-  border-bottom: 0.8vh solid rgb(0, 104, 104);
-  border-top: 0.2vh solid rgb(0, 104, 104);
-  border-right: 0.2vh solid rgb(0, 104, 104);
-
-  animation: glowing-shadow-subtitle 3s infinite;
-
-}
-
-.projectSectionButton:hover{
-
-  background-color: rgb(82, 93, 255);
-  color: white;
-
-  border-left: 0.8vh solid rgb(29, 33, 95);
-  border-bottom: 0.8vh solid rgb(29, 33, 95);
-  border-top: 0.2vh solid rgb(29, 33, 95);
-  border-right: 0.2vh solid rgb(29, 33, 95);
-
-}
-
 
 
 

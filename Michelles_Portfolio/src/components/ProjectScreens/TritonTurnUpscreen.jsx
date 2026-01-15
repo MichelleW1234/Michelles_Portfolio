@@ -22,7 +22,7 @@ function TritonTurnUpscreen() {
 
         <div className = "projectScreen">
 
-            <Link className = "projectButton" to = "/home"> Back </Link>
+            <Link className = "projectGeneralButton" to = "/home"> &lt; Back to Home </Link>
 
             <h2 className="projectSubTitle"> Project Details:</h2>
             <div className = "projectInfoContainer">
@@ -50,7 +50,7 @@ function TritonTurnUpscreen() {
             </div>
 
             <h2 className="projectSubTitle"> Project Links: </h2>
-            <a className = "projectButton" href="https://github.com/MichelleW1234/CSE-110-Project.git" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
+            <a className = "projectLinkButton" href="https://github.com/MichelleW1234/CSE-110-Project.git" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
 
         </div>
 

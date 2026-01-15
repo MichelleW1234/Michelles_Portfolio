@@ -50,7 +50,7 @@ function Arcadescreen() {
 
             <div className="projectScreen">
 
-                <Link className = "projectButton" to = "/home"> Back </Link>
+                <Link className = "projectGeneralButton" to = "/home"> &lt; Back to Home </Link>
 
                 <h2 className="projectSubTitle"> Project Details:</h2>
                 <div className = "projectInfoContainer">
@@ -97,11 +97,11 @@ function Arcadescreen() {
 
                     {openFullVideoSection ? (
 
-                        <button className="projectButton" onClick = {() => setOpenFullVideoSection(false)}> Collapse All Videos &#9650; </button>
+                        <button className="projectGeneralButton" onClick = {() => setOpenFullVideoSection(false)}> Collapse All Videos &#9650; </button>
 
                     ) : (
 
-                        <button className="projectButton" onClick = {() => setOpenFullVideoSection(true)}> Expand All Videos &#9660; </button>
+                        <button className="projectGeneralButton" onClick = {() => setOpenFullVideoSection(true)}> Expand All Videos &#9660; </button>
 
                     )}
 
@@ -111,9 +111,9 @@ function Arcadescreen() {
 
                 <h2 className="projectSubTitle"> Project Links: </h2>
                 <div className = "projectLinksContainer">
-                    <a className = "projectButton" href="https://github.com/MichelleW1234/Arcade.git" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
-                    <a className = "projectButton" href="https://github.com/MichelleW1234/Arcade/releases/tag/v1.0.5" target="_blank" rel="noopener noreferrer"> Go to Arcade v1.0.5 </a>
-                    <a className = "projectButton" href="https://github.com/MichelleW1234/Arcade/releases" target="_blank" rel="noopener noreferrer"> Go to All Arcade Releases</a>
+                    <a className = "projectLinkButton" href="https://github.com/MichelleW1234/Arcade.git" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
+                    <a className = "projectLinkButton" href="https://github.com/MichelleW1234/Arcade/releases/tag/v1.0.5" target="_blank" rel="noopener noreferrer"> Go to Arcade v1.0.5 </a>
+                    <a className = "projectLinkButton" href="https://github.com/MichelleW1234/Arcade/releases" target="_blank" rel="noopener noreferrer"> Go to All Arcade Releases</a>
                 </div>
     
         </div>

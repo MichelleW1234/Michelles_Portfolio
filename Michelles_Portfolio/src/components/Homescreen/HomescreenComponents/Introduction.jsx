@@ -11,7 +11,7 @@ function Introduction() {
         it was learning a new library, like React, or pushing me to bring an idea, like Arcade, to life. While these projects have had many meaningful takeaways, the most significant one to me is seeing in 
         real time what I can do to create "something"s from "nothing"s, which, in itself, has been incredible to experience firsthand.
       </p>
-      <a className = "projectSectionButton" href="https://docs.google.com/document/d/1yxwJvILbZGjwvqFF6PGSkCUXcnz6qH2YGJsIg52HeIo/preview" target="_blank" rel="noopener noreferrer"> View My Resume </a>
+      <a className = "resumeButton" href="https://docs.google.com/document/d/1yxwJvILbZGjwvqFF6PGSkCUXcnz6qH2YGJsIg52HeIo/preview" target="_blank" rel="noopener noreferrer"> View My Resume </a>
     </div>
 
   )

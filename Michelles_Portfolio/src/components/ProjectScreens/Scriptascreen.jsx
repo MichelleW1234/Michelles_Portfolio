@@ -21,7 +21,7 @@ function Scriptascreen() {
 
         <div className="projectScreen">
 
-            <Link className = "projectButton" to = "/home"> Back </Link>
+            <Link className = "projectGeneralButton" to = "/home"> &lt; Back to Home </Link>
 
             <h2 className="projectSubTitle">Description:</h2>            
             <div className = "projectInfoContainer">
@@ -44,8 +44,8 @@ function Scriptascreen() {
                 Project Links:
             </h2>
             <div className = "projectLinksContainer">
-                <a className = "projectButton" href="https://github.com/MichelleW1234/Scripta" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
-                <a className = "projectButton" href="https://github.com/MichelleW1234/Scripta/releases/tag/v.1.0.0" target="_blank" rel="noopener noreferrer"> Go to Scripta v1.0.0 </a>
+                <a className = "projectLinkButton" href="https://github.com/MichelleW1234/Scripta" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
+                <a className = "projectLinkButton" href="https://github.com/MichelleW1234/Scripta/releases/tag/v.1.0.0" target="_blank" rel="noopener noreferrer"> Go to Scripta v1.0.0 </a>
             </div>
 
         </div>
