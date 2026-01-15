@@ -9,19 +9,20 @@
     justify-content: center;
 
     background-color: rgba(103, 121, 255, 0.5);
-    box-shadow: 0 0 2vh 1vh rgb(154, 141, 255);
+    box-shadow: 0 0 1rem 0.25rem rgb(154, 141, 255);
 
 }
 
 .skillExpandedCard{
 
-    height: 60%;
+    height: 75%;
     width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    padding: 2rem 1rem;
+    border-radius: 2rem;
+    padding: 3rem 1rem;
     gap: 2rem;
 
     background-color: rgba(13, 0, 39, 0.65);
@@ -35,9 +36,7 @@
     width: 80%;
     overflow-y: auto;
     
-    font-weight: bold;
-
-    color: rgb(228, 220, 255);
+    color: rgb(235, 229, 255);
 
 }
 
@@ -47,11 +46,13 @@
     border-radius: 0.5rem;
 
     color: rgb(14, 0, 104);
-    background-color: rgb(158, 227, 255);
-    border-left: 0.3rem solid rgb(40, 55, 74);
-    border-bottom: 0.3rem solid rgb(40, 55, 74);
-    border-top: 0.1rem solid rgb(40, 55, 74);
-    border-right: 0.1rem solid rgb(40, 55, 74);
+    background-color: rgb(200, 233, 255);
+    border-left: 0.3rem solid rgb(0, 71, 118);
+    border-bottom: 0.3rem solid rgb(0, 71, 118);
+    border-top: 0.1rem solid rgb(0, 71, 118);
+    border-right: 0.1rem solid rgb(0, 71, 118);
+
+    animation: glowing-light-turquoise 3s infinite;
 
 }
 
@@ -63,5 +64,7 @@
     border-bottom: 0.3rem solid rgb(6, 0, 67);
     border-top: 0.1rem solid rgb(6, 0, 67);
     border-right: 0.1rem solid rgb(6, 0, 67);
+
+    animation: glowing-dark-blue 3s infinite;
 
 }

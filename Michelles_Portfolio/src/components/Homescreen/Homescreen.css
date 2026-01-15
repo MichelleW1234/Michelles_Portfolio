@@ -1,10 +1,9 @@
 .portfolioContentScreen {
 
-  margin-top: 5rem;
   display: flex;
   flex-direction: column;
 
-  gap: 5rem;
+  margin-top: 6rem;
 
 }
 
@@ -26,10 +25,9 @@
 
   padding: 0.5rem;
 
-  color: rgb(0, 24, 68);
+  color: rgb(54, 0, 124);
   background-color: rgb(220, 183, 255);
-
-  animation: glowing-shadow-subtitle 3s infinite;
+  box-shadow: 0 0 1rem 0.25rem rgb(202, 117, 255);
 
 }
 
@@ -47,40 +45,44 @@
 .sectionSwipeButton {
 
   padding: 1rem 1.5rem;
-
   border-radius: 0.3rem;
 
   color: rgb(88, 0, 98);
-  background-color: rgb(217, 151, 255);
-  border-left: 0.6vh solid rgb(99, 0, 156);
-  border-bottom: 0.6vh solid rgb(99, 0, 156);
-  border-top: 0.2vh solid rgb(99, 0, 156);
-  border-right: 0.2vh solid rgb(99, 0, 156);
+  background-color: rgb(210, 151, 255);
+  border-left: 0.25rem solid rgb(99, 0, 156);
+  border-bottom: 0.25rem solid rgb(99, 0, 156);
+  border-top: 0.1rem solid rgb(99, 0, 156);
+  border-right: 0.1rem solid rgb(99, 0, 156);
 
-  animation: glowing-shadow-subtitle 3s infinite;
+  animation: glowing-light-purple 3s infinite;
 
 }
 
 .sectionSwipeButton:hover {
 
   color: white;
-  background-color: rgb(130, 0, 170);
-  border-left: 0.6vh solid rgb(56, 0, 68);
-  border-bottom: 0.6vh solid rgb(56, 0, 68);
-  border-top: 0.2vh solid rgb(56, 0, 68);
-  border-right: 0.2vh solid rgb(56, 0, 68);
+  background-color: rgb(113, 0, 170);
+  border-left: 0.25rem solid rgb(56, 0, 68);
+  border-bottom: 0.25rem solid rgb(56, 0, 68);
+  border-top: 0.1rem solid rgb(56, 0, 68);
+  border-right: 0.1rem solid rgb(56, 0, 68);
+
+  animation: glowing-dark-purple 3s infinite;
 
 }
 
 
 .sectionContainer {
 
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-    
-  gap: 2rem;
+
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+  gap: 4rem;
 
 }
 
@@ -91,11 +93,6 @@
 
 /* Mobile adjustments */
 @media (max-device-width: 1024px) and (orientation: portrait) and (hover: none) {
-
-  .subTitle{
-
-    animation: glowing-shadow-subtitle-mobile 3s infinite;
-
-  }
+  
 
 }

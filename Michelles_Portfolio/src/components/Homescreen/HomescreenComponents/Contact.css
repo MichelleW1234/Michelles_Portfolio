@@ -14,7 +14,7 @@
     flex-wrap: wrap;  
 
     gap: 3rem;
-    padding: 5vh 5vw;
+    padding: 4rem;
     
 }
 
@@ -36,7 +36,7 @@
     border-top: 0.15vh solid rgb(42, 82, 82);
     border-right: 0.15vh solid rgb(42, 82, 82);
 
-    animation: glowing-shadow-components 4s infinite;
+    animation: glowing-light-turquoise 3s infinite;
 
 }
 
@@ -47,6 +47,8 @@
     border-bottom: 0.6vh solid rgb(19, 72, 72);
     border-top: 0.15vh solid rgb(19, 72, 72);
     border-right: 0.15vh solid rgb(19, 72, 72);
+
+    animation: glowing-dark-turquoise 3s infinite;
 
 }
 
@@ -82,8 +84,6 @@
         justify-content: center;
 
         padding: 1rem 4rem;
-
-        animation: glowing-shadow-components-mobile 4s infinite;
 
     }
 

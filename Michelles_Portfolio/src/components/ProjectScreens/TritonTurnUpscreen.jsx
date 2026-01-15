@@ -26,12 +26,9 @@ function TritonTurnUpscreen() {
 
             <h2 className="projectSubTitle"> Project Details:</h2>
             <div className = "projectInfoContainer">
-                <h3>Description:</h3>
+                <h3>Features:</h3>
                 <p>
-                    Our web app, TritonTurnup, allows UCSD students to browse a detailed list of upcoming and ongoing events 
-                    affiliated with the school. Upon logging in, students can add these events to their calendars based on their 
-                    schedule availability, promoting socialization and stress relief by raising awareness of fun and engaging events 
-                    within the Triton community.
+                    <p>&gt; Add stuff here</p>
                 </p>
             </div>
             <div className = "projectInfoContainer">

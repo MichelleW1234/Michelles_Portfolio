@@ -1,11 +1,12 @@
 .projectScreen {
 
     margin-top: 5rem;
+    margin-bottom: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    gap: 2rem;
+    gap: 4rem;
 
 }
 
@@ -21,7 +22,7 @@
 
     img {
 
-        width: 8em;
+        width: 6em;
 
     }
 
@@ -30,15 +31,14 @@
 
 .projectSubTitle{
 
-  width: 100%;
-  text-align: center;
+    width: 100%;
+    text-align: center;
 
-  color: rgb(0, 24, 68);
-  background-color: rgb(158, 218, 255);
+    padding: 0.5rem;
 
-  padding: 0.5rem;
-
-  animation: glowing-shadow-subtitle 3s infinite;
+    color: rgb(10, 0, 148);
+    background-color: rgb(158, 218, 255);
+    box-shadow: 0 0 1rem 0.25rem rgb(130, 163, 254);
 
 }
 
@@ -46,17 +46,17 @@
 
 .projectGeneralButton {
 
-  padding: 1rem 1.5rem;
-  border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
 
-  color: rgb(61, 0, 59);
-  background-color: rgb(252, 168, 255);
-  border-left: 0.8vh solid rgb(90, 0, 104);
-  border-bottom: 0.8vh solid rgb(90, 0, 104);
-  border-top: 0.2vh solid rgb(90, 0, 104);
-  border-right: 0.2vh solid rgb(90, 0, 104);
+    color: rgb(61, 0, 59);
+    background-color: rgb(239, 168, 255);
+    border-left: 0.25rem solid rgb(90, 0, 104);
+    border-bottom: 0.25rem solid rgb(90, 0, 104);
+    border-top: 0.1rem solid rgb(90, 0, 104);
+    border-right: 0.1rem solid rgb(90, 0, 104);
 
-  animation: glowing-shadow-subtitle 3s infinite;
+    animation:  glowing-light-pink 3s infinite;
 
 }
 
@@ -65,12 +65,12 @@
 
     color: white;
     background-color: rgb(129, 0, 133);
-    border-left: 0.8vh solid rgb(41, 0, 47);
-    border-bottom: 0.8vh solid rgb(41, 0, 47);
-    border-top: 0.2vh solid rgb(41, 0, 47);
-    border-right: 0.2vh solid rgb(41, 0, 47);
+    border-left: 0.25rem solid rgb(41, 0, 47);
+    border-bottom: 0.25rem solid rgb(41, 0, 47);
+    border-top: 0.1rem solid rgb(41, 0, 47);
+    border-right: 0.1rem solid rgb(41, 0, 47);
 
-    animation: glowing-shadow-subtitle 3s infinite;
+    animation: glowing-dark-pink 3s infinite;
 
 }
 
@@ -81,6 +81,8 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+
+    gap: 2rem;
 
     color: white;
 
@@ -123,12 +125,16 @@
     color: rgb(227, 192, 255);
     box-shadow: 0 0 1vh 0.75vh rgb(195, 117, 255); 
 
+    animation: glowing-light-purple 2s infinite;
     transition: transform 0.25s ease;
 
     img {
 
         width: 100%;
+
         box-shadow: 0 0 1vh 0.5vh rgb(195, 117, 255); 
+
+        animation: glowing-light-purple 2s infinite;
 
     }
 
@@ -142,9 +148,12 @@
     color: rgb(249, 192, 255);
     box-shadow: 0 0 1vh 0.75vh rgb(244, 93, 255);
 
+    animation: glowing-dark-pink 2s infinite;
+
     img {
 
         box-shadow: 0 0 1vh 0.5vh rgb(244, 93, 255);
+        animation: glowing-dark-pink 2s infinite;
 
     }
 
@@ -174,17 +183,21 @@
     border-top: 0.1rem solid rgb(55, 0, 144);
     border-right: 0.1rem solid rgb(55, 0, 144);
 
+    animation: glowing-light-purple 3s infinite;
+
 }
 
 
 .projectLinkButton:hover{
 
-  color: white;
-  background-color: rgb(68, 0, 196);
-  border-left: 0.3rem solid rgb(31, 0, 90);
-  border-bottom: 0.3rem solid rgb(31, 0, 90);
-  border-top: 0.1rem solid rgb(31, 0, 90);
-  border-right: 0.1rem solid rgb(31, 0, 90);
+    color: white;
+    background-color: rgb(64, 0, 183);
+    border-left: 0.3rem solid rgb(17, 0, 50);
+    border-bottom: 0.3rem solid rgb(17, 0, 50);
+    border-top: 0.1rem solid rgb(17, 0, 50);
+    border-right: 0.1rem solid rgb(17, 0, 50);
+
+    animation: glowing-dark-blue 3s infinite;
 
 }
 
@@ -194,28 +207,7 @@
 
 /* Mobile adjustments */
 @media (max-device-width: 1024px) and (orientation: portrait) and (hover: none) {
-        
-    .projectButton{
-
-        padding: 1.5vw 1.5vh;
-
-        background-color: rgb(0, 179, 255);
-        border-left: 0.35vh solid rgb(0, 91, 130);
-        border-bottom: 0.35vh solid rgb(0, 91, 130);
-        border-top: 0.1vh solid rgb(0, 91, 130);
-        border-right: 0.1vh solid rgb(0, 91, 130);
-
-    }
-
-    .projectButton:hover{
-
-        color: white;
-        background-color: rgb(0, 47, 255);
-        border-left: 0.35vh solid rgb(0, 24, 130);
-        border-bottom: 0.35vh solid rgb(0, 24, 130);
-        border-top: 0.1vh solid rgb(0, 24, 130);
-        border-right: 0.1vh solid rgb(0, 24, 130);
-        
-    }
+    
+    
 
 }

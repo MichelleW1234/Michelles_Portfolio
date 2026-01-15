@@ -7,6 +7,7 @@
     justify-content: center;
 
     gap: 3rem;
+    padding: 1rem;
 
 }
 
@@ -25,19 +26,18 @@
 
 .projectCard{
 
-    width: 55%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    padding: 1.5em 2em;
-    gap: 0.5em;
+    padding: 2rem;
+    gap: 1rem;
 
     color: rgb(4, 0, 60);
     background-color: rgb(184, 225, 254);
-
-    animation: glowing-shadow-components 3s infinite;
+    box-shadow: 0 0 1rem 0.25rem rgb(159, 204, 255);
 
 }
 
@@ -60,6 +60,14 @@
 
 }
 
+.projectSummaryContainer{
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+
+}
 
 
 .projectImage {
@@ -80,17 +88,16 @@
 .goToProjectButton {
 
   padding: 1.5rem 2rem;
-
   border-radius: 0.5rem;
 
   color: rgb(0, 0, 164);
   background-color: rgb(179, 187, 255);
-  border-left: 0.8vh solid rgb(0, 13, 134);
-  border-bottom: 0.8vh solid rgb(0, 13, 134);
-  border-top: 0.2vh solid rgb(0, 13, 134);
-  border-right: 0.2vh solid rgb(0, 13, 134);
+  border-left: 0.3rem solid rgb(0, 13, 134);
+  border-bottom: 0.3rem solid rgb(0, 13, 134);
+  border-top: 0.1rem solid rgb(0, 13, 134);
+  border-right: 0.1rem solid rgb(0, 13, 134);
 
-  animation: glowing-shadow-subtitle 3s infinite;
+  animation: glowing-light-blue 3s infinite;
 
 }
 
@@ -98,10 +105,12 @@
 
   color: white;
   background-color: rgb(0, 12, 174);
-  border-left: 0.8vh solid rgb(0, 4, 58);
-  border-bottom: 0.8vh solid rgb(0, 4, 58);
-  border-top: 0.2vh solid rgb(0, 4, 58);
-  border-right: 0.2vh solid rgb(0, 4, 58);
+  border-left: 0.3rem solid rgb(0, 4, 58);
+  border-bottom: 0.3rem solid rgb(0, 4, 58);
+  border-top: 0.1rem solid rgb(0, 4, 58);
+  border-right: 0.1rem solid rgb(0, 4, 58);
+
+  animation: glowing-dark-blue 3s infinite;
 
 }
 
@@ -114,29 +123,7 @@
 /* Mobile adjustments */
 @media (max-device-width: 1024px) and (orientation: portrait) and (hover: none) {
 
-    .projectContainer{
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
 
-        gap: 3em;
-
-        animation: none;
-        
-    }
-
-    .projectImage {
-
-        width: 25vw;
-        
-        border-left: 0.3vh solid rgb(153, 0, 255);
-        border-bottom: 0.3vh solid rgb(153, 0, 255);
-        border-top: 0.3vh solid rgb(225, 0, 255);
-        border-right: 0.3vh solid rgb(225, 0, 255);
-
-        padding: 1vw 1vh;
-
-    }
-
+    
 }

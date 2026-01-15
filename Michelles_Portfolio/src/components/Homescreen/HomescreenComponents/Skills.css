@@ -11,7 +11,7 @@
   padding: 5rem;
 
   color: white;
-  box-shadow: 0 0 1rem 0.5rem rgb(130, 117, 229);
+  box-shadow: 0 0 1rem 0.5rem rgb(117, 145, 229);
 
 }
 
@@ -26,6 +26,7 @@
   background-color: rgba(255, 255, 255, 0);
   box-shadow: 0 0 1vh 0.75vh rgb(216, 63, 233);
 
+  animation: glowing-dark-pink 2s infinite;
   transition: transform 0.25s ease;
 
 }
@@ -36,6 +37,7 @@
   color: rgb(255, 255, 255);
   box-shadow: 0 0 1vh 0.75vh rgb(252, 160, 255);
 
+  animation:  glowing-light-pink 2s infinite;
   transform: scale(1.1);
 
 }

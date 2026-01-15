@@ -107,8 +107,6 @@ function Arcadescreen() {
 
                 </div>
                 
-
-
                 <h2 className="projectSubTitle"> Project Links: </h2>
                 <div className = "projectLinksContainer">
                     <a className = "projectLinkButton" href="https://github.com/MichelleW1234/Arcade.git" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
