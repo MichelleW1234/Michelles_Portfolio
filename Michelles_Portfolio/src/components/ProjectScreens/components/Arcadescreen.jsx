@@ -131,7 +131,7 @@ function Arcadescreen() {
                     <a className = "projectLinkButton" href="https://github.com/MichelleW1234/Arcade/releases" target="_blank" rel="noopener noreferrer"> Go to All Arcade Releases</a>
                 </div>
 
-                <button className = "projectGeneralButton" onClick = {() => ScrollBackToTop()}> &#9650; Back To Top </button>
+                <button className = "projectGeneralButton" onClick = {() => ScrollBackToTop()}> &#9650; Back to Top </button>
     
             </div>
 

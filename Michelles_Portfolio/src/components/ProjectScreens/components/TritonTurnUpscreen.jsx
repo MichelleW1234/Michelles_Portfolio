@@ -59,7 +59,7 @@ function TritonTurnUpscreen() {
                 <a className = "projectLinkButton" href="https://github.com/MichelleW1234/CSE-110-Project.git" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
             </div>
 
-            <button className = "projectGeneralButton" onClick = {() => ScrollBackToTop()}> &#9650; Back To Top </button>
+            <button className = "projectGeneralButton" onClick = {() => ScrollBackToTop()}> &#9650; Back to Top </button>
 
         </div>
 
