@@ -25,17 +25,23 @@ function TritonTurnUpscreen() {
             <Link className = "projectGeneralButton" to = "/home"> &lt; Back to Home </Link>
 
             <h2 className="projectSubTitle"> Project Details:</h2>
-            <div className = "projectInfoContainer">
-                <h3>Features:</h3>
-                <p>
+            <div className = "projectDetailsContainer">
+                <h3 className="projectDetailsSubTitle"> Timeline: </h3>
+                <div className = "projectDetailsInfoBlockContainer"> 
                     <p>&gt; Add stuff here</p>
-                </p>
-            </div>
-            <div className = "projectInfoContainer">
-                <h3>My Role:</h3>
-                <p>&gt; Contributed to UI/UX and front-end in an Agile team using GitHub</p>
-                <p>&gt; Conducted user research and testing to improve engagement</p>
-                <p>&gt; Mentored by professor with extensive software development experience</p>
+                </div>
+
+                <h3 className="projectDetailsSubTitle">Features:</h3>
+                <div className = "projectDetailsInfoBlockContainer"> 
+                    <p>&gt; Add stuff here</p>
+                </div>
+
+                <h3 className="projectDetailsSubTitle">My Role:</h3>
+                <div className = "projectDetailsInfoBlockContainer"> 
+                    <p>&gt; Contributed to UI/UX and front-end in an Agile team using GitHub</p>
+                    <p>&gt; Conducted user research and testing to improve engagement</p>
+                    <p>&gt; Mentored by professor with extensive software development experience</p>
+                </div>
             </div>
 
             <h2 className="projectSubTitle"> Video Content: </h2>

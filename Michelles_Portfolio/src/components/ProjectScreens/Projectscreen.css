@@ -26,7 +26,6 @@
 
     }
 
-
 }
 
 .projectSubTitle{
@@ -75,12 +74,35 @@
 }
 
 
-.projectInfoContainer{
+.projectDetailsContainer{
 
-    width: 80%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 4rem;
+    padding: 1rem;
+
+}
+
+.projectDetailsSubTitle{
+
+    width: 100%;
+    text-align: center;
+
+    padding: 1rem;
+
+    color: rgb(224, 222, 255);
+    box-shadow: 0 0 8px 4px rgb(142, 130, 254);
+
+}
+
+.projectDetailsInfoBlockContainer {
+
+    width: 85%;
     display: flex;
     flex-direction: column;
-    text-align: center;
 
     gap: 2rem;
 
@@ -203,6 +225,93 @@
 /* Mobile adjustments */
 @media (max-device-width: 1024px) and (orientation: portrait) and (hover: none) {
     
-    
+    .projectScreen {
+
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+        gap: 6rem;
+
+    }
+
+
+    .projectTitleIconContainer{
+
+        img {
+
+            width: 90px;
+
+        }
+
+    }
+
+
+
+    .projectGeneralButton {
+
+        padding: 2rem 2.5rem;
+
+    }
+
+
+    .projectDetailsContainer{
+
+        width: 95%;
+
+    }
+
+    .projectDetailsInfoBlockContainer {
+
+        width: 90%;
+        
+        gap: 3rem;
+        padding: 3rem 2rem;
+
+    }
+
+    .projectVideoSectionContainer {
+
+        gap: 3rem;
+
+    }
+
+    .projectVideoContainer {
+            
+        gap: 5rem;
+
+    }
+
+
+    .projectVideoCard {
+
+        width: 15rem;
+
+        gap: 2.5rem;
+
+        transition: none;
+
+    }
+
+
+    .projectVideoCard:hover {
+
+        transform: none;
+
+    }
+
+
+    .projectLinksContainer {
+
+        flex-direction: column;
+
+        gap: 5rem;
+
+    }
+
+    .projectLinkButton{
+
+        padding: 2.5rem 3rem;
+
+    }
+
 
 }

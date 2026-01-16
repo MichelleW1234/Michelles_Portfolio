@@ -1,5 +1,6 @@
 .skillsContainer{
 
+  max-width: 100%;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -19,7 +20,7 @@
   width: 15rem;
   text-align: center;
 
-  padding: 3rem;
+  padding: 3rem 4rem;
 
   color: rgb(250, 203, 255);
   border: none;
@@ -44,7 +45,27 @@
 
 @media (max-width: 1024px) and (orientation: portrait) and (hover: none){
     
+  .skillsContainer{
 
+    gap: 4rem;
+
+  }
+
+  .skill{
+
+    width: 20rem;
+
+    padding: 5rem;
+
+    transition: none;
+
+  }
+
+  .skill:hover{
+
+    transform: none;
+
+  }
 
   
 }

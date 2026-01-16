@@ -24,11 +24,25 @@ function Scriptascreen() {
             <Link className = "projectGeneralButton" to = "/home"> &lt; Back to Home </Link>
 
             <h2 className="projectSubTitle">Description:</h2>            
-            <div className = "projectInfoContainer">
-                <p>&gt; Developed a React-based document editor that allows users to create and edit plain text with enhanced capabilities such as dynamic customization options, including font styles, font sizes, text color, page background color, and title styling </p>
-                <p>&gt; Enabled image import support with slider-based size controls to adjust image dimensions within documents </p>
-                <p>&gt; Implemented document management functionality to create, save, reopen, search, and delete documents (with trash support) directly within the application </p>
-                <p>&gt; Designed an interactive, responsive UI using React, JavaScript, and CSS to deliver a smooth and visually polished editing experience </p>
+            <div className = "projectDetailsContainer">
+
+                <h3 className="projectDetailsSubTitle"> Timeline: </h3>
+                <div className = "projectDetailsInfoBlockContainer"> 
+                    <p>&gt; Add stuff here</p>
+                </div>
+
+                <h3 className="projectDetailsSubTitle">Features: </h3>
+                <div className = "projectDetailsInfoBlockContainer"> 
+                    <p>&gt; Developed a React-based document editor that allows users to create and edit plain text with enhanced capabilities such as dynamic customization options, including font styles, font sizes, text color, page background color, and title styling </p>
+                    <p>&gt; Enabled image import support with slider-based size controls to adjust image dimensions within documents </p>
+                    <p>&gt; Implemented document management functionality to create, save, reopen, search, and delete documents (with trash support) directly within the application </p>
+                    <p>&gt; Designed an interactive, responsive UI using React, JavaScript, and CSS to deliver a smooth and visually polished editing experience </p>
+                </div>
+
+                <h3 className="projectDetailsSubTitle">Tools Used: </h3>
+                <div className = "projectDetailsInfoBlockContainer"> 
+                    <p>&gt; Add stuff here</p>
+                </div>
             </div>
 
             <h2 className="projectSubTitle"> Video Content: </h2>

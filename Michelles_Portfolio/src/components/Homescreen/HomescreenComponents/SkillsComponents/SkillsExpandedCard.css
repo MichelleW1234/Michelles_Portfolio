@@ -5,38 +5,37 @@
     z-index: 1;    
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
-    background-color: rgba(103, 121, 255, 0.5);
+    background-color: rgba(129, 144, 255, 0.5);
     box-shadow: 0 0 8px 4px rgb(154, 141, 255);
 
 }
 
 .skillExpandedCard{
 
-    height: 75%;
-    width: 60%;
+    max-height: 85%;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    border-radius: 15px;
-    padding: 3rem 1rem;
-    gap: 2rem;
+    padding: 3rem;
+    gap: 2.5rem;
 
-    background-color: rgba(13, 0, 39, 0.65);
+    color: rgb(235, 229, 255);
+    background-color: rgba(16, 0, 46, 0.75);
     box-shadow: 0 0 8px 4px rgb(169, 163, 255);
 
 }
 
+
 .skillExpandedCardDescription {
 
     height: 80%;
-    width: 80%;
+    display: flex;
+    flex-direction: column;
     overflow-y: auto;
-    
-    color: rgb(235, 229, 255);
+
+    gap: 0.5rem;
 
 }
 
@@ -66,5 +65,31 @@
     border-right: 1px solid rgb(6, 0, 67);
 
     animation: glowing-dark-blue 3s infinite;
+
+}
+
+
+
+@media (max-device-width: 1024px) and (orientation: portrait) and (hover: none){
+
+    .skillExpandedCard{
+
+        max-height: 90%;
+
+        gap: 3.5rem;
+
+    }
+
+    .skillExpandedCardDescription {
+
+        gap: 2rem;
+
+    }
+
+    .skillExpandedCardButton {
+
+        padding: 2rem 2.5rem;
+
+    }
 
 }

@@ -121,7 +121,62 @@
 /* Mobile adjustments */
 @media (max-device-width: 1024px) and (orientation: portrait) and (hover: none) {
 
+    .projectsContainer{
+
+        gap: 5rem;
+
+    }
 
 
+    .projectContainer {
+
+        flex-direction: column;
+
+        gap: 5rem;
+
+    }
+
+
+    .projectCard{
+
+        width: 90%;
+
+    }
+
+    .projectIntroContainer {
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 4rem;
+        padding: 1.5rem;
+
+    }
+
+
+    .projectSummaryContainer{
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        gap: 1rem;
+
+    }
+
+
+    .projectImage {
+
+        width: 120px;
+
+    }
+
+    .goToProjectButton {
+
+        padding: 2.5rem 3rem;
+
+    }
     
 }

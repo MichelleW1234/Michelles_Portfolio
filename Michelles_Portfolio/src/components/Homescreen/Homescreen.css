@@ -91,5 +91,39 @@
 /* Mobile adjustments */
 @media (max-device-width: 1024px) and (orientation: portrait) and (hover: none) {
   
+  .portfolioContentScreen {
+
+    margin-top: 9rem;
+
+  }
+
+  .swipingContentScreen {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 5rem;
+
+  }
+
+
+  .sectionSwipeButtonContainer{
+
+    gap: 5rem;
+
+  }
+
+  .sectionSwipeButton {
+
+    padding: 2rem 2.5rem;
+
+  }
+
+  .sectionContainer {
+
+    margin-bottom: 8rem;
+    gap: 6rem;
+
+  }
 
 }

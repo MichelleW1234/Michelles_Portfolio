@@ -41,5 +41,10 @@
 @media (max-device-width: 1024px) and (orientation: portrait) and (hover: none) {
 
 
+  .resumeButton {
+
+    padding: 2.5rem 3rem;
+
+  }
 
 }

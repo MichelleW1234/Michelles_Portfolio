@@ -2,6 +2,9 @@
 
   --default-font-size: 1rem;
 
+  --default-font-size-mobile: 1.5rem;
+  /*  --default-font-size-mobile: 1.125rem;*/
+
 }
 
 html {
@@ -361,6 +364,48 @@ p, button, a {
 
 
 @media (max-device-width: 1024px) and (orientation: portrait) and (hover: none) {
+
+
+  h1 {
+
+    font-size: calc(var(--default-font-size-mobile)*4);
+
+  }
+
+  h2 {
+
+    font-size: calc(var(--default-font-size-mobile)*2);
+
+  }
+
+
+  h3 {
+
+    font-size: calc(var(--default-font-size-mobile)*1.5);
+
+  }
+
+
+  h4{
+
+    font-size: calc(var(--default-font-size-mobile)*1.3);
+
+  }
+
+  p, button, a {
+
+    font-size: var(--default-font-size-mobile);
+
+  }
+
+
+
+
+  .heading{
+
+    gap: 2rem;
+
+  }
 
 
 
