@@ -135,6 +135,35 @@ p, button, a {
 
 
 
+::-webkit-scrollbar {
+
+  width: 10px;
+
+}
+ 
+::-webkit-scrollbar-track {
+
+  background: #0a0034;  
+
+}
+
+::-webkit-scrollbar-thumb {
+
+  border-radius: 5px;
+
+  border: 2px solid #0a0034;
+  background: linear-gradient(rgb(196, 215, 255), rgb(91, 0, 181));
+  
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+  background: linear-gradient(rgb(196, 241, 255), rgb(40, 44, 255));
+
+}
+
+
+
 
 /* Animations: */
 

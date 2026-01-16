@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 
-import TritonTurnup from "../../images/TritonTurnup.svg";
-import TritonTurnupDemo from "../../images/TritonTurnupDemo.svg";
+import TritonTurnup from "../../../images/TritonTurnup.svg";
+import TritonTurnupDemo from "../../../images/TritonTurnupDemo.svg";
+
+import { ScrollBackToTop } from "../helpers/Helpers";
 
 import "./Projectscreen.css";
 
@@ -53,7 +55,11 @@ function TritonTurnUpscreen() {
             </div>
 
             <h2 className="projectSubTitle"> Project Links: </h2>
-            <a className = "projectLinkButton" href="https://github.com/MichelleW1234/CSE-110-Project.git" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
+            <div className = "projectLinksContainer">
+                <a className = "projectLinkButton" href="https://github.com/MichelleW1234/CSE-110-Project.git" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
+            </div>
+
+            <button className = "projectGeneralButton" onClick = {() => ScrollBackToTop()}> &#9650; Back To Top </button>
 
         </div>
 

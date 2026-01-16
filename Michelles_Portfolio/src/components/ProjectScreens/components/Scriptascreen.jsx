@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 
-import Scripta from "../../images/Scripta.svg";
-import ScriptaDemo from "../../images/ScriptaDemo.svg";
+import Scripta from "../../../images/Scripta.svg";
+import ScriptaDemo from "../../../images/ScriptaDemo.svg";
+
+import { ScrollBackToTop } from "../helpers/Helpers";
 
 import "./Projectscreen.css";
 
@@ -61,6 +63,8 @@ function Scriptascreen() {
                 <a className = "projectLinkButton" href="https://github.com/MichelleW1234/Scripta" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
                 <a className = "projectLinkButton" href="https://github.com/MichelleW1234/Scripta/releases/tag/v.1.0.0" target="_blank" rel="noopener noreferrer"> Go to Scripta v1.0.0 </a>
             </div>
+
+            <button className = "projectGeneralButton" onClick = {() => ScrollBackToTop()}> &#9650; Back To Top </button>
 
         </div>
 

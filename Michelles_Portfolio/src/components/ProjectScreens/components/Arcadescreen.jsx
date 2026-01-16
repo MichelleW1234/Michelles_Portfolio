@@ -1,18 +1,20 @@
 import { Link } from "react-router-dom";
 import {useState} from "react";
 
-import Arcade from "../../images/Arcade.svg";
-import RPS from "../../images/ArcadeMedia/RPS.svg";
-import TTT from "../../images/ArcadeMedia/TTT.svg";
-import SNK from "../../images/ArcadeMedia/SNK.svg";
-import SPIM2 from "../../images/ArcadeMedia/SPIM2.svg";
-import SPIM4 from "../../images/ArcadeMedia/SPIM4.svg";
-import ORB from "../../images/ArcadeMedia/ORB.svg";
-import CBL from "../../images/ArcadeMedia/CBL.svg";
-import BFR from "../../images/ArcadeMedia/BFR.svg";
-import SMZ from "../../images/ArcadeMedia/SMZ.svg";
-import CHC from "../../images/ArcadeMedia/CHC.svg";
-import CWMCat from "../../images/ArcadeMedia/CWMCat.svg";
+import Arcade from "../../../images/Arcade.svg";
+import RPS from "../../../images/ArcadeMedia/RPS.svg";
+import TTT from "../../../images/ArcadeMedia/TTT.svg";
+import SNK from "../../../images/ArcadeMedia/SNK.svg";
+import SPIM2 from "../../../images/ArcadeMedia/SPIM2.svg";
+import SPIM4 from "../../../images/ArcadeMedia/SPIM4.svg";
+import ORB from "../../../images/ArcadeMedia/ORB.svg";
+import CBL from "../../../images/ArcadeMedia/CBL.svg";
+import BFR from "../../../images/ArcadeMedia/BFR.svg";
+import SMZ from "../../../images/ArcadeMedia/SMZ.svg";
+import CHC from "../../../images/ArcadeMedia/CHC.svg";
+import CWMCat from "../../../images/ArcadeMedia/CWMCat.svg";
+
+import { ScrollBackToTop } from "../helpers/Helpers";
 
 import "./Projectscreen.css";
 
@@ -128,8 +130,11 @@ function Arcadescreen() {
                     <a className = "projectLinkButton" href="https://github.com/MichelleW1234/Arcade/releases/tag/v1.0.5" target="_blank" rel="noopener noreferrer"> Go to Arcade v1.0.5 </a>
                     <a className = "projectLinkButton" href="https://github.com/MichelleW1234/Arcade/releases" target="_blank" rel="noopener noreferrer"> Go to All Arcade Releases</a>
                 </div>
+
+                <button className = "projectGeneralButton" onClick = {() => ScrollBackToTop()}> &#9650; Back To Top </button>
     
-        </div>
+            </div>
+
         </>
 
     )

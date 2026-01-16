@@ -1,9 +1,10 @@
 import {HashRouter, Routes, Route} from "react-router-dom";
 
 import Homescreen from "./components/Homescreen/Homescreen.jsx";
-import Arcadescreen from "./components/ProjectScreens/Arcadescreen.jsx";
-import TritonTurnUpscreen from "./components/ProjectScreens/TritonTurnUpscreen.jsx";
-import Scriptascreen from "./components/ProjectScreens/Scriptascreen.jsx";
+import Arcadescreen from "./components/ProjectScreens/components/Arcadescreen.jsx";
+import TritonTurnUpscreen from "./components/ProjectScreens/components/TritonTurnUpscreen.jsx";
+import Scriptascreen from "./components/ProjectScreens/components/Scriptascreen.jsx";
+import ScrollToTop from "./ScrollToTop.jsx";
 
 import './App.css';
 
@@ -12,6 +13,7 @@ function App() {
   return (
 
     <HashRouter>
+      <ScrollToTop />
       <Routes>
         <Route index element={<Homescreen/>}/>
           
