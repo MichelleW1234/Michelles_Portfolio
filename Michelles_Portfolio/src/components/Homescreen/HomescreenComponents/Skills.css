@@ -3,28 +3,27 @@
   position: relative;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
 
   gap: 3rem;
-
-  padding: 5rem;
+  padding: 4rem;
 
   color: white;
-  box-shadow: 0 0 1rem 0.5rem rgb(117, 145, 229);
+  box-shadow: 0 0 10px 5px rgb(117, 145, 229);
 
 }
 
 .skill{
 
-  width: 15em;
-  padding: 3rem;
+  width: 15rem;
   text-align: center;
 
-  border: none;
+  padding: 3rem;
+
   color: rgb(250, 203, 255);
-  background-color: rgba(255, 255, 255, 0);
-  box-shadow: 0 0 1vh 0.75vh rgb(216, 63, 233);
+  border: none;
+  background-color: inherit;
 
   animation: glowing-dark-pink 2s infinite;
   transition: transform 0.25s ease;
@@ -35,7 +34,6 @@
 .skill:hover{
 
   color: rgb(255, 255, 255);
-  box-shadow: 0 0 1vh 0.75vh rgb(252, 160, 255);
 
   animation:  glowing-light-pink 2s infinite;
   transform: scale(1.1);
@@ -43,24 +41,10 @@
 }
 
 
-.skillExpanded{
-  
-  height: 30rem;
-  width: 30rem;
-
-  background-color: aqua;
-
-}
-
-
 
 @media (max-width: 1024px) and (orientation: portrait) and (hover: none){
     
-  .skillsContainer {
 
-    padding: 5vw 5vh;
 
-    box-shadow: 0 0 1vh 0.5vh rgb(63, 173, 233);
-
-  }
+  
 }

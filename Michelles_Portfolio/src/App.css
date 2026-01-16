@@ -4,11 +4,17 @@
 
 }
 
+html {
+
+  font-size: 100%;
+
+}
+
 body{
 
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 
   gap: 5rem;
   padding: 4rem;
@@ -48,7 +54,7 @@ a, a:link, a:visited, a:hover {
 
 h1, h2, h3, h4, p {
 
-  margin: 0;         
+  margin: 0rem;         
 
 }
 
@@ -97,7 +103,8 @@ p, button, a {
   display: flex;
   flex-direction: column;
 
-  gap: 1em;
+  gap: 1rem;
+
 }
 
 
@@ -107,19 +114,19 @@ p, button, a {
 
   color: rgb(212, 0, 255);
   text-shadow: 
-    0.3rem -0.25rem 0rem rgb(0, 179, 255),
-    0rem 0.2rem 0rem rgb(255, 0, 234);
+    3px -3px 0px rgb(0, 179, 255),
+    0px 0px 0px rgb(255, 0, 234);
 
 }
 
 
 .horizontalLine {
 
-  height: 0.2vh;
+  height: 3px;
   width: 100%;
 
   background-color: #ff00ff;
-  box-shadow: 0px -2px 0px rgb(0, 179, 255);
+  box-shadow: 0px -3px 0px rgb(0, 179, 255);
 
 }
 
@@ -128,26 +135,25 @@ p, button, a {
 
 /* Animations: */
 
-
 @keyframes glowing-body {
 
   0% {
     box-shadow: 
-      0 0 1vh 1vh rgb(70, 143, 253),
-      0 0 2vh 1.5vh rgb(117, 79, 252),
-      0 0 3.5vh 2vh rgb(153, 80, 254);
+      0 0 5px 4px rgb(70, 143, 253),
+      0 0 10px 8px rgb(117, 79, 252),
+      0 0 15px 12px rgb(153, 80, 254);
   }
   50% {
     box-shadow: 
-      0 0 1vh 1vh rgba(70, 143, 253, 0.383),
-      0 0 2vh 1.5vh rgba(116, 79, 252, 0.335),
-      0 0 3.5vh 2vh rgba(152, 80, 254, 0.373);
+      0 0 5px 4px rgb(70, 143, 253, 0.5),
+      0 0 10px 8px rgb(117, 79, 252, 0.5),
+      0 0 15px 12px rgb(153, 80, 254, 0.5);
   }
   100% {
     box-shadow:
-      0 0 1vh 1vh rgb(70, 143, 253),
-      0 0 2vh 1.5vh rgb(117, 79, 252),
-      0 0 3.5vh 2vh rgb(153, 80, 254);
+      0 0 5px 4px rgb(70, 143, 253),
+      0 0 10px 8px rgb(117, 79, 252),
+      0 0 15px 12px rgb(153, 80, 254);
   }
 
 }
@@ -158,18 +164,18 @@ p, button, a {
 
   0% {
     box-shadow: 
-      0 0 0.5rem 0.1rem rgb(248, 194, 255),
-      0 0 1rem 0.2rem rgb(204, 138, 255);
+      0 0 5px 2px rgb(248, 194, 255),
+      0 0 10px 4px rgb(204, 138, 255);
   }
   50% {
     box-shadow: 
-      0 0 0.5rem 0.1rem rgb(248, 194, 255, 0.5),
-      0 0 1rem 0.2rem rgb(204, 138, 255, 0.5);
+      0 0 5px 2px rgb(248, 194, 255, 0.5),
+      0 0 10px 4px rgb(204, 138, 255, 0.5);
   }
   100% {
     box-shadow:
-      0 0 0.5rem 0.1rem rgb(248, 194, 255),
-      0 0 1rem 0.2rem rgb(204, 138, 255);
+      0 0 5px 2px rgb(248, 194, 255),
+      0 0 10px 4px rgb(204, 138, 255);
   }
 
 }
@@ -179,18 +185,18 @@ p, button, a {
 
   0% {
     box-shadow: 
-      0 0 0.5rem 0.1rem rgb(249, 88, 255),
-      0 0 1rem 0.2rem rgb(200, 106, 255);
+      0 0 5px 2px rgb(249, 88, 255),
+      0 0 10px 4px rgb(200, 106, 255);
   }
   50% {
     box-shadow: 
-      0 0 0.5rem 0.1rem rgb(249, 88, 255, 0.5),
-      0 0 1rem 0.2rem rgb(200, 106, 255, 0.5);
+      0 0 5px 2px rgb(249, 88, 255, 0.5),
+      0 0 10px 4px rgb(200, 106, 255, 0.5);
   }
   100% {
     box-shadow:
-      0 0 0.5rem 0.1rem rgb(249, 88, 255),
-      0 0 1rem 0.2rem rgb(200, 106, 255);
+      0 0 5px 2px rgb(249, 88, 255),
+      0 0 10px 4px rgb(200, 106, 255);
   }
 
 }
@@ -202,18 +208,18 @@ p, button, a {
 
   0% {
     box-shadow: 
-      0 0 0.5rem 0.1rem rgb(227, 169, 254),
-      0 0 1rem 0.2rem rgb(199, 156, 255);
+      0 0 5px 2px rgb(227, 169, 254),
+      0 0 10px 4px rgb(199, 156, 255);
   }
   50% {
     box-shadow: 
-      0 0 0.5rem 0.1rem rgb(227, 169, 254, 0.5),
-      0 0 1rem 0.2rem rgb(199, 156, 255, 0.5);
+      0 0 5px 2px rgb(227, 169, 254, 0.5),
+      0 0 10px 4px rgb(199, 156, 255, 0.5);
   }
   100% {
     box-shadow:
-      0 0 0.5rem 0.1rem rgb(227, 169, 254),
-      0 0 1rem 0.2rem rgb(199, 156, 255);
+      0 0 5px 2px rgb(227, 169, 254),
+      0 0 10px 4px rgb(199, 156, 255);
   }
 
 }
@@ -223,18 +229,18 @@ p, button, a {
 
   0% {
     box-shadow: 
-      0 0 0.5rem 0.1rem rgb(191, 88, 255),
-      0 0 1rem 0.2rem rgb(148, 71, 255);
+      0 0 5px 2px rgb(191, 88, 255),
+      0 0 10px 4px rgb(148, 71, 255);
   }
   50% {
     box-shadow: 
-      0 0 0.5rem 0.1rem rgb(191, 88, 255, 0.5),
-      0 0 1rem 0.2rem rgb(148, 71, 255, 0.5);
+      0 0 5px 2px rgb(191, 88, 255, 0.5),
+      0 0 10px 4px rgb(148, 71, 255, 0.5);
   }
   100% {
     box-shadow:
-      0 0 0.5rem 0.1rem rgb(191, 88, 255),
-      0 0 1rem 0.2rem rgb(148, 71, 255);
+      0 0 5px 2px rgb(191, 88, 255),
+      0 0 10px 4px rgb(148, 71, 255);
   }
 
 }
@@ -245,18 +251,18 @@ p, button, a {
 
   0% {
     box-shadow: 
-      0 0 0.5rem 0.1rem rgb(185, 229, 255),
-      0 0 1rem 0.2rem rgb(174, 195, 255);
+      0 0 5px 2px rgb(185, 229, 255),
+      0 0 10px 4px rgb(174, 195, 255);
   }
   50% {
     box-shadow: 
-      0 0 0.5rem 0.1rem rgb(185, 229, 255, 0.5),
-      0 0 1rem 0.2rem rgb(174, 195, 255, 0.5);
+      0 0 5px 2px rgb(185, 229, 255, 0.5),
+      0 0 10px 4px rgb(174, 195, 255, 0.5);
   }
   100% {
     box-shadow:
-      0 0 0.5rem 0.1rem rgb(185, 229, 255),
-      0 0 1rem 0.2rem rgb(174, 195, 255);
+      0 0 5px 2px rgb(185, 229, 255),
+      0 0 10px 4px rgb(174, 195, 255);
   }
 
 }
@@ -266,18 +272,18 @@ p, button, a {
 
   0% {
     box-shadow: 
-      0 0 0.5rem 0.1rem rgb(59, 172, 192),
-      0 0 1rem 0.2rem rgb(37, 121, 177);
+      0 0 5px 2px rgb(59, 172, 192),
+      0 0 10px 4px rgb(37, 121, 177);
   }
   50% {
     box-shadow: 
-      0 0 0.5rem 0.1rem rgb(59, 172, 192, 0.5),
-      0 0 1rem 0.2rem rgb(37, 121, 177, 0.5);
+      0 0 5px 2px rgb(59, 172, 192, 0.5),
+      0 0 10px 4px rgb(37, 121, 177, 0.5);
   }
   100% {
     box-shadow:
-      0 0 0.5rem 0.1rem rgb(59, 172, 192),
-      0 0 1rem 0.2rem rgb(37, 121, 177);
+      0 0 5px 2px rgb(59, 172, 192),
+      0 0 10px 4px rgb(37, 121, 177);
   }
 
 }
@@ -288,18 +294,18 @@ p, button, a {
 
   0% {
     box-shadow: 
-      0 0 0.5rem 0.1rem rgb(185, 205, 255),
-      0 0 1rem 0.2rem rgb(174, 174, 255);
+      0 0 5px 2px rgb(185, 205, 255),
+      0 0 10px 4px rgb(174, 174, 255);
   }
   50% {
     box-shadow: 
-      0 0 0.5rem 0.1rem rgb(185, 205, 255, 0.5),
-      0 0 1rem 0.2rem rgb(174, 174, 255, 0.5);
+      0 0 5px 2px rgb(185, 205, 255, 0.5),
+      0 0 10px 4px rgb(174, 174, 255, 0.5);
   }
   100% {
     box-shadow:
-      0 0 0.5rem 0.1rem rgb(185, 205, 255),
-      0 0 1rem 0.2rem rgb(174, 174, 255);
+      0 0 5px 2px rgb(185, 205, 255),
+      0 0 10px 4px rgb(174, 174, 255);
   }
 
 }
@@ -309,25 +315,25 @@ p, button, a {
 
   0% {
     box-shadow: 
-      0 0 0.5rem 0.1rem rgb(116, 139, 255),
-      0 0 1rem 0.2rem rgb(130, 95, 255);
+      0 0 5px 2px rgb(116, 139, 255),
+      0 0 10px 4px rgb(130, 95, 255);
   }
   50% {
     box-shadow: 
-      0 0 0.5rem 0.1rem rgb(116, 139, 255, 0.5),
-      0 0 1rem 0.2rem rgb(130, 95, 255, 0.5);
+      0 0 5px 2px rgb(116, 139, 255, 0.5),
+      0 0 10px 4px rgb(130, 95, 255, 0.5);
   }
   100% {
     box-shadow:
-      0 0 0.5rem 0.1rem rgb(116, 139, 255),
-      0 0 1rem 0.2rem rgb(130, 95, 255);
+      0 0 5px 2px rgb(116, 139, 255),
+      0 0 10px 4px rgb(130, 95, 255);
   }
 
 }
 
 
 
-
+/*
 @keyframes glowing-body-mobile {
 
     0% {
@@ -350,36 +356,13 @@ p, button, a {
     }
 
 }
+*/
 
 
 
 @media (max-device-width: 1024px) and (orientation: portrait) and (hover: none) {
 
-  body{
 
-    background: linear-gradient(rgb(22, 0, 133), rgb(96, 0, 118));
-    padding-left: 5vw;
-    padding-right: 5vw;
-    padding-bottom: 5vh;
-    padding-top: 5vh;
 
-    font-family: monospace;
-
-    margin: 3vh 3vw;
-
-    animation: glowing-body-mobile 3s infinite;
-
-  }
-
-  .title{
-
-    text-align: center;
-
-    color: rgb(212, 0, 255);
-    text-shadow: 
-      0.4vw -0.25vh 0px rgb(0, 179, 255),
-      0vw 0.2vh 0px rgb(255, 0, 234);
-
-  }
   
 }

@@ -9,11 +9,10 @@
 
 .swipingContentScreen {
 
-  width: 100%;
   display: flex;
   flex-direction: column;
 
-  gap: 1rem;
+  gap: 3rem;
 
 }
 
@@ -27,7 +26,7 @@
 
   color: rgb(54, 0, 124);
   background-color: rgb(220, 183, 255);
-  box-shadow: 0 0 1rem 0.25rem rgb(202, 117, 255);
+  box-shadow: 0 0 10px 5px rgb(202, 117, 255);
 
 }
 
@@ -45,14 +44,14 @@
 .sectionSwipeButton {
 
   padding: 1rem 1.5rem;
-  border-radius: 0.3rem;
+  border-radius: 7px;
 
   color: rgb(88, 0, 98);
   background-color: rgb(210, 151, 255);
-  border-left: 0.25rem solid rgb(99, 0, 156);
-  border-bottom: 0.25rem solid rgb(99, 0, 156);
-  border-top: 0.1rem solid rgb(99, 0, 156);
-  border-right: 0.1rem solid rgb(99, 0, 156);
+  border-left: 3px solid rgb(99, 0, 156);
+  border-bottom: 3px solid rgb(99, 0, 156);
+  border-top: 1px solid rgb(99, 0, 156);
+  border-right: 1px solid rgb(99, 0, 156);
 
   animation: glowing-light-purple 3s infinite;
 
@@ -62,10 +61,10 @@
 
   color: white;
   background-color: rgb(113, 0, 170);
-  border-left: 0.25rem solid rgb(56, 0, 68);
-  border-bottom: 0.25rem solid rgb(56, 0, 68);
-  border-top: 0.1rem solid rgb(56, 0, 68);
-  border-right: 0.1rem solid rgb(56, 0, 68);
+  border-left: 3px solid rgb(56, 0, 68);
+  border-bottom: 3px solid rgb(56, 0, 68);
+  border-top: 1px solid rgb(56, 0, 68);
+  border-right: 1px solid rgb(56, 0, 68);
 
   animation: glowing-dark-purple 3s infinite;
 
@@ -74,13 +73,11 @@
 
 .sectionContainer {
 
-  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  margin-top: 2rem;
   margin-bottom: 6rem;
   gap: 4rem;
 

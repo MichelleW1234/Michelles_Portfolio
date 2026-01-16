@@ -1,6 +1,5 @@
 .projectsContainer{
 
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,7 +12,6 @@
 
 .projectContainer {
 
-    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -27,6 +25,7 @@
 .projectCard{
 
     width: 60%;
+    max-width: 100rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,14 +36,14 @@
 
     color: rgb(4, 0, 60);
     background-color: rgb(184, 225, 254);
-    box-shadow: 0 0 1rem 0.25rem rgb(159, 204, 255);
+    box-shadow: 0 0 8px 4px rgb(159, 204, 255);
 
 }
 
 .projectHorizontalLine{
 
     width: 85%;
-    height: 0.20vh;
+    height: 1.5px;
 
     background-color: #000322;
 
@@ -55,8 +54,8 @@
     display: flex;
     flex-direction: row;
 
-    gap: 4em; 
-    padding: 1em;
+    gap: 3rem;
+    padding: 1rem;
 
 }
 
@@ -72,30 +71,29 @@
 
 .projectImage {
 
-    width: 8em;
-
-    border-left: 0.4vh solid rgb(153, 0, 255);
-    border-bottom: 0.4vh solid rgb(153, 0, 255);
-    border-top: 0.4vh solid rgb(225, 0, 255);
-    border-right: 0.4vh solid rgb(225, 0, 255);
+    width: 100px;
 
     padding: 1rem;
 
-    box-shadow: 0 0 1vh 0.35vh rgb(191, 0, 255);
+    box-shadow: 0 0 6px 3px rgb(191, 0, 255);
+    border-left: 2px solid rgb(153, 0, 255);
+    border-bottom: 2px solid rgb(153, 0, 255);
+    border-top: 2px solid rgb(225, 0, 255);
+    border-right: 2px solid rgb(225, 0, 255);
 
 }
 
 .goToProjectButton {
 
   padding: 1.5rem 2rem;
-  border-radius: 0.5rem;
+  border-radius: 7px;
 
   color: rgb(0, 0, 164);
   background-color: rgb(179, 187, 255);
-  border-left: 0.3rem solid rgb(0, 13, 134);
-  border-bottom: 0.3rem solid rgb(0, 13, 134);
-  border-top: 0.1rem solid rgb(0, 13, 134);
-  border-right: 0.1rem solid rgb(0, 13, 134);
+  border-left: 3.5px solid rgb(0, 13, 134);
+  border-bottom: 3.5px solid rgb(0, 13, 134);
+  border-top: 1px solid rgb(0, 13, 134);
+  border-right: 1px solid rgb(0, 13, 134);
 
   animation: glowing-light-blue 3s infinite;
 
@@ -105,10 +103,10 @@
 
   color: white;
   background-color: rgb(0, 12, 174);
-  border-left: 0.3rem solid rgb(0, 4, 58);
-  border-bottom: 0.3rem solid rgb(0, 4, 58);
-  border-top: 0.1rem solid rgb(0, 4, 58);
-  border-right: 0.1rem solid rgb(0, 4, 58);
+  border-left: 3.5px solid rgb(0, 4, 58);
+  border-bottom: 3.5px solid rgb(0, 4, 58);
+  border-top: 1px solid rgb(0, 4, 58);
+  border-right: 1px solid rgb(0, 4, 58);
 
   animation: glowing-dark-blue 3s infinite;
 
