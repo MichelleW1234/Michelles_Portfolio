@@ -7,6 +7,54 @@
 
 }
 
+
+.navContainer{
+
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  flex-wrap: wrap;
+
+  gap: 3rem;
+
+}
+
+.navButton{
+
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+
+  color: rgb(209, 216, 255);
+  background-color: inherit;
+  border: none;
+
+  animation: glowing-light-blue 3s infinite;
+  
+}
+
+.navButton:hover {
+
+  color: rgb(242, 214, 253);
+
+  animation: glowing-light-pink 3s infinite;
+    
+}
+
+
+.navButtonActive{
+
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+
+  color: rgb(231, 153, 255);
+  background-color: inherit;
+  border: none;
+
+  animation: glowing-dark-pink 3s infinite;
+  
+}
+
+
 .swipingContentScreen {
 
   display: flex;
@@ -30,46 +78,6 @@
 
 }
 
-.sectionSwipeButtonContainer{
-
-  display: flex;
-  flex-direction: row;
-  align-self: center;
-  flex-wrap: wrap;
-
-  gap: 3rem;
-
-}
-
-.sectionSwipeButton {
-
-  padding: 1rem 1.5rem;
-  border-radius: 7px;
-
-  color: rgb(88, 0, 98);
-  background-color: rgb(210, 151, 255);
-  border-left: 3px solid rgb(99, 0, 156);
-  border-bottom: 3px solid rgb(99, 0, 156);
-  border-top: 1px solid rgb(99, 0, 156);
-  border-right: 1px solid rgb(99, 0, 156);
-
-  animation: glowing-light-purple 3s infinite;
-
-}
-
-.sectionSwipeButton:hover {
-
-  color: white;
-  background-color: rgb(113, 0, 170);
-  border-left: 3px solid rgb(56, 0, 68);
-  border-bottom: 3px solid rgb(56, 0, 68);
-  border-top: 1px solid rgb(56, 0, 68);
-  border-right: 1px solid rgb(56, 0, 68);
-
-  animation: glowing-dark-purple 3s infinite;
-
-}
-
 
 .sectionContainer {
 
@@ -89,13 +97,33 @@
 
 
 /* Mobile adjustments */
-@media (max-device-width: 1024px) and (orientation: portrait) and (hover: none) {
+@media (max-device-width: 1024px) {
   
   .portfolioContentScreen {
 
     margin-top: 9rem;
 
   }
+
+
+  .navContainer{
+
+    gap: 5rem;
+
+  }
+
+  .navButton {
+
+    padding: 2rem 2.5rem;
+
+  }
+
+  .navButtonActive {
+
+    padding: 2rem 2.5rem;
+
+  }
+
 
   .swipingContentScreen {
 
@@ -106,18 +134,6 @@
 
   }
 
-
-  .sectionSwipeButtonContainer{
-
-    gap: 5rem;
-
-  }
-
-  .sectionSwipeButton {
-
-    padding: 2rem 2.5rem;
-
-  }
 
   .sectionContainer {
 

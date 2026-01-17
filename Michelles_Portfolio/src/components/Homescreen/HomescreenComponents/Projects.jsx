@@ -8,14 +8,15 @@ import "./Projects.css";
 
 function Projects() {    
 
-  const cardNames = ["Arcade", "TritonTurnup", "Scripta"];
-  const cardTypes = ["Personal Project", "Academic Project", "Personal Project"];
-  const cardSummaries = ["A retro-style browser game where players take on a series of mini-games to earn (or lose) points and win prizes, tracked through a dynamic scoring system. Built with React, Vite, and React Router DOM.",
-      "A web app that helps UCSD students discover upcoming campus-affiliated events. After logging in, students can add events to a calendar based on availability, encouraging social connection and stress relief through greater awareness of engaging activities in the Triton community.",
-      "A React-based web app for creating and managing customizable plain text documents, featuring dynamic styling options, image import with resizing controls, and built-in document management."
+  const cardNames = ["Arcade", "Scripta", "TritonTurnup"];
+  const cardTypes = ["Personal Project", "Personal Project", "Academic Project"];
+  const cardSummaries = [
+    "A 2d desktop game where players take on a series of mini-games to earn (or lose) points and win prizes.",
+    "A desktop app for creating and managing customizable plain text documents, featuring dynamic styling options, and built-in document management.",
+    "A web application that helps UCSD students discover upcoming campus-affiliated events, encouraging social connection and stress relief through greater awareness of engaging activities in the Triton community."
   ];
-  const cardImages = [Arcade, TritonTurnup, Scripta];
-  const cardPageLinks = ["/arcade", "/tritonturnup", "/scripta"];
+  const cardImages = [Arcade, Scripta, TritonTurnup];
+  const cardPageLinks = ["/arcade", "/scripta", "/tritonturnup"];
 
   return (
     <div className = "sectionContainer">

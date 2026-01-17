@@ -30,20 +30,29 @@ function TritonTurnUpscreen() {
             <div className = "projectDetailsContainer">
                 <h3 className="projectDetailsSubTitle"> Timeline: </h3>
                 <div className = "projectDetailsInfoBlockContainer"> 
-                    <p>&gt; Add stuff here</p>
+                    <p>10/10/24 ............... First team meet-up and start of the planning stage</p>
+                    <p>10/17/24 ............... Team meet-up for the creation of vision document</p>
+                    <p>10/24/24 ............... Conducted user research interviews and pitched the app idea</p>
+                    <p>10/31/24 ............... Team meet-up for role delegation</p>
+                    <p>11/6/24 ............... First meeting with mentor to discuss progress</p>
+                    <p>12/6/24 ............... Project deadline and submission </p>
                 </div>
 
                 <h3 className="projectDetailsSubTitle">Features:</h3>
                 <div className = "projectDetailsInfoBlockContainer"> 
-                    <p>&gt; Add stuff here</p>
+                    <p>&gt; In-app calendar that aggregates user-selected events into a personalized schedule </p>
+                    <p>&gt; Card-based event carousel populated with web-scraped UCSD events, enabling users to browse, add to their schedule, or dismiss uninterested events</p>
+                    <p>&gt; Authentication system supporting user-specific calendars and schedule management</p>
+                    <p>&gt; Availability selection interface allowing users to mark weekly availability and automatically filter out incompatible events</p>
                 </div>
 
                 <h3 className="projectDetailsSubTitle">My Role:</h3>
                 <div className = "projectDetailsInfoBlockContainer"> 
-                    <p>&gt; Contributed to UI/UX and front-end in an Agile team using GitHub</p>
-                    <p>&gt; Conducted user research and testing to improve engagement</p>
-                    <p>&gt; Mentored by professor with extensive software development experience</p>
+                    <p> &gt; Collaborated with an Agile team using GitHub for version control, while under mentorship from a professor with extensive software development expertise </p>
+                    <p> &gt; Contributed to the planning, design, and development phases of building the web app, focusing primarily on the app's UI/UX and front-end </p>
+                    <p> &gt; Conducted user research and usability testing to gain insights into user needs, behaviors, and product interactions </p>
                 </div>
+
             </div>
 
             <h2 className="projectSubTitle"> Video Content: </h2>

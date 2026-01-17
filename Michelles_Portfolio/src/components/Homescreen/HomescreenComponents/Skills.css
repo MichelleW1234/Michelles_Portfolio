@@ -1,6 +1,5 @@
 .skillsContainer{
 
-  max-width: 100%;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -41,9 +40,19 @@
 
 }
 
+@media (max-width: 600px){
 
+  .skillsContainer{
 
-@media (max-width: 1024px) and (orientation: portrait) and (hover: none){
+    padding: 0rem;
+
+    box-shadow: none;
+
+  }
+
+}
+
+@media (max-device-width: 1024px){
     
   .skillsContainer{
 

@@ -30,21 +30,28 @@ function Scriptascreen() {
 
                 <h3 className="projectDetailsSubTitle"> Timeline: </h3>
                 <div className = "projectDetailsInfoBlockContainer"> 
-                    <p>&gt; Add stuff here</p>
+                    <p>10/2025 ............... Project started</p>
+                    <p>12/2025 ............... First Github release (Scripta V1.0.0 for Mac)</p>
                 </div>
 
                 <h3 className="projectDetailsSubTitle">Features: </h3>
                 <div className = "projectDetailsInfoBlockContainer"> 
-                    <p>&gt; Developed a React-based document editor that allows users to create and edit plain text with enhanced capabilities such as dynamic customization options, including font styles, font sizes, text color, page background color, and title styling </p>
-                    <p>&gt; Enabled image import support with slider-based size controls to adjust image dimensions within documents </p>
-                    <p>&gt; Implemented document management functionality to create, save, reopen, search, and delete documents (with trash support) directly within the application </p>
-                    <p>&gt; Designed an interactive, responsive UI using React, JavaScript, and CSS to deliver a smooth and visually polished editing experience </p>
+                    <p>&gt; Editable text interface allowing users to create and edit plain text with enhanced capabilities such as dynamic customization options that include font styles, font sizes, text color, page background color, and title styling </p>
+                    <p>&gt; Interactive image import system with size controls to adjust image dimensions within documents </p>
+                    <p>&gt; Document management functionality to create, save, reopen, search, and delete documents (with trash support) directly within the application </p>
+                    <p>&gt; Mapped keyboard controls for seamless navigation and interaction within the app </p>
                 </div>
 
                 <h3 className="projectDetailsSubTitle">Tools Used: </h3>
                 <div className = "projectDetailsInfoBlockContainer"> 
-                    <p>&gt; Add stuff here</p>
+                    <h4> &gt; Core Frameworks & Libraries: </h4>
+                    <p> React, Electron, React Router DOM </p>
+                    <h4> &gt; Programming Languages: </h4>
+                    <p> JavaScript, HTML, CSS </p>
+                    <h4> &gt; Build & Packaging: </h4>
+                    <p> Vite, Node.js, npm, Electron Builder </p>
                 </div>
+
             </div>
 
             <h2 className="projectSubTitle"> Video Content: </h2>

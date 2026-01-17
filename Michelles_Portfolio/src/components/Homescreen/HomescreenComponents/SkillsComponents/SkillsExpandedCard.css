@@ -70,7 +70,26 @@
 
 
 
-@media (max-device-width: 1024px) and (orientation: portrait) and (hover: none){
+@media (max-width: 900px){
+
+    .skillExpandedCard{
+
+        max-height: 90%;
+
+        gap: 3.5rem;
+
+    }
+
+    .skillExpandedCardDescription {
+
+        gap: 2rem;
+
+    }
+
+}
+
+
+@media (max-device-width: 1024px){
 
     .skillExpandedCard{
 

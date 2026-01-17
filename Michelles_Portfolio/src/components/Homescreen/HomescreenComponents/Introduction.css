@@ -1,5 +1,6 @@
 .introText{
 
+  width: 90%;
   text-align: center;
   color: white;
 
@@ -38,8 +39,7 @@
 
 
 /* Mobile adjustments */
-@media (max-device-width: 1024px) and (orientation: portrait) and (hover: none) {
-
+@media (max-device-width: 1024px){
 
   .resumeButton {
 

@@ -57,18 +57,18 @@ a, a:link, a:visited, a:hover {
 
 h1, h2, h3, h4, p {
 
-  margin: 0rem;         
+  margin: 0rem;
 
 }
 
 
-h1 {
+h1{
 
   font-size: calc(var(--default-font-size)*4);
 
 }
 
-h2 {
+h2{
 
   font-size: calc(var(--default-font-size)*2);
 
@@ -117,8 +117,7 @@ p, button, a {
 
   color: rgb(212, 0, 255);
   text-shadow: 
-    3px -3px 0px rgb(0, 179, 255),
-    0px 0px 0px rgb(255, 0, 234);
+    3px -3px 0px rgb(0, 179, 255);
 
 }
 
@@ -365,37 +364,26 @@ p, button, a {
 
 
 
-/*
-@keyframes glowing-body-mobile {
 
-    0% {
-      box-shadow: 
-        0 0 0.1vh 0.1vh rgb(70, 143, 253),
-        0 0 0.5vh 0.3vh rgb(117, 79, 252),
-        0 0 1vh 0.6vh rgb(153, 80, 254);
-    }
-    50% {
-      box-shadow: 
-        0 0 0.1vh 0.1vh rgba(70, 143, 253, 0.383),
-        0 0 0.5vh 0.3vh rgba(116, 79, 252, 0.335),
-        0 0 1vh 0.6vh rgba(152, 80, 254, 0.373);
-    }
-    100% {
-      box-shadow:
-        0 0 0.1vh 0.1vh rgb(70, 143, 253),
-        0 0 0.5vh 0.3vh rgb(117, 79, 252),
-        0 0 1vh 0.6vh rgb(153, 80, 254);
-    }
+@media (max-width: 600px) {
+
+  body{
+
+    width: 100vw;
+
+    padding: 4rem 2rem;
+    margin: 0rem;
+
+    animation: none;
+    
+  }
 
 }
-*/
 
 
+@media (max-device-width: 1024px) {
 
-@media (max-device-width: 1024px) and (orientation: portrait) and (hover: none) {
-
-
-  h1 {
+  h1{
 
     font-size: calc(var(--default-font-size-mobile)*4);
 
@@ -427,16 +415,10 @@ p, button, a {
 
   }
 
-
-
-
   .heading{
 
     gap: 2rem;
 
   }
-
-
-
   
 }

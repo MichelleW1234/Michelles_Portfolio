@@ -1,3 +1,5 @@
+import {useState} from "react";
+
 import Introduction from "./HomescreenComponents/Introduction.jsx";
 import Projects from "./HomescreenComponents/Projects.jsx";
 import Skills from "./HomescreenComponents/Skills.jsx";
@@ -11,39 +13,11 @@ function Homescreen() {
 
   const {ActiveSection, setActiveSection} = useActiveSection();
 
-  const nextSection = () => {
-
-    if (ActiveSection === 2) {
-
-      setActiveSection(0);
-
-    } else {
-
-      setActiveSection(prev => prev + 1);
-    
-    }
-
-  }
-
-
-  const prevSection = () => {
-
-    if (ActiveSection === 0) {
-
-      setActiveSection(2);
-
-    } else {
-
-      setActiveSection(prev => prev - 1);
-    
-    }
-
-  }
-
-
+  
   return (
 
     <>
+
       <div className="heading">
         <h1 className = "title"> Michelle Wee </h1>
         <div className="horizontalLine"></div>
@@ -53,9 +27,10 @@ function Homescreen() {
 
         <div className="swipingContentScreen">
           
-          <div className="sectionSwipeButtonContainer">
-            <button className="sectionSwipeButton" onClick = {() => prevSection()}> &lt; Prev Section</button>
-            <button className = "sectionSwipeButton" onClick = {() => nextSection()}> Next Section &gt; </button>
+          <div className="navContainer">
+            <button className={ActiveSection === 0 ? "navButtonActive" : "navButton"} onClick = {() => setActiveSection(0)}> Introduction </button>
+            <button className={ActiveSection === 1 ? "navButtonActive" : "navButton"} onClick = {() => setActiveSection(1)}> Projects </button>
+            <button className={ActiveSection === 2 ? "navButtonActive" : "navButton"} onClick = {() => setActiveSection(2)}> Skills </button>
           </div>
 
           {ActiveSection === 0 ? (

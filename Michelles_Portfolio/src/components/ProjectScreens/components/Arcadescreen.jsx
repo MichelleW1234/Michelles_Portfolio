@@ -58,25 +58,35 @@ function Arcadescreen() {
                 <div className = "projectDetailsContainer">
                     <h3 className="projectDetailsSubTitle"> Timeline: </h3>
                     <div className = "projectDetailsInfoBlockContainer"> 
-                        <p>12/2024 &rarr; Project started</p>
-                        <p>04/2025 &rarr; First Github release (Arcade V1.0.0 for Mac)</p>
-                        <p>06/2025 &rarr; Second Github release (Arcade V1.0.1 for Mac)</p>
-                        <p>08/2025 &rarr; Third + Fourth Github releases (Arcade V1.0.2 &  V1.0.3 for Mac)</p>
-                        <p>09/2025 &rarr; Fifth Github release (Arcade V1.0.4 for Mac)</p>
-                        <p>10/2025 &rarr; Sixth Github release (Arcade V1.0.5 for Mac)</p>
+                        <p>12/2024 ............... Project started</p>
+                        <p>04/2025 ................ First Github release (Arcade V1.0.0 for Mac)</p>
+                        <p>06/2025 ............... Second Github release (Arcade V1.0.1 for Mac)</p>
+                        <p>08/2025 ............... Third + Fourth Github releases (Arcade V1.0.2 &  V1.0.3 for Mac)</p>
+                        <p>09/2025 ............... Fifth Github release (Arcade V1.0.4 for Mac)</p>
+                        <p>10/2025 ............... Sixth Github release (Arcade V1.0.5 for Mac)</p>
                     </div>
 
                     <h3 className="projectDetailsSubTitle">Features: </h3>
                     <div className = "projectDetailsInfoBlockContainer"> 
-                        <p>&gt; Developed an interactive macOs retro-style game with web tech (React (JavaScript), HTML, CSS, Electron)</p>
-                        <p>&gt; Controlled animation flow by syncing React component states with gameplay logic, triggering re-renders and animating game elements in response to user actions</p>
-                        <p>&gt; Designed an engaging user interface with hand-drawn visual assets, CSS animations, background music, and sound effects to enhance the player experience</p>
-                        <p>&gt; Implemented game logic and dynamic outcomes based on user input, with real-time feedback</p>
-                        <p>&gt; Enabled keyboard navigation within the game interface by mapping key events to UI actions</p>
-                        <p>&gt; Implemented persistent data storage using Electron Store to save and restore user progress across app sessions</p>
+                        <p>&gt; Scoring system with dynamic point gains and losses based on player actions</p>
+                        <p>&gt; Player-controlled point economy with multiple spending options, including prize redemption, claw machines, and additional gameplay </p>
+                        <p>&gt; Multiple interactive mini-games with dynamic outcomes based on player input that players can choose from to accumulate points </p>
+                        <p>&gt; Integrated sound effects and background music triggered by gameplay events </p>
+                        <p>&gt; State-driven animations that respond to player actions and gameplay outcomes </p>
+                        <p>&gt; Persistent storage to save and restore user progress across app sessions </p>
+                        <p>&gt; Mapped keyboard input to in-game actions, allowing intuitive navigation and gameplay control </p>
                      </div>
 
                     <h3 className="projectDetailsSubTitle">Tools Used: </h3>
+                    <div className = "projectDetailsInfoBlockContainer"> 
+                        <h4> &gt; Core Frameworks & Libraries: </h4>
+                        <p> React, Electron, React Router DOM </p>
+                        <h4> &gt; Programming Languages: </h4>
+                        <p> JavaScript, HTML, CSS </p>
+                        <h4> &gt; Build & Packaging: </h4>
+                        <p> Vite, Node.js, npm, Electron Builder </p>
+                    </div>
+
                 </div>
 
                 <h2 className="projectSubTitle"> Video Content: </h2>

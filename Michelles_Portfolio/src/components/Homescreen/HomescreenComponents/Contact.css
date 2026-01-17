@@ -48,18 +48,17 @@
 }
 
 
-@media (max-device-width: 1024px) and (orientation: portrait) and (hover: none){
+@media (max-device-width: 1024px){
 
     .contactContainer {
 
-        gap: 5rem;
+        gap: 4rem;
         
     }
 
     .contactBox{
 
-        border-radius: 15px;
-        padding: 3rem;
+        padding: 4rem;
 
     }
 
