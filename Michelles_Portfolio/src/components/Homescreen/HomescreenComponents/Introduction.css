@@ -41,9 +41,15 @@
 /* Mobile adjustments */
 @media (max-device-width: 1024px) and (pointer: coarse){
 
+  .introText{
+
+    width: 95%;
+
+  }
+
   .resumeButton {
 
-    padding: 2.5rem 3rem;
+    padding: 1.7rem 2.2rem;
 
   }
 
