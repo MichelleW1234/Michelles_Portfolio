@@ -2,7 +2,7 @@
 
   --default-font-size: 1rem;
 
-  --default-font-size-mobile: 2rem;
+  --default-font-size-mobile: 1.125rem;
 
 }
 
@@ -408,7 +408,6 @@ p, button, a {
 
 
 @media (max-width: 600px) and (pointer: coarse){
-
 
   body{
 
