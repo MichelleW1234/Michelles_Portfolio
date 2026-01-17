@@ -66,12 +66,44 @@
     transform: none;
 
   }
-
   
 }
 
 
-@media (max-width: 600px){
+
+@media (max-width: 600px) and (pointer: coarse){
+
+  .skillsContainer{
+
+    padding: 0rem;
+
+    box-shadow: none;
+
+  }
+
+
+  .skill{
+
+    width: 25rem;
+
+    padding: 5rem;
+
+    transition: none;
+
+  }
+
+  .skill:hover{
+
+    transform: none;
+
+  }
+
+}
+
+
+
+
+@media (max-width: 600px) and (pointer: fine){
 
   .skillsContainer{
 
