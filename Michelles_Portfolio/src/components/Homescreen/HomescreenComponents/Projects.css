@@ -116,13 +116,15 @@
 
 
 
-@media (max-width: 900px) and (pointer: fine){
+
+@media (max-device-width: 1024px) and (pointer: coarse) {
 
     .projectsContainer{
 
         gap: 5rem;
 
     }
+
 
     .projectContainer {
 
@@ -172,17 +174,23 @@
 
     }
 
+    .goToProjectButton {
+
+        padding: 2.5rem 3rem;
+
+    }
+
 }
 
 
-@media (max-device-width: 1024px) and (pointer: coarse) {
+
+@media (max-width: 900px) and (pointer: fine) {
 
     .projectsContainer{
 
         gap: 5rem;
 
     }
-
 
     .projectContainer {
 
@@ -196,6 +204,8 @@
     .projectCard{
 
         width: 90%;
+
+        padding: 2rem 1rem;
 
     }
 
@@ -223,16 +233,9 @@
 
     }
 
-
     .projectImage {
 
         width: 120px;
-
-    }
-
-    .goToProjectButton {
-
-        padding: 2.5rem 3rem;
 
     }
 

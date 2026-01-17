@@ -42,17 +42,6 @@
 
 
 
-@media (max-width: 600px) and (pointer: fine){
-
-  .skillsContainer{
-
-    padding: 0rem;
-
-    box-shadow: none;
-
-  }
-
-}
 
 @media (max-device-width: 1024px) and (pointer: coarse){
     
@@ -79,4 +68,17 @@
   }
 
   
+}
+
+
+@media (max-width: 600px){
+
+  .skillsContainer{
+
+    padding: 0rem;
+
+    box-shadow: none;
+
+  }
+
 }

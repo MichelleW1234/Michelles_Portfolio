@@ -70,23 +70,6 @@
 
 
 
-@media (max-width: 900px) and (pointer: fine){
-
-    .skillExpandedCard{
-
-        max-height: 90%;
-
-        gap: 3.5rem;
-
-    }
-
-    .skillExpandedCardDescription {
-
-        gap: 2rem;
-
-    }
-
-}
 
 
 @media (max-device-width: 1024px) and (pointer: coarse){
@@ -108,6 +91,26 @@
     .skillExpandedCardButton {
 
         padding: 2rem 2.5rem;
+
+    }
+
+}
+
+
+
+@media (max-width: 900px) and (pointer: fine){
+
+    .skillExpandedCard{
+
+        max-height: 90%;
+
+        gap: 3.5rem;
+
+    }
+
+    .skillExpandedCardDescription {
+
+        gap: 2rem;
 
     }
 
