@@ -40,7 +40,9 @@
 
 }
 
-@media (max-width: 600px){
+
+
+@media (max-width: 600px) and (pointer: fine){
 
   .skillsContainer{
 
@@ -52,7 +54,7 @@
 
 }
 
-@media (max-device-width: 1024px){
+@media (max-device-width: 1024px) and (pointer: coarse){
     
   .skillsContainer{
 

@@ -99,7 +99,6 @@ p, button, a {
 
 /* Custom tags: */
 
-
 .heading{
 
   display: flex;
@@ -364,11 +363,12 @@ p, button, a {
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 600px) and (pointer: fine) {
 
   body{
 
     width: 100vw;
+    min-width: 20rem;
 
     padding: 4rem 2rem;
     margin: 0rem;
@@ -380,7 +380,7 @@ p, button, a {
 }
 
 
-@media (max-device-width: 1024px) {
+@media (max-device-width: 1024px)  and (pointer: coarse) {
 
   h1{
 

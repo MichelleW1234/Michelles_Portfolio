@@ -48,7 +48,7 @@
 }
 
 
-@media (max-device-width: 1024px){
+@media (max-device-width: 1024px) and (pointer: coarse){
 
     .contactContainer {
 
