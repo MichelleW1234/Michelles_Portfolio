@@ -8,7 +8,7 @@ import "./Projects.css";
 
 function Projects() {    
 
-  const cardNames = ["Arcade", "Scripta", "TritonTurnup"];
+  const cardNames = ["Arcade", "Scripta", "TritonTurnUp"];
   const cardTypes = ["Personal Project", "Personal Project", "Academic Project"];
   const cardSummaries = [
     "A 2d desktop game where players take on a series of mini-games to earn (or lose) points and win prizes.",
