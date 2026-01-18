@@ -67,9 +67,8 @@
 
   .skillsContainer{
 
-    padding: 0rem;
-    box-shadow: none;
-    gap: 0rem;
+    padding: 3rem;
+    gap: 2rem;
 
   }
 
@@ -79,7 +78,6 @@
 
     padding: 4rem;
 
-    animation: glowing-stacked-boxes-dark-pink 2s infinite;
     transition: none;
 
   }
@@ -100,9 +98,8 @@
 
   .skillsContainer{
 
-    padding: 0rem;
-    box-shadow: none;
-    gap: 0rem;
+    padding: 3rem;
+    gap: 2rem;
 
   }
 
@@ -112,7 +109,6 @@
 
     padding: 4rem;
 
-    animation: glowing-stacked-boxes-dark-pink 2s infinite;
     transition: none;
 
   }
