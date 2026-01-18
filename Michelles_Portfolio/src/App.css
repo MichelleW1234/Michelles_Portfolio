@@ -17,7 +17,7 @@ html {
 body{
 
   min-height: 100vh;
-  min-width: 30rem;
+  min-width: 20rem;
   display: flex;
   flex-direction: column;
 
@@ -473,7 +473,6 @@ p, button, a {
   body{
 
     padding: 4rem 2rem;
-    margin: 2rem;
     
   }
 
