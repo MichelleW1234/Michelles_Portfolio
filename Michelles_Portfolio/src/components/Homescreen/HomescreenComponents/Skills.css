@@ -75,9 +75,7 @@
 
   .skillsContainer{
 
-    padding: 0rem;
-
-    box-shadow: none;
+    padding: 2rem;
 
   }
 
@@ -85,7 +83,7 @@
 
     width: 20rem;
 
-    padding: 5rem;
+    padding: 4rem;
 
     transition: none;
 
@@ -106,9 +104,7 @@
 
   .skillsContainer{
 
-    padding: 0rem;
-
-    box-shadow: none;
+    padding: 2rem;
 
   }
 

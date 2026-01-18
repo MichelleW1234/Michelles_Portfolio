@@ -196,14 +196,14 @@
 
         flex-direction: column;
 
-        gap: 5rem;
+        gap: 2rem;
 
     }
 
 
     .projectCard{
 
-        width: 90%;
+        width: 100%;
 
         padding: 2rem 1rem;
 

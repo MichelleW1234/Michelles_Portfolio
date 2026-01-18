@@ -50,18 +50,6 @@
 
 @media (max-device-width: 1024px) and (pointer: coarse){
 
-    .contactContainer {
-
-        gap: 4rem;
-        
-    }
-
-    .contactBox{
-
-        padding: 3rem;
-
-    }
-
     .contactImage{
 
         height: 75px;

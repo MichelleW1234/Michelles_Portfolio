@@ -250,7 +250,7 @@
 
     .projectGeneralButton {
 
-        padding: 2rem 2.5rem;
+        padding: 1.2rem 1.7rem;
 
     }
 
@@ -267,8 +267,8 @@
     .projectDetailsInfoBlockContainer {
 
         gap: 3rem;
-        padding-left: 4rem;
-        padding-right: 4rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
 
     }
 
@@ -287,7 +287,7 @@
 
     .projectVideoCard {
 
-        width: 18rem;
+        width: 15rem;
 
         gap: 2.5rem;
 
@@ -307,13 +307,11 @@
 
         flex-direction: column;
 
-        gap: 5rem;
-
     }
 
     .projectLinkButton{
 
-        padding: 2.5rem 3rem;
+        padding: 1.7rem 2.2rem;
 
     }
 
