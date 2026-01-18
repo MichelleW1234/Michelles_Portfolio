@@ -28,12 +28,6 @@ function Scriptascreen() {
             <h2 className="projectSubTitle">Description:</h2>            
             <div className = "projectDetailsContainer">
 
-                <h3 className="projectDetailsSubTitle"> Timeline: </h3>
-                <div className = "projectDetailsInfoBlockContainer"> 
-                    <p>10/2025 ............... Project started</p>
-                    <p>12/2025 ............... First Github release (Scripta V1.0.0 for Mac)</p>
-                </div>
-
                 <h3 className="projectDetailsSubTitle">Features: </h3>
                 <div className = "projectDetailsInfoBlockContainer"> 
                     <p>&gt; Editable text interface allowing users to create and edit plain text with enhanced capabilities such as dynamic customization options that include font styles, font sizes, text color, page background color, and title styling </p>
@@ -50,6 +44,12 @@ function Scriptascreen() {
                     <p> JavaScript, HTML, CSS </p>
                     <h4> &gt; Build & Packaging: </h4>
                     <p> Vite, Node.js, npm, Electron Builder </p>
+                </div>
+
+                <h3 className="projectDetailsSubTitle"> Timeline: </h3>
+                <div className = "projectDetailsInfoBlockContainer"> 
+                    <p>10/2025 ............... Project started</p>
+                    <p>12/2025 ............... First Github release (Scripta V1.0.0 for Mac)</p>
                 </div>
 
             </div>

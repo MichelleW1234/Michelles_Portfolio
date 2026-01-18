@@ -92,6 +92,20 @@
 
         padding: 1.2rem 1.7rem;
 
+        border-left: 4.5px solid rgb(0, 71, 118);
+        border-bottom: 4.5px solid rgb(0, 71, 118);
+        border-top: 1.5px solid rgb(0, 71, 118);
+        border-right: 1.5px solid rgb(0, 71, 118);
+        
+    }
+
+    .skillExpandedCardButton:hover {
+
+        border-left: 4.5px solid rgb(6, 0, 67);
+        border-bottom: 4.5px solid rgb(6, 0, 67);
+        border-top: 1.5px solid rgb(6, 0, 67);
+        border-right: 1.5px solid rgb(6, 0, 67);
+        
     }
 
 }

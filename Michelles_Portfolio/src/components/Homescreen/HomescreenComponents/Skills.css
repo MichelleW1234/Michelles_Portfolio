@@ -53,6 +53,20 @@
 
   .skill{
 
+    width: 17rem;
+
+    padding: 4rem 3rem;
+
+  }
+
+}
+
+
+
+@media (max-device-width: 600px) and (pointer: coarse){
+
+  .skill{
+
     width: 20rem;
 
     padding: 4rem;
@@ -72,11 +86,12 @@
 
 
 
+
 @media (max-width: 600px) and (pointer: fine){
 
   .skillsContainer{
 
-    padding: 2rem;
+    padding: 4rem 2rem;
 
   }
 

@@ -114,11 +114,7 @@
 
 
 
-
-
-
 @media (max-device-width: 1024px) and (pointer: coarse) {
-
 
     .projectsContainer{
 
@@ -137,9 +133,7 @@
 
     .projectCard{
 
-        width: 100%;
-
-        padding: 2rem 1rem;
+        width: 80%;
 
     }
 
@@ -177,6 +171,35 @@
 
         padding: 1.7rem 2.2rem;
 
+        border-left: 4.5px solid rgb(0, 13, 134);
+        border-bottom: 4.5px solid rgb(0, 13, 134);
+        border-top: 1.5px solid rgb(0, 13, 134);
+        border-right: 1.5px solid rgb(0, 13, 134);
+
+    }
+
+    .goToProjectButton:hover {
+
+        border-left: 4.5px solid rgb(0, 4, 58);
+        border-bottom: 4.5px solid rgb(0, 4, 58);
+        border-top: 1.5px solid rgb(0, 4, 58);
+        border-right: 1.5px solid rgb(0, 4, 58);
+
+    }
+
+}
+
+
+
+
+@media (max-device-width: 600px) and (pointer: coarse) {
+
+    .projectCard{
+
+        width: 100%;
+
+        padding: 2rem 1rem;
+
     }
 
 }
@@ -192,8 +215,6 @@
     }
 
     .projectContainer {
-
-        flex-direction: column;
 
         gap: 2rem;
 

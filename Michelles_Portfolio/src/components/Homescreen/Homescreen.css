@@ -98,19 +98,6 @@
 
 /* Mobile adjustments */
 @media (max-device-width: 1024px) and (pointer: coarse) {
-  
-  .portfolioContentScreen {
-
-    margin-top: 8rem;
-
-  }
-
-  .navContainer{
-
-    gap: 2rem;
-
-  }
-
 
   .navButton {
 
@@ -124,16 +111,30 @@
 
   }
 
+}
+
+
+
+@media (max-device-width: 600px) and (pointer: coarse) {
+  
+  .portfolioContentScreen {
+
+    margin-top: 8rem;
+
+  }
+
+  .navContainer{
+
+    gap: 2rem;
+
+  }
 
   .swipingContentScreen {
-
-    display: flex;
-    flex-direction: column;
 
     gap: 5rem;
 
   }
-
+ 
 
   .sectionContainer {
 

@@ -252,6 +252,20 @@
 
         padding: 1.2rem 1.7rem;
 
+        border-left: 4px solid rgb(41, 0, 47);
+        border-bottom: 4px solid rgb(41, 0, 47);
+        border-top: 1.5px solid rgb(41, 0, 47);
+        border-right: 1.5px solid rgb(41, 0, 47);
+
+    }
+
+    .projectGeneralButton:hover {
+
+        border-left: 4px solid rgb(41, 0, 47);
+        border-bottom: 4px solid rgb(41, 0, 47);
+        border-top: 1.5px solid rgb(41, 0, 47);
+        border-right: 1.5px solid rgb(41, 0, 47);
+
     }
 
 
@@ -264,9 +278,8 @@
 
     .projectDetailsInfoBlockContainer {
 
-        gap: 1rem;
-        padding-left: 0rem;
-        padding-right: 0rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
 
     }
 
@@ -289,6 +302,44 @@
 
         gap: 2.5rem;
 
+    }
+
+    .projectLinkButton{
+
+        padding: 1.7rem 2.2rem;
+
+        border-left: 4.5px solid rgb(55, 0, 144);
+        border-bottom: 4.5px solid rgb(55, 0, 144);
+        border-top: 2px solid rgb(55, 0, 144);
+        border-right: 2px solid rgb(55, 0, 144);
+
+    }
+
+    .projectLinkButton:hover{
+
+        border-left: 4.5px solid rgb(17, 0, 50);
+        border-bottom: 4.5px solid rgb(17, 0, 50);
+        border-top: 2px solid rgb(17, 0, 50);
+        border-right: 2px solid rgb(17, 0, 50);
+
+    }
+
+}
+
+
+
+@media (max-device-width: 600px) and (pointer: coarse){
+
+    .projectDetailsInfoBlockContainer {
+
+        padding-left: 0rem;
+        padding-right: 0rem;
+
+    }
+
+
+    .projectVideoCard {
+
         transition: none;
 
     }
@@ -307,9 +358,16 @@
 
     }
 
-    .projectLinkButton{
+}
 
-        padding: 1.7rem 2.2rem;
+
+
+@media (max-width: 600px) and (pointer: fine){
+
+    .projectDetailsInfoBlockContainer {
+
+        padding-left: 0rem;
+        padding-right: 0rem;
 
     }
 

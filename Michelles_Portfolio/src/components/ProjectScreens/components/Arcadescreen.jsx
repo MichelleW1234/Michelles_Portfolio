@@ -56,15 +56,6 @@ function Arcadescreen() {
 
                 <h2 className="projectSubTitle"> Project Details:</h2>
                 <div className = "projectDetailsContainer">
-                    <h3 className="projectDetailsSubTitle"> Timeline: </h3>
-                    <div className = "projectDetailsInfoBlockContainer"> 
-                        <p>12/2024 ............... Project started</p>
-                        <p>04/2025 ................ First Github release (Arcade V1.0.0 for Mac)</p>
-                        <p>06/2025 ............... Second Github release (Arcade V1.0.1 for Mac)</p>
-                        <p>08/2025 ............... Third + Fourth Github releases (Arcade V1.0.2 &  V1.0.3 for Mac)</p>
-                        <p>09/2025 ............... Fifth Github release (Arcade V1.0.4 for Mac)</p>
-                        <p>10/2025 ............... Sixth Github release (Arcade V1.0.5 for Mac)</p>
-                    </div>
 
                     <h3 className="projectDetailsSubTitle">Features: </h3>
                     <div className = "projectDetailsInfoBlockContainer"> 
@@ -85,6 +76,16 @@ function Arcadescreen() {
                         <p> JavaScript, HTML, CSS </p>
                         <h4> &gt; Build & Packaging: </h4>
                         <p> Vite, Node.js, npm, Electron Builder </p>
+                    </div>
+
+                    <h3 className="projectDetailsSubTitle"> Timeline: </h3>
+                    <div className = "projectDetailsInfoBlockContainer"> 
+                        <p>12/2024 ............... Project started</p>
+                        <p>04/2025 ................ First Github release (Arcade V1.0.0 for Mac)</p>
+                        <p>06/2025 ............... Second Github release (Arcade V1.0.1 for Mac)</p>
+                        <p>08/2025 ............... Third + Fourth Github releases (Arcade V1.0.2 &  V1.0.3 for Mac)</p>
+                        <p>09/2025 ............... Fifth Github release (Arcade V1.0.4 for Mac)</p>
+                        <p>10/2025 ............... Sixth Github release (Arcade V1.0.5 for Mac)</p>
                     </div>
 
                 </div>
