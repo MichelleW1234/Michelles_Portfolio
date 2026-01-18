@@ -1,5 +1,6 @@
 .skillsContainer{
 
+  min-height: 20rem;
   position: relative;
   display: flex;
   flex-direction: row;

@@ -13,7 +13,7 @@
 
 .skillExpandedCard{
 
-    max-height: 85%;
+    max-height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,7 +30,6 @@
 
 .skillExpandedCardDescription {
 
-    height: 80%;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
