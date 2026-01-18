@@ -16,8 +16,8 @@ function TritonTurnUpscreen() {
 
         <div className="heading">
             <div className="projectTitleIconContainer">
-                    <img className= "projectTitleImage" src={TritonTurnup}/> 
-                    <h1 className = "title"> TritonTurnUp </h1>
+                <img className= "projectTitleImage" src={TritonTurnup}/> 
+                <h1 className = "title"> TritonTurnUp </h1>
             </div>
             <div className="horizontalLine"></div>
         </div>

@@ -59,7 +59,7 @@ a, a:link, a:visited, a:hover {
 
 h1, h2, h3, h4 {
 
-    font-family: 'Orbitron', monospace;
+  font-family: 'Orbitron', monospace;
 
 }
 
@@ -121,6 +121,7 @@ p, button, a {
 
 .title{
 
+  max-width: 100%;
   text-align: center;
 
   color: rgb(212, 0, 255);
@@ -421,7 +422,7 @@ p, button, a {
   body{
 
     padding: 4rem 2rem;
-    margin: 2rem;
+    margin: 0rem;
 
     animation: none;
     
@@ -474,6 +475,8 @@ p, button, a {
 
     padding: 4rem 2rem;
     margin: 0;
+
+    animation: none;
     
   }
 
