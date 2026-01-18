@@ -79,12 +79,6 @@
 
     }
 
-    .skillExpandedCardDescription {
-
-        gap: 2rem;
-
-    }
-
     .skillExpandedCardButton {
 
         padding: 1.2rem 1.7rem;
@@ -103,6 +97,18 @@
         border-top: 1.5px solid rgb(6, 0, 67);
         border-right: 1.5px solid rgb(6, 0, 67);
         
+    }
+
+}
+
+
+
+@media (max-width: 900px) and (pointer: coarse){
+
+    .skillExpandedCardDescription {
+
+        gap: 2rem;
+
     }
 
 }
