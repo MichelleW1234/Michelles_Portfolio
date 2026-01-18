@@ -48,6 +48,7 @@
 
   .skillsContainer{
 
+    min-height: 40rem;
     padding: 4rem 2rem;
 
   }
