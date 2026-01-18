@@ -373,6 +373,26 @@ p, button, a {
 
 
 
+@keyframes glowing-stacked-boxes-dark-pink{
+
+  0% {
+    box-shadow: 
+      0 3px 12px rgb(242, 60, 255);
+  }
+  50% {
+    box-shadow: 
+      0 3px 12px rgb(242, 60, 255, 0.5);
+  }
+  100% {
+    box-shadow:
+      0 3px 12px rgb(242, 60, 255);
+  }
+
+}
+
+
+
+
 
 @media (max-device-width: 1024px)  and (pointer: coarse) {
 

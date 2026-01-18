@@ -114,6 +114,7 @@
 
 .projectVideoSectionContainer {
 
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -134,6 +135,7 @@
     gap: 3rem;
 
 }
+
 
 
 .projectVideoCard {
@@ -175,6 +177,18 @@
         animation: glowing-dark-pink 2s infinite;
 
     }
+
+}
+
+.projectVideoMobileWatch {
+
+    display: none;
+
+}
+
+.projectVideoNormalWatch{
+
+    display: inline;
 
 }
 
@@ -338,9 +352,41 @@
     }
 
 
+    .projectVideoContainer {
+            
+        padding: 0rem;
+        gap: 2rem;
+
+    }
+
     .projectVideoCard {
 
+        width: 90%;
+
+        padding: 3rem;
+        gap: 1rem;
+
+        color: rgb(227, 192, 255);
+
         transition: none;
+
+        img {
+
+            display: none;
+
+        }
+
+    }
+
+    .projectVideoMobileWatch {
+
+        display: inline;
+
+    }
+
+    .projectVideoNormalWatch{
+
+        display: none;
 
     }
 

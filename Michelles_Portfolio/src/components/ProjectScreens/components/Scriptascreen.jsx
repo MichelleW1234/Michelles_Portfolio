@@ -57,7 +57,11 @@ function Scriptascreen() {
             <h2 className="projectSubTitle"> Video Content: </h2>
             <div className="projectVideoSectionContainer">
                 <a className = "projectVideoCard" href="https://drive.google.com/file/d/18kaJoc-IkkRINIQjO2polFLivxWjDAy5/view?usp=drive_link" target="_blank">
-                    Demo Video
+                    <p className="projectVideoMobileWatch"> &#9654; Watch </p> 
+                    <p>
+                        <span className="projectVideoNormalWatch"> &#9654; </span> 
+                        Demo Video
+                    </p>
                     <img src = {ScriptaDemo}/>
                 </a>
             </div>

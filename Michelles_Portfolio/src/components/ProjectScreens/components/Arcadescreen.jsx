@@ -99,7 +99,10 @@ function Arcadescreen() {
                             openFullVideoSection ? (
 
                                 <a className = "projectVideoCard" href={videoLinks[index]} target="_blank">
-                                    {videoTitles[index]}
+                                    <p className="projectVideoMobileWatch"> &#9654; Watch </p> 
+                                    <p>
+                                        <span className="projectVideoNormalWatch"> &#9654; </span> {videoTitles[index]}
+                                    </p>
                                     <img src={videoImages[index]}/>
                                 </a>
 
@@ -108,7 +111,10 @@ function Arcadescreen() {
                                 index < 3 ? (
 
                                     <a className = "projectVideoCard" href={videoLinks[index]} target="_blank">
-                                        {videoTitles[index]}
+                                        <p className="projectVideoMobileWatch"> &#9654; Watch </p> 
+                                        <p>
+                                            <span className="projectVideoNormalWatch"> &#9654; </span> {videoTitles[index]}
+                                        </p>
                                         <img src={videoImages[index]}/>
                                     </a>
 

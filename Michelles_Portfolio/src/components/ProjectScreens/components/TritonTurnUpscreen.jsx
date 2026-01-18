@@ -59,7 +59,11 @@ function TritonTurnUpscreen() {
             <h2 className="projectSubTitle"> Video Content: </h2>
             <div className="projectVideoSectionContainer">
                 <a className = "projectVideoCard" href="https://drive.google.com/file/d/1bjoVWfcJ89o7ha2sFHtFunMhr9dIxjtt/view" target="_blank">
-                    Demo Video
+                    <p className="projectVideoMobileWatch"> &#9654; Watch </p> 
+                    <p>
+                        <span className="projectVideoNormalWatch"> &#9654; </span> 
+                        Demo Video
+                    </p>
                     <img src = {TritonTurnupDemo}/>
                 </a>
             </div>

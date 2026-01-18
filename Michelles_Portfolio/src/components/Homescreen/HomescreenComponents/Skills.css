@@ -65,12 +65,21 @@
 
 @media (max-device-width: 600px) and (pointer: coarse){
 
+  .skillsContainer{
+
+    padding: 0rem;
+    box-shadow: none;
+    gap: 0rem;
+
+  }
+
   .skill{
 
-    width: 20rem;
+    width: 100%;
 
     padding: 4rem;
 
+    animation: glowing-stacked-boxes-dark-pink 2s infinite;
     transition: none;
 
   }
@@ -91,7 +100,26 @@
 
   .skillsContainer{
 
-    padding: 4rem 2rem;
+    padding: 0rem;
+    box-shadow: none;
+    gap: 0rem;
+
+  }
+
+  .skill{
+
+    width: 100%;
+
+    padding: 4rem;
+
+    animation: glowing-stacked-boxes-dark-pink 2s infinite;
+    transition: none;
+
+  }
+
+  .skill:hover{
+
+    transform: none;
 
   }
 
