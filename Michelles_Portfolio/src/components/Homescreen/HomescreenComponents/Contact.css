@@ -50,6 +50,14 @@
 
 @media (max-device-width: 1024px) and (pointer: coarse){
 
+    .contactContainer {
+
+        gap: 2rem;
+        
+    }
+
+    /*
+
     .contactImage{
 
         height: 75px;
@@ -73,6 +81,18 @@
         border-top: 1.5px solid rgb(19, 72, 72);
         border-right: 1.5px solid rgb(19, 72, 72);
 
+    }
+        */
+
+}
+
+
+@media (max-device-width: 600px) and (pointer: coarse){
+
+    .contactContainer {
+    
+        flex-direction: column;
+        
     }
 
 }

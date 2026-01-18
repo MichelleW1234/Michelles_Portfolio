@@ -99,6 +99,12 @@
 /* Mobile adjustments */
 @media (max-device-width: 1024px) and (pointer: coarse) {
 
+  .navContainer{
+
+    gap: 2rem;
+
+  }
+
   .navButton {
 
     padding: 1.2rem 1.7rem;
@@ -116,16 +122,10 @@
 
 
 @media (max-device-width: 600px) and (pointer: coarse) {
-  
-  .portfolioContentScreen {
-
-    margin-top: 8rem;
-
-  }
 
   .navContainer{
 
-    gap: 2rem;
+    flex-direction: column;
 
   }
 
@@ -135,11 +135,4 @@
 
   }
  
-
-  .sectionContainer {
-
-    margin-bottom: 8rem;
-
-  }
-
 }
