@@ -15,14 +15,14 @@
   align-self: center;
   flex-wrap: wrap;
 
-  gap: 3rem;
+  gap: 2.5rem;
 
 }
 
 .navButton{
 
   padding: 1rem 1.5rem;
-  border-radius: 8px;
+  border-radius: 4px;
 
   color: rgb(209, 216, 255);
   background-color: inherit;
@@ -44,7 +44,7 @@
 .navButtonActive{
 
   padding: 1rem 1.5rem;
-  border-radius: 8px;
+  border-radius: 4px;
 
   color: rgb(231, 153, 255);
   background-color: inherit;
