@@ -18,7 +18,7 @@
 .skill{
 
   width: 15rem;
-  min-height: 20vh;
+  min-height: 25vh;
   text-align: center;
 
   padding: 3rem 4rem;
@@ -44,31 +44,11 @@
 
 
 
-
 @media (max-device-width: 1024px) and (pointer: coarse){
 
   .skillsContainer{
 
-    padding: 4rem 2rem;
-
-  }
-
-  .skill{
-
-    width: 17rem;
-    min-height: 15vh;
-    padding: 4rem 3rem;
-
-  }
-
-}
-
-
-
-@media (max-device-width: 600px) and (pointer: coarse){
-
-  .skillsContainer{
-
+    width: 80%;
     flex-direction: column;
 
     padding: 3rem;
@@ -95,6 +75,18 @@
 }
 
 
+@media (max-device-width: 600px) and (pointer: coarse){
+
+  .skillsContainer{
+
+    width: 100%;
+
+    padding: 2rem;
+
+  }
+
+}
+
 
 
 
@@ -102,9 +94,10 @@
 
   .skillsContainer{
 
+    width: 80%;
     flex-direction: column;
 
-    padding: 3rem;
+    padding: 2rem;
     gap: 2rem;
 
   }
