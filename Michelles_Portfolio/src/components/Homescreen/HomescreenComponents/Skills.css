@@ -44,34 +44,6 @@
 
 
 @media (max-device-width: 1024px) and (pointer: coarse){
-    
-  .skillsContainer{
-
-    gap: 4rem;
-
-  }
-
-  .skill{
-
-    width: 25rem;
-
-    padding: 5rem;
-
-    transition: none;
-
-  }
-
-  .skill:hover{
-
-    transform: none;
-
-  }
-  
-}
-
-
-
-@media (max-width: 600px) and (pointer: coarse){
 
   .skillsContainer{
 
