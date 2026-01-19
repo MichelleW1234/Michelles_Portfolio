@@ -12,7 +12,7 @@ function Projects() {
   const cardTypes = ["Personal Project", "Personal Project", "Academic Project"];
   const cardSummaries = [
     "A 2d desktop game where players take on a series of mini-games to earn (or lose) points and win prizes.",
-    "A desktop app for creating and managing customizable plain text documents, featuring dynamic styling options, and built-in document management.",
+    "A desktop app for creating and managing customizable plain text documents, featuring dynamic styling options and built-in document management.",
     "A web application that helps UCSD students discover upcoming campus-affiliated events, encouraging social connection and stress relief through greater awareness of engaging activities in the Triton community."
   ];
   const cardImages = [Arcade, Scripta, TritonTurnup];

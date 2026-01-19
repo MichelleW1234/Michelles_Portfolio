@@ -15,7 +15,7 @@ function Introduction() {
       <p className = "introText">
         To learn more about my other skills and what I've been doing outside of projects, click "View My Resume" or scroll down to visit my "Let's Connect" section. Otherwise, feel free to look through the rest of my portfolio!
       </p>
-      <a className = "resumeButton" href="https://docs.google.com/document/d/1yxwJvILbZGjwvqFF6PGSkCUXcnz6qH2YGJsIg52HeIo/preview" target="_blank" rel="noopener noreferrer"> View My Resume </a>
+      <a className = "resumeButton" href="https://docs.google.com/document/d/1X1ef91Pe4IisdxDLfFJddlETUiTk6Z-KBSSqTalb2GY/preview" target="_blank" rel="noopener noreferrer"> View My Resume </a>
     </div>
 
   )
