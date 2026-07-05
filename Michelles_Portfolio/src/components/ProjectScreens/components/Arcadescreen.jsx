@@ -21,6 +21,7 @@ import "./Projectscreen.css";
 
 function Arcadescreen() {
 
+
     const videoTitles = ["Rock-Paper-Scissors", "Tic-Tac-Toe", "Snake", "Space Invasion (Mission 2)", "Space Invasion (Mission 4)",
                         "Orbit", "Color Blast", "Cat Claw Machine", "Balloon Frenzy", "Sky Maze", "Chicken Crossing"];
     const videoImages = [RPS, TTT, SNK, SPIM2, SPIM4, ORB, CBL, CWMCat, BFR, SMZ, CHC];
@@ -35,7 +36,20 @@ function Arcadescreen() {
                         "https://drive.google.com/file/d/1WbA9IL-9Gd6Jw6AEkmLVYZ8k-kchLq7Z/view?usp=drive_link",
                         "https://drive.google.com/file/d/1npOK4lx2jSFZZAWbtdkZMMEEWV8ToRpx/view?usp=drive_link",
                         "https://drive.google.com/file/d/1TPUmVp_TV3V_aWHpYJbx7BRTzsoLE8d7/view?usp=drive_link"];
+    const videoSummaries = ["A demonstration of a 10-round game of basic Rock-Paper-Scissors where players compete against the computer.",      
+                            "A demonstration of a standard 3×3 game of tic-tac-toe against the computer, with the first player determined by a coin flip and points awarded based on the outcome.",
+                            "A demonstration of Snake, where the user controls the snake using WASD to collect apples for points while avoiding an early exit penalty.",
+                            "A demonstration of the 2nd mission in Space Invasion, where the user attempts to eliminate an alien hive with two different variants before they reach them.",
+                            "A demonstration of the 4th and final mission in Space Invasion, where the user attempts to defeat the hive queen without triggering an explosion and before their flashlight battery runs out.",
+                            "A demonstration of Orbit, where the user tests their timing by stopping the moving indicator on the green zone.",
+                            "A demonstration of Color Blast, where the user tests their reflexes by clicking circles that match the target color to earn points while avoiding incorrect selections under a time limit.",
+                            "A demonstration of the Cat Claw Machine, where the user attempts to win a prize by timing their claw grabs based on where the green ball lands.",
+                            "A demonstration of Balloon Frenzy, where the user pops as many balloons as they can under a time limit while avoiding birds.",
+                            "A demonstration of Sky Maze, where the user uses WASD to guide the bird up and down to dodge incoming walls and travel as far as possible.",
+                            "A demonstration of Chicken Crossing, where the user uses WASD to navigate the chicken through traffic under a time limit, avoiding cars and using safe grassy zones.",
+                        ];
 
+    
 
     const [openFullVideoSection, setOpenFullVideoSection] = useState(false);
  
@@ -43,8 +57,7 @@ function Arcadescreen() {
 
         <>
             <div className="heading">
-                <div className="projectTitleIconContainer">
-                    <img className= "projectTitleImage" src={Arcade}/>
+                <div className="projectTitleIconContainer projectTitleIconContainer-Arcade">
                     <h1 className = "title"> Arcade </h1>
                 </div>
                 <div className="horizontalLine"></div>
@@ -57,95 +70,162 @@ function Arcadescreen() {
                 <h2 className="projectSubTitle"> Project Details:</h2>
                 <div className = "projectDetailsContainer">
 
-                    <h3 className="projectDetailsSubTitle">Features: </h3>
-                    <div className = "projectDetailsInfoBlockContainer"> 
-                        <p>&gt; Scoring system with dynamic point gains and losses based on player actions</p>
-                        <p>&gt; Player-controlled point economy with multiple spending options, including prize redemption, claw machines, and additional gameplay </p>
-                        <p>&gt; Multiple interactive mini-games with dynamic outcomes based on player input that players can choose from to accumulate points </p>
-                        <p>&gt; Integrated sound effects and background music triggered by gameplay events </p>
-                        <p>&gt; State-driven animations that respond to player actions and gameplay outcomes </p>
-                        <p>&gt; Persistent storage to save and restore user progress across app sessions </p>
-                        <p>&gt; Mapped keyboard input to in-game actions, allowing intuitive navigation and gameplay control </p>
-                     </div>
+                    <div className="test">
+                        <div className="testInner">
+                            <h3 className="projectDetailsSubTitle">Features:</h3>
+                            <div className = "projectDetailsInfoBlockContainer"> 
+                                <p>&gt; Scoring system with dynamic point gains and losses based on player actions</p>
+                                <p>&gt; Player-controlled point economy with multiple spending options, including prize redemption, claw machines, and additional gameplay </p>
+                                <p>&gt; Multiple interactive mini-games with dynamic outcomes based on player input that players can choose from to accumulate points </p>
+                                <p>&gt; Integrated sound effects and background music triggered by gameplay events </p>
+                                <p>&gt; State-driven animations that respond to player actions and gameplay outcomes </p>
+                                <p>&gt; Persistent storage to save and restore user progress across app sessions </p>
+                                <p>&gt; Mapped keyboard input to in-game actions, allowing intuitive navigation and gameplay control </p>
+                            </div>
+                        </div>
 
-                    <h3 className="projectDetailsSubTitle">Tools Used: </h3>
-                    <div className = "projectDetailsInfoBlockContainer"> 
-                        <h4> &gt; Core Frameworks & Libraries: </h4>
-                        <p> React, Electron, React Router DOM </p>
-                        <h4> &gt; Programming Languages: </h4>
-                        <p> JavaScript, HTML, CSS </p>
-                        <h4> &gt; Build & Packaging: </h4>
-                        <p> Vite, Node.js, npm, Electron Builder </p>
+                        <div className="testInner">
+                            <h3 className="projectDetailsSubTitle">Tools Used: </h3>
+                            <div className = "projectDetailsInfoBlockContainer"> 
+                                <h4> &gt; Core Frameworks & Libraries: </h4>
+                                <p> React, Electron, React Router DOM </p>
+                                <h4> &gt; Programming Languages: </h4>
+                                <p> JavaScript, HTML, CSS </p>
+                                <h4> &gt; Build & Packaging: </h4>
+                                <p> Vite, Node.js, npm, Electron Builder </p>
+                            </div>
+                        </div>
                     </div>
 
                     <h3 className="projectDetailsSubTitle"> Timeline: </h3>
-                    <div className = "projectDetailsInfoBlockContainer"> 
-                        <p>12/2024 ............... Project started</p>
-                        <p>04/2025 ................ First Github release (Arcade V1.0.0 for Mac)</p>
-                        <p>06/2025 ............... Second Github release (Arcade V1.0.1 for Mac)</p>
-                        <p>08/2025 ............... Third + Fourth Github releases (Arcade V1.0.2 &  V1.0.3 for Mac)</p>
-                        <p>09/2025 ............... Fifth Github release (Arcade V1.0.4 for Mac)</p>
-                        <p>10/2025 ............... Sixth Github release (Arcade V1.0.5 for Mac)</p>
+
+                    <div className = "projectDetailsInfoBlockContainer timelineContainerLarge"> 
+                        <div className = "timelineContainerInner">
+                            <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div></div>
+                            <p>&nbsp; 12/2024 &#8594; Project started</p>
+                        </div>
+                        <div className = "timelineContainerInner">
+                            <div className="timeline"><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDot"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div></div>
+                            <p>&nbsp; 04/2025 &#8594; First Github release (Arcade V1.0.0 for Mac)</p>
+                        </div>
+                        <div className = "timelineContainerInner">
+                            <div className="timeline"><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDot"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div></div>
+                            <p>&nbsp; 06/2025 &#8594; Second Github release (Arcade V1.0.1 for Mac)</p>
+                        </div>
+                        <div className = "timelineContainerInner">
+                            <div className="timeline"><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDot"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div></div>
+                            <p>&nbsp; 08/2025 &#8594; Third + Fourth Github releases (Arcade V1.0.2 &  V1.0.3 for Mac)</p>
+                        </div>
+                        <div className = "timelineContainerInner">
+                            <div className="timeline"><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDot"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div></div>
+                            <p>&nbsp; 09/2025 &#8594; Fifth Github release (Arcade V1.0.4 for Mac)</p>
+                        </div>
+                        <div className = "timelineContainerInner">
+                            <div className="timeline"><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDot"></div></div>
+                            <p>&nbsp; 10/2025 &#8594; Sixth Github release (Arcade V1.0.5 for Mac) </p>
+                        </div>
+                    </div>
+
+                    <div className = "projectDetailsInfoBlockContainer timelineContainerSmall"> 
+                        <div className = "timelineContainerInner">
+                            <p> &nbsp; 12/2024 </p>
+                            <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
+                            <p> &nbsp; Project started</p>
+                        </div>
+
+                        <div className = "timelineContainerInner">
+                            <p>&nbsp; 04/2025 </p>
+                            <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
+                            <p> &nbsp; First Github release (Arcade V1.0.0 for Mac)</p>
+                        </div>
+                        
+                        <div className = "timelineContainerInner">
+                            <p>&nbsp; 06/2025</p>
+                            <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
+                            <p> &nbsp; Second Github release (Arcade V1.0.1 for Mac)</p>
+                        </div>
+                        
+                        <div className = "timelineContainerInner">
+                            <p>&nbsp; 08/2025</p>
+                            <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
+                            <p> &nbsp; Third + Fourth Github releases (Arcade V1.0.2 &  V1.0.3 for Mac)</p>
+                        </div>
+                        
+                        <div className = "timelineContainerInner">
+                            <p> &nbsp; 09/2025 </p>
+                            <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
+                            <p> &nbsp; Fifth Github release (Arcade V1.0.4 for Mac)</p>
+                        </div>
+
+                        <div className = "timelineContainerInner">
+                            <p> &nbsp; 10/2025 </p>
+                            <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
+                            <p> &nbsp; Sixth Github release (Arcade V1.0.5 for Mac) </p>
+                        </div>
                     </div>
 
                 </div>
 
-                <h2 className="projectSubTitle"> Video Content: </h2>
-                <div className="projectVideoSectionContainer">
+                <h2 className="projectSubTitle"> Project Media: </h2>
+                <div className = "projectDetailsContainer">
+                    <h3 className="projectDetailsSubTitle"> Video Content: </h3>
+                    <div className="projectVideoSectionContainer">
 
-                    <div className="projectVideoContainer">
-                        {videoTitles.map((video, index) => (
+                        <div className="projectVideoContainer">
+                            {videoTitles.map((video, index) => (
 
-                            openFullVideoSection ? (
-
-                                <a className = "projectVideoCard" href={videoLinks[index]} target="_blank">
-                                    <p className="projectVideoMobileWatch"> &#9654; Watch </p> 
-                                    <p>
-                                        <span className="projectVideoNormalWatch"> &#9654; </span> {videoTitles[index]}
-                                    </p>
-                                    <img src={videoImages[index]}/>
-                                </a>
-
-                            ) : (
-
-                                index < 3 ? (
+                                openFullVideoSection ? (
 
                                     <a className = "projectVideoCard" href={videoLinks[index]} target="_blank">
-                                        <p className="projectVideoMobileWatch"> &#9654; Watch </p> 
-                                        <p>
-                                            <span className="projectVideoNormalWatch"> &#9654; </span> {videoTitles[index]}
-                                        </p>
-                                        <img src={videoImages[index]}/>
+                                        <p> &#9654; Watch {videoTitles[index]}</p> 
+                                        <div className="projectVideoCardInner">
+                                            <img src={videoImages[index]}/>
+                                            <p>{videoSummaries[index]}</p>
+                                        </div>
                                     </a>
 
                                 ) : (
 
-                                    null
+                                    index < 3 ? (
+
+                                        <a className = "projectVideoCard" href={videoLinks[index]} target="_blank">
+                                            <p> &#9654; Watch {videoTitles[index]}</p> 
+                                            <div className="projectVideoCardInner">
+                                                <img src={videoImages[index]}/>
+                                                <p>{videoSummaries[index]}</p>
+                                            </div>
+                                        </a>
+
+                                    ) : (
+
+                                        null
+
+                                    )
 
                                 )
+                    
+                            ))}
+                        </div>
 
-                            )
+                        {openFullVideoSection ? (
+
+                            <button className="projectGeneralButton" onClick = {() => setOpenFullVideoSection(false)}> Collapse All Videos &#9650; </button>
+
+                        ) : (
+
+                            <button className="projectGeneralButton" onClick = {() => setOpenFullVideoSection(true)}> Expand All Videos &#9660; </button>
+
+                        )}
+
+                    </div>
                 
-                        ))}
+                    <h3 className="projectDetailsSubTitle"> External Links: </h3>
+                    <div className = "projectLinksContainer">
+                        <a className = "projectLinkButton" href="https://github.com/MichelleW1234/Arcade.git" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
+                        <a className = "projectLinkButton" href="https://github.com/MichelleW1234/Arcade/releases/tag/v1.0.5" target="_blank" rel="noopener noreferrer"> Go to Arcade v1.0.5 </a>
+                        <a className = "projectLinkButton" href="https://github.com/MichelleW1234/Arcade/releases" target="_blank" rel="noopener noreferrer"> Go to All Arcade Releases</a>
                     </div>
 
-                    {openFullVideoSection ? (
-
-                        <button className="projectGeneralButton" onClick = {() => setOpenFullVideoSection(false)}> Collapse All Videos &#9650; </button>
-
-                    ) : (
-
-                        <button className="projectGeneralButton" onClick = {() => setOpenFullVideoSection(true)}> Expand All Videos &#9660; </button>
-
-                    )}
-
-                </div>
-                
-                <h2 className="projectSubTitle"> Project Links: </h2>
-                <div className = "projectLinksContainer">
-                    <a className = "projectLinkButton" href="https://github.com/MichelleW1234/Arcade.git" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
-                    <a className = "projectLinkButton" href="https://github.com/MichelleW1234/Arcade/releases/tag/v1.0.5" target="_blank" rel="noopener noreferrer"> Go to Arcade v1.0.5 </a>
-                    <a className = "projectLinkButton" href="https://github.com/MichelleW1234/Arcade/releases" target="_blank" rel="noopener noreferrer"> Go to All Arcade Releases</a>
                 </div>
 
                 <button className = "projectGeneralButton" onClick = {() => ScrollBackToTop()}> &#9650; Back to Top </button>

@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
-import Arcade from "../../../images/Arcade.svg";
+import Arcade from "../../../images/Arcade.png";
 import TritonTurnup from "../../../images/TritonTurnup.svg";
-import Scripta from "../../../images/Scripta.svg";
+import Scripta from "../../../images/Scripta.png";
 
 import "./Projects.css";
 
@@ -28,21 +28,16 @@ function Projects() {
         {cardNames.map((card, index) => (
 
           <div key = {index} className = "projectContainer">
-            <div className = "projectCard">
+            <div className = {`projectCard projectCard-${card}Small`}>
 
               <h3>{cardNames[index]}</h3>
               <div className="projectHorizontalLine"></div>
 
-              <div className = "projectIntroContainer">
-                <div>
-                  <img className= "projectImage" src={cardImages[index]}/>
-                </div>
-                <div className="projectSummaryContainer">
-                  <h4> Project Type: </h4> 
-                  <p> {cardTypes[index]} </p>
-                  <h4>Summary: </h4> 
-                  <p> {cardSummaries[index]} </p>
-                </div>
+              <div className="projectSummaryContainer">
+                <h4> Project Type: </h4> 
+                <p> {cardTypes[index]} </p>
+                <h4>Summary: </h4> 
+                <p> {cardSummaries[index]} </p>
               </div>
 
             </div>

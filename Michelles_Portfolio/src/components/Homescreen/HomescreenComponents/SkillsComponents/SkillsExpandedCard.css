@@ -73,11 +73,18 @@
 
 @media (max-device-width: 1024px) and (pointer: coarse){
 
+    .skillExpandedCardFlag{
+
+        position: fixed;
+
+    } 
+    
     .skillExpandedCard{
         
         gap: 3.5rem;
 
     }
+
 
     .skillExpandedCardButton {
 
@@ -103,25 +110,31 @@
 
 
 
-@media (max-width: 900px) and (pointer: coarse){
-
-    .skillExpandedCardDescription {
-
-        gap: 2rem;
-
-    }
-
-}
-
-
 
 @media (max-width: 900px) and (pointer: fine){
+
+    .skillExpandedCardFlag{
+
+        position: fixed;
+
+    } 
 
     .skillExpandedCard{
 
         gap: 3.5rem;
 
     }
+
+    .skillExpandedCardDescription {
+
+        gap: 1rem;
+
+    }
+
+}
+
+
+@media (max-width: 600px) and (pointer: coarse){
 
     .skillExpandedCardDescription {
 

@@ -3,6 +3,7 @@ import {useState} from "react";
 import Introduction from "./HomescreenComponents/Introduction.jsx";
 import Projects from "./HomescreenComponents/Projects.jsx";
 import Skills from "./HomescreenComponents/Skills.jsx";
+import TechStack from "./HomescreenComponents/TechStack.jsx";
 import Contact from "./HomescreenComponents/Contact.jsx";
 
 import {useActiveSection} from "../../providers/ActiveSectionProvider.jsx";
@@ -19,7 +20,9 @@ function Homescreen() {
     <>
 
       <div className="heading">
-        <h1 className = "title"> Michelle Wee </h1>
+        <div className="projectTitleIconContainer">
+          <h1 className = "title"> Michelle Wee </h1>
+        </div>
         <div className="horizontalLine"></div>
       </div>
 
@@ -31,6 +34,7 @@ function Homescreen() {
             <button className={ActiveSection === 0 ? "navButtonActive" : "navButton"} onClick = {() => setActiveSection(0)}> Introduction </button>
             <button className={ActiveSection === 1 ? "navButtonActive" : "navButton"} onClick = {() => setActiveSection(1)}> Projects </button>
             <button className={ActiveSection === 2 ? "navButtonActive" : "navButton"} onClick = {() => setActiveSection(2)}> Skills </button>
+            <button className={ActiveSection === 3 ? "navButtonActive" : "navButton"} onClick = {() => setActiveSection(3)}> Tech Stack </button>
           </div>
 
           {ActiveSection === 0 ? (
@@ -45,7 +49,11 @@ function Homescreen() {
 
             <Skills/>
 
-          ) : null}
+          ) : ActiveSection === 3 ?( 
+
+            <TechStack/>
+            
+          ): null}
 
         </div>
 

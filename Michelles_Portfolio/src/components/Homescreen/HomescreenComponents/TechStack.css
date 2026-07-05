@@ -1,0 +1,56 @@
+.technologyContainer{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 3rem;
+  padding: 1rem;
+
+  color: white;
+
+}
+
+
+.technology{
+
+  height: 10rem;
+
+}
+
+
+@media (max-device-width: 1024px) and (pointer: coarse){
+
+  .skillsContainer{
+
+    padding: 0rem;
+    gap: 2rem;
+
+  }
+
+  .technology{
+
+    height: 5rem;
+
+  }
+
+}
+
+
+@media (max-width: 900px) and (pointer: fine){
+
+  .technologyContainer{
+
+    padding: 0rem;
+    gap: 2rem;
+
+  }
+
+  .technology{
+
+    height: 8rem;
+
+  }
+
+}
