@@ -1,10 +1,10 @@
 .projectsContainer{
 
+    width: 90%;
     display: flex;
     flex-direction: column;
 
     gap: 3rem;
-    padding: 1rem;
 
 }
 
@@ -118,6 +118,7 @@
 
     .projectsContainer{
 
+        width: 95%;
         gap: 5rem;
 
     }
@@ -174,25 +175,11 @@
 
 
 
-
-@media (max-device-width: 600px) and (pointer: coarse) {
-
-    .projectCard{
-
-        width: 100%;
-
-        padding: 2rem;
-
-    }
-
-}
-
-
-
 @media (max-width: 900px) and (pointer: fine) {
 
     .projectsContainer{
 
+        width: 95%;
         gap: 5rem;
 
     }
@@ -221,6 +208,26 @@
         text-align: center;
 
         gap: 1rem;
+
+    }
+
+}
+
+
+
+@media (max-device-width: 600px) and (pointer: coarse) {
+
+    .projectsContainer{
+
+        width: 100%;
+
+    }
+
+    .projectCard{
+
+        width: 100%;
+
+        padding: 2rem;
 
     }
 

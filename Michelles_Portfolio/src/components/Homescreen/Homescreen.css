@@ -34,14 +34,13 @@
 
 .swipingContentScreen {
 
+  width: 100%;
   display: flex;
   flex-direction: column;
 
   gap: 3rem;
   padding-top: 6rem;
   padding-bottom: 6rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
 
 }
 
@@ -100,9 +99,35 @@
 
   }
 
+
+  .swipingContentScreen {
+
+    padding-left: 0rem;
+    padding-right: 0rem;
+
+  }
+
+
+  .subTitle{
+
+    mask-image: linear-gradient(to right, transparent 0%, rgb(220, 183, 255) 25%, rgb(220, 183, 255) 75%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(220, 183, 255) 25%, rgb(220, 183, 255) 75%, transparent 100%);
+
+  }
+ 
+
 }
 
+@media (max-width: 900px) and (pointer: fine){
 
+  .subTitle{
+
+    mask-image: linear-gradient(to right, transparent 0%, rgb(220, 183, 255) 25%, rgb(220, 183, 255) 75%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(220, 183, 255) 25%, rgb(220, 183, 255) 75%, transparent 100%);
+
+  }
+
+}
 
 @media (max-device-width: 600px) and (pointer: coarse) {
 
@@ -115,6 +140,17 @@
   .swipingContentScreen {
 
     gap: 5rem;
+
+    padding-left: 0rem;
+    padding-right: 0rem;
+
+  }
+
+
+  .subTitle{
+
+    mask-image: linear-gradient(to right, transparent 0%, rgb(220, 183, 255) 15%, rgb(220, 183, 255) 85%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(220, 183, 255) 15%, rgb(220, 183, 255) 85%, transparent 100%);
 
   }
  

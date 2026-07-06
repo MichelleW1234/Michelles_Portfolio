@@ -4,72 +4,12 @@
     flex-direction: column;
     align-items: center;
 
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     gap: 4rem;
 
 }
 
-.upsideDownTitle{
-
-transform: rotate(180deg);
-
-}
-
-.projectTitleIconContainer{
-
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    padding: 2rem;
-    gap: 2rem;
-    
-    color: rgb(253, 225, 255);
-    background-color: rgb(0, 0, 0);
-
-    mask-image: linear-gradient(to right, transparent 0%, black 35%, black 65%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 35%, black 65%, transparent 100%);
-
-}
-
-.projectTitleIconContainer-Arcade{
-
-    background-image:
-        linear-gradient(rgb(0, 0, 0, 0.75), rgb(0, 0, 0, 0)),
-        url("../../../images/Arcade.png");
-
-    background-size: contain;
-    background-position: center;
-
-}
-
-
-.projectTitleIconContainer-Scripta{
-
-    background-image:
-        linear-gradient(rgb(0, 0, 0, 0.75), rgb(0, 0, 0, 0)),
-        url("../../../images/Scripta.png");
-
-    background-size: contain;
-    background-position: center;
-
-
-}
-
-
-.projectTitleIconContainer-TritonTurnUp{
-
-    background-image: 
-        linear-gradient(rgb(0, 0, 0, 0.75), rgb(0, 0, 0, 0)),
-        url("../../../images/TritonTurnup.svg");
-
-    background-size: contain;
-    background-position: center;
-
-}
 
 .projectSubTitle{
 
@@ -83,8 +23,8 @@ transform: rotate(180deg);
     background-color: rgb(158, 218, 255);
     box-shadow: 0 0 10px 5px rgb(130, 163, 254);
 
-    mask-image: linear-gradient(to right, transparent 0%, black 35%, black 65%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 35%, black 65%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, rgb(158, 218, 255) 35%, rgb(158, 218, 255) 65%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(158, 218, 255) 35%, rgb(158, 218, 255) 65%, transparent 100%);
 
 }
 
@@ -108,12 +48,13 @@ transform: rotate(180deg);
 
 
 
+
+
 .projectDetailsContainer{
 
     width: 90%;
     display: flex;
     flex-direction: column;
-    align-items: center;
 
     gap: 4rem;
     padding: 1rem;
@@ -157,6 +98,8 @@ transform: rotate(180deg);
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     gap: 2rem;
     padding-left: 2rem;
@@ -181,6 +124,15 @@ transform: rotate(180deg);
         drop-shadow(0 0 2px rgb(255, 255, 255))
         drop-shadow(0 0 3px  rgb(255, 255, 255));
 
+}
+
+.timelineContainerLarge{
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 2rem;
+    
 }
 
 .timelineContainerSmall{
@@ -289,11 +241,10 @@ transform: rotate(180deg);
 
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
 
     gap: 3rem;
-    margin-bottom: 3rem;
-
 }
 
 
@@ -313,9 +264,16 @@ transform: rotate(180deg);
 
     .projectScreen {
 
-        margin-top: 6rem;
-        margin-bottom: 6rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
         gap: 5rem;
+
+    }
+
+    .projectSubTitle{
+
+        mask-image: linear-gradient(to right, transparent 0%, rgb(158, 218, 255) 25%, rgb(158, 218, 255) 75%, transparent 100%);
+        -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(158, 218, 255) 25%, rgb(158, 218, 255) 75%, transparent 100%);
 
     }
 
@@ -434,8 +392,17 @@ transform: rotate(180deg);
 
     .projectDetailsInfoBlockContainer {
 
+        align-items: start;
+
         padding-left: 0rem;
         padding-right: 0rem;
+
+    }
+
+    .projectSubTitle{
+
+        mask-image: linear-gradient(to right, transparent 0%, rgb(158, 218, 255) 25%, rgb(158, 218, 255) 75%, transparent 100%);
+        -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(158, 218, 255) 25%, rgb(158, 218, 255) 75%, transparent 100%);
 
     }
 
@@ -494,8 +461,18 @@ transform: rotate(180deg);
 
     .projectDetailsInfoBlockContainer {
 
+        align-items: start;
+
         padding-left: 0rem;
         padding-right: 0rem;
+
+    }
+
+
+    .projectSubTitle{
+
+        mask-image: linear-gradient(to right, transparent 0%, rgb(158, 218, 255) 15%, rgb(158, 218, 255) 85%, transparent 100%);
+        -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(158, 218, 255) 15%, rgb(158, 218, 255) 85%, transparent 100%);
 
     }
 

@@ -24,7 +24,7 @@ function Homescreen() {
     <>
 
       <div className="heading">
-        <div className="projectTitleIconContainer">
+        <div className="titleContainer">
           <h1 className = "title"> Michelle Wee </h1>
         </div>
         <div className="horizontalLine"></div>
@@ -61,7 +61,7 @@ function Homescreen() {
 
       <div className="heading">
         <div className="horizontalLine"></div>
-        <div className="projectTitleIconContainer">
+        <div className="titleContainer">
           <h2>Let's Connect!</h2>
           <div className = "contactContainer">
             <a className = "teleportationButton contactBox" href="mailto: michellew1822@gmail.com"> 

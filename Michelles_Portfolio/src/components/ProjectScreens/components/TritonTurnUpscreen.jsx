@@ -15,7 +15,7 @@ function TritonTurnUpscreen() {
     <>
 
         <div className="heading">
-            <div className="projectTitleIconContainer projectTitleIconContainer-TritonTurnUp">
+            <div className="titleContainer titleContainer-TritonTurnUp">
                 <h1 className = "title"> TritonTurnUp </h1>
             </div>
             <div className="horizontalLine"></div>
@@ -48,72 +48,93 @@ function TritonTurnUpscreen() {
                     </div>
                 </div>
 
-                <h3 className="projectDetailsSubTitle"> Timeline: </h3>
-                <div className = "projectDetailsInfoBlockContainer timelineContainerLarge"> 
-                    <div className = "timelineContainerInner">
-                        <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div></div>
-                        <p>&nbsp; 10/10/24 &#8594; First team meet-up and start of the planning stage</p>
+                <div className="test">
+
+                    <div className="testInner">
+                        <h3 className="projectDetailsSubTitle">Tools Used: </h3>
+                        <div className = "projectDetailsInfoBlockContainer"> 
+                            <h4> &gt; Core Frameworks & Libraries: </h4>
+                            <p> React, React Router, React Big Calendar </p>
+                            <h4> &gt; Programming Languages: </h4>
+                            <p> JavaScript, HTML, CSS, Python </p>
+                            <h4> &gt; Build & Packaging: </h4>
+                            <p> Vite, Node.js, npm </p>
+                            <h4> &gt; Authentication / APIs: </h4>
+                            <p> Google OAuth, Google APIs, JWT Authentication </p>
+                        </div>
                     </div>
-                    <div className = "timelineContainerInner">
-                        <div className="timeline"><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDot"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div></div>
-                        <p>&nbsp; 10/17/24 &#8594; Team meet-up for the creation of vision document</p>
+                    
+                    <div className="testInner">
+                        <h3 className="projectDetailsSubTitle"> Timeline: </h3>
+                        <div className = "projectDetailsInfoBlockContainer">
+                            <div className = "timelineContainerLarge"> 
+                                <div className = "timelineContainerInner">
+                                    <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div></div>
+                                    <p>&nbsp; 10/10/24 &#8594; First team meet-up and start of the planning stage</p>
+                                </div>
+                                <div className = "timelineContainerInner">
+                                    <div className="timeline"><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDot"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div></div>
+                                    <p>&nbsp; 10/17/24 &#8594; Team meet-up for the creation of vision document</p>
+                                </div>
+                                <div className = "timelineContainerInner">
+                                    <div className="timeline"><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDot"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div></div>
+                                    <p>&nbsp; 10/24/24 &#8594; Conducted user research interviews and pitched the app idea</p>
+                                </div>
+                                <div className = "timelineContainerInner">
+                                    <div className="timeline"><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDot"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div></div>
+                                    <p>&nbsp; 10/31/24 &#8594; Team meet-up for role delegation</p>
+                                </div>
+                                <div className = "timelineContainerInner">
+                                    <div className="timeline"><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDot"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div></div>
+                                    <p>&nbsp; 11/6/24 &#8594; First meeting with mentor to discuss progress</p>
+                                </div>
+                                <div className = "timelineContainerInner">
+                                    <div className="timeline"><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDot"></div></div>
+                                    <p>&nbsp; 12/6/24 &#8594; Project deadline and submission </p>
+                                </div>
+                            </div>
+
+                            <div className = "timelineContainerSmall"> 
+                                <div className = "timelineContainerInner">
+                                    <p> &nbsp; 10/10/24 </p>
+                                    <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
+                                    <p> &nbsp; First team meet-up and start of the planning stage</p>
+                                </div>
+
+                                <div className = "timelineContainerInner">
+                                    <p>&nbsp; 10/17/24 </p>
+                                    <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
+                                    <p> &nbsp; Team meet-up for the creation of vision document</p>
+                                </div>
+                                
+                                <div className = "timelineContainerInner">
+                                    <p>&nbsp; 10/24/24</p>
+                                    <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
+                                    <p> &nbsp; Conducted user research interviews and pitched the app idea</p>
+                                </div>
+                                
+                                <div className = "timelineContainerInner">
+                                    <p>&nbsp; 10/31/24</p>
+                                    <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
+                                    <p> &nbsp; Team meet-up for role delegation</p>
+                                </div>
+                                
+                                <div className = "timelineContainerInner">
+                                    <p> &nbsp; 11/6/24 </p>
+                                    <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
+                                    <p> &nbsp; First meeting with mentor to discuss progress</p>
+                                </div>
+
+                                <div className = "timelineContainerInner">
+                                    <p> &nbsp; 12/6/24 </p>
+                                    <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
+                                    <p> &nbsp; Project deadline and submission </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className = "timelineContainerInner">
-                        <div className="timeline"><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDot"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div></div>
-                        <p>&nbsp; 10/24/24 &#8594; Conducted user research interviews and pitched the app idea</p>
-                    </div>
-                    <div className = "timelineContainerInner">
-                        <div className="timeline"><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDot"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div></div>
-                        <p>&nbsp; 10/31/24 &#8594; Team meet-up for role delegation</p>
-                    </div>
-                    <div className = "timelineContainerInner">
-                        <div className="timeline"><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDot"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div></div>
-                        <p>&nbsp; 11/6/24 &#8594; First meeting with mentor to discuss progress</p>
-                    </div>
-                    <div className = "timelineContainerInner">
-                        <div className="timeline"><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDot"></div></div>
-                        <p>&nbsp; 12/6/24 &#8594; Project deadline and submission </p>
-                    </div>
+
                 </div>
-
-                <div className = "projectDetailsInfoBlockContainer timelineContainerSmall"> 
-                    <div className = "timelineContainerInner">
-                        <p> &nbsp; 10/10/24 </p>
-                        <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
-                        <p> &nbsp; First team meet-up and start of the planning stage</p>
-                    </div>
-
-                    <div className = "timelineContainerInner">
-                        <p>&nbsp; 10/17/24 </p>
-                        <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
-                        <p> &nbsp; Team meet-up for the creation of vision document</p>
-                    </div>
-                    
-                    <div className = "timelineContainerInner">
-                        <p>&nbsp; 10/24/24</p>
-                        <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
-                        <p> &nbsp; Conducted user research interviews and pitched the app idea</p>
-                    </div>
-                    
-                    <div className = "timelineContainerInner">
-                        <p>&nbsp; 10/31/24</p>
-                        <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
-                        <p> &nbsp; Team meet-up for role delegation</p>
-                    </div>
-                    
-                    <div className = "timelineContainerInner">
-                        <p> &nbsp; 11/6/24 </p>
-                        <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
-                        <p> &nbsp; First meeting with mentor to discuss progress</p>
-                    </div>
-
-                    <div className = "timelineContainerInner">
-                        <p> &nbsp; 12/6/24 </p>
-                        <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
-                        <p> &nbsp; Project deadline and submission </p>
-                    </div>
-                </div>
-
             </div>
 
             <h2 className="projectSubTitle"> Project Media: </h2>
@@ -141,8 +162,8 @@ function TritonTurnUpscreen() {
 
         <div className="heading">
             <div className="horizontalLine"></div>
-            <div className="projectTitleIconContainer projectTitleIconContainer-TritonTurnUp">
-                <h1 className = "title upsideDownTitle"> TritonTurnUp </h1>
+            <div className="titleContainer titleContainer-TritonTurnUp">
+                <h1 className = "title title-UpsideDown"> TritonTurnUp </h1>
             </div>
         </div>
 

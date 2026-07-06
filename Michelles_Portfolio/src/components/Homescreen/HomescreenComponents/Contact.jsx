@@ -9,7 +9,7 @@ function Contact() {
   return (
     <div className = "sectionContainer">
 
-      <div className = "projectTitleIconContainer contactContainer">
+      <div className = "titleContainer contactContainer">
 
         
         <a className = "teleportationButton contactBox" href="mailto: michellew1822@gmail.com"> 

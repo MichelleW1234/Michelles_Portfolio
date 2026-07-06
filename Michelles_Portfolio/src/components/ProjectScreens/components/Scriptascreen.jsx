@@ -14,7 +14,7 @@ function Scriptascreen() {
 
     <>
         <div className="heading">
-            <div className="projectTitleIconContainer projectTitleIconContainer-Scripta">
+            <div className="titleContainer titleContainer-Scripta">
                 <h1 className = "title"> Scripta </h1>
             </div>
             <div className="horizontalLine"></div>
@@ -41,7 +41,7 @@ function Scriptascreen() {
                         <h3 className="projectDetailsSubTitle">Tools Used: </h3>
                         <div className = "projectDetailsInfoBlockContainer"> 
                             <h4> &gt; Core Frameworks & Libraries: </h4>
-                            <p> React, Electron, React Router DOM </p>
+                            <p> React, Electron, React Router </p>
                             <h4> &gt; Programming Languages: </h4>
                             <p> JavaScript, HTML, CSS </p>
                             <h4> &gt; Build & Packaging: </h4>
@@ -51,7 +51,8 @@ function Scriptascreen() {
                 </div>
 
                 <h3 className="projectDetailsSubTitle"> Timeline: </h3>
-                <div className = "projectDetailsInfoBlockContainer timelineContainerLarge"> 
+                <div className = "projectDetailsInfoBlockContainer">
+                    <div className = "timelineContainerLarge"> 
                         <div className = "timelineContainerInner">
                             <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div></div>
                             <p>&nbsp; 10/2025 &#8594; Project started</p>
@@ -62,7 +63,7 @@ function Scriptascreen() {
                         </div>
                     </div>
 
-                    <div className = "projectDetailsInfoBlockContainer timelineContainerSmall"> 
+                    <div className = "timelineContainerSmall"> 
                         <div className = "timelineContainerInner">
                             <p> &nbsp; 10/2025 </p>
                             <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
@@ -75,7 +76,7 @@ function Scriptascreen() {
                             <p> &nbsp; First Github release (Scripta V1.0.0 for Mac)</p>
                         </div>
                     </div>
-
+                </div>
             </div>
 
             <h2 className="projectSubTitle"> Project Media: </h2>
@@ -104,8 +105,8 @@ function Scriptascreen() {
 
         <div className="heading">
             <div className="horizontalLine"></div>
-            <div className="projectTitleIconContainer projectTitleIconContainer-Scripta">
-                <h1 className = "title upsideDownTitle"> Scripta </h1>
+            <div className="titleContainer titleContainer-Scripta">
+                <h1 className = "title title-UpsideDown"> Scripta </h1>
             </div>
         </div>
 

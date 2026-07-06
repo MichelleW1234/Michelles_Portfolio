@@ -57,7 +57,7 @@ function Arcadescreen() {
 
         <>
             <div className="heading">
-                <div className="projectTitleIconContainer projectTitleIconContainer-Arcade">
+                <div className="titleContainer titleContainer-Arcade">
                     <h1 className = "title"> Arcade </h1>
                 </div>
                 <div className="horizontalLine"></div>
@@ -88,7 +88,7 @@ function Arcadescreen() {
                             <h3 className="projectDetailsSubTitle">Tools Used: </h3>
                             <div className = "projectDetailsInfoBlockContainer"> 
                                 <h4> &gt; Core Frameworks & Libraries: </h4>
-                                <p> React, Electron, React Router DOM </p>
+                                <p> React, Electron, React Router </p>
                                 <h4> &gt; Programming Languages: </h4>
                                 <p> JavaScript, HTML, CSS </p>
                                 <h4> &gt; Build & Packaging: </h4>
@@ -99,68 +99,70 @@ function Arcadescreen() {
 
                     <h3 className="projectDetailsSubTitle"> Timeline: </h3>
 
-                    <div className = "projectDetailsInfoBlockContainer timelineContainerLarge"> 
-                        <div className = "timelineContainerInner">
-                            <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div></div>
-                            <p>&nbsp; 12/2024 &#8594; Project started</p>
-                        </div>
-                        <div className = "timelineContainerInner">
-                            <div className="timeline"><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDot"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div></div>
-                            <p>&nbsp; 04/2025 &#8594; First Github release (Arcade V1.0.0 for Mac)</p>
-                        </div>
-                        <div className = "timelineContainerInner">
-                            <div className="timeline"><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDot"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div></div>
-                            <p>&nbsp; 06/2025 &#8594; Second Github release (Arcade V1.0.1 for Mac)</p>
-                        </div>
-                        <div className = "timelineContainerInner">
-                            <div className="timeline"><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDot"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div></div>
-                            <p>&nbsp; 08/2025 &#8594; Third + Fourth Github releases (Arcade V1.0.2 &  V1.0.3 for Mac)</p>
-                        </div>
-                        <div className = "timelineContainerInner">
-                            <div className="timeline"><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDot"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div></div>
-                            <p>&nbsp; 09/2025 &#8594; Fifth Github release (Arcade V1.0.4 for Mac)</p>
-                        </div>
-                        <div className = "timelineContainerInner">
-                            <div className="timeline"><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDot"></div></div>
-                            <p>&nbsp; 10/2025 &#8594; Sixth Github release (Arcade V1.0.5 for Mac) </p>
-                        </div>
-                    </div>
-
-                    <div className = "projectDetailsInfoBlockContainer timelineContainerSmall"> 
-                        <div className = "timelineContainerInner">
-                            <p> &nbsp; 12/2024 </p>
-                            <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
-                            <p> &nbsp; Project started</p>
-                        </div>
-
-                        <div className = "timelineContainerInner">
-                            <p>&nbsp; 04/2025 </p>
-                            <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
-                            <p> &nbsp; First Github release (Arcade V1.0.0 for Mac)</p>
+                    <div className = "projectDetailsInfoBlockContainer">
+                        <div className = "timelineContainerLarge"> 
+                            <div className = "timelineContainerInner">
+                                <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div></div>
+                                <p>&nbsp; 12/2024 &#8594; Project started</p>
+                            </div>
+                            <div className = "timelineContainerInner">
+                                <div className="timeline"><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDot"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div></div>
+                                <p>&nbsp; 04/2025 &#8594; First Github release (Arcade V1.0.0 for Mac)</p>
+                            </div>
+                            <div className = "timelineContainerInner">
+                                <div className="timeline"><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDot"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div></div>
+                                <p>&nbsp; 06/2025 &#8594; Second Github release (Arcade V1.0.1 for Mac)</p>
+                            </div>
+                            <div className = "timelineContainerInner">
+                                <div className="timeline"><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDot"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div></div>
+                                <p>&nbsp; 08/2025 &#8594; Third + Fourth Github releases (Arcade V1.0.2 &  V1.0.3 for Mac)</p>
+                            </div>
+                            <div className = "timelineContainerInner">
+                                <div className="timeline"><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDot"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div></div>
+                                <p>&nbsp; 09/2025 &#8594; Fifth Github release (Arcade V1.0.4 for Mac)</p>
+                            </div>
+                            <div className = "timelineContainerInner">
+                                <div className="timeline"><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDot"></div></div>
+                                <p>&nbsp; 10/2025 &#8594; Sixth Github release (Arcade V1.0.5 for Mac) </p>
+                            </div>
                         </div>
                         
-                        <div className = "timelineContainerInner">
-                            <p>&nbsp; 06/2025</p>
-                            <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
-                            <p> &nbsp; Second Github release (Arcade V1.0.1 for Mac)</p>
-                        </div>
-                        
-                        <div className = "timelineContainerInner">
-                            <p>&nbsp; 08/2025</p>
-                            <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
-                            <p> &nbsp; Third + Fourth Github releases (Arcade V1.0.2 &  V1.0.3 for Mac)</p>
-                        </div>
-                        
-                        <div className = "timelineContainerInner">
-                            <p> &nbsp; 09/2025 </p>
-                            <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
-                            <p> &nbsp; Fifth Github release (Arcade V1.0.4 for Mac)</p>
-                        </div>
+                        <div className = "timelineContainerSmall"> 
+                            <div className = "timelineContainerInner">
+                                <p> &nbsp; 12/2024 </p>
+                                <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
+                                <p> &nbsp; Project started</p>
+                            </div>
 
-                        <div className = "timelineContainerInner">
-                            <p> &nbsp; 10/2025 </p>
-                            <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
-                            <p> &nbsp; Sixth Github release (Arcade V1.0.5 for Mac) </p>
+                            <div className = "timelineContainerInner">
+                                <p>&nbsp; 04/2025 </p>
+                                <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
+                                <p> &nbsp; First Github release (Arcade V1.0.0 for Mac)</p>
+                            </div>
+                            
+                            <div className = "timelineContainerInner">
+                                <p>&nbsp; 06/2025</p>
+                                <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
+                                <p> &nbsp; Second Github release (Arcade V1.0.1 for Mac)</p>
+                            </div>
+                            
+                            <div className = "timelineContainerInner">
+                                <p>&nbsp; 08/2025</p>
+                                <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
+                                <p> &nbsp; Third + Fourth Github releases (Arcade V1.0.2 &  V1.0.3 for Mac)</p>
+                            </div>
+                            
+                            <div className = "timelineContainerInner">
+                                <p> &nbsp; 09/2025 </p>
+                                <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
+                                <p> &nbsp; Fifth Github release (Arcade V1.0.4 for Mac)</p>
+                            </div>
+
+                            <div className = "timelineContainerInner">
+                                <p> &nbsp; 10/2025 </p>
+                                <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
+                                <p> &nbsp; Sixth Github release (Arcade V1.0.5 for Mac) </p>
+                            </div>
                         </div>
                     </div>
 
@@ -234,8 +236,8 @@ function Arcadescreen() {
 
             <div className="heading">
                 <div className="horizontalLine"></div>
-                <div className="projectTitleIconContainer projectTitleIconContainer-Arcade">
-                    <h1 className = "title upsideDownTitle"> Arcade </h1>
+                <div className="titleContainer titleContainer-Arcade">
+                    <h1 className = "title title-UpsideDown"> Arcade </h1>
                 </div>
             </div>
 
