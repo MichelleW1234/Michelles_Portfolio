@@ -22,7 +22,7 @@ function Scriptascreen() {
 
         <div className="projectScreen">
 
-            <Link className = "projectGeneralButton" to = "/home"> &lt; Back to Home </Link>
+            <Link className = "teleportationButton projectGeneralButton" to = "/home"> &lt; Back to Home </Link>
 
             <h2 className="projectSubTitle">Project Details:</h2>            
             <div className = "projectDetailsContainer">
@@ -82,7 +82,7 @@ function Scriptascreen() {
             <div className = "projectDetailsContainer">
                 <h3 className="projectDetailsSubTitle"> Video Content: </h3>
                 <div className="projectVideoSectionContainer">
-                    <a className = "projectVideoCard" href="https://drive.google.com/file/d/18kaJoc-IkkRINIQjO2polFLivxWjDAy5/view?usp=drive_link" target="_blank">
+                    <a className = "teleportationButton projectVideoCard" href="https://drive.google.com/file/d/18kaJoc-IkkRINIQjO2polFLivxWjDAy5/view?usp=drive_link" target="_blank">
                         <p>&#9654; Watch Demo Video </p> 
                         <div className="projectVideoCardInner">
                             <img src = {ScriptaDemo}/>
@@ -93,14 +93,22 @@ function Scriptascreen() {
 
                 <h3 className="projectDetailsSubTitle"> External Links: </h3>
                 <div className = "projectLinksContainer">
-                    <a className = "projectLinkButton" href="https://github.com/MichelleW1234/Scripta" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
-                    <a className = "projectLinkButton" href="https://github.com/MichelleW1234/Scripta/releases/tag/v.1.0.0" target="_blank" rel="noopener noreferrer"> Go to Scripta v1.0.0 </a>
+                    <a className = "teleportationButton projectLinkButton" href="https://github.com/MichelleW1234/Scripta" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
+                    <a className = "teleportationButton projectLinkButton" href="https://github.com/MichelleW1234/Scripta/releases/tag/v.1.0.0" target="_blank" rel="noopener noreferrer"> Go to Scripta v1.0.0 </a>
                 </div>
             </div>
 
-            <button className = "projectGeneralButton" onClick = {() => ScrollBackToTop()}> &#9650; Back to Top </button>
+            <button className = "teleportationButton projectGeneralButton" onClick = {() => ScrollBackToTop()}> &#9650; Back to Top </button>
 
         </div>
+
+        <div className="heading">
+            <div className="horizontalLine"></div>
+            <div className="projectTitleIconContainer projectTitleIconContainer-Scripta">
+                <h1 className = "title upsideDownTitle"> Scripta </h1>
+            </div>
+        </div>
+
 
     </>
 

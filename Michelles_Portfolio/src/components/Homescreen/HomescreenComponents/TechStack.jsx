@@ -1,13 +1,13 @@
 import {useState} from "react";
 
-import JS from "../../../images/JS.jpg";
-import React from "../../../images/React.jpg";
+import JS from "../../../images/JS.png";
+import React from "../../../images/React.png";
 import CSS from "../../../images/CSS.png";
 import HTML from "../../../images/HTML.png";
 import Figma from "../../../images/Figma.png";
 import Github from "../../../images/Github.png";
-import Electron from "../../../images/Electron.jpeg";
-import Unity from "../../../images/Unity.svg";
+import Electron from "../../../images/Electron.png";
+import Unity from "../../../images/Unity.png";
 
 import "./TechStack.css";
 

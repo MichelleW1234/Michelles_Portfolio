@@ -42,7 +42,7 @@ function Skills() {
 
           <button
             key = {index} 
-            className="skill"
+            className="conditionalButton skill"
             onClick={() => hoveredSkill(index)}
           >
             {item}

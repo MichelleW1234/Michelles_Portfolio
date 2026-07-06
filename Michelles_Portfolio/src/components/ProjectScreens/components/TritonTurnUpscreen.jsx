@@ -23,7 +23,7 @@ function TritonTurnUpscreen() {
 
         <div className = "projectScreen">
 
-            <Link className = "projectGeneralButton" to = "/home"> &lt; Back to Home </Link>
+            <Link className = "teleportationButton projectGeneralButton" to = "/home"> &lt; Back to Home </Link>
 
             <h2 className="projectSubTitle"> Project Details:</h2>
             <div className = "projectDetailsContainer">
@@ -120,7 +120,7 @@ function TritonTurnUpscreen() {
             <div className = "projectDetailsContainer">
                 <h3 className="projectDetailsSubTitle"> Video Content: </h3>
                 <div className="projectVideoSectionContainer">
-                    <a className = "projectVideoCard" href="https://drive.google.com/file/d/1bjoVWfcJ89o7ha2sFHtFunMhr9dIxjtt/view" target="_blank">
+                    <a className = "teleportationButton projectVideoCard" href="https://drive.google.com/file/d/1bjoVWfcJ89o7ha2sFHtFunMhr9dIxjtt/view" target="_blank">
                         <p>&#9654; Watch Demo Video </p> 
                         <div className="projectVideoCardInner">
                             <img src = {TritonTurnupDemo}/>
@@ -131,13 +131,21 @@ function TritonTurnUpscreen() {
 
                 <h3 className="projectDetailsSubTitle"> External Links: </h3>
                 <div className = "projectLinksContainer">
-                    <a className = "projectLinkButton" href="https://github.com/MichelleW1234/CSE-110-Project.git" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
+                    <a className = "teleportationButton projectLinkButton" href="https://github.com/MichelleW1234/CSE-110-Project.git" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
                 </div>
             </div>
 
-            <button className = "projectGeneralButton" onClick = {() => ScrollBackToTop()}> &#9650; Back to Top </button>
+            <button className = "teleportationButton projectGeneralButton" onClick = {() => ScrollBackToTop()}> &#9650; Back to Top </button>
 
         </div>
+
+        <div className="heading">
+            <div className="horizontalLine"></div>
+            <div className="projectTitleIconContainer projectTitleIconContainer-TritonTurnUp">
+                <h1 className = "title upsideDownTitle"> TritonTurnUp </h1>
+            </div>
+        </div>
+
 
     </>
 

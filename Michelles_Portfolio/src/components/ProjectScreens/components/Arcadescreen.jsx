@@ -65,7 +65,7 @@ function Arcadescreen() {
 
             <div className="projectScreen">
 
-                <Link className = "projectGeneralButton" to = "/home"> &lt; Back to Home </Link>
+                <Link className = "teleportationButton projectGeneralButton" to = "/home"> &lt; Back to Home </Link>
 
                 <h2 className="projectSubTitle"> Project Details:</h2>
                 <div className = "projectDetailsContainer">
@@ -176,7 +176,7 @@ function Arcadescreen() {
 
                                 openFullVideoSection ? (
 
-                                    <a className = "projectVideoCard" href={videoLinks[index]} target="_blank">
+                                    <a className = "teleportationButton projectVideoCard" href={videoLinks[index]} target="_blank">
                                         <p> &#9654; Watch {videoTitles[index]}</p> 
                                         <div className="projectVideoCardInner">
                                             <img src={videoImages[index]}/>
@@ -186,9 +186,9 @@ function Arcadescreen() {
 
                                 ) : (
 
-                                    index < 3 ? (
+                                    index < 4 ? (
 
-                                        <a className = "projectVideoCard" href={videoLinks[index]} target="_blank">
+                                        <a className = "teleportationButton projectVideoCard" href={videoLinks[index]} target="_blank">
                                             <p> &#9654; Watch {videoTitles[index]}</p> 
                                             <div className="projectVideoCardInner">
                                                 <img src={videoImages[index]}/>
@@ -209,11 +209,11 @@ function Arcadescreen() {
 
                         {openFullVideoSection ? (
 
-                            <button className="projectGeneralButton" onClick = {() => setOpenFullVideoSection(false)}> Collapse All Videos &#9650; </button>
+                            <button className="conditionalButton projectConditionalButton" onClick = {() => setOpenFullVideoSection(false)}> Collapse All Videos &#9650; </button>
 
                         ) : (
 
-                            <button className="projectGeneralButton" onClick = {() => setOpenFullVideoSection(true)}> Expand All Videos &#9660; </button>
+                            <button className="conditionalButton projectConditionalButton" onClick = {() => setOpenFullVideoSection(true)}> Expand All Videos &#9660; </button>
 
                         )}
 
@@ -221,15 +221,22 @@ function Arcadescreen() {
                 
                     <h3 className="projectDetailsSubTitle"> External Links: </h3>
                     <div className = "projectLinksContainer">
-                        <a className = "projectLinkButton" href="https://github.com/MichelleW1234/Arcade.git" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
-                        <a className = "projectLinkButton" href="https://github.com/MichelleW1234/Arcade/releases/tag/v1.0.5" target="_blank" rel="noopener noreferrer"> Go to Arcade v1.0.5 </a>
-                        <a className = "projectLinkButton" href="https://github.com/MichelleW1234/Arcade/releases" target="_blank" rel="noopener noreferrer"> Go to All Arcade Releases</a>
+                        <a className = "teleportationButton projectLinkButton" href="https://github.com/MichelleW1234/Arcade.git" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
+                        <a className = "teleportationButton projectLinkButton" href="https://github.com/MichelleW1234/Arcade/releases/tag/v1.0.5" target="_blank" rel="noopener noreferrer"> Go to Arcade v1.0.5 </a>
+                        <a className = "teleportationButton projectLinkButton" href="https://github.com/MichelleW1234/Arcade/releases" target="_blank" rel="noopener noreferrer"> Go to All Arcade Releases</a>
                     </div>
 
                 </div>
 
-                <button className = "projectGeneralButton" onClick = {() => ScrollBackToTop()}> &#9650; Back to Top </button>
+                <button className = "teleportationButton projectGeneralButton" onClick = {() => ScrollBackToTop()}> &#9650; Back to Top </button>
     
+            </div>
+
+            <div className="heading">
+                <div className="horizontalLine"></div>
+                <div className="projectTitleIconContainer projectTitleIconContainer-Arcade">
+                    <h1 className = "title upsideDownTitle"> Arcade </h1>
+                </div>
             </div>
 
         </>

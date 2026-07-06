@@ -22,7 +22,7 @@ function SkillsExpandedCard({activeSkill, setActiveSkill}) {
             ))}
           </div>
 
-          <button className = "skillExpandedCardButton" onClick = {() => setActiveSkill(-1)}>Close</button>
+          <button className = "conditionalButton skillExpandedCardButton" onClick = {() => setActiveSkill(-1)}>Close</button>
         </div>
     </div>
 

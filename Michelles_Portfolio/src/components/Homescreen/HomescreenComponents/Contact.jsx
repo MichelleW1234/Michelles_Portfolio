@@ -9,20 +9,17 @@ function Contact() {
   return (
     <div className = "sectionContainer">
 
-      <h2 className = "subTitle"> Let's Connect! </h2>
+      <div className = "projectTitleIconContainer contactContainer">
 
-      <div className = "contactContainer">
-
-        <a className = "contactBox" href="mailto: michellew1822@gmail.com"> 
-          <img className = "contactImage" src={Email}/>
-        </a>
-
-        <a className = "contactBox" href="https://www.linkedin.com/in/michelle-wee123/" target="_blank" rel="noopener noreferrer"> 
-          <img className = "contactImage" src={Linkedin}/>
-        </a>
         
-        <a className = "contactBox" href="https://github.com/MichelleW1234" target="_blank" rel="noopener noreferrer"> 
-          <img className = "contactImage" src={GitHub}/>
+        <a className = "teleportationButton contactBox" href="mailto: michellew1822@gmail.com"> 
+          <img src={Email}/>
+        </a>
+        <a className = "teleportationButton contactBox" href="https://www.linkedin.com/in/michelle-wee123/" target="_blank" rel="noopener noreferrer"> 
+          <img src={Linkedin}/>
+        </a>
+        <a className = "teleportationButton contactBox" href="https://github.com/MichelleW1234" target="_blank" rel="noopener noreferrer"> 
+          <img src={GitHub}/>
         </a>
 
       </div>

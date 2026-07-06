@@ -29,11 +29,14 @@
     justify-content: center;
 
     padding: 3rem 4rem;
-    gap: 3rem;
+    gap: 2rem;
 
     color: rgb(4, 0, 60);
     background-color: rgb(184, 225, 254);
     box-shadow: 0 0 8px 4px rgb(159, 204, 255);
+
+    mask-image: linear-gradient(to right, transparent 0%, rgb(159, 204, 255) 5%, rgb(159, 204, 255) 95%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(159, 204, 255) 5%, rgb(159, 204, 255)k 95%, transparent 100%);
 
 }
 
@@ -101,46 +104,10 @@
 }
 
 
-.projectImage {
-
-    width: 100px;
-
-    padding: 1rem;
-
-    box-shadow: 0 0 6px 3px rgb(191, 0, 255);
-    border-left: 2px solid rgb(153, 0, 255);
-    border-bottom: 2px solid rgb(153, 0, 255);
-    border-top: 2px solid rgb(225, 0, 255);
-    border-right: 2px solid rgb(225, 0, 255);
-
-}
-
 .goToProjectButton {
 
   padding: 1.5rem 2rem;
-  border-radius: 7px;
-
-  color: rgb(0, 0, 164);
-  background-color: rgb(179, 187, 255);
-  border-left: 3.5px solid rgb(0, 13, 134);
-  border-bottom: 3.5px solid rgb(0, 13, 134);
-  border-top: 1px solid rgb(0, 13, 134);
-  border-right: 1px solid rgb(0, 13, 134);
-
-  animation: glowing-light-blue 3s infinite;
-
-}
-
-.goToProjectButton:hover{
-
-  color: white;
-  background-color: rgb(0, 12, 174);
-  border-left: 3.5px solid rgb(0, 4, 58);
-  border-bottom: 3.5px solid rgb(0, 4, 58);
-  border-top: 1px solid rgb(0, 4, 58);
-  border-right: 1px solid rgb(0, 4, 58);
-
-  animation: glowing-dark-blue 3s infinite;
+  border-radius: 30px;
 
 }
 
@@ -182,12 +149,6 @@
 
     }
 
-    .projectImage {
-
-        display: none;
-
-    }
-
     .goToProjectButton {
 
         padding: 1.7rem 2.2rem;
@@ -220,7 +181,7 @@
 
         width: 100%;
 
-        padding: 2rem 1rem;
+        padding: 2rem;
 
     }
 
@@ -247,7 +208,7 @@
 
         width: 100%;
 
-        padding: 2rem 1rem;
+        padding: 2rem;
 
     }
 
@@ -260,12 +221,6 @@
         text-align: center;
 
         gap: 1rem;
-
-    }
-
-    .projectImage {
-
-       display: none;
 
     }
 

@@ -17,6 +17,10 @@
 
   height: 10rem;
 
+  filter: 
+      drop-shadow(0 0 3px rgb(249, 88, 255))
+      drop-shadow(0 0 6px rgb(200, 106, 255));
+
 }
 
 

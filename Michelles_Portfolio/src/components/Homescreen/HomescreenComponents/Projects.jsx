@@ -42,7 +42,7 @@ function Projects() {
 
             </div>
 
-            <Link to = {`${cardPageLinks[index]}`} className = "goToProjectButton"> Read More &gt; </Link>
+            <Link to = {`${cardPageLinks[index]}`} className = "teleportationButton goToProjectButton"> Read More &gt; </Link>
 
           </div>
         ))}

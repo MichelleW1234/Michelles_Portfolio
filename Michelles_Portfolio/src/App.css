@@ -143,6 +143,70 @@ p, button, a {
 
 
 
+.conditionalButton{
+
+  color: rgb(255, 181, 253);
+  border: none;
+  background-color: inherit;
+
+  animation: glowing-dark-pink 3s infinite;
+  transition: transform 0.25s ease;
+
+  img {
+
+    animation: glowing-dark-pink-image 3s infinite;
+
+  }
+
+
+}
+
+
+.conditionalButton:hover {
+
+  color: rgb(255, 217, 254);
+
+  animation:  glowing-light-pink 3s infinite;
+  transform: scale(1.1);
+
+  img {
+
+    animation: glowing-light-pink-image 3s infinite;
+
+  }
+
+}
+
+
+.teleportationButton{
+
+  color: rgb(0, 0, 164);
+  background-color: rgb(179, 187, 255);
+  border-left: 3.5px solid rgb(0, 13, 134);
+  border-bottom: 3.5px solid rgb(0, 13, 134);
+  border-top: 1px solid rgb(0, 13, 134);
+  border-right: 1px solid rgb(0, 13, 134);
+
+  animation: glowing-light-blue 3s infinite;
+  transition: transform 0.25s ease;
+
+}
+
+.teleportationButton:hover{
+
+  color: white;
+  background-color: rgb(0, 12, 174);
+  border-left: 3.5px solid rgb(0, 4, 58);
+  border-bottom: 3.5px solid rgb(0, 4, 58);
+  border-top: 1px solid rgb(0, 4, 58);
+  border-right: 1px solid rgb(0, 4, 58);
+
+  animation: glowing-dark-blue 3s infinite;
+  transform: scale(1.1);
+
+}
+
+
 ::-webkit-scrollbar {
 
   width: 10px;
@@ -221,6 +285,29 @@ p, button, a {
 }
 
 
+
+@keyframes glowing-light-pink-image {
+
+  0% {
+    filter: 
+      drop-shadow(0 0 3px rgb(248, 194, 255))
+      drop-shadow(0 0 6px rgb(204, 138, 255));
+  }
+  50% {
+    filter: 
+      drop-shadow(0 0 3px rgb(248, 194, 255, 0.5))
+      drop-shadow(0 0 6px rgb(204, 138, 255, 0.5));
+  }
+  100% {
+    filter: 
+      drop-shadow(0 0 3px rgb(248, 194, 255))
+      drop-shadow(0 0 6px rgb(204, 138, 255));
+  }
+
+}
+
+
+
 @keyframes glowing-dark-pink {
 
   0% {
@@ -242,88 +329,22 @@ p, button, a {
 }
 
 
-
-
-@keyframes glowing-light-purple {
+@keyframes glowing-dark-pink-image {
 
   0% {
-    box-shadow: 
-      0 0 5px 2px rgb(227, 169, 254),
-      0 0 10px 4px rgb(199, 156, 255);
+    filter: 
+      drop-shadow(0 0 3px rgb(249, 88, 255))
+      drop-shadow(0 0 6px rgb(200, 106, 255));
   }
   50% {
-    box-shadow: 
-      0 0 5px 2px rgb(227, 169, 254, 0.5),
-      0 0 10px 4px rgb(199, 156, 255, 0.5);
+    filter: 
+      drop-shadow(0 0 3px rgb(249, 88, 255, 0.5))
+      drop-shadow(0 0 6px rgb(200, 106, 255, 0.5));
   }
   100% {
-    box-shadow:
-      0 0 5px 2px rgb(227, 169, 254),
-      0 0 10px 4px rgb(199, 156, 255);
-  }
-
-}
-
-
-@keyframes glowing-dark-purple {
-
-  0% {
-    box-shadow: 
-      0 0 5px 2px rgb(191, 88, 255),
-      0 0 10px 4px rgb(148, 71, 255);
-  }
-  50% {
-    box-shadow: 
-      0 0 5px 2px rgb(191, 88, 255, 0.5),
-      0 0 10px 4px rgb(148, 71, 255, 0.5);
-  }
-  100% {
-    box-shadow:
-      0 0 5px 2px rgb(191, 88, 255),
-      0 0 10px 4px rgb(148, 71, 255);
-  }
-
-}
-
-
-
-@keyframes glowing-light-turquoise {
-
-  0% {
-    box-shadow: 
-      0 0 5px 2px rgb(185, 229, 255),
-      0 0 10px 4px rgb(174, 195, 255);
-  }
-  50% {
-    box-shadow: 
-      0 0 5px 2px rgb(185, 229, 255, 0.5),
-      0 0 10px 4px rgb(174, 195, 255, 0.5);
-  }
-  100% {
-    box-shadow:
-      0 0 5px 2px rgb(185, 229, 255),
-      0 0 10px 4px rgb(174, 195, 255);
-  }
-
-}
-
-
-@keyframes glowing-dark-turquoise {
-
-  0% {
-    box-shadow: 
-      0 0 5px 2px rgb(59, 172, 192),
-      0 0 10px 4px rgb(37, 121, 177);
-  }
-  50% {
-    box-shadow: 
-      0 0 5px 2px rgb(59, 172, 192, 0.5),
-      0 0 10px 4px rgb(37, 121, 177, 0.5);
-  }
-  100% {
-    box-shadow:
-      0 0 5px 2px rgb(59, 172, 192),
-      0 0 10px 4px rgb(37, 121, 177);
+    filter: 
+      drop-shadow(0 0 3px rgb(249, 88, 255))
+      drop-shadow(0 0 6px rgb(200, 106, 255));
   }
 
 }
@@ -414,7 +435,45 @@ p, button, a {
     gap: 2rem;
 
   }
+
+  .conditionalButton{
+
+    transition: none;
+
+  }
+
+  .conditionalButton:hover {
+
+    transform: none;
+
+  }
+
+  .teleportationButton{
+
+    transition: none;
+
+  }
+
+  .teleportationButton:hover{
+
+    transform: none;
+
+  }
   
+}
+
+
+@media (max-width: 900px) and (pointer: fine){
+
+  body{
+
+    padding: 4rem 2rem;
+    margin: 0;
+
+    animation: none;
+    
+  }
+
 }
 
 
@@ -465,20 +524,6 @@ p, button, a {
 
     gap: 2rem;
 
-  }
-
-}
-
-
-@media (max-width: 600px) and (pointer: fine){
-
-  body{
-
-    padding: 4rem 2rem;
-    margin: 0;
-
-    animation: none;
-    
   }
 
 }

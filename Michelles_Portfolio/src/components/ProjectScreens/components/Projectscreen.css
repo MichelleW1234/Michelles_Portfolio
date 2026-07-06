@@ -10,6 +10,12 @@
 
 }
 
+.upsideDownTitle{
+
+transform: rotate(180deg);
+
+}
+
 .projectTitleIconContainer{
 
     width: 100%;
@@ -75,6 +81,18 @@
     background-color: rgb(158, 218, 255);
     box-shadow: 0 0 10px 5px rgb(130, 163, 254);
 
+    mask-image: linear-gradient(to right, transparent 0%, black 35%, black 65%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 35%, black 65%, transparent 100%);
+
+}
+
+
+
+.projectConditionalButton {
+
+    padding: 1rem 1.5rem;
+    border-radius: 7px;
+
 }
 
 
@@ -82,32 +100,10 @@
 .projectGeneralButton {
 
     padding: 1rem 1.5rem;
-    border-radius: 7px;
-
-    color: rgb(61, 0, 59);
-    background-color: rgb(232, 131, 255);
-    border-left: 3px solid rgb(90, 0, 104);
-    border-bottom: 3px solid rgb(90, 0, 104);
-    border-top: 1px solid rgb(90, 0, 104);
-    border-right: 1px solid rgb(90, 0, 104);
-
-    animation:  glowing-light-pink 3s infinite;
+    border-radius: 30px;
 
 }
 
-
-.projectGeneralButton:hover {
-
-    color: white;
-    background-color: rgb(129, 0, 133);
-    border-left: 3px solid rgb(41, 0, 47);
-    border-bottom: 3px solid rgb(41, 0, 47);
-    border-top: 1px solid rgb(41, 0, 47);
-    border-right: 1px solid rgb(41, 0, 47);
-
-    animation: glowing-dark-pink 3s infinite;
-
-}
 
 
 .projectDetailsContainer{
@@ -131,6 +127,7 @@
 
     color: rgb(224, 222, 255);
     box-shadow: 0 0 8px 4px rgb(142, 130, 254);
+    
 
 }
 
@@ -165,6 +162,7 @@
 
     color: white;
 
+
 }
 
 
@@ -180,7 +178,6 @@
         drop-shadow(0 0 1px rgb(255, 255, 255))
         drop-shadow(0 0 2px rgb(255, 255, 255))
         drop-shadow(0 0 3px  rgb(255, 255, 255));
-
 
 }
 
@@ -224,7 +221,7 @@
     width: 5rem;
     border-radius: 0.1rem;
 
-    border: 0.1rem solid rgb(0, 238, 255);
+    border: 0.1rem solid rgb(253, 122, 255);
 
 }
 
@@ -250,7 +247,7 @@
     flex-wrap: wrap;
         
     padding: 3rem 0rem;
-    gap: 1rem;
+    gap: 2rem;
 
 }
 
@@ -264,33 +261,11 @@
 
     padding: 1rem;
     gap: 1rem;
-
-    color: rgb(227, 192, 255);
-
-    animation: glowing-light-purple 2s infinite;
-    transition: transform 0.25s ease;
+    border-radius: 2rem;
 
     img {
 
-        width: 10rem;
-
-        animation: glowing-light-purple 2s infinite;
-
-    }
-
-}
-
-
-.projectVideoCard:hover {
-    
-    color: rgb(249, 192, 255);
-
-    animation: glowing-dark-pink 2s infinite;
-    transform: scale(1.1);
-
-    img {
-
-        animation: glowing-dark-pink 2s infinite;
+        width: 8rem;
 
     }
 
@@ -324,29 +299,6 @@
 
     padding: 1.5rem 2rem;
     border-radius: 8px;
-    
-    color: rgb(58, 0, 139);
-    background-color: rgb(208, 179, 255);
-    border-left: 3.5px solid rgb(55, 0, 144);
-    border-bottom: 3.5px solid rgb(55, 0, 144);
-    border-top: 1.5px solid rgb(55, 0, 144);
-    border-right: 1.5px solid rgb(55, 0, 144);
-
-    animation: glowing-light-purple 3s infinite;
-
-}
-
-
-.projectLinkButton:hover{
-
-    color: white;
-    background-color: rgb(64, 0, 183);
-    border-left: 3.5px solid rgb(17, 0, 50);
-    border-bottom: 3.5px solid rgb(17, 0, 50);
-    border-top: 1.5px solid rgb(17, 0, 50);
-    border-right: 1.5px solid rgb(17, 0, 50);
-
-    animation: glowing-dark-blue 3s infinite;
 
 }
 
@@ -433,7 +385,7 @@
 
     .projectVideoCard {
 
-        width: 55%;
+        width: 75%;
         padding: 1rem;
         gap: 1rem;
 

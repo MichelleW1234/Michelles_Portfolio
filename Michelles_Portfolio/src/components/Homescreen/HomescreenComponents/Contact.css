@@ -4,7 +4,7 @@
     flex-direction: row;
     flex-wrap: wrap;  
 
-    gap: 3rem;
+    gap: 2rem;
     
 }
 
@@ -16,55 +16,44 @@
     justify-content: center;
 
     border-radius: 50%;
-    padding: 2rem;
+    padding: 1rem;
 
-    background-color: rgb(101, 255, 255);
-    border-left: 4px solid rgb(42, 82, 82);
-    border-bottom: 4px solid rgb(42, 82, 82);
-    border-top: 1px solid rgb(42, 82, 82);
-    border-right: 1px solid rgb(42, 82, 82);
+    img {
 
-    animation: glowing-light-turquoise 3s infinite;
+        height: 50px;
+        width: 50px;
 
-}
-
-.contactBox:hover{
-
-    background-color: rgb(44, 147, 147);
-    border-left: 4px solid rgb(19, 72, 72);
-    border-bottom: 4px solid rgb(19, 72, 72);
-    border-top: 1px solid rgb(19, 72, 72);
-    border-right: 1px solid rgb(19, 72, 72);
-
-    animation: glowing-dark-turquoise 3s infinite;
-
-}
-
-.contactImage{
-
-    height: 70px;
-    width: 70px;
-
-}
-
-
-@media (max-device-width: 1024px) and (pointer: coarse){
-
-    .contactContainer {
-
-        gap: 2rem;
-        
     }
 
 }
 
 
+
 @media (max-device-width: 600px) and (pointer: coarse){
 
     .contactContainer {
-    
-        flex-direction: column;
+
+        gap: 1rem;
         
+    }
+
+    .contactBox{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+        padding: 0.5rem;
+
+        img {
+
+            height: 25px;
+            width: 25px;
+
+        }
+
     }
 
 }
