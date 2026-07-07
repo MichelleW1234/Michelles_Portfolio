@@ -26,7 +26,7 @@
   background-color: inherit;
   border: none;
 
-  animation: glowing-light-blue 3s infinite;
+  animation: glowing-teleportationButton 3s infinite;
   transition: transform 0.25s ease;
   
 }
@@ -44,22 +44,6 @@
 
 }
 
-
-.subTitle{
-
-  width: 100%;
-  text-align: center;
-
-  padding: 0.5rem;
-
-  color: rgb(54, 0, 124);
-  background-color: rgb(220, 183, 255);
-  box-shadow: 0 0 10px 5px rgb(202, 117, 255);
-
-  mask-image: linear-gradient(to right, transparent 0%, rgb(220, 183, 255) 35%, rgb(220, 183, 255) 65%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(220, 183, 255) 35%, rgb(220, 183, 255) 65%, transparent 100%);
-
-}
 
 
 .sectionContainer {
@@ -106,26 +90,12 @@
     padding-right: 0rem;
 
   }
-
-
-  .subTitle{
-
-    mask-image: linear-gradient(to right, transparent 0%, rgb(220, 183, 255) 25%, rgb(220, 183, 255) 75%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(220, 183, 255) 25%, rgb(220, 183, 255) 75%, transparent 100%);
-
-  }
  
 
 }
 
 @media (max-width: 900px) and (pointer: fine){
 
-  .subTitle{
-
-    mask-image: linear-gradient(to right, transparent 0%, rgb(220, 183, 255) 25%, rgb(220, 183, 255) 75%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(220, 183, 255) 25%, rgb(220, 183, 255) 75%, transparent 100%);
-
-  }
 
 }
 
@@ -143,14 +113,6 @@
 
     padding-left: 0rem;
     padding-right: 0rem;
-
-  }
-
-
-  .subTitle{
-
-    mask-image: linear-gradient(to right, transparent 0%, rgb(220, 183, 255) 15%, rgb(220, 183, 255) 85%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(220, 183, 255) 15%, rgb(220, 183, 255) 85%, transparent 100%);
 
   }
  

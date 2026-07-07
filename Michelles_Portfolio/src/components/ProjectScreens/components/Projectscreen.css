@@ -11,26 +11,8 @@
 }
 
 
-.projectSubTitle{
 
-    width: 100%;
-    text-align: center;
-
-    padding: 0.5rem;
-
-    color: rgb(10, 0, 148);
-
-    background-color: rgb(158, 218, 255);
-    box-shadow: 0 0 10px 5px rgb(130, 163, 254);
-
-    mask-image: linear-gradient(to right, transparent 0%, rgb(158, 218, 255) 35%, rgb(158, 218, 255) 65%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(158, 218, 255) 35%, rgb(158, 218, 255) 65%, transparent 100%);
-
-}
-
-
-
-.projectConditionalButton {
+.projectPageExpansionButton {
 
     padding: 1rem 1.5rem;
     border-radius: 7px;
@@ -39,7 +21,7 @@
 
 
 
-.projectGeneralButton {
+.projectPageJumpButton {
 
     padding: 1rem 1.5rem;
     border-radius: 30px;
@@ -47,10 +29,7 @@
 }
 
 
-
-
-
-.projectDetailsContainer{
+.projectModuleContainer{
 
     width: 90%;
     display: flex;
@@ -61,21 +40,21 @@
 
 }
 
-.projectDetailsSubTitle{
+
+.projectModuleSubTitle{
 
     width: 100%;
     text-align: center;
 
     padding: 1rem;
 
-    color: rgb(224, 222, 255);
-    box-shadow: 0 0 8px 4px rgb(142, 130, 254);
+    color: rgb(248, 194, 255); /*Good*/
+    box-shadow: 0 0 8px 4px rgb(204, 138, 255); /*Good*/
     
-
 }
 
 
-.test{
+.projectDetailsContainer{
 
     display: flex;
     flex-direction: row;
@@ -84,7 +63,7 @@
 
 }
 
-.testInner{
+.projectDetailsModuleContainer{
 
     width: 50%;
     display: flex;
@@ -111,7 +90,42 @@
 }
 
 
-.timeLineDot{
+
+.projectTimelineContainerLarge{
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 2rem;
+    
+}
+
+.projectTimelineContainerSmall{
+
+    display: none;
+
+}
+
+.projectTimelineContainerInner{
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5rem;
+
+}
+
+.projectTimeline{
+
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+
+.projectprojectTimelinePoint{
 
     width: 1rem;
     height: 1rem;
@@ -126,40 +140,7 @@
 
 }
 
-.timelineContainerLarge{
-
-    display: flex;
-    flex-direction: column;
-
-    gap: 2rem;
-    
-}
-
-.timelineContainerSmall{
-
-    display: none;
-
-}
-
-.timelineContainerInner{
-
-    display: flex;
-    flex-direction: column;
-
-    gap: 0.5rem;
-
-}
-
-.timeline{
-
-    width: fit-content;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-}
-
-.timeLineDotDull{
+.projectprojectTimelinePointDull{
 
     width: 1rem;
     height: 1rem;
@@ -170,7 +151,7 @@
 }
 
 
-.timeLineDash {
+.projectTimelineDash {
 
     width: 5rem;
     border-radius: 0.1rem;
@@ -215,7 +196,7 @@
 
     padding: 1rem;
     gap: 1rem;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
 
     img {
 
@@ -270,14 +251,7 @@
 
     }
 
-    .projectSubTitle{
-
-        mask-image: linear-gradient(to right, transparent 0%, rgb(158, 218, 255) 25%, rgb(158, 218, 255) 75%, transparent 100%);
-        -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(158, 218, 255) 25%, rgb(158, 218, 255) 75%, transparent 100%);
-
-    }
-
-    .projectGeneralButton {
+    .projectPageJumpButton {
 
         padding: 1.2rem 1.7rem;
 
@@ -288,7 +262,7 @@
 
     }
 
-    .projectGeneralButton:hover {
+    .projectPageJumpButton:hover {
 
         border-left: 4px solid rgb(41, 0, 47);
         border-bottom: 4px solid rgb(41, 0, 47);
@@ -298,20 +272,20 @@
     }
 
 
-    .projectDetailsContainer{
+    .projectModuleContainer{
 
         width: 95%;
 
     }
 
 
-    .timelineContainerLarge{
+    .projectTimelineContainerLarge{
 
         display: none;
 
     }
 
-    .timelineContainerSmall{
+    .projectTimelineContainerSmall{
 
         display: flex;
         flex-direction: column;
@@ -320,7 +294,7 @@
 
     }
 
-    .test{
+    .projectDetailsContainer{
 
         flex-direction: column;
 
@@ -328,7 +302,7 @@
 
     }
 
-    .testInner{
+    .projectDetailsModuleContainer{
 
         width: 100%;
 
@@ -399,20 +373,13 @@
 
     }
 
-    .projectSubTitle{
-
-        mask-image: linear-gradient(to right, transparent 0%, rgb(158, 218, 255) 25%, rgb(158, 218, 255) 75%, transparent 100%);
-        -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(158, 218, 255) 25%, rgb(158, 218, 255) 75%, transparent 100%);
-
-    }
-
-    .timelineContainerLarge{
+    .projectTimelineContainerLarge{
 
         display: none;
 
     }
 
-    .timelineContainerSmall{
+    .projectTimelineContainerSmall{
 
         display: flex;
         flex-direction: column;
@@ -421,7 +388,7 @@
 
     }
 
-    .test{
+    .projectDetailsContainer{
 
         flex-direction: column;
 
@@ -429,7 +396,7 @@
 
     }
 
-    .testInner{
+    .projectDetailsModuleContainer{
 
         width: 100%;
 
@@ -465,14 +432,6 @@
 
         padding-left: 0rem;
         padding-right: 0rem;
-
-    }
-
-
-    .projectSubTitle{
-
-        mask-image: linear-gradient(to right, transparent 0%, rgb(158, 218, 255) 15%, rgb(158, 218, 255) 85%, transparent 100%);
-        -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(158, 218, 255) 15%, rgb(158, 218, 255) 85%, transparent 100%);
 
     }
 

@@ -41,8 +41,8 @@ function Arcadescreen() {
                             "A demonstration of Snake, where the user controls the snake using WASD to collect apples for points while avoiding an early exit penalty.",
                             "A demonstration of the 2nd mission in Space Invasion, where the user attempts to eliminate an alien hive with two different variants before they reach them.",
                             "A demonstration of the 4th and final mission in Space Invasion, where the user attempts to defeat the hive queen without triggering an explosion and before their flashlight battery runs out.",
-                            "A demonstration of Orbit, where the user tests their timing by stopping the moving indicator on the green zone.",
-                            "A demonstration of Color Blast, where the user tests their reflexes by clicking circles that match the target color to earn points while avoiding incorrect selections under a time limit.",
+                            "A demonstration of Orbit, where the user projectDetailsContainers their timing by stopping the moving indicator on the green zone.",
+                            "A demonstration of Color Blast, where the user projectDetailsContainers their reflexes by clicking circles that match the target color to earn points while avoiding incorrect selections under a time limit.",
                             "A demonstration of the Cat Claw Machine, where the user attempts to win a prize by timing their claw grabs based on where the green ball lands.",
                             "A demonstration of Balloon Frenzy, where the user pops as many balloons as they can under a time limit while avoiding birds.",
                             "A demonstration of Sky Maze, where the user uses WASD to guide the bird up and down to dodge incoming walls and travel as far as possible.",
@@ -55,7 +55,8 @@ function Arcadescreen() {
  
     return (
 
-        <>
+        <div className="contentBody">
+            
             <div className="heading">
                 <div className="titleContainer titleContainer-Arcade">
                     <h1 className = "title"> Arcade </h1>
@@ -65,14 +66,14 @@ function Arcadescreen() {
 
             <div className="projectScreen">
 
-                <Link className = "teleportationButton projectGeneralButton" to = "/home"> &lt; Back to Home </Link>
+                <Link className = "teleportationButton projectPageJumpButton" to = "/home"> &lt; Back to Home </Link>
 
-                <h2 className="projectSubTitle"> Project Details:</h2>
-                <div className = "projectDetailsContainer">
+                <h2 className="subTitle"> Project Details:</h2>
+                <div className = "projectModuleContainer">
 
-                    <div className="test">
-                        <div className="testInner">
-                            <h3 className="projectDetailsSubTitle">Features:</h3>
+                    <div className="projectDetailsContainer">
+                        <div className="projectDetailsModuleContainer">
+                            <h3 className="projectModuleSubTitle">Features:</h3>
                             <div className = "projectDetailsInfoBlockContainer"> 
                                 <p>&gt; Scoring system with dynamic point gains and losses based on player actions</p>
                                 <p>&gt; Player-controlled point economy with multiple spending options, including prize redemption, claw machines, and additional gameplay </p>
@@ -84,8 +85,8 @@ function Arcadescreen() {
                             </div>
                         </div>
 
-                        <div className="testInner">
-                            <h3 className="projectDetailsSubTitle">Tools Used: </h3>
+                        <div className="projectDetailsModuleContainer">
+                            <h3 className="projectModuleSubTitle">Tools Used: </h3>
                             <div className = "projectDetailsInfoBlockContainer"> 
                                 <h4> &gt; Core Frameworks & Libraries: </h4>
                                 <p> React, Electron, React Router </p>
@@ -97,70 +98,70 @@ function Arcadescreen() {
                         </div>
                     </div>
 
-                    <h3 className="projectDetailsSubTitle"> Timeline: </h3>
+                    <h3 className="projectModuleSubTitle"> Timeline: </h3>
 
                     <div className = "projectDetailsInfoBlockContainer">
-                        <div className = "timelineContainerLarge"> 
-                            <div className = "timelineContainerInner">
-                                <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div></div>
+                        <div className = "projectTimelineContainerLarge"> 
+                            <div className = "projectTimelineContainerInner">
+                                <div className="projectTimeline"><div className = "projectprojectTimelinePoint"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div></div>
                                 <p>&nbsp; 12/2024 &#8594; Project started</p>
                             </div>
-                            <div className = "timelineContainerInner">
-                                <div className="timeline"><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDot"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div></div>
+                            <div className = "projectTimelineContainerInner">
+                                <div className="projectTimeline"><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePoint"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div></div>
                                 <p>&nbsp; 04/2025 &#8594; First Github release (Arcade V1.0.0 for Mac)</p>
                             </div>
-                            <div className = "timelineContainerInner">
-                                <div className="timeline"><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDot"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div></div>
+                            <div className = "projectTimelineContainerInner">
+                                <div className="projectTimeline"><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePoint"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div></div>
                                 <p>&nbsp; 06/2025 &#8594; Second Github release (Arcade V1.0.1 for Mac)</p>
                             </div>
-                            <div className = "timelineContainerInner">
-                                <div className="timeline"><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDot"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div></div>
+                            <div className = "projectTimelineContainerInner">
+                                <div className="projectTimeline"><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePoint"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div></div>
                                 <p>&nbsp; 08/2025 &#8594; Third + Fourth Github releases (Arcade V1.0.2 &  V1.0.3 for Mac)</p>
                             </div>
-                            <div className = "timelineContainerInner">
-                                <div className="timeline"><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDot"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div></div>
+                            <div className = "projectTimelineContainerInner">
+                                <div className="projectTimeline"><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePoint"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div></div>
                                 <p>&nbsp; 09/2025 &#8594; Fifth Github release (Arcade V1.0.4 for Mac)</p>
                             </div>
-                            <div className = "timelineContainerInner">
-                                <div className="timeline"><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDotDull"></div><hr className = "timeLineDash"/><div className = "timeLineDot"></div></div>
+                            <div className = "projectTimelineContainerInner">
+                                <div className="projectTimeline"><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePoint"></div></div>
                                 <p>&nbsp; 10/2025 &#8594; Sixth Github release (Arcade V1.0.5 for Mac) </p>
                             </div>
                         </div>
                         
-                        <div className = "timelineContainerSmall"> 
-                            <div className = "timelineContainerInner">
+                        <div className = "projectTimelineContainerSmall"> 
+                            <div className = "projectTimelineContainerInner">
                                 <p> &nbsp; 12/2024 </p>
-                                <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
+                                <div className="projectTimeline"><div className = "projectprojectTimelinePoint"></div><hr className = "projectTimelineDash"/></div>
                                 <p> &nbsp; Project started</p>
                             </div>
 
-                            <div className = "timelineContainerInner">
+                            <div className = "projectTimelineContainerInner">
                                 <p>&nbsp; 04/2025 </p>
-                                <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
+                                <div className="projectTimeline"><div className = "projectprojectTimelinePoint"></div><hr className = "projectTimelineDash"/></div>
                                 <p> &nbsp; First Github release (Arcade V1.0.0 for Mac)</p>
                             </div>
                             
-                            <div className = "timelineContainerInner">
+                            <div className = "projectTimelineContainerInner">
                                 <p>&nbsp; 06/2025</p>
-                                <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
+                                <div className="projectTimeline"><div className = "projectprojectTimelinePoint"></div><hr className = "projectTimelineDash"/></div>
                                 <p> &nbsp; Second Github release (Arcade V1.0.1 for Mac)</p>
                             </div>
                             
-                            <div className = "timelineContainerInner">
+                            <div className = "projectTimelineContainerInner">
                                 <p>&nbsp; 08/2025</p>
-                                <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
+                                <div className="projectTimeline"><div className = "projectprojectTimelinePoint"></div><hr className = "projectTimelineDash"/></div>
                                 <p> &nbsp; Third + Fourth Github releases (Arcade V1.0.2 &  V1.0.3 for Mac)</p>
                             </div>
                             
-                            <div className = "timelineContainerInner">
+                            <div className = "projectTimelineContainerInner">
                                 <p> &nbsp; 09/2025 </p>
-                                <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
+                                <div className="projectTimeline"><div className = "projectprojectTimelinePoint"></div><hr className = "projectTimelineDash"/></div>
                                 <p> &nbsp; Fifth Github release (Arcade V1.0.4 for Mac)</p>
                             </div>
 
-                            <div className = "timelineContainerInner">
+                            <div className = "projectTimelineContainerInner">
                                 <p> &nbsp; 10/2025 </p>
-                                <div className="timeline"><div className = "timeLineDot"></div><hr className = "timeLineDash"/></div>
+                                <div className="projectTimeline"><div className = "projectprojectTimelinePoint"></div><hr className = "projectTimelineDash"/></div>
                                 <p> &nbsp; Sixth Github release (Arcade V1.0.5 for Mac) </p>
                             </div>
                         </div>
@@ -168,9 +169,9 @@ function Arcadescreen() {
 
                 </div>
 
-                <h2 className="projectSubTitle"> Project Media: </h2>
-                <div className = "projectDetailsContainer">
-                    <h3 className="projectDetailsSubTitle"> Video Content: </h3>
+                <h2 className="subTitle"> Project Media: </h2>
+                <div className = "projectModuleContainer">
+                    <h3 className="projectModuleSubTitle"> Video Content: </h3>
                     <div className="projectVideoSectionContainer">
 
                         <div className="projectVideoContainer">
@@ -211,17 +212,17 @@ function Arcadescreen() {
 
                         {openFullVideoSection ? (
 
-                            <button className="conditionalButton projectConditionalButton" onClick = {() => setOpenFullVideoSection(false)}> Collapse All Videos &#9650; </button>
+                            <button className="conditionalButton projectPageExpansionButton" onClick = {() => setOpenFullVideoSection(false)}> Collapse All Videos &#9650; </button>
 
                         ) : (
 
-                            <button className="conditionalButton projectConditionalButton" onClick = {() => setOpenFullVideoSection(true)}> Expand All Videos &#9660; </button>
+                            <button className="conditionalButton projectPageExpansionButton" onClick = {() => setOpenFullVideoSection(true)}> Expand All Videos &#9660; </button>
 
                         )}
 
                     </div>
                 
-                    <h3 className="projectDetailsSubTitle"> External Links: </h3>
+                    <h3 className="projectModuleSubTitle"> External Links: </h3>
                     <div className = "projectLinksContainer">
                         <a className = "teleportationButton projectLinkButton" href="https://github.com/MichelleW1234/Arcade.git" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
                         <a className = "teleportationButton projectLinkButton" href="https://github.com/MichelleW1234/Arcade/releases/tag/v1.0.5" target="_blank" rel="noopener noreferrer"> Go to Arcade v1.0.5 </a>
@@ -230,7 +231,7 @@ function Arcadescreen() {
 
                 </div>
 
-                <button className = "teleportationButton projectGeneralButton" onClick = {() => ScrollBackToTop()}> &#9650; Back to Top </button>
+                <button className = "teleportationButton projectPageJumpButton" onClick = {() => ScrollBackToTop()}> &#9650; Back to Top </button>
     
             </div>
 
@@ -241,7 +242,7 @@ function Arcadescreen() {
                 </div>
             </div>
 
-        </>
+        </div>
 
     )
 
