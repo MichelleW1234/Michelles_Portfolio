@@ -243,8 +243,6 @@
 
     .projectScreen {
 
-        padding-top: 5rem;
-        padding-bottom: 5rem;
         gap: 5rem;
 
     }
@@ -396,6 +394,13 @@
 
 @media (max-device-width: 600px) and (pointer: coarse){
 
+
+    .projectScreen {
+
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+    }
 
     .projectGeneralModuleContainer{
 
