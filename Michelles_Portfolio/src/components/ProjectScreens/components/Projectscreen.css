@@ -20,7 +20,6 @@
 }
 
 
-
 .projectPageJumpButton {
 
     padding: 1rem 1.5rem;
@@ -29,7 +28,7 @@
 }
 
 
-.projectModuleContainer{
+.projectGeneralModuleContainer{
 
     width: 90%;
     display: flex;
@@ -41,15 +40,15 @@
 }
 
 
-.projectModuleSubTitle{
+.projectGeneralModuleSubTitle{
 
     width: 100%;
     text-align: center;
 
     padding: 1rem;
 
-    color: rgb(248, 194, 255); /*Good*/
-    box-shadow: 0 0 8px 4px rgb(204, 138, 255); /*Good*/
+    color: rgb(249, 207, 255);
+    box-shadow: 0 0 8px 4px rgb(234, 206, 255);
     
 }
 
@@ -73,7 +72,7 @@
 
 }
 
-.projectDetailsInfoBlockContainer {
+.projectDetailsContentContainer {
 
     display: flex;
     flex-direction: column;
@@ -91,7 +90,7 @@
 
 
 
-.projectTimelineContainerLarge{
+.projectTimelineContainerDesktop{
 
     display: flex;
     flex-direction: column;
@@ -100,13 +99,13 @@
     
 }
 
-.projectTimelineContainerSmall{
+.projectTimelineContainerMobile{
 
     display: none;
 
 }
 
-.projectTimelineContainerInner{
+.projectTimelineEntryContainer{
 
     display: flex;
     flex-direction: column;
@@ -115,7 +114,7 @@
 
 }
 
-.projectTimeline{
+.projectTimelineMapContainer{
 
     width: fit-content;
     display: flex;
@@ -125,46 +124,45 @@
 }
 
 
-.projectprojectTimelinePoint{
+.projectTimelinePoint{
 
     width: 1rem;
     height: 1rem;
     border-radius: 50%;
 
-    background: rgb(255, 0, 230);
+    background: rgb(225, 0, 255);
 
     filter: 
-        drop-shadow(0 0 1px rgb(255, 255, 255))
-        drop-shadow(0 0 2px rgb(255, 255, 255))
-        drop-shadow(0 0 3px  rgb(255, 255, 255));
+        drop-shadow(0 0 1px rgb(250, 209, 255))
+        drop-shadow(0 0 2px rgb(250, 209, 255))
+        drop-shadow(0 0 3px rgb(250, 209, 255));
 
 }
 
-.projectprojectTimelinePointDull{
+.projectTimelinePointDull{
 
     width: 1rem;
     height: 1rem;
     border-radius: 50%;
 
-    background: rgb(177, 0, 160);
+    background: rgb(165, 0, 187);
 
 }
 
 
-.projectTimelineDash {
+.projectTimelineLine {
 
     width: 5rem;
     border-radius: 0.1rem;
 
-    border: 0.1rem solid rgb(253, 122, 255);
+    border: 0.1rem solid rgb(209, 130, 255);
 
 }
 
 
 
-.projectVideoSectionContainer {
+.projectExpandableVideoContainer {
 
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -188,7 +186,7 @@
 
 
 
-.projectVideoCard {
+.projectVideoEntryButton {
 
     width: 30rem;
     display: flex;
@@ -207,7 +205,7 @@
 }
 
 
-.projectVideoCardInner{
+.projectVideoEntryButtonDescriptionContainer{
 
     display: flex;
     flex-direction: row;
@@ -229,7 +227,7 @@
 }
 
 
-.projectLinkButton{
+.projectLinkEntryButton{
 
     padding: 1.5rem 2rem;
     border-radius: 8px;
@@ -255,37 +253,23 @@
 
         padding: 1.2rem 1.7rem;
 
-        border-left: 4px solid rgb(41, 0, 47);
-        border-bottom: 4px solid rgb(41, 0, 47);
-        border-top: 1.5px solid rgb(41, 0, 47);
-        border-right: 1.5px solid rgb(41, 0, 47);
-
-    }
-
-    .projectPageJumpButton:hover {
-
-        border-left: 4px solid rgb(41, 0, 47);
-        border-bottom: 4px solid rgb(41, 0, 47);
-        border-top: 1.5px solid rgb(41, 0, 47);
-        border-right: 1.5px solid rgb(41, 0, 47);
-
     }
 
 
-    .projectModuleContainer{
+    .projectGeneralModuleContainer{
 
         width: 95%;
 
     }
 
 
-    .projectTimelineContainerLarge{
+    .projectTimelineContainerDesktop{
 
         display: none;
 
     }
 
-    .projectTimelineContainerSmall{
+    .projectTimelineContainerMobile{
 
         display: flex;
         flex-direction: column;
@@ -310,14 +294,14 @@
 
     }
 
-    .projectVideoSectionContainer {
+    .projectExpandableVideoContainer {
 
         gap: 3rem;
 
     }
 
 
-    .projectVideoCard {
+    .projectVideoEntryButton {
 
         width: 75%;
         padding: 1rem;
@@ -333,29 +317,15 @@
 
     }
 
-    .projectVideoCard:hover {
+    .projectVideoEntryButton:hover {
 
         transform: none;
 
     }
 
-    .projectLinkButton{
+    .projectLinkEntryButton{
 
         padding: 1.7rem 2.2rem;
-
-        border-left: 4.5px solid rgb(55, 0, 144);
-        border-bottom: 4.5px solid rgb(55, 0, 144);
-        border-top: 2px solid rgb(55, 0, 144);
-        border-right: 2px solid rgb(55, 0, 144);
-
-    }
-
-    .projectLinkButton:hover{
-
-        border-left: 4.5px solid rgb(17, 0, 50);
-        border-bottom: 4.5px solid rgb(17, 0, 50);
-        border-top: 2px solid rgb(17, 0, 50);
-        border-right: 2px solid rgb(17, 0, 50);
 
     }
 
@@ -364,7 +334,7 @@
 
 @media (max-width: 900px) and (pointer: fine){
 
-    .projectDetailsInfoBlockContainer {
+    .projectDetailsContentContainer {
 
         align-items: start;
 
@@ -373,13 +343,13 @@
 
     }
 
-    .projectTimelineContainerLarge{
+    .projectTimelineContainerDesktop{
 
         display: none;
 
     }
 
-    .projectTimelineContainerSmall{
+    .projectTimelineContainerMobile{
 
         display: flex;
         flex-direction: column;
@@ -404,7 +374,7 @@
 
     }
 
-    .projectVideoCard {
+    .projectVideoEntryButton {
 
         width: 90%;
 
@@ -426,7 +396,15 @@
 
 @media (max-device-width: 600px) and (pointer: coarse){
 
-    .projectDetailsInfoBlockContainer {
+
+    .projectGeneralModuleContainer{
+
+        width: 100%;
+
+    }
+
+
+    .projectDetailsContentContainer {
 
         align-items: start;
 
@@ -443,7 +421,7 @@
     }
 
 
-    .projectVideoCard {
+    .projectVideoEntryButton {
 
         width: 100%;
 
@@ -453,6 +431,8 @@
     .projectLinksContainer {
 
         flex-direction: column;
+
+        gap: 2rem;
 
     }
 

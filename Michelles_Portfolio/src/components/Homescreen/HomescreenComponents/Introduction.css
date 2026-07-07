@@ -1,4 +1,4 @@
-.introText{
+.introductionParagraphContainer{
 
   width: 90%;
   text-align: center;
@@ -6,7 +6,7 @@
 
 }
 
-.resumeButton {
+.introductionResumeButton {
 
   padding: 1.5rem 2rem;
   border-radius: 5px;
@@ -19,23 +19,9 @@
 /* Mobile adjustments */
 @media (max-device-width: 1024px) and (pointer: coarse){
 
-  .resumeButton {
+  .introductionResumeButton {
 
     padding: 1.7rem 2.2rem;
-
-    border-left: 4.5px solid rgb(0, 104, 104);
-    border-bottom: 4.5px solid rgb(0, 104, 104);
-    border-top: 1.5px solid rgb(0, 104, 104);
-    border-right: 1.5px solid rgb(0, 104, 104);
-
-  }
-
-  .resumeButton:hover{
-
-    border-left: 4.5px solid rgb(29, 33, 95);
-    border-bottom: 4.5px solid rgb(29, 33, 95);
-    border-top: 1.5px solid rgb(29, 33, 95);
-    border-right: 1.5px solid rgb(29, 33, 95);
 
   }
 
@@ -45,7 +31,7 @@
 
 @media (max-device-width: 600px) and (pointer: coarse){
 
-  .introText{
+  .introductionParagraphContainer{
 
     width: 100%;
 
@@ -55,7 +41,7 @@
 
 @media (max-width: 600px) and (pointer: fine){
 
-  .introText{
+  .introductionParagraphContainer{
 
     width: 100%;
 

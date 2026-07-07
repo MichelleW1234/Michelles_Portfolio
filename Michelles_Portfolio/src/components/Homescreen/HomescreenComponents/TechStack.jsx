@@ -24,14 +24,14 @@ function TechStack() {
 
 
   return (
-    <div className = "sectionContainer">
+    <div className = "homeSwipingSectionContainer">
 
       <h2 className = "subTitle"> Tools I've Worked With: </h2>
-      <div className = "technologyContainer">
+      <div className = "techStackContainer">
 
         {skillsList.map((item, index) => (
 
-          <img className = "technology" src = {skillsList[index]}/>
+          <img className = "techStackEntry" src = {skillsList[index]}/>
 
         ))}
 

@@ -12,17 +12,17 @@ function SkillsExpandedCard({activeSkill, setActiveSkill}) {
 
   return (
 
-    <div className = "skillExpandedCardFlag">
-        <div className="skillExpandedCard">
+    <div className = "skillsExpandedCardFlag">
+        <div className="skillExpandedCardContainer">
           <h3>Notable Applications: </h3>
 
-          <div className="skillExpandedCardDescription"> 
+          <div className="skillExpandedCardContent"> 
             {skillApplications[activeSkill].map((line, index) => ( 
               <p key={index}> &gt; {line} </p>
             ))}
           </div>
 
-          <button className = "conditionalButton skillExpandedCardButton" onClick = {() => setActiveSkill(-1)}>Close</button>
+          <button className = "conditionalButton skillExpandedCardCloseButton" onClick = {() => setActiveSkill(-1)}>Close</button>
         </div>
     </div>
 

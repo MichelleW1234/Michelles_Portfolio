@@ -69,12 +69,11 @@ function Arcadescreen() {
                 <Link className = "teleportationButton projectPageJumpButton" to = "/home"> &lt; Back to Home </Link>
 
                 <h2 className="subTitle"> Project Details:</h2>
-                <div className = "projectModuleContainer">
-
+                <div className = "projectGeneralModuleContainer">
                     <div className="projectDetailsContainer">
                         <div className="projectDetailsModuleContainer">
-                            <h3 className="projectModuleSubTitle">Features:</h3>
-                            <div className = "projectDetailsInfoBlockContainer"> 
+                            <h3 className="projectGeneralModuleSubTitle">Features:</h3>
+                            <div className = "projectDetailsContentContainer"> 
                                 <p>&gt; Scoring system with dynamic point gains and losses based on player actions</p>
                                 <p>&gt; Player-controlled point economy with multiple spending options, including prize redemption, claw machines, and additional gameplay </p>
                                 <p>&gt; Multiple interactive mini-games with dynamic outcomes based on player input that players can choose from to accumulate points </p>
@@ -86,8 +85,8 @@ function Arcadescreen() {
                         </div>
 
                         <div className="projectDetailsModuleContainer">
-                            <h3 className="projectModuleSubTitle">Tools Used: </h3>
-                            <div className = "projectDetailsInfoBlockContainer"> 
+                            <h3 className="projectGeneralModuleSubTitle">Tools Used: </h3>
+                            <div className = "projectDetailsContentContainer"> 
                                 <h4> &gt; Core Frameworks & Libraries: </h4>
                                 <p> React, Electron, React Router </p>
                                 <h4> &gt; Programming Languages: </h4>
@@ -98,70 +97,70 @@ function Arcadescreen() {
                         </div>
                     </div>
 
-                    <h3 className="projectModuleSubTitle"> Timeline: </h3>
+                    <h3 className="projectGeneralModuleSubTitle"> Timeline: </h3>
 
-                    <div className = "projectDetailsInfoBlockContainer">
-                        <div className = "projectTimelineContainerLarge"> 
-                            <div className = "projectTimelineContainerInner">
-                                <div className="projectTimeline"><div className = "projectprojectTimelinePoint"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div></div>
+                    <div className = "projectDetailsContentContainer">
+                        <div className = "projectTimelineContainerDesktop"> 
+                            <div className = "projectTimelineEntryContainer">
+                                <div className="projectTimelineMapContainer"><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div></div>
                                 <p>&nbsp; 12/2024 &#8594; Project started</p>
                             </div>
-                            <div className = "projectTimelineContainerInner">
-                                <div className="projectTimeline"><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePoint"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div></div>
+                            <div className = "projectTimelineEntryContainer">
+                                <div className="projectTimelineMapContainer"><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div></div>
                                 <p>&nbsp; 04/2025 &#8594; First Github release (Arcade V1.0.0 for Mac)</p>
                             </div>
-                            <div className = "projectTimelineContainerInner">
-                                <div className="projectTimeline"><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePoint"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div></div>
+                            <div className = "projectTimelineEntryContainer">
+                                <div className="projectTimelineMapContainer"><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div></div>
                                 <p>&nbsp; 06/2025 &#8594; Second Github release (Arcade V1.0.1 for Mac)</p>
                             </div>
-                            <div className = "projectTimelineContainerInner">
-                                <div className="projectTimeline"><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePoint"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div></div>
+                            <div className = "projectTimelineEntryContainer">
+                                <div className="projectTimelineMapContainer"><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div></div>
                                 <p>&nbsp; 08/2025 &#8594; Third + Fourth Github releases (Arcade V1.0.2 &  V1.0.3 for Mac)</p>
                             </div>
-                            <div className = "projectTimelineContainerInner">
-                                <div className="projectTimeline"><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePoint"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div></div>
+                            <div className = "projectTimelineEntryContainer">
+                                <div className="projectTimelineMapContainer"><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div></div>
                                 <p>&nbsp; 09/2025 &#8594; Fifth Github release (Arcade V1.0.4 for Mac)</p>
                             </div>
-                            <div className = "projectTimelineContainerInner">
-                                <div className="projectTimeline"><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePointDull"></div><hr className = "projectTimelineDash"/><div className = "projectprojectTimelinePoint"></div></div>
+                            <div className = "projectTimelineEntryContainer">
+                                <div className="projectTimelineMapContainer"><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePoint"></div></div>
                                 <p>&nbsp; 10/2025 &#8594; Sixth Github release (Arcade V1.0.5 for Mac) </p>
                             </div>
                         </div>
                         
-                        <div className = "projectTimelineContainerSmall"> 
-                            <div className = "projectTimelineContainerInner">
+                        <div className = "projectTimelineContainerMobile"> 
+                            <div className = "projectTimelineEntryContainer">
                                 <p> &nbsp; 12/2024 </p>
-                                <div className="projectTimeline"><div className = "projectprojectTimelinePoint"></div><hr className = "projectTimelineDash"/></div>
+                                <div className="projectTimelineMapContainer"><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/></div>
                                 <p> &nbsp; Project started</p>
                             </div>
 
-                            <div className = "projectTimelineContainerInner">
+                            <div className = "projectTimelineEntryContainer">
                                 <p>&nbsp; 04/2025 </p>
-                                <div className="projectTimeline"><div className = "projectprojectTimelinePoint"></div><hr className = "projectTimelineDash"/></div>
+                                <div className="projectTimelineMapContainer"><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/></div>
                                 <p> &nbsp; First Github release (Arcade V1.0.0 for Mac)</p>
                             </div>
                             
-                            <div className = "projectTimelineContainerInner">
+                            <div className = "projectTimelineEntryContainer">
                                 <p>&nbsp; 06/2025</p>
-                                <div className="projectTimeline"><div className = "projectprojectTimelinePoint"></div><hr className = "projectTimelineDash"/></div>
+                                <div className="projectTimelineMapContainer"><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/></div>
                                 <p> &nbsp; Second Github release (Arcade V1.0.1 for Mac)</p>
                             </div>
                             
-                            <div className = "projectTimelineContainerInner">
+                            <div className = "projectTimelineEntryContainer">
                                 <p>&nbsp; 08/2025</p>
-                                <div className="projectTimeline"><div className = "projectprojectTimelinePoint"></div><hr className = "projectTimelineDash"/></div>
+                                <div className="projectTimelineMapContainer"><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/></div>
                                 <p> &nbsp; Third + Fourth Github releases (Arcade V1.0.2 &  V1.0.3 for Mac)</p>
                             </div>
                             
-                            <div className = "projectTimelineContainerInner">
+                            <div className = "projectTimelineEntryContainer">
                                 <p> &nbsp; 09/2025 </p>
-                                <div className="projectTimeline"><div className = "projectprojectTimelinePoint"></div><hr className = "projectTimelineDash"/></div>
+                                <div className="projectTimelineMapContainer"><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/></div>
                                 <p> &nbsp; Fifth Github release (Arcade V1.0.4 for Mac)</p>
                             </div>
 
-                            <div className = "projectTimelineContainerInner">
+                            <div className = "projectTimelineEntryContainer">
                                 <p> &nbsp; 10/2025 </p>
-                                <div className="projectTimeline"><div className = "projectprojectTimelinePoint"></div><hr className = "projectTimelineDash"/></div>
+                                <div className="projectTimelineMapContainer"><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/></div>
                                 <p> &nbsp; Sixth Github release (Arcade V1.0.5 for Mac) </p>
                             </div>
                         </div>
@@ -170,18 +169,18 @@ function Arcadescreen() {
                 </div>
 
                 <h2 className="subTitle"> Project Media: </h2>
-                <div className = "projectModuleContainer">
-                    <h3 className="projectModuleSubTitle"> Video Content: </h3>
-                    <div className="projectVideoSectionContainer">
+                <div className = "projectGeneralModuleContainer">
+                    <h3 className="projectGeneralModuleSubTitle"> Video Content: </h3>
+                    <div className="projectExpandableVideoContainer">
 
                         <div className="projectVideoContainer">
                             {videoTitles.map((video, index) => (
 
                                 openFullVideoSection ? (
 
-                                    <a className = "teleportationButton projectVideoCard" href={videoLinks[index]} target="_blank">
+                                    <a className = "teleportationButton projectVideoEntryButton" href={videoLinks[index]} target="_blank">
                                         <p> &#9654; Watch {videoTitles[index]}</p> 
-                                        <div className="projectVideoCardInner">
+                                        <div className="projectVideoEntryButtonDescriptionContainer">
                                             <img src={videoImages[index]}/>
                                             <p>{videoSummaries[index]}</p>
                                         </div>
@@ -191,9 +190,9 @@ function Arcadescreen() {
 
                                     index < 4 ? (
 
-                                        <a className = "teleportationButton projectVideoCard" href={videoLinks[index]} target="_blank">
+                                        <a className = "teleportationButton projectVideoEntryButton" href={videoLinks[index]} target="_blank">
                                             <p> &#9654; Watch {videoTitles[index]}</p> 
-                                            <div className="projectVideoCardInner">
+                                            <div className="projectVideoEntryButtonDescriptionContainer">
                                                 <img src={videoImages[index]}/>
                                                 <p>{videoSummaries[index]}</p>
                                             </div>
@@ -222,11 +221,11 @@ function Arcadescreen() {
 
                     </div>
                 
-                    <h3 className="projectModuleSubTitle"> External Links: </h3>
+                    <h3 className="projectGeneralModuleSubTitle"> External Links: </h3>
                     <div className = "projectLinksContainer">
-                        <a className = "teleportationButton projectLinkButton" href="https://github.com/MichelleW1234/Arcade.git" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
-                        <a className = "teleportationButton projectLinkButton" href="https://github.com/MichelleW1234/Arcade/releases/tag/v1.0.5" target="_blank" rel="noopener noreferrer"> Go to Arcade v1.0.5 </a>
-                        <a className = "teleportationButton projectLinkButton" href="https://github.com/MichelleW1234/Arcade/releases" target="_blank" rel="noopener noreferrer"> Go to All Arcade Releases</a>
+                        <a className = "teleportationButton projectLinkEntryButton" href="https://github.com/MichelleW1234/Arcade.git" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
+                        <a className = "teleportationButton projectLinkEntryButton" href="https://github.com/MichelleW1234/Arcade/releases/tag/v1.0.5" target="_blank" rel="noopener noreferrer"> Go to Arcade v1.0.5 </a>
+                        <a className = "teleportationButton projectLinkEntryButton" href="https://github.com/MichelleW1234/Arcade/releases" target="_blank" rel="noopener noreferrer"> Go to All Arcade Releases</a>
                     </div>
 
                 </div>

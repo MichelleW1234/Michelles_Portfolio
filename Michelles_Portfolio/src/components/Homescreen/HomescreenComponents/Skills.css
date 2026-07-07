@@ -11,12 +11,12 @@
   padding: 4rem;
 
   color: white;
-  box-shadow: 0 0 10px 5px rgb(117, 145, 229);
+  box-shadow: 0 0 10px 5px rgb(128, 149, 255);
 
 }
 
 
-.skill{
+.skillsEntry{
 
   width: 18rem;
   height: 15rem;
@@ -50,22 +50,21 @@
     flex-direction: column;
 
     padding: 0rem;
-    gap: 1rem;
+    gap: 2rem;
 
     box-shadow: none;
 
   }
 
   
-  .skill{
-
+  .skillsEntry{
+  
     width: 100%;
-    height: 10rem;
-
+    height: auto;
     flex-direction: row;
-    flex-wrap:wrap;
-    
-    transition: none;
+    flex-wrap: wrap;
+
+    padding: 2rem;
 
     img {
 
@@ -73,13 +72,6 @@
       height: 3rem;
 
     }
-
-  }
-
-
-  .skill:hover{
-
-    transform: none;
 
   }
 
@@ -99,13 +91,14 @@
 
   }
 
-  .skill{
+  .skillsEntry{
 
     width: 100%;
-    height: 10rem;
-
+    height: auto;
     flex-direction: row;
     flex-wrap: wrap;
+
+    padding: 2rem;
 
     img {
 
@@ -123,12 +116,12 @@
 
   .skillsContainer{
 
-    width: 100%;
+    width: 90%;
 
   }
 
 
-  .skill{
+  .skillsEntry{
 
     img {
 

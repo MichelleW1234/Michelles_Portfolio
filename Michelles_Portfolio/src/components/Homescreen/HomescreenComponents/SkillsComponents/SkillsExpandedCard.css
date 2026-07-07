@@ -1,4 +1,4 @@
-.skillExpandedCardFlag{
+.skillsExpandedCardFlag{
 
     position: absolute;
     inset: 0; 
@@ -6,12 +6,12 @@
     display: flex;
     flex-direction: column;
 
-    background-color: rgba(129, 144, 255, 0.5);
-    box-shadow: 0 0 8px 4px rgb(154, 141, 255);
+    background-color: rgba(124, 146, 255, 0.5);
+    box-shadow: 0 0 8px 4px rgb(155, 128, 255);
 
 }
 
-.skillExpandedCard{
+.skillExpandedCardContainer{
 
     max-height: 100%;
     display: flex;
@@ -21,14 +21,14 @@
     padding: 3rem;
     gap: 2.5rem;
 
-    color: rgb(235, 229, 255);
-    background-color: rgba(16, 0, 46, 0.75);
-    box-shadow: 0 0 6px 3px rgb(169, 163, 255);
+    color: rgb(214, 214, 255);
+    background-color: rgba(0, 15, 53, 0.75);
+    box-shadow: 0 0 6px 3px rgb(128, 128, 255);
 
 }
 
 
-.skillExpandedCardDescription {
+.skillExpandedCardContent {
 
     display: flex;
     flex-direction: column;
@@ -38,7 +38,7 @@
 
 }
 
-.skillExpandedCardButton {
+.skillExpandedCardCloseButton {
 
     padding: 1rem 1.5rem;
     border-radius: 5px;
@@ -51,20 +51,20 @@
 
 @media (max-device-width: 1024px) and (pointer: coarse){
 
-    .skillExpandedCardFlag{
+    .skillsExpandedCardFlag{
 
         position: fixed;
 
     } 
     
-    .skillExpandedCard{
+    .skillExpandedCardContainer{
         
         gap: 3.5rem;
 
     }
 
 
-    .skillExpandedCardButton {
+    .skillExpandedCardCloseButton {
 
         padding: 1.2rem 1.7rem;
         
@@ -77,19 +77,19 @@
 
 @media (max-width: 900px) and (pointer: fine){
 
-    .skillExpandedCardFlag{
+    .skillsExpandedCardFlag{
 
         position: fixed;
 
     } 
 
-    .skillExpandedCard{
+    .skillExpandedCardContainer{
 
         gap: 3.5rem;
 
     }
 
-    .skillExpandedCardDescription {
+    .skillExpandedCardContent {
 
         gap: 1rem;
 
@@ -100,7 +100,7 @@
 
 @media (max-width: 600px) and (pointer: coarse){
 
-    .skillExpandedCardDescription {
+    .skillExpandedCardContent {
 
         gap: 2rem;
 

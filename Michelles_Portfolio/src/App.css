@@ -190,9 +190,8 @@ p, button, a {
   max-width: 100%;
   text-align: center;
 
-  color: rgb(212, 0, 255);
-  text-shadow: 
-    3px -3px 0px rgb(0, 179, 255);
+  color: rgb(247, 0, 255);
+  text-shadow: 3px -3px 0px rgb(121, 159, 255);
 
 }
 
@@ -202,8 +201,8 @@ p, button, a {
   height: 3px;
   width: 100%;
 
-  background-color: #ff00ff;
-  box-shadow: 0px -3px 0px rgb(0, 179, 255);
+  background-color: rgb(247, 0, 255);
+  box-shadow: 0px -3px 0px rgb(121, 159, 255);
 
 }
 
@@ -215,18 +214,18 @@ p, button, a {
 
   padding: 0.5rem;
 
-  color: rgb(73, 0, 129);
-  background-color: rgb(248, 194, 255);
+  color: rgb(78, 0, 124);
+  background-color: rgb(253, 199, 255);
 
-  mask-image: linear-gradient(to right, transparent 0%, rgb(248, 194, 255) 35%, rgb(248, 194, 255) 65%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(248, 194, 255) 35%, rgb(248, 194, 255) 65%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, rgb(253, 199, 255) 35%, rgb(253, 199, 255) 65%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(253, 199, 255) 35%, rgb(253, 199, 255) 65%, transparent 100%);
 
 }
 
 
 .conditionalButton{
 
-  color: rgb(255, 181, 253);
+  color: rgb(249, 205, 255);
   border: none;
   background-color: inherit;
 
@@ -245,7 +244,7 @@ p, button, a {
 
 .conditionalButton:hover {
 
-  color: rgb(255, 217, 254);
+  color: rgb(254, 210, 255);
 
   animation:  glowing-conditionalButton-hover 3s infinite;
   transform: scale(1.1);
@@ -261,12 +260,12 @@ p, button, a {
 
 .teleportationButton{
 
-  color: rgb(0, 0, 164);
-  background-color: rgb(179, 187, 255);
-  border-left: 3.5px solid rgb(0, 13, 134);
-  border-bottom: 3.5px solid rgb(0, 13, 134);
-  border-top: 1px solid rgb(0, 13, 134);
-  border-right: 1px solid rgb(0, 13, 134);
+  color: rgb(0, 0, 114);
+  background-color: rgb(185, 205, 255);
+  border-left: 3.5px solid rgb(0, 0, 114);
+  border-bottom: 3.5px solid rgb(0, 0, 114);
+  border-top: 1px solid rgb(0, 0, 114);
+  border-right: 1px solid rgb(0, 0, 114);
 
   animation: glowing-teleportationButton 3s infinite;
   transition: transform 0.25s ease;
@@ -275,12 +274,12 @@ p, button, a {
 
 .teleportationButton:hover{
 
-  color: white;
-  background-color: rgb(0, 12, 174);
-  border-left: 3.5px solid rgb(0, 4, 58);
-  border-bottom: 3.5px solid rgb(0, 4, 58);
-  border-top: 1px solid rgb(0, 4, 58);
-  border-right: 1px solid rgb(0, 4, 58);
+  color: rgb(217, 208, 255);
+  background-color: rgb(0, 31, 188);
+  border-left: 3.5px solid rgb(13, 0, 60);
+  border-bottom: 3.5px solid rgb(13, 0, 60);
+  border-top: 1px solid rgb(13, 0, 60);
+  border-right: 1px solid rgb(13, 0, 60);
 
   animation: glowing-teleportationButton-hover 3s infinite;
   transform: scale(1.1);
@@ -387,7 +386,6 @@ p, button, a {
   }
 
 }
-
 
 
 @keyframes glowing-conditionalButton {
@@ -529,8 +527,8 @@ p, button, a {
 
   .subTitle{
 
-    mask-image: linear-gradient(to right, transparent 0%, rgb(248, 194, 255) 25%, rgb(248, 194, 255) 75%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(248, 194, 255) 25%, rgb(248, 194, 255) 75%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, rgb(253, 199, 255) 25%, rgb(253, 199, 255) 75%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(253, 199, 255) 25%, rgb(253, 199, 255) 75%, transparent 100%);
 
   }
 
@@ -586,8 +584,8 @@ p, button, a {
 
   .subTitle{
 
-    mask-image: linear-gradient(to right, transparent 0%, rgb(248, 194, 255) 25%, rgb(248, 194, 255) 75%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(248, 194, 255) 25%, rgb(248, 194, 255) 75%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, rgb(253, 199, 255) 25%, rgb(253, 199, 255) 75%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(253, 199, 255) 25%, rgb(253, 199, 255) 75%, transparent 100%);
 
   }
 
@@ -607,7 +605,7 @@ p, button, a {
 
   .contentBody{
 
-    padding: 4rem 2rem;
+    padding: 4rem 1rem;
 
   }
 
@@ -658,8 +656,8 @@ p, button, a {
 
   .subTitle{
 
-    mask-image: linear-gradient(to right, transparent 0%, rgb(248, 194, 255) 15%, rgb(248, 194, 255) 85%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(248, 194, 255) 15%, rgb(248, 194, 255) 85%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, rgb(253, 199, 255) 15%, rgb(253, 199, 255) 85%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(253, 199, 255) 15%, rgb(253, 199, 255) 85%, transparent 100%);
 
   }
 

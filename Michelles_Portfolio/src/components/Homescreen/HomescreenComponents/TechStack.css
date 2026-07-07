@@ -1,4 +1,4 @@
-.technologyContainer{
+.techStackContainer{
 
   width: 90%;
   display: flex;
@@ -14,20 +14,20 @@
 }
 
 
-.technology{
+.techStackEntry{
 
-  height: 10rem;
+  height: 8rem;
 
   filter: 
-      drop-shadow(0 0 3px rgb(249, 88, 255))
-      drop-shadow(0 0 6px rgb(200, 106, 255));
+      drop-shadow(0 0 3px rgb(248, 194, 255))
+      drop-shadow(0 0 6px rgb(204, 138, 255));
 
 }
 
 
 @media (max-device-width: 1024px) and (pointer: coarse){
 
-  .skillsContainer{
+  .techStackContainer{
 
     width: 95%;
 
@@ -36,7 +36,7 @@
 
   }
 
-  .technology{
+  .techStackEntry{
 
     height: 5rem;
 
@@ -47,7 +47,7 @@
 
 @media (max-width: 900px) and (pointer: fine){
 
-  .technologyContainer{
+  .techStackContainer{
 
     width: 95%;
     
@@ -56,9 +56,9 @@
 
   }
 
-  .technology{
+  .techStackEntry{
 
-    height: 8rem;
+    height: 5rem;
 
   }
 

@@ -26,7 +26,7 @@ function Skills() {
 
 
   return (
-    <div className = "sectionContainer">
+    <div className = "homeSwipingSectionContainer">
 
       <h2 className = "subTitle"> My Skills: </h2>
       <div className = "skillsContainer">
@@ -42,7 +42,7 @@ function Skills() {
 
           <button
             key = {index} 
-            className="conditionalButton skill"
+            className="conditionalButton skillsEntry"
             onClick={() => hoveredSkill(index)}
           >
             {item}
