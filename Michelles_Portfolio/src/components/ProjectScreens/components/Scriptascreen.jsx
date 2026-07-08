@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
-import Scripta from "../../../images/Scripta.svg";
-import ScriptaDemo from "../../../images/ScriptaDemo.svg";
+import ScriptaDemo from "../../../images/ScriptaDemo.png";
 
 import { ScrollBackToTop } from "../helpers/Helpers";
 
@@ -31,10 +30,10 @@ function Scriptascreen() {
                     <div className="projectDetailsModuleContainer">
                         <h3 className="projectGeneralModuleSubTitle">Features: </h3>
                         <div className = "projectDetailsContentContainer"> 
-                            <p>&gt; Editable text interface allowing users to create and edit plain text with enhanced capabilities such as dynamic customization options that include font styles, font sizes, text color, page background color, and title styling </p>
-                            <p>&gt; Interactive image import system with size controls to adjust image dimensions within documents </p>
-                            <p>&gt; Document management functionality to create, save, reopen, search, and delete documents (with trash support) directly within the application </p>
-                            <p>&gt; Mapped keyboard controls for seamless navigation and interaction within the app </p>
+                            <p>&gt; Rich text editor with customizable fonts, sizes, colors, page backgrounds, and title styling </p>
+                            <p>&gt; Interactive image import system with adjustable image sizing within documents </p>
+                            <p>&gt; Document management system for creating, saving, reopening, searching, and deleting documents with trash support </p>
+                            <p>&gt; Keyboard input mapping for seamless application navigation and interaction </p>
                         </div>
                     </div>
 
@@ -42,7 +41,7 @@ function Scriptascreen() {
                         <h3 className="projectGeneralModuleSubTitle">Tools Used: </h3>
                         <div className = "projectDetailsContentContainer"> 
                             <h4> &gt; Core Frameworks & Libraries: </h4>
-                            <p> React, Electron, React Router </p>
+                            <p> React, Electron, React Router, React ContentEditable </p>
                             <h4> &gt; Programming Languages: </h4>
                             <p> JavaScript, HTML, CSS </p>
                             <h4> &gt; Build & Packaging: </h4>

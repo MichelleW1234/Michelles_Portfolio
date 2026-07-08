@@ -6,7 +6,7 @@ import terminal from "../../../images/Terminal.png";
 import paint from "../../../images/Paint.png";
 import gear from "../../../images/Gear.png";
 import cursor from "../../../images/Cursor.png";
-import alien from "../../../images/Alien.png";
+import controller from "../../../images/Controller.png";
 
 import "./Skills.css";
 
@@ -15,7 +15,7 @@ function Skills() {
   const [activeSkill, setActiveSkill] = useState(-1);
 
   const skillsList = ["Software Development", "Visual Design", "Software Engineering", "UI/UX", "Game Development"]; 
-  const skillsImage = [terminal, paint, gear, cursor, alien];
+  const skillsImage = [terminal, paint, gear, cursor, controller];
 
   const hoveredSkill = (skillIndex) => {
 

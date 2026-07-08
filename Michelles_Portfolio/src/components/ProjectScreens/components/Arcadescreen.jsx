@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import {useState} from "react";
 
-import Arcade from "../../../images/Arcade.svg";
 import RPS from "../../../images/ArcadeMedia/RPS.svg";
 import TTT from "../../../images/ArcadeMedia/TTT.svg";
 import SNK from "../../../images/ArcadeMedia/SNK.svg";
@@ -36,17 +35,17 @@ function Arcadescreen() {
                         "https://drive.google.com/file/d/1WbA9IL-9Gd6Jw6AEkmLVYZ8k-kchLq7Z/view?usp=drive_link",
                         "https://drive.google.com/file/d/1npOK4lx2jSFZZAWbtdkZMMEEWV8ToRpx/view?usp=drive_link",
                         "https://drive.google.com/file/d/1TPUmVp_TV3V_aWHpYJbx7BRTzsoLE8d7/view?usp=drive_link"];
-    const videoSummaries = ["A demonstration of a 10-round game of basic Rock-Paper-Scissors where players compete against the computer.",      
-                            "A demonstration of a standard 3×3 game of tic-tac-toe against the computer, with the first player determined by a coin flip and points awarded based on the outcome.",
-                            "A demonstration of Snake, where the user controls the snake using WASD to collect apples for points while avoiding an early exit penalty.",
-                            "A demonstration of the 2nd mission in Space Invasion, where the user attempts to eliminate an alien hive with two different variants before they reach them.",
-                            "A demonstration of the 4th and final mission in Space Invasion, where the user attempts to defeat the hive queen without triggering an explosion and before their flashlight battery runs out.",
-                            "A demonstration of Orbit, where the user projectDetailsContainers their timing by stopping the moving indicator on the green zone.",
-                            "A demonstration of Color Blast, where the user projectDetailsContainers their reflexes by clicking circles that match the target color to earn points while avoiding incorrect selections under a time limit.",
-                            "A demonstration of the Cat Claw Machine, where the user attempts to win a prize by timing their claw grabs based on where the green ball lands.",
-                            "A demonstration of Balloon Frenzy, where the user pops as many balloons as they can under a time limit while avoiding birds.",
-                            "A demonstration of Sky Maze, where the user uses WASD to guide the bird up and down to dodge incoming walls and travel as far as possible.",
-                            "A demonstration of Chicken Crossing, where the user uses WASD to navigate the chicken through traffic under a time limit, avoiding cars and using safe grassy zones.",
+    const videoSummaries = ["A 10-round game of basic Rock-Paper-Scissors where players compete against the computer.",      
+                            "A standard 3×3 game of tic-tac-toe against the computer, with the first player determined by a coin flip and points awarded based on the outcome.",
+                            "Snake, where the user controls the snake using WASD to collect apples for points while avoiding an early exit penalty.",
+                            "The 2nd mission in Space Invasion, where the user attempts to eliminate an alien hive with two different variants before they reach them.",
+                            "The 4th and final mission in Space Invasion, where the user attempts to defeat the hive queen without triggering an explosion and before their flashlight battery runs out.",
+                            "Orbit, where the user projectDetailsContainers their timing by stopping the moving indicator on the green zone.",
+                            "Color Blast, where the user projectDetailsContainers their reflexes by clicking circles that match the target color to earn points while avoiding incorrect selections under a time limit.",
+                            "The Cat Claw Machine, where the user attempts to win a prize by timing their claw grabs based on where the green ball lands.",
+                            "Balloon Frenzy, where the user pops as many balloons as they can under a time limit while avoiding birds.",
+                            "Sky Maze, where the user uses WASD to guide the bird up and down to dodge incoming walls and travel as far as possible.",
+                            "Chicken Crossing, where the user uses WASD to navigate the chicken through traffic under a time limit, avoiding cars and using safe grassy zones.",
                         ];
 
     
@@ -73,14 +72,14 @@ function Arcadescreen() {
                     <div className="projectDetailsContainer">
                         <div className="projectDetailsModuleContainer">
                             <h3 className="projectGeneralModuleSubTitle">Features:</h3>
-                            <div className = "projectDetailsContentContainer"> 
-                                <p>&gt; Scoring system with dynamic point gains and losses based on player actions</p>
-                                <p>&gt; Player-controlled point economy with multiple spending options, including prize redemption, claw machines, and additional gameplay </p>
-                                <p>&gt; Multiple interactive mini-games with dynamic outcomes based on player input that players can choose from to accumulate points </p>
-                                <p>&gt; Integrated sound effects and background music triggered by gameplay events </p>
-                                <p>&gt; State-driven animations that respond to player actions and gameplay outcomes </p>
-                                <p>&gt; Persistent storage to save and restore user progress across app sessions </p>
-                                <p>&gt; Mapped keyboard input to in-game actions, allowing intuitive navigation and gameplay control </p>
+                            <div className = "projectDetailsContentContainer">
+                                <p>&gt; Dynamic scoring system with action-based point rewards and penalties </p>
+                                <p>&gt; Player-driven point economy with prize redemption, claw machines, and gameplay purchases </p>
+                                <p>&gt; Multiple interactive mini-games featuring player-driven gameplay and dynamic outcomes </p>
+                                <p>&gt; Integrated audio systems for event-triggered sound effects and background music </p>
+                                <p>&gt; State-driven animations synchronized with gameplay events </p>
+                                <p>&gt; Persistent storage to save and restore user progress across sessions </p>
+                                <p>&gt; Keyboard input mapping for intuitive game navigation and controls </p>
                             </div>
                         </div>
 

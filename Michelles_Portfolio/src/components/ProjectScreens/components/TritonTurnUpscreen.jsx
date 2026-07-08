@@ -31,19 +31,19 @@ function TritonTurnUpscreen() {
                     <div className="projectDetailsModuleContainer">
                         <h3 className="projectGeneralModuleSubTitle">Features:</h3>
                         <div className = "projectDetailsContentContainer"> 
-                            <p>&gt; In-app calendar that aggregates user-selected events into a personalized schedule </p>
-                            <p>&gt; Card-based event carousel populated with web-scraped UCSD events, enabling users to browse, add to their schedule, or dismiss uninterested events</p>
-                            <p>&gt; Authentication system supporting user-specific calendars and schedule management</p>
-                            <p>&gt; Availability selection interface allowing users to mark weekly availability and automatically filter out incompatible events</p>
+                            <p>&gt; Personalized calendar that aggregates user-selected events into a unified schedule </p>
+                            <p>&gt; Interactive event carousel displaying web-scraped UCSD events with options to save or dismiss events </p>
+                            <p>&gt; User authentication system supporting personalized calendars and schedule management </p>
+                            <p>&gt; Weekly availability interface that automatically filters incompatible events</p>
                         </div>
                     </div>
 
                     <div className="projectDetailsModuleContainer">
                         <h3 className="projectGeneralModuleSubTitle">My Role:</h3>
                         <div className = "projectDetailsContentContainer"> 
-                            <p> &gt; Collaborated with an Agile team using GitHub for version control, while under mentorship from a professor with extensive software development expertise </p>
-                            <p> &gt; Contributed to the planning, design, and development phases of building the web app, focusing primarily on the app's UI/UX and front-end </p>
-                            <p> &gt; Conducted user research and usability projectDetailsContainering to gain insights into user needs, behaviors, and product interactions </p>
+                            <p> &gt; Collaborated in an Agile development team using GitHub for version control under faculty mentorship </p>
+                            <p> &gt; Contributed to planning, design, and development with a focus on UI/UX and front-end implementation</p>
+                            <p> &gt; Conducted user research and usability testing to understand user needs and improve product interactions </p>
                         </div>
                     </div>
                 </div>
