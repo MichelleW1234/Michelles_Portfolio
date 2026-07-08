@@ -4,6 +4,7 @@ import Homescreen from "./components/Homescreen/Homescreen.jsx";
 import Arcadescreen from "./components/ProjectScreens/components/Arcadescreen.jsx";
 import TritonTurnUpscreen from "./components/ProjectScreens/components/TritonTurnUpscreen.jsx";
 import Scriptascreen from "./components/ProjectScreens/components/Scriptascreen.jsx";
+import UpDownTimescreen from "./components/ProjectScreens/components/UpDownTime.jsx";
 import ScrollToTop from "./ScrollToTop.jsx";
 
 import './App.css';
@@ -21,6 +22,7 @@ function App() {
         <Route path="/arcade" element={<Arcadescreen/>}/>
         <Route path="/tritonturnup" element={<TritonTurnUpscreen/>}/>
         <Route path="/scripta" element={<Scriptascreen/>}/>
+        <Route path="/updowntime" element={<UpDownTimescreen/>}/>
 
       </Routes>
     </HashRouter>

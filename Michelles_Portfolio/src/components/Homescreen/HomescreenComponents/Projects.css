@@ -81,6 +81,22 @@
 }
 
 
+
+
+.projectsCardContainer-UpDownTimeMobile{
+
+    background-image: 
+        linear-gradient(rgb(188, 207, 255, 0.75), rgb(188, 207, 255, 0.75)),
+        url("../../../images/UpDownTime.png");
+
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
 .projectsCardHorizontalLine{
 
     width: 85%;
