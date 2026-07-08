@@ -26,17 +26,18 @@ function Skills() {
 
 
   return (
-    <div className = "homeSwipingSectionContainer">
 
-      <h2 className = "subTitle"> My Skills: </h2>
-      <div className = "skillsContainer">
-
+    <>
         {activeSkill !== -1 && 
           <SkillsExpandedCard
             activeSkill={activeSkill}
             setActiveSkill={setActiveSkill}
           />
         }
+    <div className = "homeSwipingSectionContainer">
+
+      <h2 className = "subTitle"> My Skills: </h2>
+      <div className = "skillsContainer">
 
         {skillsList.map((item, index) => (
 
@@ -53,6 +54,7 @@ function Skills() {
 
       </div>
     </div>
+    </>
 
   )
 }

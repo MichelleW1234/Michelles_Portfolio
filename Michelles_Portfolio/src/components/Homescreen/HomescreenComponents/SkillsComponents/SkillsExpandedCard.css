@@ -1,25 +1,28 @@
 .skillsExpandedCardFlag{
 
-    position: absolute;
+    position: fixed;
     inset: 0; 
     z-index: 1;    
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    background-color: rgba(124, 146, 255, 0.5);
-    box-shadow: 0 0 8px 4px rgb(155, 128, 255);
+    background-color: rgba(0, 20, 119, 0.5);
 
 }
 
 .skillExpandedCardContainer{
 
     max-height: 100%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     padding: 3rem;
     gap: 2.5rem;
+    border-radius: 2rem;
 
     color: rgb(214, 214, 255);
     background-color: rgba(0, 15, 53, 0.75);
@@ -53,14 +56,17 @@
 
     .skillsExpandedCardFlag{
 
-        position: fixed;
+        justify-content: start;
 
     } 
     
     .skillExpandedCardContainer{
+
+        width: 100%;
         
         gap: 3.5rem;
-
+        border-radius: 0rem;
+        
     }
 
 
@@ -79,13 +85,15 @@
 
     .skillsExpandedCardFlag{
 
-        position: fixed;
-
+        justify-content: start;
     } 
 
     .skillExpandedCardContainer{
 
+        width: 100%;
+
         gap: 3.5rem;
+        border-radius: 0rem;
 
     }
 
