@@ -26,7 +26,7 @@ function Scriptascreen() {
 
             <h2 className="subTitle">Project Details:</h2>            
             <div className = "projectGeneralModuleContainer">
-                <div className="projectDetailsContainer">
+                <div className="projectDetailsRowContainer">
                     <div className="projectDetailsModuleContainer">
                         <h3 className="projectGeneralModuleSubTitle">Features: </h3>
                         <div className = "projectDetailsContentContainer"> 
@@ -50,30 +50,27 @@ function Scriptascreen() {
                     </div>
                 </div>
 
-                <h3 className="projectGeneralModuleSubTitle"> Timeline: </h3>
-                <div className = "projectDetailsContentContainer">
-                    <div className = "projectTimelineContainerDesktop"> 
-                        <div className = "projectTimelineEntryContainer">
-                            <div className="projectTimelineMapContainer"><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div></div>
-                            <p>&nbsp; 10/2025 &#8594; Project started</p>
-                        </div>
-                        <div className = "projectTimelineEntryContainer">
-                            <div className="projectTimelineMapContainer"><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePoint"></div></div>
-                            <p>&nbsp; 12/2025 &#8594; First Github release (Scripta V1.0.0 for Mac)</p>
-                        </div>
-                    </div>
+                <div className="projectDetailsRowContainer">
+                    <div className="projectDetailsModuleContainer">
+                        <h3 className="projectGeneralModuleSubTitle"> Timeline: </h3>
+                        <div className = "projectDetailsContentContainer">
+                            <div className = "projectTimelineContainer"> 
+                                <div className = "projectTimelineEntryContainer">
+                                    <div className="projectTimelineEntryDateContainer">
+                                        <p> 10/2025 </p>
+                                        <div className="projectTimelineMapContainer"><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/></div> 
+                                    </div>
+                                    <p> Project started </p>
+                                </div>
 
-                    <div className = "projectTimelineContainerMobile"> 
-                        <div className = "projectTimelineEntryContainer">
-                            <p> &nbsp; 10/2025 </p>
-                            <div className="projectTimelineMapContainer"><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/></div>
-                            <p> &nbsp; Project started</p>
-                        </div>
-
-                        <div className = "projectTimelineEntryContainer">
-                            <p>&nbsp; 12/2025 </p>
-                            <div className="projectTimelineMapContainer"><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/></div>
-                            <p> &nbsp; First Github release (Scripta V1.0.0 for Mac)</p>
+                                <div className = "projectTimelineEntryContainer">
+                                    <div className="projectTimelineEntryDateContainer">
+                                        <p> 12/2025 </p>
+                                        <div className="projectTimelineMapContainer"><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/></div> 
+                                    </div>
+                                    <p> First Github release (Scripta V1.0.0 for Mac) </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

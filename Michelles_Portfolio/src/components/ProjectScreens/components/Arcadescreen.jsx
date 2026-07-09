@@ -20,6 +20,14 @@ import "./Projectscreen.css";
 
 function Arcadescreen() {
 
+    const timeLineDates = ["12/2024", "04/2025", "06/2025", "08/2025", "09/2025", "10/2025"];
+    const timeLineDescriptions = ["Project started", 
+                                "First Github release (Arcade V1.0.0 for Mac)",  
+                                "Second Github release (Arcade V1.0.1 for Mac)",
+                                "Third + Fourth Github release (Arcade V1.0.2 & V1.0.3 for Mac)",
+                                "Fifth Github release (Arcade V1.0.4 for Mac)",
+                                "Sixth Github release (Arcade V1.0.5 for Mac)"
+                            ];
 
     const videoTitles = ["Rock-Paper-Scissors", "Tic-Tac-Toe", "Snake", "Space Invasion (Mission 2)", "Space Invasion (Mission 4)",
                         "Orbit", "Color Blast", "Cat Claw Machine", "Balloon Frenzy", "Sky Maze", "Chicken Crossing"];
@@ -40,8 +48,8 @@ function Arcadescreen() {
                             "Snake, where the user controls the snake using WASD to collect apples for points while avoiding an early exit penalty.",
                             "The 2nd mission in Space Invasion, where the user attempts to eliminate an alien hive with two different variants before they reach them.",
                             "The 4th and final mission in Space Invasion, where the user attempts to defeat the hive queen without triggering an explosion and before their flashlight battery runs out.",
-                            "Orbit, where the user projectDetailsContainers their timing by stopping the moving indicator on the green zone.",
-                            "Color Blast, where the user projectDetailsContainers their reflexes by clicking circles that match the target color to earn points while avoiding incorrect selections under a time limit.",
+                            "Orbit, where the user projectDetailsRowContainers their timing by stopping the moving indicator on the green zone.",
+                            "Color Blast, where the user projectDetailsRowContainers their reflexes by clicking circles that match the target color to earn points while avoiding incorrect selections under a time limit.",
                             "The Cat Claw Machine, where the user attempts to win a prize by timing their claw grabs based on where the green ball lands.",
                             "Balloon Frenzy, where the user pops as many balloons as they can under a time limit while avoiding birds.",
                             "Sky Maze, where the user uses WASD to guide the bird up and down to dodge incoming walls and travel as far as possible.",
@@ -69,7 +77,7 @@ function Arcadescreen() {
 
                 <h2 className="subTitle"> Project Details:</h2>
                 <div className = "projectGeneralModuleContainer">
-                    <div className="projectDetailsContainer">
+                    <div className="projectDetailsRowContainer">
                         <div className="projectDetailsModuleContainer">
                             <h3 className="projectGeneralModuleSubTitle">Features:</h3>
                             <div className = "projectDetailsContentContainer">
@@ -96,72 +104,30 @@ function Arcadescreen() {
                         </div>
                     </div>
 
-                    <h3 className="projectGeneralModuleSubTitle"> Timeline: </h3>
+                    <div className="projectDetailsRowContainer">
+                        <div className="projectDetailsModuleContainer">
+                            <h3 className="projectGeneralModuleSubTitle"> Timeline: </h3>
 
-                    <div className = "projectDetailsContentContainer">
-                        <div className = "projectTimelineContainerDesktop"> 
-                            <div className = "projectTimelineEntryContainer">
-                                <div className="projectTimelineMapContainer"><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div></div>
-                                <p>&nbsp; 12/2024 &#8594; Project started</p>
+                            <div className = "projectDetailsContentContainer">
+
+                                <div className = "projectTimelineContainer"> 
+                                    
+                                    {timeLineDates.map((item, index) => (
+
+                                        <div className = "projectTimelineEntryContainer">
+                                            <div className="projectTimelineEntryDateContainer">
+                                                <p> {timeLineDates[index]} </p>
+                                                <div className="projectTimelineMapContainer"><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/></div> 
+                                            </div>
+                                            <p> {timeLineDescriptions[index]} </p>
+                                        </div>
+
+                                    ))}
+
+                                </div>
+                            
                             </div>
-                            <div className = "projectTimelineEntryContainer">
-                                <div className="projectTimelineMapContainer"><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div></div>
-                                <p>&nbsp; 04/2025 &#8594; First Github release (Arcade V1.0.0 for Mac)</p>
-                            </div>
-                            <div className = "projectTimelineEntryContainer">
-                                <div className="projectTimelineMapContainer"><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div></div>
-                                <p>&nbsp; 06/2025 &#8594; Second Github release (Arcade V1.0.1 for Mac)</p>
-                            </div>
-                            <div className = "projectTimelineEntryContainer">
-                                <div className="projectTimelineMapContainer"><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div></div>
-                                <p>&nbsp; 08/2025 &#8594; Third + Fourth Github releases (Arcade V1.0.2 &  V1.0.3 for Mac)</p>
-                            </div>
-                            <div className = "projectTimelineEntryContainer">
-                                <div className="projectTimelineMapContainer"><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div></div>
-                                <p>&nbsp; 09/2025 &#8594; Fifth Github release (Arcade V1.0.4 for Mac)</p>
-                            </div>
-                            <div className = "projectTimelineEntryContainer">
-                                <div className="projectTimelineMapContainer"><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePoint"></div></div>
-                                <p>&nbsp; 10/2025 &#8594; Sixth Github release (Arcade V1.0.5 for Mac) </p>
-                            </div>
-                        </div>
                         
-                        <div className = "projectTimelineContainerMobile"> 
-                            <div className = "projectTimelineEntryContainer">
-                                <p> &nbsp; 12/2024 </p>
-                                <div className="projectTimelineMapContainer"><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/></div>
-                                <p> &nbsp; Project started</p>
-                            </div>
-
-                            <div className = "projectTimelineEntryContainer">
-                                <p>&nbsp; 04/2025 </p>
-                                <div className="projectTimelineMapContainer"><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/></div>
-                                <p> &nbsp; First Github release (Arcade V1.0.0 for Mac)</p>
-                            </div>
-                            
-                            <div className = "projectTimelineEntryContainer">
-                                <p>&nbsp; 06/2025</p>
-                                <div className="projectTimelineMapContainer"><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/></div>
-                                <p> &nbsp; Second Github release (Arcade V1.0.1 for Mac)</p>
-                            </div>
-                            
-                            <div className = "projectTimelineEntryContainer">
-                                <p>&nbsp; 08/2025</p>
-                                <div className="projectTimelineMapContainer"><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/></div>
-                                <p> &nbsp; Third + Fourth Github releases (Arcade V1.0.2 &  V1.0.3 for Mac)</p>
-                            </div>
-                            
-                            <div className = "projectTimelineEntryContainer">
-                                <p> &nbsp; 09/2025 </p>
-                                <div className="projectTimelineMapContainer"><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/></div>
-                                <p> &nbsp; Fifth Github release (Arcade V1.0.4 for Mac)</p>
-                            </div>
-
-                            <div className = "projectTimelineEntryContainer">
-                                <p> &nbsp; 10/2025 </p>
-                                <div className="projectTimelineMapContainer"><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/></div>
-                                <p> &nbsp; Sixth Github release (Arcade V1.0.5 for Mac) </p>
-                            </div>
                         </div>
                     </div>
 

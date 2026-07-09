@@ -53,7 +53,7 @@
 }
 
 
-.projectDetailsContainer{
+.projectDetailsRowContainer{
 
     display: flex;
     flex-direction: row;
@@ -64,6 +64,7 @@
 
 .projectDetailsModuleContainer{
 
+    flex: 1 1 50%;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -89,37 +90,41 @@
 }
 
 
-
-.projectTimelineContainerDesktop{
+.projectTimelineContainer{
 
     display: flex;
     flex-direction: column;
-
     gap: 2rem;
-    
-}
-
-.projectTimelineContainerMobile{
-
-    display: none;
 
 }
 
 .projectTimelineEntryContainer{
 
     display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 1rem;
+
+}
+
+.projectTimelineEntryDateContainer{
+
+    display: flex;
     flex-direction: column;
+    align-items: center;
 
     gap: 0.5rem;
 
 }
 
+
 .projectTimelineMapContainer{
 
-    width: fit-content;
     display: flex;
     flex-direction: row;
-    align-items: center;
+
+    gap: 0rem;
 
 }
 
@@ -136,16 +141,6 @@
         drop-shadow(0 0 1px rgb(250, 209, 255))
         drop-shadow(0 0 2px rgb(250, 209, 255))
         drop-shadow(0 0 3px rgb(250, 209, 255));
-
-}
-
-.projectTimelinePointDull{
-
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-
-    background: rgb(165, 0, 187);
 
 }
 
@@ -262,23 +257,7 @@
 
     }
 
-
-    .projectTimelineContainerDesktop{
-
-        display: none;
-
-    }
-
-    .projectTimelineContainerMobile{
-
-        display: flex;
-        flex-direction: column;
-
-        gap: 2rem; 
-
-    }
-
-    .projectDetailsContainer{
+    .projectDetailsRowContainer{
 
         flex-direction: column;
 
@@ -342,23 +321,8 @@
         padding-right: 0rem;
 
     }
-
-    .projectTimelineContainerDesktop{
-
-        display: none;
-
-    }
-
-    .projectTimelineContainerMobile{
-
-        display: flex;
-        flex-direction: column;
-        
-        gap: 2rem;
-
-    }
-
-    .projectDetailsContainer{
+   
+    .projectDetailsRowContainer{
 
         flex-direction: column;
 
@@ -420,7 +384,8 @@
 
     }
 
-    .projectTimelineContainerMobile{
+    
+    .projectTimelineContainer{
 
         gap: 1rem;
 

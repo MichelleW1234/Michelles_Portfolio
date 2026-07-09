@@ -10,6 +10,15 @@ import "./Projectscreen.css";
 
 function TritonTurnUpscreen() {
 
+    const timeLineDates = ["10/10/24", "10/17/24", "10/24/24", "10/31/24", "11/6/24", "12/6/24"];
+    const timeLineDescriptions = ["First team meet-up and start of the planning stage",
+                                    "Team meet-up for the creation of vision document",
+                                    "Conducted user research interviews and pitched the app idea",
+                                    "Team meet-up for role delegation",
+                                    "First meeting with mentor to discuss progress",
+                                    "Project deadline and submission"
+                                ];
+
   return (
 
     <div className="contentBody">
@@ -27,7 +36,7 @@ function TritonTurnUpscreen() {
 
             <h2 className="subTitle"> Project Details:</h2>
             <div className = "projectGeneralModuleContainer">
-                <div className="projectDetailsContainer">
+                <div className="projectDetailsRowContainer">
                     <div className="projectDetailsModuleContainer">
                         <h3 className="projectGeneralModuleSubTitle">Features:</h3>
                         <div className = "projectDetailsContentContainer"> 
@@ -43,13 +52,12 @@ function TritonTurnUpscreen() {
                         <div className = "projectDetailsContentContainer"> 
                             <p> &gt; Collaborated in an Agile development team using GitHub for version control under faculty mentorship </p>
                             <p> &gt; Contributed to planning, design, and development with a focus on UI/UX and front-end implementation</p>
-                            <p> &gt; Conducted user research and usability testing to understand user needs and improve product interactions </p>
+                            <p> &gt; Conducted user research and usability projectTimelineEntryContainer to understand user needs and improve product interactions </p>
                         </div>
                     </div>
                 </div>
 
-                <div className="projectDetailsContainer">
-
+                <div className="projectDetailsRowContainer">
                     <div className="projectDetailsModuleContainer">
                         <h3 className="projectGeneralModuleSubTitle">Tools Used: </h3>
                         <div className = "projectDetailsContentContainer"> 
@@ -67,70 +75,22 @@ function TritonTurnUpscreen() {
                     <div className="projectDetailsModuleContainer">
                         <h3 className="projectGeneralModuleSubTitle"> Timeline: </h3>
                         <div className = "projectDetailsContentContainer">
-                            <div className = "projectTimelineContainerDesktop"> 
-                                <div className = "projectTimelineEntryContainer">
-                                    <div className="projectTimelineMapContainer"><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div></div>
-                                    <p>&nbsp; 10/10/24 &#8594; First team meet-up and start of the planning stage</p>
-                                </div>
-                                <div className = "projectTimelineEntryContainer">
-                                    <div className="projectTimelineMapContainer"><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div></div>
-                                    <p>&nbsp; 10/17/24 &#8594; Team meet-up for the creation of vision document</p>
-                                </div>
-                                <div className = "projectTimelineEntryContainer">
-                                    <div className="projectTimelineMapContainer"><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div></div>
-                                    <p>&nbsp; 10/24/24 &#8594; Conducted user research interviews and pitched the app idea</p>
-                                </div>
-                                <div className = "projectTimelineEntryContainer">
-                                    <div className="projectTimelineMapContainer"><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div></div>
-                                    <p>&nbsp; 10/31/24 &#8594; Team meet-up for role delegation</p>
-                                </div>
-                                <div className = "projectTimelineEntryContainer">
-                                    <div className="projectTimelineMapContainer"><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div></div>
-                                    <p>&nbsp; 11/6/24 &#8594; First meeting with mentor to discuss progress</p>
-                                </div>
-                                <div className = "projectTimelineEntryContainer">
-                                    <div className="projectTimelineMapContainer"><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePointDull"></div><hr className = "projectTimelineLine"/><div className = "projectTimelinePoint"></div></div>
-                                    <p>&nbsp; 12/6/24 &#8594; Project deadline and submission </p>
-                                </div>
+                            <div className = "projectTimelineContainer"> 
+                               
+                                {timeLineDates.map((item, index) => (
+
+                                    <div className = "projectTimelineEntryContainer">
+                                        <div className="projectTimelineEntryDateContainer">
+                                            <p> {timeLineDates[index]} </p>
+                                            <div className="projectTimelineMapContainer"><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/></div> 
+                                        </div>
+                                        <p> {timeLineDescriptions[index]} </p>
+                                    </div>
+
+                                ))}
+
                             </div>
 
-                            <div className = "projectTimelineContainerMobile"> 
-                                <div className = "projectTimelineEntryContainer">
-                                    <p> &nbsp; 10/10/24 </p>
-                                    <div className="projectTimelineMapContainer"><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/></div>
-                                    <p> &nbsp; First team meet-up and start of the planning stage</p>
-                                </div>
-
-                                <div className = "projectTimelineEntryContainer">
-                                    <p>&nbsp; 10/17/24 </p>
-                                    <div className="projectTimelineMapContainer"><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/></div>
-                                    <p> &nbsp; Team meet-up for the creation of vision document</p>
-                                </div>
-                                
-                                <div className = "projectTimelineEntryContainer">
-                                    <p>&nbsp; 10/24/24</p>
-                                    <div className="projectTimelineMapContainer"><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/></div>
-                                    <p> &nbsp; Conducted user research interviews and pitched the app idea</p>
-                                </div>
-                                
-                                <div className = "projectTimelineEntryContainer">
-                                    <p>&nbsp; 10/31/24</p>
-                                    <div className="projectTimelineMapContainer"><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/></div>
-                                    <p> &nbsp; Team meet-up for role delegation</p>
-                                </div>
-                                
-                                <div className = "projectTimelineEntryContainer">
-                                    <p> &nbsp; 11/6/24 </p>
-                                    <div className="projectTimelineMapContainer"><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/></div>
-                                    <p> &nbsp; First meeting with mentor to discuss progress</p>
-                                </div>
-
-                                <div className = "projectTimelineEntryContainer">
-                                    <p> &nbsp; 12/6/24 </p>
-                                    <div className="projectTimelineMapContainer"><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/></div>
-                                    <p> &nbsp; Project deadline and submission </p>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
