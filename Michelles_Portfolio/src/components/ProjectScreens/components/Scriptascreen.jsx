@@ -46,6 +46,8 @@ function Scriptascreen() {
                             <p> JavaScript, HTML, CSS </p>
                             <h4> &gt; Build & Packaging: </h4>
                             <p> Vite, Node.js, npm, Electron Builder </p>
+                            <h4> &gt; Development Tools: </h4>
+                            <p> VSCode, GitHub</p>
                         </div>
                     </div>
                 </div>

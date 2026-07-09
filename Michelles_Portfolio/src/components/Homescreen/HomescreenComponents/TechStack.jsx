@@ -4,16 +4,18 @@ import JS from "../../../images/JS.png";
 import React from "../../../images/React.png";
 import CSS from "../../../images/CSS.png";
 import HTML from "../../../images/HTML.png";
+import CSharp from "../../../images/CSharp.png";
 import Figma from "../../../images/Figma.png";
 import Github from "../../../images/Github.png";
 import Electron from "../../../images/Electron.png";
 import Unity from "../../../images/Unity.png";
+import VSCode from "../../../images/VSCode.png";
 
 import "./TechStack.css";
 
 function TechStack() {
 
-  const skillsList = [JS, React, CSS, HTML, Figma, Github, Electron, Unity];
+  const skillsList = [JS, React, CSS, HTML, CSharp, Figma, Github, Electron, Unity, VSCode];
 
   const hoveredSkill = (skillIndex) => {
 

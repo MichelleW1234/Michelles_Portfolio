@@ -22,6 +22,15 @@ function UpDownTimescreen() {
                                 "Game deadline",
                                 "Final game showcase"];
 
+
+    const linkNames = ["itch.io Link", "Pitch Deck", "Art Document", "Random Events Planning Document"];
+    const linkSRCs = ["https://squishyj.itch.io/updowntime",
+                        "https://drive.google.com/file/d/1P1_HCZufYDgggQi4ml9hq6coI1CHjwJM/view?usp=drive_link",
+                        "https://docs.google.com/presentation/d/1m-VsPORp_hXcN7x8O754oy7ohMRxLBSgSAPPPQQS96I/edit?usp=drive_link",
+                        "https://docs.google.com/spreadsheets/d/1CIlsSRRRqLR4woOn2dSekh14PQ_vB9SKi59yZosp6eU/edit?usp=drive_link"
+                    ];
+
+
   return (
 
     <div className="contentBody">
@@ -55,25 +64,24 @@ function UpDownTimescreen() {
                     <div className="projectDetailsModuleContainer">
                         <h3 className="projectGeneralModuleSubTitle">My Role:</h3>
                         <div className = "projectDetailsContentContainer"> 
-                            <p> &gt; Collaborated in an Agile development team using GitHub for version control </p>
-                            <p> &gt; Contributed to planning, design, and development with a focus on UI/UX and front-end implementation</p>
-                            <p> &gt; Conducted user research and usability projectTimelineEntryContainer to understand user needs and improve product interactions </p>
+                            <p> &gt; Served on the programming team, contributing to both the planning and development of the game </p>
+                            <p> &gt; Collaborated during the planning phase to design dynamic environmental events and gameplay conditions</p>
+                            <p> &gt; Developed gameplay systems in Unity using C# scripting and Unity's physics engine to implement core game mechanics </p>
+                            <p> &gt; Debugged and refined gameplay systems in preparation for public project showcases </p>
                         </div>
                     </div>
                 </div>
- <div className="projectDetailsRowContainer"></div>
+
                 <div className="projectDetailsRowContainer">
                     <div className="projectDetailsModuleContainer">
                         <h3 className="projectGeneralModuleSubTitle">Tools Used: </h3>
                         <div className = "projectDetailsContentContainer"> 
                             <h4> &gt; Core Frameworks & Libraries: </h4>
-                            <p> React, React Router, React Big Calendar </p>
+                            <p> Unity, Unity Input System, Universal Render Pipeline (URP), Unity 2D Animation, Unity Tilemap </p>
                             <h4> &gt; Programming Languages: </h4>
-                            <p> JavaScript, HTML, CSS, Python </p>
-                            <h4> &gt; Build & Packaging: </h4>
-                            <p> Vite, Node.js, npm </p>
-                            <h4> &gt; Authentication / APIs: </h4>
-                            <p> Google OAuth, Google APIs, JWT Authentication </p>
+                            <p> C# </p>
+                            <h4> &gt; Development Tools: </h4>
+                            <p> Unity Physics 2D, Unity Timeline, VSCode, GitHub</p>
                         </div>
                     </div>
                     
@@ -104,21 +112,16 @@ function UpDownTimescreen() {
 
             <h2 className="subTitle"> Project Media: </h2>
             <div className = "projectGeneralModuleContainer">
-                <h3 className="projectGeneralModuleSubTitle"> Video Content: </h3>
-                <div className="projectExpandableVideoContainer">
-                    <a className = "teleportationButton projectVideoEntryButton" href="https://drive.google.com/file/d/1bjoVWfcJ89o7ha2sFHtFunMhr9dIxjtt/view" target="_blank">
-                        <p>&#9654; Watch Demo Video </p> 
-                        <div className="projectVideoEntryButtonDescriptionContainer">
-                            <img src = {TritonTurnupDemo}/>
-                            <p> A demonstration of our web application's core features, including user login, schedule-based filtering, entry browsing, and calendar integration. </p>
-                        </div>
-                    </a>
-                </div>
-
                 <h3 className="projectGeneralModuleSubTitle"> External Links: </h3>
+
                 <div className = "projectLinksContainer">
-                    <a className = "teleportationButton projectLinkEntryButton" href="https://github.com/MichelleW1234/CSE-110-Project.git" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
+                    {linkSRCs.map((item, index) => (
+
+                        <a className = "teleportationButton projectLinkEntryButton" href={linkSRCs[index]} target="_blank" rel="noopener noreferrer"> {linkNames[index]} </a>
+
+                    ))}
                 </div>
+               
             </div>
 
             <button className = "teleportationButton projectPageJumpButton" onClick = {() => ScrollBackToTop()}> &#9650; Back to Top </button>

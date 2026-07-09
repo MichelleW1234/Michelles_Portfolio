@@ -69,6 +69,8 @@ function TritonTurnUpscreen() {
                             <p> Vite, Node.js, npm </p>
                             <h4> &gt; Authentication / APIs: </h4>
                             <p> Google OAuth, Google APIs, JWT Authentication </p>
+                            <h4> &gt; Development Tools: </h4>
+                            <p> VSCode, GitHub</p>
                         </div>
                     </div>
                     
