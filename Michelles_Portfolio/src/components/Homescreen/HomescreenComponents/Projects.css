@@ -20,7 +20,7 @@
 
 }
 
-.projectsCardContainer{
+.projectsEntryCardContainer{
 
     width: 45rem;
     display: flex;
@@ -31,18 +31,18 @@
     padding: 3rem 4rem;
     gap: 2rem;
 
-    color: rgb(0, 0, 124);
-    background-color: rgb(188, 207, 255);
-    mask-image: linear-gradient(to right, transparent 0%, rgb(188, 207, 255) 5%, rgb(188, 207, 255) 95%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(188, 207, 255) 5%, rgb(188, 207, 255) 95%, transparent 100%);
+    color: rgb(var(--color-blue-bright-detail-dark));
+    background: rgb(255, 255, 255, 0.75);
+    mask-image: linear-gradient(to right, transparent 0%, rgb(0,0,0) 5%, rgb(0,0,0) 95%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(0,0,0) 5%, rgb(0,0,0) 95%, transparent 100%);
 
 }
 
 
-.projectsCardContainer-ArcadeMobile{
+.projectsEntryCardContainer-Arcade{
 
     background-image: 
-        linear-gradient(rgb(188, 207, 255, 0.75), rgb(188, 207, 255, 0.75)),
+        linear-gradient(rgba(var(--color-pink-bright-base), 0.75), rgba(var(--color-blue-bright-base), 0.75)),
         url("../../../images/Arcade.png");
 
     
@@ -53,10 +53,10 @@
 }
 
 
-.projectsCardContainer-ScriptaMobile{
+.projectsEntryCardContainer-Scripta{
 
     background-image: 
-        linear-gradient(rgb(188, 207, 255, 0.75), rgb(188, 207, 255, 0.75)),
+        linear-gradient(rgba(var(--color-pink-bright-base), 0.75), rgba(var(--color-blue-bright-base), 0.75)),
         url("../../../images/Scripta.png");
     
     background-size: contain;
@@ -66,10 +66,10 @@
 }
 
 
-.projectsCardContainer-TritonTurnUpMobile{
+.projectsEntryCardContainer-TritonTurnUp{
 
     background-image: 
-        linear-gradient(rgb(188, 207, 255, 0.75), rgb(188, 207, 255, 0.75)),
+        linear-gradient(rgba(var(--color-pink-bright-base), 0.75), rgba(var(--color-blue-bright-base), 0.75)),
         url("../../../images/TritonTurnup.svg");
 
     
@@ -81,12 +81,10 @@
 }
 
 
-
-
-.projectsCardContainer-UpDownTimeMobile{
+.projectsEntryCardContainer-UpDownTime{
 
     background-image: 
-        linear-gradient(rgb(188, 207, 255, 0.75), rgb(188, 207, 255, 0.75)),
+        linear-gradient(rgba(var(--color-pink-bright-base), 0.75), rgba(var(--color-blue-bright-base), 0.75)),
         url("../../../images/UpDownTime.png");
 
     
@@ -97,16 +95,16 @@
 }
 
 
-.projectsCardHorizontalLine{
+.projectsEntryCardHorizontalLine{
 
     width: 85%;
     height: 1.5px;
 
-    background-color: rgb(0, 0, 124);
+    background-color: rgb(var(--color-blue-bright-detail-dark));
 
 }
 
-.projectsCardDescriptionContainer{
+.projectsEntryCardDescriptionContainer{
 
     display: flex;
     flex-direction: column;
@@ -118,7 +116,7 @@
 }
 
 
-.projectsReadMoreButton {
+.projectsEntryReadMoreButton {
 
   padding: 1.5rem 2rem;
   border-radius: 30px;
@@ -146,14 +144,14 @@
     }
 
 
-    .projectsCardContainer{
+    .projectsEntryCardContainer{
 
         width: 80%;
 
     }
 
 
-    .projectsCardDescriptionContainer{
+    .projectsEntryCardDescriptionContainer{
 
         flex-direction: column;
         justify-content: center;
@@ -164,7 +162,7 @@
 
     }
 
-    .projectsReadMoreButton {
+    .projectsEntryReadMoreButton {
 
         padding: 1.7rem 2.2rem;
 
@@ -191,7 +189,7 @@
     }
 
 
-    .projectsCardContainer{
+    .projectsEntryCardContainer{
 
         width: 100%;
 
@@ -200,7 +198,7 @@
     }
 
 
-    .projectsCardDescriptionContainer{
+    .projectsEntryCardDescriptionContainer{
 
         flex-direction: column;
         justify-content: center;
@@ -223,7 +221,7 @@
 
     }
 
-    .projectsCardContainer{
+    .projectsEntryCardContainer{
 
         width: 100%;
 

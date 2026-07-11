@@ -22,11 +22,11 @@ function Homescreen() {
 
     <div className = "contentBody">
 
-      <div className="heading">
-        <div className="titleContainer">
-          <h1 className = "title"> Michelle Wee </h1>
+      <div className="banner">
+        <div className="bannerContentContainer">
+          <h1 className = "bannerContentWords"> Michelle Wee </h1>
         </div>
-        <div className="horizontalLine"></div>
+        <div className="bannerHorizontalLine"></div>
       </div>
 
       <main className="homeSwipingContainer">
@@ -58,18 +58,18 @@ function Homescreen() {
 
       </main>
 
-      <div className="heading">
-        <div className="horizontalLine"></div>
-        <div className="titleContainer">
+      <div className="banner">
+        <div className="bannerHorizontalLine"></div>
+        <div className="bannerContentContainer">
           <h2>Let's Connect!</h2>
-          <div className = "homeContactContainer">
-            <a className = "teleportationButton homeContactEntryButton" href="mailto: michellew1822@gmail.com"> 
+          <div className = "homeContactsContainer">
+            <a className = "teleportationButton homeContactsButton" href="mailto: michellew1822@gmail.com"> 
               <img src={Email}/>
             </a>
-            <a className = "teleportationButton homeContactEntryButton" href="https://www.linkedin.com/in/michelle-wee123/" target="_blank" rel="noopener noreferrer"> 
+            <a className = "teleportationButton homeContactsButton" href="https://www.linkedin.com/in/michelle-wee123/" target="_blank" rel="noopener noreferrer"> 
               <img src={Linkedin}/>
             </a>
-            <a className = "teleportationButton homeContactEntryButton" href="https://github.com/MichelleW1234" target="_blank" rel="noopener noreferrer"> 
+            <a className = "teleportationButton homeContactsButton" href="https://github.com/MichelleW1234" target="_blank" rel="noopener noreferrer"> 
               <img src={GitHub}/>
             </a>
           </div>

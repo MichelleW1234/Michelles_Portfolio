@@ -1,8 +1,9 @@
-.introductionParagraphContainer{
+.introductionContentContainer{
 
   width: 90%;
   text-align: center;
-  color: white;
+
+  color: rgb(var(--color-pink-bright-detail-light));
 
 }
 
@@ -31,7 +32,7 @@
 
 @media (max-device-width: 600px) and (pointer: coarse){
 
-  .introductionParagraphContainer{
+  .introductionContentContainer{
 
     width: 100%;
 
@@ -41,7 +42,7 @@
 
 @media (max-width: 600px) and (pointer: fine){
 
-  .introductionParagraphContainer{
+  .introductionContentContainer{
 
     width: 100%;
 

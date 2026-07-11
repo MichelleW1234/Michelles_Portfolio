@@ -13,23 +13,23 @@ function Scriptascreen() {
 
     <div className="contentBody">
         
-        <div className="heading">
-            <div className="titleContainer titleContainer-Scripta">
-                <h1 className = "title"> Scripta </h1>
+        <div className="banner">
+            <div className="bannerContentContainer bannerContentContainer-Scripta">
+                <h1 className = "bannerContentWords"> Scripta </h1>
             </div>
-            <div className="horizontalLine"></div>
+            <div className="bannerHorizontalLine"></div>
         </div>
 
         <div className="projectScreen">
 
             <Link className = "teleportationButton projectPageJumpButton" to = "/home"> &lt; Back to Home </Link>
 
-            <h2 className="subTitle">Project Details:</h2>            
-            <div className = "projectGeneralModuleContainer">
-                <div className="projectDetailsRowContainer">
-                    <div className="projectDetailsModuleContainer">
-                        <h3 className="projectGeneralModuleSubTitle">Features: </h3>
-                        <div className = "projectDetailsContentContainer"> 
+            <h2 className="sectionTitle">Project Details:</h2>            
+            <div className = "projectSectionContainer">
+                <div className="projectSectionDetailsRowContainer">
+                    <div className="projectSectionDetailsSectionGeneralContainer">
+                        <h3 className="projectSectionSubsectionTitle">Features: </h3>
+                        <div className = "projectSectionDetailsSectionGeneralContentContainer"> 
                             <p>&gt; Rich text editor with customizable fonts, sizes, colors, page backgrounds, and title styling </p>
                             <p>&gt; Interactive image import system with adjustable image sizing within documents </p>
                             <p>&gt; Document management system for creating, saving, reopening, searching, and deleting documents with trash support </p>
@@ -37,9 +37,9 @@ function Scriptascreen() {
                         </div>
                     </div>
 
-                    <div className="projectDetailsModuleContainer">
-                        <h3 className="projectGeneralModuleSubTitle">Tools Used: </h3>
-                        <div className = "projectDetailsContentContainer"> 
+                    <div className="projectSectionDetailsSectionGeneralContainer">
+                        <h3 className="projectSectionSubsectionTitle">Tools Used: </h3>
+                        <div className = "projectSectionDetailsSectionGeneralContentContainer"> 
                             <h4> &gt; Core Frameworks & Libraries: </h4>
                             <p> React, Electron, React Router, React ContentEditable </p>
                             <h4> &gt; Programming Languages: </h4>
@@ -52,23 +52,23 @@ function Scriptascreen() {
                     </div>
                 </div>
 
-                <div className="projectDetailsRowContainer">
-                    <div className="projectDetailsModuleContainer">
-                        <h3 className="projectGeneralModuleSubTitle"> Timeline: </h3>
-                        <div className = "projectDetailsContentContainer">
-                            <div className = "projectTimelineContainer"> 
-                                <div className = "projectTimelineEntryContainer">
-                                    <div className="projectTimelineEntryDateContainer">
+                <div className="projectSectionDetailsRowContainer">
+                    <div className="projectSectionDetailsSectionGeneralContainer">
+                        <h3 className="projectSectionSubsectionTitle"> Timeline: </h3>
+                        <div className = "projectSectionDetailsSectionGeneralContentContainer">
+                            <div className = "projectSectionDetailsSectionGeneralContentTimelineContainer"> 
+                                <div className = "projectSectionDetailsSectionGeneralContentTimelineEntryContainer">
+                                    <div className="projectSectionDetailsSectionGeneralContentTimelineEntryDateContainer">
                                         <p> 10/2025 </p>
-                                        <div className="projectTimelineMapContainer"><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/></div> 
+                                        <div className="projectSectionDetailsSectionGeneralContentTimelineEntryVisualContainer"><div className = "projectSectionDetailsSectionGeneralContentTimelineEntryVisualPoint"></div><hr className = "projectSectionDetailsSectionGeneralContentTimelineEntryVisualLine"/></div> 
                                     </div>
                                     <p> Project started </p>
                                 </div>
 
-                                <div className = "projectTimelineEntryContainer">
-                                    <div className="projectTimelineEntryDateContainer">
+                                <div className = "projectSectionDetailsSectionGeneralContentTimelineEntryContainer">
+                                    <div className="projectSectionDetailsSectionGeneralContentTimelineEntryDateContainer">
                                         <p> 12/2025 </p>
-                                        <div className="projectTimelineMapContainer"><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/></div> 
+                                        <div className="projectSectionDetailsSectionGeneralContentTimelineEntryVisualContainer"><div className = "projectSectionDetailsSectionGeneralContentTimelineEntryVisualPoint"></div><hr className = "projectSectionDetailsSectionGeneralContentTimelineEntryVisualLine"/></div> 
                                     </div>
                                     <p> First Github release (Scripta V1.0.0 for Mac) </p>
                                 </div>
@@ -78,23 +78,23 @@ function Scriptascreen() {
                 </div>
             </div>
 
-            <h2 className="subTitle"> Project Media: </h2>
-            <div className = "projectGeneralModuleContainer">
-                <h3 className="projectGeneralModuleSubTitle"> Video Content: </h3>
-                <div className="projectExpandableVideoContainer">
-                    <a className = "teleportationButton projectVideoEntryButton" href="https://drive.google.com/file/d/18kaJoc-IkkRINIQjO2polFLivxWjDAy5/view?usp=drive_link" target="_blank">
+            <h2 className="sectionTitle"> Project Media: </h2>
+            <div className = "projectSectionContainer">
+                <h3 className="projectSectionSubsectionTitle"> Video Content: </h3>
+                <div className="projectSectionMediaSectionVideosExpandableContainer">
+                    <a className = "teleportationButton projectSectionMediaSectionVideosExpandableEntryButton" href="https://drive.google.com/file/d/18kaJoc-IkkRINIQjO2polFLivxWjDAy5/view?usp=drive_link" target="_blank">
                         <p>&#9654; Watch Demo Video </p> 
-                        <div className="projectVideoEntryButtonDescriptionContainer">
+                        <div className="projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer">
                             <img src = {ScriptaDemo}/>
                             <p> A demonstration of the app’s document system, including creating documents, editing content, adding text and importing images, saving files, using the search bar, and removing documents. </p>
                         </div>
                     </a>
                 </div>
 
-                <h3 className="projectGeneralModuleSubTitle"> External Links: </h3>
-                <div className = "projectLinksContainer">
-                    <a className = "teleportationButton projectLinkEntryButton" href="https://github.com/MichelleW1234/Scripta" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
-                    <a className = "teleportationButton projectLinkEntryButton" href="https://github.com/MichelleW1234/Scripta/releases/tag/v.1.0.0" target="_blank" rel="noopener noreferrer"> Go to Scripta v1.0.0 </a>
+                <h3 className="projectSectionSubsectionTitle"> External Links: </h3>
+                <div className = "projectSectionMediaSectionLinksContainer">
+                    <a className = "teleportationButton projectSectionMediaSectionLinksEntryButton" href="https://github.com/MichelleW1234/Scripta" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
+                    <a className = "teleportationButton projectSectionMediaSectionLinksEntryButton" href="https://github.com/MichelleW1234/Scripta/releases/tag/v.1.0.0" target="_blank" rel="noopener noreferrer"> Go to Scripta v1.0.0 </a>
                 </div>
             </div>
 
@@ -102,10 +102,10 @@ function Scriptascreen() {
 
         </div>
 
-        <div className="heading">
-            <div className="horizontalLine"></div>
-            <div className="titleContainer titleContainer-Scripta">
-                <h1 className = "title title-UpsideDown"> Scripta </h1>
+        <div className="banner">
+            <div className="bannerHorizontalLine"></div>
+            <div className="bannerContentContainer bannerContentContainer-Scripta">
+                <h1 className = "bannerContentWords bannerContentWords-UpsideDown"> Scripta </h1>
             </div>
         </div>
 

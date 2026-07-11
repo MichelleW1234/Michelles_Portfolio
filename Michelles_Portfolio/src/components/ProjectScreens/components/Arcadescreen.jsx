@@ -48,8 +48,8 @@ function Arcadescreen() {
                             "Snake, where the user controls the snake using WASD to collect apples for points while avoiding an early exit penalty.",
                             "The 2nd mission in Space Invasion, where the user attempts to eliminate an alien hive with two different variants before they reach them.",
                             "The 4th and final mission in Space Invasion, where the user attempts to defeat the hive queen without triggering an explosion and before their flashlight battery runs out.",
-                            "Orbit, where the user projectDetailsRowContainers their timing by stopping the moving indicator on the green zone.",
-                            "Color Blast, where the user projectDetailsRowContainers their reflexes by clicking circles that match the target color to earn points while avoiding incorrect selections under a time limit.",
+                            "Orbit, where the user projectSectionDetailsRowContainers their timing by stopping the moving indicator on the green zone.",
+                            "Color Blast, where the user projectSectionDetailsRowContainers their reflexes by clicking circles that match the target color to earn points while avoiding incorrect selections under a time limit.",
                             "The Cat Claw Machine, where the user attempts to win a prize by timing their claw grabs based on where the green ball lands.",
                             "Balloon Frenzy, where the user pops as many balloons as they can under a time limit while avoiding birds.",
                             "Sky Maze, where the user uses WASD to guide the bird up and down to dodge incoming walls and travel as far as possible.",
@@ -64,23 +64,23 @@ function Arcadescreen() {
 
         <div className="contentBody">
             
-            <div className="heading">
-                <div className="titleContainer titleContainer-Arcade">
-                    <h1 className = "title"> Arcade </h1>
+            <div className="banner">
+                <div className="bannerContentContainer bannerContentContainer-Arcade">
+                    <h1 className = "bannerContentWords"> Arcade </h1>
                 </div>
-                <div className="horizontalLine"></div>
+                <div className="bannerHorizontalLine"></div>
             </div>
 
             <div className="projectScreen">
 
                 <Link className = "teleportationButton projectPageJumpButton" to = "/home"> &lt; Back to Home </Link>
 
-                <h2 className="subTitle"> Project Details:</h2>
-                <div className = "projectGeneralModuleContainer">
-                    <div className="projectDetailsRowContainer">
-                        <div className="projectDetailsModuleContainer">
-                            <h3 className="projectGeneralModuleSubTitle">Features:</h3>
-                            <div className = "projectDetailsContentContainer">
+                <h2 className="sectionTitle"> Project Details:</h2>
+                <div className = "projectSectionContainer">
+                    <div className="projectSectionDetailsRowContainer">
+                        <div className="projectSectionDetailsSectionGeneralContainer">
+                            <h3 className="projectSectionSubsectionTitle">Features:</h3>
+                            <div className = "projectSectionDetailsSectionGeneralContentContainer">
                                 <p>&gt; Dynamic scoring system with action-based point rewards and penalties </p>
                                 <p>&gt; Player-driven point economy with prize redemption, claw machines, and gameplay purchases </p>
                                 <p>&gt; Multiple interactive mini-games featuring player-driven gameplay and dynamic outcomes </p>
@@ -91,9 +91,9 @@ function Arcadescreen() {
                             </div>
                         </div>
 
-                        <div className="projectDetailsModuleContainer">
-                            <h3 className="projectGeneralModuleSubTitle">Tools Used: </h3>
-                            <div className = "projectDetailsContentContainer"> 
+                        <div className="projectSectionDetailsSectionGeneralContainer">
+                            <h3 className="projectSectionSubsectionTitle">Tools Used: </h3>
+                            <div className = "projectSectionDetailsSectionGeneralContentContainer"> 
                                 <h4> &gt; Core Frameworks & Libraries: </h4>
                                 <p> React, Electron, React Router </p>
                                 <h4> &gt; Programming Languages: </h4>
@@ -106,20 +106,20 @@ function Arcadescreen() {
                         </div>
                     </div>
 
-                    <div className="projectDetailsRowContainer">
-                        <div className="projectDetailsModuleContainer">
-                            <h3 className="projectGeneralModuleSubTitle"> Timeline: </h3>
+                    <div className="projectSectionDetailsRowContainer">
+                        <div className="projectSectionDetailsSectionGeneralContainer">
+                            <h3 className="projectSectionSubsectionTitle"> Timeline: </h3>
 
-                            <div className = "projectDetailsContentContainer">
+                            <div className = "projectSectionDetailsSectionGeneralContentContainer">
 
-                                <div className = "projectTimelineContainer"> 
+                                <div className = "projectSectionDetailsSectionGeneralContentTimelineContainer"> 
                                     
                                     {timeLineDates.map((item, index) => (
 
-                                        <div className = "projectTimelineEntryContainer">
-                                            <div className="projectTimelineEntryDateContainer">
+                                        <div className = "projectSectionDetailsSectionGeneralContentTimelineEntryContainer">
+                                            <div className="projectSectionDetailsSectionGeneralContentTimelineEntryDateContainer">
                                                 <p> {timeLineDates[index]} </p>
-                                                <div className="projectTimelineMapContainer"><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/></div> 
+                                                <div className="projectSectionDetailsSectionGeneralContentTimelineEntryVisualContainer"><div className = "projectSectionDetailsSectionGeneralContentTimelineEntryVisualPoint"></div><hr className = "projectSectionDetailsSectionGeneralContentTimelineEntryVisualLine"/></div> 
                                             </div>
                                             <p> {timeLineDescriptions[index]} </p>
                                         </div>
@@ -135,19 +135,19 @@ function Arcadescreen() {
 
                 </div>
 
-                <h2 className="subTitle"> Project Media: </h2>
-                <div className = "projectGeneralModuleContainer">
-                    <h3 className="projectGeneralModuleSubTitle"> Video Content: </h3>
-                    <div className="projectExpandableVideoContainer">
+                <h2 className="sectionTitle"> Project Media: </h2>
+                <div className = "projectSectionContainer">
+                    <h3 className="projectSectionSubsectionTitle"> Video Content: </h3>
+                    <div className="projectSectionMediaSectionVideosExpandableContainer">
 
-                        <div className="projectVideoContainer">
+                        <div className="projectSectionMediaSectionVideosExpandableContainer">
                             {videoTitles.map((video, index) => (
 
                                 openFullVideoSection ? (
 
-                                    <a className = "teleportationButton projectVideoEntryButton" href={videoLinks[index]} target="_blank">
+                                    <a className = "teleportationButton projectSectionMediaSectionVideosExpandableEntryButton" href={videoLinks[index]} target="_blank">
                                         <p> &#9654; Watch {videoTitles[index]}</p> 
-                                        <div className="projectVideoEntryButtonDescriptionContainer">
+                                        <div className="projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer">
                                             <img src={videoImages[index]}/>
                                             <p>{videoSummaries[index]}</p>
                                         </div>
@@ -157,9 +157,9 @@ function Arcadescreen() {
 
                                     index < 4 ? (
 
-                                        <a className = "teleportationButton projectVideoEntryButton" href={videoLinks[index]} target="_blank">
+                                        <a className = "teleportationButton projectSectionMediaSectionVideosExpandableEntryButton" href={videoLinks[index]} target="_blank">
                                             <p> &#9654; Watch {videoTitles[index]}</p> 
-                                            <div className="projectVideoEntryButtonDescriptionContainer">
+                                            <div className="projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer">
                                                 <img src={videoImages[index]}/>
                                                 <p>{videoSummaries[index]}</p>
                                             </div>
@@ -188,11 +188,11 @@ function Arcadescreen() {
 
                     </div>
                 
-                    <h3 className="projectGeneralModuleSubTitle"> External Links: </h3>
-                    <div className = "projectLinksContainer">
-                        <a className = "teleportationButton projectLinkEntryButton" href="https://github.com/MichelleW1234/Arcade.git" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
-                        <a className = "teleportationButton projectLinkEntryButton" href="https://github.com/MichelleW1234/Arcade/releases/tag/v1.0.5" target="_blank" rel="noopener noreferrer"> Go to Arcade v1.0.5 </a>
-                        <a className = "teleportationButton projectLinkEntryButton" href="https://github.com/MichelleW1234/Arcade/releases" target="_blank" rel="noopener noreferrer"> Go to All Arcade Releases</a>
+                    <h3 className="projectSectionSubsectionTitle"> External Links: </h3>
+                    <div className = "projectSectionMediaSectionLinksContainer">
+                        <a className = "teleportationButton projectSectionMediaSectionLinksEntryButton" href="https://github.com/MichelleW1234/Arcade.git" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
+                        <a className = "teleportationButton projectSectionMediaSectionLinksEntryButton" href="https://github.com/MichelleW1234/Arcade/releases/tag/v1.0.5" target="_blank" rel="noopener noreferrer"> Go to Arcade v1.0.5 </a>
+                        <a className = "teleportationButton projectSectionMediaSectionLinksEntryButton" href="https://github.com/MichelleW1234/Arcade/releases" target="_blank" rel="noopener noreferrer"> Go to All Arcade Releases</a>
                     </div>
 
                 </div>
@@ -201,10 +201,10 @@ function Arcadescreen() {
     
             </div>
 
-            <div className="heading">
-                <div className="horizontalLine"></div>
-                <div className="titleContainer titleContainer-Arcade">
-                    <h1 className = "title title-UpsideDown"> Arcade </h1>
+            <div className="banner">
+                <div className="bannerHorizontalLine"></div>
+                <div className="bannerContentContainer bannerContentContainer-Arcade">
+                    <h1 className = "bannerContentWords bannerContentWords-UpsideDown"> Arcade </h1>
                 </div>
             </div>
 

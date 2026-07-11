@@ -3,10 +3,32 @@
 :root {
 
   --default-font-size: 1rem;
-
   --default-font-size-mobile: 1.125rem;
 
+  --color-pink-dark-base: 245, 63, 255;
+  --color-pink-dark-layer: 188, 63, 255;
+  --color-pink-dark-detail-dark: 82, 0, 126;
+  --color-pink-dark-detail-light: 234, 194, 255;
+
+  --color-pink-bright-base: 249, 126, 255;
+  --color-pink-bright-layer: 211, 128, 255;
+  --color-pink-bright-detail-dark: 81, 0, 125;
+  --color-pink-bright-detail-light: 234, 195, 255;
+
+  --color-blue-bright-base: 124, 176, 255;
+  --color-blue-bright-layer: 139, 124, 255;
+  --color-blue-bright-detail-dark: 14, 0, 123;
+  --color-blue-bright-detail-light: 203, 196, 255;
+
+  --color-blue-dark-base: 62, 139, 255;
+  --color-blue-dark-layer: 83, 60, 255;
+  --color-blue-dark-detail-dark: 14, 0, 117;
+  --color-blue-dark-detail-light: 207, 200, 255;
+
 }
+
+
+
 
 html {
 
@@ -40,7 +62,6 @@ body{
 * {
 
   box-sizing: border-box;
-
   font-family: monospace;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -114,7 +135,7 @@ p, button, a {
 
 /* Custom tags: */
 
-.heading{
+.banner{
 
   display: flex;
   flex-direction: column;
@@ -123,7 +144,7 @@ p, button, a {
 
 }
 
-.titleContainer{
+.bannerContentContainer{
 
   width: 100%;
   display: flex;
@@ -134,16 +155,16 @@ p, button, a {
   padding: 2rem;
   gap: 2rem;
   
-  color: rgb(253, 225, 255);
+  color: rgb(var(--color-pink-bright-detail-light));
   background-color: rgb(0, 0, 0);
 
-  mask-image: linear-gradient(to right, transparent 0%, black 35%, black 65%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 35%, black 65%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, rgb(0,0,0) 35%, rgb(0,0,0) 65%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(0,0,0) 35%, rgb(0,0,0) 65%, transparent 100%);
 
 }
 
 
-.titleContainer-Arcade{
+.bannerContentContainer-Arcade{
 
   background-image:
       linear-gradient(rgb(0, 0, 0, 0.75), rgb(0, 0, 0, 0)),
@@ -155,7 +176,7 @@ p, button, a {
 }
 
 
-.titleContainer-Scripta{
+.bannerContentContainer-Scripta{
 
   background-image:
       linear-gradient(rgb(0, 0, 0, 0.75), rgb(0, 0, 0, 0)),
@@ -167,7 +188,7 @@ p, button, a {
 }
 
 
-.titleContainer-TritonTurnUp{
+.bannerContentContainer-TritonTurnUp{
 
   background-image: 
       linear-gradient(rgb(0, 0, 0, 0.75), rgb(0, 0, 0, 0)),
@@ -179,7 +200,7 @@ p, button, a {
 }
 
 
-.titleContainer-UpDownTime{
+.bannerContentContainer-UpDownTime{
 
   background-image: 
       linear-gradient(rgb(0, 0, 0, 0.75), rgb(0, 0, 0, 0)),
@@ -191,53 +212,53 @@ p, button, a {
 }
 
 
-.title-UpsideDown{
+.bannerContentWords-UpsideDown{
 
   transform: rotate(180deg);
 
 }
 
-.title{
+.bannerContentWords{
 
   max-width: 100%;
   text-align: center;
 
-  color: rgb(247, 0, 255);
-  text-shadow: 3px -3px 0px rgb(121, 159, 255);
+  color: rgb(var(--color-pink-dark-base));
+  text-shadow: 3px -3px 0px rgb(var(--color-blue-bright-base));
 
 }
 
 
-.horizontalLine {
+.bannerHorizontalLine {
 
   height: 3px;
   width: 100%;
 
-  background-color: rgb(247, 0, 255);
-  box-shadow: 0px -3px 0px rgb(121, 159, 255);
+  background-color: rgb(var(--color-pink-dark-base));
+  box-shadow: 0px -3px 0px rgb(var(--color-blue-bright-base));
 
 }
 
 
-.subTitle{
+.sectionTitle{
 
   width: 100%;
   text-align: center;
 
   padding: 0.5rem;
 
-  color: rgb(78, 0, 124);
-  background-color: rgb(253, 199, 255);
+  color: rgb(var(--color-pink-bright-detail-dark));
+  background-color: rgb(var(--color-pink-bright-base));
 
-  mask-image: linear-gradient(to right, transparent 0%, rgb(253, 199, 255) 35%, rgb(253, 199, 255) 65%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(253, 199, 255) 35%, rgb(253, 199, 255) 65%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, rgb(0,0,0) 35%, rgb(0,0,0) 65%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(0,0,0) 35%, rgb(0,0,0) 65%, transparent 100%);
 
 }
 
 
 .conditionalButton{
 
-  color: rgb(249, 205, 255);
+  color: rgb(var(--color-pink-dark-detail-light));
   border: none;
   background-color: inherit;
 
@@ -250,13 +271,12 @@ p, button, a {
 
   }
 
-
 }
 
 
 .conditionalButton:hover {
 
-  color: rgb(254, 210, 255);
+  color: rgb(var(--color-pink-bright-detail-light));
 
   animation:  glowing-conditionalButton-hover 3s infinite;
   transform: scale(1.1);
@@ -272,12 +292,12 @@ p, button, a {
 
 .teleportationButton{
 
-  color: rgb(0, 0, 114);
-  background-color: rgb(185, 205, 255);
-  border-left: 3.5px solid rgb(0, 0, 114);
-  border-bottom: 3.5px solid rgb(0, 0, 114);
-  border-top: 1px solid rgb(0, 0, 114);
-  border-right: 1px solid rgb(0, 0, 114);
+  color: rgb(var(--color-blue-bright-detail-dark));
+  border-left: 3.5px solid rgb(var(--color-blue-bright-detail-dark));
+  border-bottom: 3.5px solid rgb(var(--color-blue-bright-detail-dark));
+  border-top: 1px solid rgb(var(--color-blue-bright-detail-dark));
+  border-right: 1px solid rgb(var(--color-blue-bright-detail-dark));
+  background: linear-gradient(rgb(var(--color-blue-bright-base)), rgb(var(--color-blue-bright-layer)));
 
   animation: glowing-teleportationButton 3s infinite;
   transition: transform 0.25s ease;
@@ -286,12 +306,12 @@ p, button, a {
 
 .teleportationButton:hover{
 
-  color: rgb(217, 208, 255);
-  background-color: rgb(0, 31, 188);
-  border-left: 3.5px solid rgb(13, 0, 60);
-  border-bottom: 3.5px solid rgb(13, 0, 60);
-  border-top: 1px solid rgb(13, 0, 60);
-  border-right: 1px solid rgb(13, 0, 60);
+  color: rgb(var(--color-blue-dark-detail-dark));
+  border-left: 3.5px solid rgb(var(--color-blue-dark-detail-dark));
+  border-bottom: 3.5px solid rgb(var(--color-blue-dark-detail-dark));
+  border-top: 1px solid rgb(var(--color-blue-dark-detail-dark));
+  border-right: 1px solid rgb(var(--color-blue-dark-detail-dark));
+  background: linear-gradient(rgb(var(--color-blue-dark-base)), rgb(var(--color-blue-dark-layer)));
 
   animation: glowing-teleportationButton-hover 3s infinite;
   transform: scale(1.1);
@@ -360,18 +380,18 @@ p, button, a {
 
   0% {
     box-shadow: 
-      0 0 5px 2px rgb(248, 194, 255),
-      0 0 10px 4px rgb(204, 138, 255);
+      0 0 5px 2px rgb(var(--color-pink-bright-base)),
+      0 0 10px 4px rgb(var(--color-pink-bright-layer));
   }
   50% {
     box-shadow: 
-      0 0 5px 2px rgb(248, 194, 255, 0.5),
-      0 0 10px 4px rgb(204, 138, 255, 0.5);
+      0 0 5px 2px rgba(var(--color-pink-bright-base), 50%),
+      0 0 10px 4px rgba(var(--color-pink-bright-layer), 50%);
   }
   100% {
     box-shadow:
-      0 0 5px 2px rgb(248, 194, 255),
-      0 0 10px 4px rgb(204, 138, 255);
+      0 0 5px 2px rgb(var(--color-pink-bright-base)),
+      0 0 10px 4px rgb(var(--color-pink-bright-layer));
       
   }
 
@@ -383,18 +403,18 @@ p, button, a {
 
   0% {
     filter: 
-      drop-shadow(0 0 3px rgb(248, 194, 255))
-      drop-shadow(0 0 6px rgb(204, 138, 255));
+      drop-shadow(0 0 3px rgb(var(--color-pink-bright-base)))
+      drop-shadow(0 0 6px rgb(var(--color-pink-bright-layer)));
   }
   50% {
     filter: 
-      drop-shadow(0 0 3px rgb(248, 194, 255, 0.5))
-      drop-shadow(0 0 6px rgb(204, 138, 255, 0.5));
+      drop-shadow(0 0 3px rgba(var(--color-pink-bright-base), 50%))
+      drop-shadow(0 0 6px rgba(var(--color-pink-bright-layer), 50%));
   }
   100% {
     filter: 
-      drop-shadow(0 0 3px rgb(248, 194, 255))
-      drop-shadow(0 0 6px rgb(204, 138, 255));
+      drop-shadow(0 0 3px rgb(var(--color-pink-bright-base)))
+      drop-shadow(0 0 6px rgb(var(--color-pink-bright-layer)));
   }
 
 }
@@ -404,18 +424,18 @@ p, button, a {
 
   0% {
     box-shadow: 
-      0 0 5px 2px rgb(249, 88, 255),
-      0 0 10px 4px rgb(200, 106, 255);
+      0 0 5px 2px rgb(var(--color-pink-dark-base)),
+      0 0 10px 4px rgb(var(--color-pink-dark-layer));
   }
   50% {
     box-shadow: 
-      0 0 5px 2px rgb(249, 88, 255, 0.5),
-      0 0 10px 4px rgb(200, 106, 255, 0.5);
+      0 0 5px 2px rgba(var(--color-pink-dark-base), 50%),
+      0 0 10px 4px rgba(var(--color-pink-dark-layer), 50%);
   }
   100% {
     box-shadow:
-      0 0 5px 2px rgb(249, 88, 255),
-      0 0 10px 4px rgb(200, 106, 255);
+      0 0 5px 2px rgb(var(--color-pink-dark-base)),
+      0 0 10px 4px rgb(var(--color-pink-dark-layer));
   }
 
 }
@@ -425,18 +445,18 @@ p, button, a {
 
   0% {
     filter: 
-      drop-shadow(0 0 3px rgb(249, 88, 255))
-      drop-shadow(0 0 6px rgb(200, 106, 255));
+      drop-shadow(0 0 3px rgb(var(--color-pink-dark-base)))
+      drop-shadow(0 0 6px rgb(var(--color-pink-dark-layer)));
   }
   50% {
     filter: 
-      drop-shadow(0 0 3px rgb(249, 88, 255, 0.5))
-      drop-shadow(0 0 6px rgb(200, 106, 255, 0.5));
+      drop-shadow(0 0 3px rgba(var(--color-pink-dark-base), 50%))
+      drop-shadow(0 0 6px rgba(var(--color-pink-dark-layer), 50%));
   }
   100% {
     filter: 
-      drop-shadow(0 0 3px rgb(249, 88, 255))
-      drop-shadow(0 0 6px rgb(200, 106, 255));
+      drop-shadow(0 0 3px rgb(var(--color-pink-dark-base)))
+      drop-shadow(0 0 6px rgb(var(--color-pink-dark-layer)));
   }
 
 }
@@ -447,18 +467,18 @@ p, button, a {
 
   0% {
     box-shadow: 
-      0 0 5px 2px rgb(185, 205, 255),
-      0 0 10px 4px rgb(174, 174, 255);
+      0 0 5px 2px rgb(var(--color-blue-bright-base)),
+      0 0 10px 4px rgb(var(--color-blue-bright-layer));
   }
   50% {
     box-shadow: 
-      0 0 5px 2px rgb(185, 205, 255, 0.5),
-      0 0 10px 4px rgb(174, 174, 255, 0.5);
+      0 0 5px 2px rgba(var(--color-blue-bright-base), 50%),
+      0 0 10px 4px rgba(var(--color-blue-bright-layer), 50%);
   }
   100% {
     box-shadow:
-      0 0 5px 2px rgb(185, 205, 255),
-      0 0 10px 4px rgb(174, 174, 255);
+      0 0 5px 2px rgb(var(--color-blue-bright-base)),
+      0 0 10px 4px rgb(var(--color-blue-bright-layer));
   }
 
 }
@@ -468,18 +488,18 @@ p, button, a {
 
   0% {
     box-shadow: 
-      0 0 5px 2px rgb(116, 139, 255),
-      0 0 10px 4px rgb(130, 95, 255);
+      0 0 5px 2px rgb(var(--color-blue-dark-base)),
+      0 0 10px 4px rgb(var(--color-blue-dark-layer));
   }
   50% {
     box-shadow: 
-      0 0 5px 2px rgb(116, 139, 255, 0.5),
-      0 0 10px 4px rgb(130, 95, 255, 0.5);
+      0 0 5px 2px rgba(var(--color-blue-dark-base), 50%),
+      0 0 10px 4px rgba(var(--color-blue-dark-layer), 50%);
   }
   100% {
     box-shadow:
-      0 0 5px 2px rgb(116, 139, 255),
-      0 0 10px 4px rgb(130, 95, 255);
+      0 0 5px 2px rgb(var(--color-blue-dark-base)),
+      0 0 10px 4px rgb(var(--color-blue-dark-layer));
   }
 
 }
@@ -523,24 +543,24 @@ p, button, a {
   }
 
 
-  .titleContainer{
+  .bannerContentContainer{
 
-    mask-image: linear-gradient(to right, transparent 0%, black 25%, black 75%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 25%, black 75%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, rgb(0,0,0) 25%, rgb(0,0,0) 75%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(0,0,0) 25%, rgb(0,0,0) 75%, transparent 100%);
 
   }
 
 
-  .heading{
+  .banner{
 
     gap: 2rem;
 
   }
 
-  .subTitle{
+  .sectionTitle{
 
-    mask-image: linear-gradient(to right, transparent 0%, rgb(253, 199, 255) 25%, rgb(253, 199, 255) 75%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(253, 199, 255) 25%, rgb(253, 199, 255) 75%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, rgb(0,0,0) 25%, rgb(0,0,0) 75%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(0,0,0) 25%, rgb(0,0,0) 75%, transparent 100%);
 
   }
 
@@ -587,17 +607,17 @@ p, button, a {
 
   }
 
-  .titleContainer{
+  .bannerContentContainer{
 
-    mask-image: linear-gradient(to right, transparent 0%, black 25%, black 75%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 25%, black 75%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, rgb(0,0,0) 25%, rgb(0,0,0) 75%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(0,0,0) 25%, rgb(0,0,0) 75%, transparent 100%);
 
   }
 
-  .subTitle{
+  .sectionTitle{
 
-    mask-image: linear-gradient(to right, transparent 0%, rgb(253, 199, 255) 25%, rgb(253, 199, 255) 75%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(253, 199, 255) 25%, rgb(253, 199, 255) 75%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, rgb(0,0,0) 25%, rgb(0,0,0) 75%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(0,0,0) 25%, rgb(0,0,0) 75%, transparent 100%);
 
   }
 
@@ -653,23 +673,23 @@ p, button, a {
 
   }
 
-  .titleContainer{
+  .bannerContentContainer{
 
-    mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, rgb(0,0,0) 15%, rgb(0,0,0) 85%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(0,0,0) 15%, rgb(0,0,0) 85%, transparent 100%);
 
   }
 
-  .heading{
+  .banner{
 
     gap: 2rem;
 
   }
 
-  .subTitle{
+  .sectionTitle{
 
-    mask-image: linear-gradient(to right, transparent 0%, rgb(253, 199, 255) 15%, rgb(253, 199, 255) 85%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(253, 199, 255) 15%, rgb(253, 199, 255) 85%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, rgb(0,0,0) 15%, rgb(0,0,0) 85%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(0,0,0) 15%, rgb(0,0,0) 85%, transparent 100%);
 
   }
 

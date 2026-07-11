@@ -1,4 +1,4 @@
-.skillsExpandedCardFlag{
+.skillsExpandedCardBackgroundContainer{
 
     position: fixed;
     inset: 0; 
@@ -8,11 +8,11 @@
     justify-content: center;
     align-items: center;
 
-    background-color: rgba(0, 20, 119, 0.5);
+    background: radial-gradient(circle, rgba(var(--color-pink-bright-detail-light), 50%) 0%, rgba(var(--color-pink-bright-detail-dark), 50%) 50%);
 
 }
 
-.skillExpandedCardContainer{
+.skillExpandedCardBackgroundFlagContainer{
 
     max-height: 100%;
     width: 50%;
@@ -24,14 +24,14 @@
     gap: 2.5rem;
     border-radius: 2rem;
 
-    color: rgb(214, 214, 255);
-    background-color: rgba(0, 15, 53, 0.75);
-    box-shadow: 0 0 6px 3px rgb(128, 128, 255);
+    color: rgb(var(--color-blue-bright-detail-light));
+    background-color: rgba(var(--color-blue-bright-detail-dark), 75%);
+    box-shadow: 0 0 6px 3px rgb(var(--color-blue-bright-detail-light));
 
 }
 
 
-.skillExpandedCardContent {
+.skillExpandedCardBackgroundFlagContentContainer {
 
     display: flex;
     flex-direction: column;
@@ -41,7 +41,7 @@
 
 }
 
-.skillExpandedCardCloseButton {
+.skillExpandedCardBackgroundFlagCloseButton {
 
     padding: 1rem 1.5rem;
     border-radius: 5px;
@@ -54,13 +54,13 @@
 
 @media (max-device-width: 1024px) and (pointer: coarse){
 
-    .skillsExpandedCardFlag{
+    .skillsExpandedCardBackgroundContainer{
 
         justify-content: start;
 
     } 
     
-    .skillExpandedCardContainer{
+    .skillExpandedCardBackgroundFlagContainer{
 
         width: 100%;
         
@@ -70,7 +70,7 @@
     }
 
 
-    .skillExpandedCardCloseButton {
+    .skillExpandedCardBackgroundFlagCloseButton {
 
         padding: 1.2rem 1.7rem;
         
@@ -83,12 +83,12 @@
 
 @media (max-width: 900px) and (pointer: fine){
 
-    .skillsExpandedCardFlag{
+    .skillsExpandedCardBackgroundContainer{
 
         justify-content: start;
     } 
 
-    .skillExpandedCardContainer{
+    .skillExpandedCardBackgroundFlagContainer{
 
         width: 100%;
 
@@ -97,7 +97,7 @@
 
     }
 
-    .skillExpandedCardContent {
+    .skillExpandedCardBackgroundFlagContentContainer {
 
         gap: 1rem;
 
@@ -108,14 +108,14 @@
 
 @media (max-width: 600px) and (pointer: coarse){
 
-    .skillExpandedCardContainer{
+    .skillExpandedCardBackgroundFlagContainer{
 
         padding: 3rem 2rem;
 
     }
 
 
-    .skillExpandedCardContent {
+    .skillExpandedCardBackgroundFlagContentContainer {
 
         gap: 2rem;
 

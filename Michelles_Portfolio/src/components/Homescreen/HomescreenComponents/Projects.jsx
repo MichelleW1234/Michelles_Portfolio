@@ -20,21 +20,21 @@ function Projects() {
   const cardPageLinks = ["/arcade", "/scripta", "/tritonturnup", "/updowntime"];
 
   return (
-    <div className = "homeSwipingSectionContainer">
+    <div className = "homeSwipingContentContainer">
         
-      <h2 className = "subTitle"> My Projects: </h2>
+      <h2 className = "sectionTitle"> My Projects: </h2>
 
       <div className="projectsContainer">
         
         {cardNames.map((card, index) => (
 
           <div key = {index} className = "projectsEntryContainer">
-            <div className = {`projectsCardContainer projectsCardContainer-${card}Mobile`}>
+            <div className = {`projectsEntryCardContainer projectsEntryCardContainer-${card}`}>
 
               <h3>{cardNames[index]}</h3>
-              <div className="projectsCardHorizontalLine"></div>
+              <div className="projectsEntryCardHorizontalLine"></div>
 
-              <div className="projectsCardDescriptionContainer">
+              <div className="projectsEntryCardDescriptionContainer">
                 <h4> Project Type: </h4> 
                 <p> {cardTypes[index]} </p>
                 <h4>Summary: </h4> 
@@ -43,7 +43,7 @@ function Projects() {
 
             </div>
 
-            <Link to = {`${cardPageLinks[index]}`} className = "teleportationButton projectsReadMoreButton"> Read More &gt; </Link>
+            <Link to = {`${cardPageLinks[index]}`} className = "teleportationButton projectsEntryReadMoreButton"> Read More &gt; </Link>
 
           </div>
         ))}

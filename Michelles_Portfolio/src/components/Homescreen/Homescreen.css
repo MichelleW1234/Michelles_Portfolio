@@ -22,7 +22,7 @@
   padding: 1rem 1.5rem;
   border-radius: 4px;
 
-  color: rgb(209, 217, 255);
+  color: rgb(var(--color-blue-bright-detail-light));
   background-color: inherit;
   border: none;
 
@@ -46,7 +46,7 @@
 
 
 
-.homeSwipingSectionContainer {
+.homeSwipingContentContainer {
 
   display: flex;
   flex-direction: column;
@@ -54,11 +54,12 @@
   justify-content: center;
 
   gap: 4rem;
+  color: white;
 
 }
 
 
-.homeContactContainer {
+.homeContactsContainer {
     
   display: flex;
   flex-direction: row;
@@ -70,7 +71,7 @@
     
 }
 
-.homeContactEntryButton{
+.homeContactsButton{
 
   display: flex;
   flex-direction: row;
@@ -138,13 +139,13 @@
   }
 
 
-  .homeContactContainer {
+  .homeContactsContainer {
 
     gap: 1rem;
       
   }
 
-  .homeContactEntryButton{
+  .homeContactsButton{
 
     padding: 0.5rem;
 

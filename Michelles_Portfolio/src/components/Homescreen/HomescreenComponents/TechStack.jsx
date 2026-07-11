@@ -26,9 +26,9 @@ function TechStack() {
 
 
   return (
-    <div className = "homeSwipingSectionContainer">
+    <div className = "homeSwipingContentContainer">
 
-      <h2 className = "subTitle"> Tools I've Worked With: </h2>
+      <h2 className = "sectionTitle"> Tools I've Worked With: </h2>
       <div className = "techStackContainer">
 
         {skillsList.map((item, index) => (

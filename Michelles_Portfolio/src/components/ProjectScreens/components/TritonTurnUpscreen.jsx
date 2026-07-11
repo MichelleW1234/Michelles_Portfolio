@@ -23,23 +23,23 @@ function TritonTurnUpscreen() {
 
     <div className="contentBody">
 
-        <div className="heading">
-            <div className="titleContainer titleContainer-TritonTurnUp">
-                <h1 className = "title"> TritonTurnUp </h1>
+        <div className="banner">
+            <div className="bannerContentContainer bannerContentContainer-TritonTurnUp">
+                <h1 className = "bannerContentWords"> TritonTurnUp </h1>
             </div>
-            <div className="horizontalLine"></div>
+            <div className="bannerHorizontalLine"></div>
         </div>
 
         <div className = "projectScreen">
 
             <Link className = "teleportationButton projectPageJumpButton" to = "/home"> &lt; Back to Home </Link>
 
-            <h2 className="subTitle"> Project Details:</h2>
-            <div className = "projectGeneralModuleContainer">
-                <div className="projectDetailsRowContainer">
-                    <div className="projectDetailsModuleContainer">
-                        <h3 className="projectGeneralModuleSubTitle">Features:</h3>
-                        <div className = "projectDetailsContentContainer"> 
+            <h2 className="sectionTitle"> Project Details:</h2>
+            <div className = "projectSectionContainer">
+                <div className="projectSectionDetailsRowContainer">
+                    <div className="projectSectionDetailsSectionGeneralContainer">
+                        <h3 className="projectSectionSubsectionTitle">Features:</h3>
+                        <div className = "projectSectionDetailsSectionGeneralContentContainer"> 
                             <p>&gt; Personalized calendar that aggregates user-selected events into a unified schedule </p>
                             <p>&gt; Interactive event carousel displaying web-scraped UCSD events with options to save or dismiss events </p>
                             <p>&gt; User authentication system supporting personalized calendars and schedule management </p>
@@ -47,20 +47,20 @@ function TritonTurnUpscreen() {
                         </div>
                     </div>
 
-                    <div className="projectDetailsModuleContainer">
-                        <h3 className="projectGeneralModuleSubTitle">My Role:</h3>
-                        <div className = "projectDetailsContentContainer"> 
+                    <div className="projectSectionDetailsSectionGeneralContainer">
+                        <h3 className="projectSectionSubsectionTitle">My Role:</h3>
+                        <div className = "projectSectionDetailsSectionGeneralContentContainer"> 
                             <p> &gt; Collaborated in an Agile development team using GitHub for version control under faculty mentorship </p>
                             <p> &gt; Contributed to planning, design, and development with a focus on UI/UX and front-end implementation</p>
-                            <p> &gt; Conducted user research and usability projectTimelineEntryContainer to understand user needs and improve product interactions </p>
+                            <p> &gt; Conducted user research and usability projectSectionDetailsSectionGeneralContentTimelineEntryContainer to understand user needs and improve product interactions </p>
                         </div>
                     </div>
                 </div>
 
-                <div className="projectDetailsRowContainer">
-                    <div className="projectDetailsModuleContainer">
-                        <h3 className="projectGeneralModuleSubTitle">Tools Used: </h3>
-                        <div className = "projectDetailsContentContainer"> 
+                <div className="projectSectionDetailsRowContainer">
+                    <div className="projectSectionDetailsSectionGeneralContainer">
+                        <h3 className="projectSectionSubsectionTitle">Tools Used: </h3>
+                        <div className = "projectSectionDetailsSectionGeneralContentContainer"> 
                             <h4> &gt; Core Frameworks & Libraries: </h4>
                             <p> React, React Router, React Big Calendar </p>
                             <h4> &gt; Programming Languages: </h4>
@@ -74,17 +74,17 @@ function TritonTurnUpscreen() {
                         </div>
                     </div>
                     
-                    <div className="projectDetailsModuleContainer">
-                        <h3 className="projectGeneralModuleSubTitle"> Timeline: </h3>
-                        <div className = "projectDetailsContentContainer">
-                            <div className = "projectTimelineContainer"> 
+                    <div className="projectSectionDetailsSectionGeneralContainer">
+                        <h3 className="projectSectionSubsectionTitle"> Timeline: </h3>
+                        <div className = "projectSectionDetailsSectionGeneralContentContainer">
+                            <div className = "projectSectionDetailsSectionGeneralContentTimelineContainer"> 
                                
                                 {timeLineDates.map((item, index) => (
 
-                                    <div className = "projectTimelineEntryContainer">
-                                        <div className="projectTimelineEntryDateContainer">
+                                    <div className = "projectSectionDetailsSectionGeneralContentTimelineEntryContainer">
+                                        <div className="projectSectionDetailsSectionGeneralContentTimelineEntryDateContainer">
                                             <p> {timeLineDates[index]} </p>
-                                            <div className="projectTimelineMapContainer"><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/></div> 
+                                            <div className="projectSectionDetailsSectionGeneralContentTimelineEntryVisualContainer"><div className = "projectSectionDetailsSectionGeneralContentTimelineEntryVisualPoint"></div><hr className = "projectSectionDetailsSectionGeneralContentTimelineEntryVisualLine"/></div> 
                                         </div>
                                         <p> {timeLineDescriptions[index]} </p>
                                     </div>
@@ -99,22 +99,22 @@ function TritonTurnUpscreen() {
                 </div>
             </div>
 
-            <h2 className="subTitle"> Project Media: </h2>
-            <div className = "projectGeneralModuleContainer">
-                <h3 className="projectGeneralModuleSubTitle"> Video Content: </h3>
-                <div className="projectExpandableVideoContainer">
-                    <a className = "teleportationButton projectVideoEntryButton" href="https://drive.google.com/file/d/1bjoVWfcJ89o7ha2sFHtFunMhr9dIxjtt/view" target="_blank">
+            <h2 className="sectionTitle"> Project Media: </h2>
+            <div className = "projectSectionContainer">
+                <h3 className="projectSectionSubsectionTitle"> Video Content: </h3>
+                <div className="projectSectionMediaSectionVideosExpandableContainer">
+                    <a className = "teleportationButton projectSectionMediaSectionVideosExpandableEntryButton" href="https://drive.google.com/file/d/1bjoVWfcJ89o7ha2sFHtFunMhr9dIxjtt/view" target="_blank">
                         <p>&#9654; Watch Demo Video </p> 
-                        <div className="projectVideoEntryButtonDescriptionContainer">
+                        <div className="projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer">
                             <img src = {TritonTurnupDemo}/>
                             <p> A demonstration of our web application's core features, including user login, schedule-based filtering, entry browsing, and calendar integration. </p>
                         </div>
                     </a>
                 </div>
 
-                <h3 className="projectGeneralModuleSubTitle"> External Links: </h3>
-                <div className = "projectLinksContainer">
-                    <a className = "teleportationButton projectLinkEntryButton" href="https://github.com/MichelleW1234/CSE-110-Project.git" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
+                <h3 className="projectSectionSubsectionTitle"> External Links: </h3>
+                <div className = "projectSectionMediaSectionLinksContainer">
+                    <a className = "teleportationButton projectSectionMediaSectionLinksEntryButton" href="https://github.com/MichelleW1234/CSE-110-Project.git" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
                 </div>
             </div>
 
@@ -122,10 +122,10 @@ function TritonTurnUpscreen() {
 
         </div>
 
-        <div className="heading">
-            <div className="horizontalLine"></div>
-            <div className="titleContainer titleContainer-TritonTurnUp">
-                <h1 className = "title title-UpsideDown"> TritonTurnUp </h1>
+        <div className="banner">
+            <div className="bannerHorizontalLine"></div>
+            <div className="bannerContentContainer bannerContentContainer-TritonTurnUp">
+                <h1 className = "bannerContentWords bannerContentWords-UpsideDown"> TritonTurnUp </h1>
             </div>
         </div>
 

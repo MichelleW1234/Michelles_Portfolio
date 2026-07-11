@@ -34,9 +34,9 @@ function Skills() {
             setActiveSkill={setActiveSkill}
           />
         }
-    <div className = "homeSwipingSectionContainer">
+    <div className = "homeSwipingContentContainer">
 
-      <h2 className = "subTitle"> My Skills: </h2>
+      <h2 className = "sectionTitle"> My Skills: </h2>
       <div className = "skillsContainer">
 
         {skillsList.map((item, index) => (

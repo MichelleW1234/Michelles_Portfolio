@@ -9,8 +9,6 @@
   gap: 3rem;
   padding: 1rem;
 
-  color: white;
-
 }
 
 
@@ -19,8 +17,8 @@
   height: 8rem;
 
   filter: 
-      drop-shadow(0 0 3px rgb(248, 194, 255))
-      drop-shadow(0 0 6px rgb(204, 138, 255));
+    drop-shadow(0 0 3px rgb(var(--color-pink-dark-detail-light)))
+    drop-shadow(0 0 6px rgb(var(--color-blue-bright-detail-light)));
 
 }
 

@@ -28,7 +28,7 @@
 }
 
 
-.projectGeneralModuleContainer{
+.projectSectionContainer{
 
     width: 90%;
     display: flex;
@@ -40,20 +40,20 @@
 }
 
 
-.projectGeneralModuleSubTitle{
+.projectSectionSubsectionTitle{
 
     width: 100%;
     text-align: center;
 
     padding: 1rem;
 
-    color: rgb(249, 207, 255);
-    box-shadow: 0 0 8px 4px rgb(234, 206, 255);
+    color: rgb(var(--color-pink-bright-detail-light));
+    box-shadow: 0 0 8px 4px rgb(var(--color-pink-bright-detail-light));
     
 }
 
 
-.projectDetailsRowContainer{
+.projectSectionDetailsRowContainer{
 
     display: flex;
     flex-direction: row;
@@ -62,7 +62,7 @@
 
 }
 
-.projectDetailsModuleContainer{
+.projectSectionDetailsSectionGeneralContainer{
 
     flex: 1 1 50%;
     width: 50%;
@@ -73,7 +73,7 @@
 
 }
 
-.projectDetailsContentContainer {
+.projectSectionDetailsSectionGeneralContentContainer {
 
     display: flex;
     flex-direction: column;
@@ -84,13 +84,12 @@
     padding-left: 2rem;
     padding-right: 2rem;
 
-    color: white;
-
+    color: rgb(var(--color-blue-bright-detail-light));
 
 }
 
 
-.projectTimelineContainer{
+.projectSectionDetailsSectionGeneralContentTimelineContainer{
 
     display: flex;
     flex-direction: column;
@@ -98,7 +97,7 @@
 
 }
 
-.projectTimelineEntryContainer{
+.projectSectionDetailsSectionGeneralContentTimelineEntryContainer{
 
     display: flex;
     flex-direction: row;
@@ -108,7 +107,7 @@
 
 }
 
-.projectTimelineEntryDateContainer{
+.projectSectionDetailsSectionGeneralContentTimelineEntryDateContainer{
 
     display: flex;
     flex-direction: column;
@@ -119,7 +118,7 @@
 }
 
 
-.projectTimelineMapContainer{
+.projectSectionDetailsSectionGeneralContentTimelineEntryVisualContainer{
 
     display: flex;
     flex-direction: row;
@@ -129,34 +128,31 @@
 }
 
 
-.projectTimelinePoint{
+.projectSectionDetailsSectionGeneralContentTimelineEntryVisualPoint{
 
     width: 1rem;
     height: 1rem;
     border-radius: 50%;
 
-    background: rgb(225, 0, 255);
-
-    filter: 
-        drop-shadow(0 0 1px rgb(250, 209, 255))
-        drop-shadow(0 0 2px rgb(250, 209, 255))
-        drop-shadow(0 0 3px rgb(250, 209, 255));
+    background: rgb(var(--color-pink-bright-base));
+    filter: drop-shadow(0 0 3px rgb(var(--color-pink-dark-detail-light)));
 
 }
 
 
-.projectTimelineLine {
+.projectSectionDetailsSectionGeneralContentTimelineEntryVisualLine {
 
     width: 5rem;
     border-radius: 0.1rem;
 
-    border: 0.1rem solid rgb(209, 130, 255);
+    border: 0.1rem solid rgb(var(--color-pink-bright-base));
+    filter: drop-shadow(0 0 3px rgb(var(--color-pink-dark-detail-light)));
 
 }
 
 
 
-.projectExpandableVideoContainer {
+.projectSectionMediaSectionVideosExpandableContainer {
 
     display: flex;
     flex-direction: column;
@@ -167,7 +163,7 @@
 
 }
 
-.projectVideoContainer {
+.projectSectionMediaSectionVideosExpandableContainer {
 
     display: flex;
     flex-direction: row;
@@ -181,7 +177,7 @@
 
 
 
-.projectVideoEntryButton {
+.projectSectionMediaSectionVideosExpandableEntryButton {
 
     width: 30rem;
     display: flex;
@@ -201,7 +197,7 @@
 }
 
 
-.projectVideoEntryButtonDescriptionContainer{
+.projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer{
 
     display: flex;
     flex-direction: row;
@@ -213,7 +209,7 @@
 }
 
 
-.projectLinksContainer {
+.projectSectionMediaSectionLinksContainer {
 
     display: flex;
     flex-direction: row;
@@ -224,7 +220,7 @@
 }
 
 
-.projectLinkEntryButton{
+.projectSectionMediaSectionLinksEntryButton{
 
     padding: 1.5rem 2rem;
     border-radius: 8px;
@@ -251,13 +247,13 @@
     }
 
 
-    .projectGeneralModuleContainer{
+    .projectSectionContainer{
 
         width: 95%;
 
     }
 
-    .projectDetailsRowContainer{
+    .projectSectionDetailsRowContainer{
 
         flex-direction: column;
 
@@ -265,7 +261,7 @@
 
     }
 
-    .projectDetailsModuleContainer{
+    .projectSectionDetailsSectionGeneralContainer{
 
         width: 100%;
 
@@ -273,14 +269,14 @@
 
     }
 
-    .projectExpandableVideoContainer {
+    .projectSectionMediaSectionVideosExpandableContainer {
 
         gap: 3rem;
 
     }
 
 
-    .projectVideoEntryButton {
+    .projectSectionMediaSectionVideosExpandableEntryButton {
 
         width: 75%;
         padding: 1rem;
@@ -296,13 +292,13 @@
 
     }
 
-    .projectVideoEntryButton:hover {
+    .projectSectionMediaSectionVideosExpandableEntryButton:hover {
 
         transform: none;
 
     }
 
-    .projectLinkEntryButton{
+    .projectSectionMediaSectionLinksEntryButton{
 
         padding: 1.7rem 2.2rem;
 
@@ -313,7 +309,7 @@
 
 @media (max-width: 900px) and (pointer: fine){
 
-    .projectDetailsContentContainer {
+    .projectSectionDetailsSectionGeneralContentContainer {
 
         align-items: start;
 
@@ -322,7 +318,7 @@
 
     }
    
-    .projectDetailsRowContainer{
+    .projectSectionDetailsRowContainer{
 
         flex-direction: column;
 
@@ -330,7 +326,7 @@
 
     }
 
-    .projectDetailsModuleContainer{
+    .projectSectionDetailsSectionGeneralContainer{
 
         width: 100%;
 
@@ -338,7 +334,7 @@
 
     }
 
-    .projectVideoEntryButton {
+    .projectSectionMediaSectionVideosExpandableEntryButton {
 
         width: 90%;
 
@@ -368,14 +364,14 @@
 
     }
 
-    .projectGeneralModuleContainer{
+    .projectSectionContainer{
 
         width: 100%;
 
     }
 
 
-    .projectDetailsContentContainer {
+    .projectSectionDetailsSectionGeneralContentContainer {
 
         align-items: start;
 
@@ -385,28 +381,28 @@
     }
 
     
-    .projectTimelineContainer{
+    .projectSectionDetailsSectionGeneralContentTimelineContainer{
 
         gap: 1rem;
 
     }
 
 
-    .projectVideoContainer {
+    .projectSectionMediaSectionVideosExpandableContainer {
             
         padding: 0rem;
 
     }
 
 
-    .projectVideoEntryButton {
+    .projectSectionMediaSectionVideosExpandableEntryButton {
 
         width: 100%;
 
     }
 
 
-    .projectLinksContainer {
+    .projectSectionMediaSectionLinksContainer {
 
         flex-direction: column;
 

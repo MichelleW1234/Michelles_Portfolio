@@ -35,23 +35,23 @@ function UpDownTimescreen() {
 
     <div className="contentBody">
 
-        <div className="heading">
-            <div className="titleContainer titleContainer-UpDownTime">
-                <h1 className = "title"> UpDownTime </h1>
+        <div className="banner">
+            <div className="bannerContentContainer bannerContentContainer-UpDownTime">
+                <h1 className = "bannerContentWords"> UpDownTime </h1>
             </div>
-            <div className="horizontalLine"></div>
+            <div className="bannerHorizontalLine"></div>
         </div>
 
         <div className = "projectScreen">
 
             <Link className = "teleportationButton projectPageJumpButton" to = "/home"> &lt; Back to Home </Link>
 
-            <h2 className="subTitle"> Project Details:</h2>
-            <div className = "projectGeneralModuleContainer">
-                <div className="projectDetailsRowContainer">
-                    <div className="projectDetailsModuleContainer">
-                        <h3 className="projectGeneralModuleSubTitle">Features:</h3>
-                        <div className = "projectDetailsContentContainer"> 
+            <h2 className="sectionTitle"> Project Details:</h2>
+            <div className = "projectSectionContainer">
+                <div className="projectSectionDetailsRowContainer">
+                    <div className="projectSectionDetailsSectionGeneralContainer">
+                        <h3 className="projectSectionSubsectionTitle">Features:</h3>
+                        <div className = "projectSectionDetailsSectionGeneralContentContainer"> 
                             <p>&gt; Custom 2D game world featuring animations and environment design </p>
                             <p>&gt; Combat system supporting player attacks, enemy encounters, dodging mechanics, and keyboard-controlled movement </p>
                             <p>&gt; Enemy AI system with proximity-based player detection and chase mechanics </p>
@@ -61,9 +61,9 @@ function UpDownTimescreen() {
                         </div>
                     </div>
 
-                    <div className="projectDetailsModuleContainer">
-                        <h3 className="projectGeneralModuleSubTitle">My Role:</h3>
-                        <div className = "projectDetailsContentContainer"> 
+                    <div className="projectSectionDetailsSectionGeneralContainer">
+                        <h3 className="projectSectionSubsectionTitle">My Role:</h3>
+                        <div className = "projectSectionDetailsSectionGeneralContentContainer"> 
                             <p> &gt; Served on the programming team, contributing to both the planning and development of the game </p>
                             <p> &gt; Collaborated during the planning phase to design dynamic environmental events and gameplay conditions</p>
                             <p> &gt; Developed gameplay systems in Unity using C# scripting and Unity's physics engine to implement core game mechanics </p>
@@ -72,10 +72,10 @@ function UpDownTimescreen() {
                     </div>
                 </div>
 
-                <div className="projectDetailsRowContainer">
-                    <div className="projectDetailsModuleContainer">
-                        <h3 className="projectGeneralModuleSubTitle">Tools Used: </h3>
-                        <div className = "projectDetailsContentContainer"> 
+                <div className="projectSectionDetailsRowContainer">
+                    <div className="projectSectionDetailsSectionGeneralContainer">
+                        <h3 className="projectSectionSubsectionTitle">Tools Used: </h3>
+                        <div className = "projectSectionDetailsSectionGeneralContentContainer"> 
                             <h4> &gt; Core Frameworks & Libraries: </h4>
                             <p> Unity, Unity Input System, Universal Render Pipeline (URP), Unity 2D Animation, Unity Tilemap </p>
                             <h4> &gt; Programming Languages: </h4>
@@ -85,17 +85,17 @@ function UpDownTimescreen() {
                         </div>
                     </div>
                     
-                    <div className="projectDetailsModuleContainer">
-                        <h3 className="projectGeneralModuleSubTitle"> Timeline: </h3>
-                        <div className = "projectDetailsContentContainer">
-                            <div className = "projectTimelineContainer"> 
+                    <div className="projectSectionDetailsSectionGeneralContainer">
+                        <h3 className="projectSectionSubsectionTitle"> Timeline: </h3>
+                        <div className = "projectSectionDetailsSectionGeneralContentContainer">
+                            <div className = "projectSectionDetailsSectionGeneralContentTimelineContainer"> 
                                
                                 {timeLineDates.map((item, index) => (
 
-                                    <div className = "projectTimelineEntryContainer">
-                                        <div className="projectTimelineEntryDateContainer">
+                                    <div className = "projectSectionDetailsSectionGeneralContentTimelineEntryContainer">
+                                        <div className="projectSectionDetailsSectionGeneralContentTimelineEntryDateContainer">
                                             <p> {timeLineDates[index]} </p>
-                                            <div className="projectTimelineMapContainer"><div className = "projectTimelinePoint"></div><hr className = "projectTimelineLine"/></div> 
+                                            <div className="projectSectionDetailsSectionGeneralContentTimelineEntryVisualContainer"><div className = "projectSectionDetailsSectionGeneralContentTimelineEntryVisualPoint"></div><hr className = "projectSectionDetailsSectionGeneralContentTimelineEntryVisualLine"/></div> 
                                         </div>
                                         <p> {timeLineDescriptions[index]} </p>
                                     </div>
@@ -110,14 +110,14 @@ function UpDownTimescreen() {
                 </div>
             </div>
 
-            <h2 className="subTitle"> Project Media: </h2>
-            <div className = "projectGeneralModuleContainer">
-                <h3 className="projectGeneralModuleSubTitle"> External Links: </h3>
+            <h2 className="sectionTitle"> Project Media: </h2>
+            <div className = "projectSectionContainer">
+                <h3 className="projectSectionSubsectionTitle"> External Links: </h3>
 
-                <div className = "projectLinksContainer">
+                <div className = "projectSectionMediaSectionLinksContainer">
                     {linkSRCs.map((item, index) => (
 
-                        <a className = "teleportationButton projectLinkEntryButton" href={linkSRCs[index]} target="_blank" rel="noopener noreferrer"> {linkNames[index]} </a>
+                        <a className = "teleportationButton projectSectionMediaSectionLinksEntryButton" href={linkSRCs[index]} target="_blank" rel="noopener noreferrer"> {linkNames[index]} </a>
 
                     ))}
                 </div>
@@ -128,10 +128,10 @@ function UpDownTimescreen() {
 
         </div>
 
-        <div className="heading">
-            <div className="horizontalLine"></div>
-            <div className="titleContainer titleContainer-UpDownTime">
-                <h1 className = "title title-UpsideDown"> UpDownTime </h1>
+        <div className="banner">
+            <div className="bannerHorizontalLine"></div>
+            <div className="bannerContentContainer bannerContentContainer-UpDownTime">
+                <h1 className = "bannerContentWords bannerContentWords-UpsideDown"> UpDownTime </h1>
             </div>
         </div>
 
