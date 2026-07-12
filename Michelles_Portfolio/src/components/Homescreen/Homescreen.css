@@ -140,13 +140,11 @@
 
   .homeContactsContainer {
 
-    gap: 1rem;
+    gap: 1.5rem;
       
   }
 
   .homeContactsButton{
-
-    padding: 0.5rem;
 
     img {
 
