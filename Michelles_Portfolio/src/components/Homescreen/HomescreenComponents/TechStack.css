@@ -17,8 +17,8 @@
   height: 8rem;
 
   filter: 
-    drop-shadow(0 0 3px rgb(var(--color-pink-dark-detail-light)))
-    drop-shadow(0 0 6px rgb(var(--color-blue-bright-detail-light)));
+    drop-shadow(0 0 3px rgba(var(--color-pink-dark-detail-light), 50%))
+    drop-shadow(0 0 6px rgba(var(--color-blue-dark-detail-light), 50%));
 
 }
 

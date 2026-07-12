@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
 
-    background: radial-gradient(circle, rgba(var(--color-pink-bright-detail-light), 50%) 0%, rgba(var(--color-pink-bright-detail-dark), 50%) 50%);
+    background: radial-gradient(circle, rgba(var(--color-blue-dark-detail-light), 50%) 0%, rgba(var(--color-pink-dark-detail-dark), 50%) 75%);
 
 }
 
@@ -24,9 +24,9 @@
     gap: 2.5rem;
     border-radius: 2rem;
 
-    color: rgb(var(--color-blue-bright-detail-light));
-    background-color: rgba(var(--color-blue-bright-detail-dark), 75%);
-    box-shadow: 0 0 6px 3px rgb(var(--color-blue-bright-detail-light));
+    color: rgb(var(--color-blue-dark-detail-light));
+    background-color: rgba(var(--color-blue-dark-detail-dark), 75%);
+    box-shadow: 0 0 10px 4px rgb(var(--color-blue-dark-detail-light));
 
 }
 

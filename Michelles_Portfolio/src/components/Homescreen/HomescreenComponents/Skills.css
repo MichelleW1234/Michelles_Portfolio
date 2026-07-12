@@ -24,7 +24,7 @@
 
   gap: 1rem;
   border: none;
-  border-radius: 1.5rem;
+  border-radius: 2rem;
 
   img {
 
@@ -61,6 +61,7 @@
     flex-wrap: wrap;
 
     padding: 2rem;
+    border-radius: 1.5rem;
 
     img {
 
@@ -95,6 +96,7 @@
     flex-wrap: wrap;
 
     padding: 2rem;
+    border-radius: 1rem;
 
     img {
 
@@ -118,6 +120,8 @@
 
 
   .skillsEntry{
+
+    border-radius: 1rem;
 
     img {
 

@@ -22,13 +22,13 @@
   padding: 1rem 1.5rem;
   border-radius: 4px;
 
-  color: rgb(var(--color-blue-bright-detail-light));
+  color: rgb(var(--color-blue-dark-detail-light));
+  box-shadow: 0 0 10px 4px rgb(var(--color-blue-dark-detail-light));
   background-color: inherit;
   border: none;
 
-  animation: glowing-teleportationButton 3s infinite;
   transition: transform 0.25s ease;
-  
+
 }
 
 
@@ -54,7 +54,6 @@
   justify-content: center;
 
   gap: 4rem;
-  color: white;
 
 }
 
