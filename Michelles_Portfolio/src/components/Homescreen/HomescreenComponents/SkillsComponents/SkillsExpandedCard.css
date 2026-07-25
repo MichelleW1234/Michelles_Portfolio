@@ -10,6 +10,20 @@
 
     background: radial-gradient(circle, rgba(var(--color-blue-dark-detail-light), 50%) 0%, rgba(var(--color-pink-dark-detail-dark), 50%) 75%);
 
+    animation: flagAppear 0.3s ease;
+
+}
+
+.skillsExpandedCardBackgroundContainer-Nonhoverable{
+
+    pointer-events: auto;
+
+}
+
+.skillsExpandedCardBackgroundContainer-Hoverable{
+
+    pointer-events: none;
+
 }
 
 .skillExpandedCardBackgroundFlagContainer{
@@ -31,6 +45,7 @@
 }
 
 
+
 .skillExpandedCardBackgroundFlagContentContainer {
 
     display: flex;
@@ -41,10 +56,16 @@
 
 }
 
-.skillExpandedCardBackgroundFlagCloseButton {
+.skillExpandedCardBackgroundFlagCloseButtonNonhoverable {
 
     padding: 1rem 1.5rem;
     border-radius: 5px;
+
+}
+
+.skillExpandedCardBackgroundFlagCloseButtonHoverable {
+
+    display: none;
 
 }
 
@@ -70,9 +91,10 @@
     }
 
 
-    .skillExpandedCardBackgroundFlagCloseButton {
+    .skillExpandedCardBackgroundFlagCloseButtonNonhoverable {
 
         padding: 1.2rem 1.7rem;
+        border-radius: 5px;
         
     }
 

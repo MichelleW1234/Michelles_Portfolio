@@ -17,9 +17,25 @@ function Skills() {
   const skillsList = ["Software Development", "Visual Design", "Software Engineering", "UI/UX", "Game Development"]; 
   const skillsImage = [terminal, paint, gear, cursor, controller];
 
-  const hoveredSkill = (skillIndex) => {
+  const canHover = window.matchMedia("(hover: hover)").matches;
 
-    setActiveSkill(skillIndex);
+  const nonHoverActivation = (skillIndex) => {
+
+    if (!canHover)  {
+
+      setActiveSkill(skillIndex);
+
+    }
+
+  }
+
+    const hoverActivation = (skillIndex) => {
+
+    if (canHover)  {
+
+      setActiveSkill(skillIndex);
+
+    }
 
   }
 
@@ -43,8 +59,10 @@ function Skills() {
 
           <button
             key = {index} 
-            className="conditionalButton skillsEntry"
-            onClick={() => hoveredSkill(index)}
+            className={`conditionalButton skillsEntry ${activeSkill === index ? "visible" : ""}`}
+            onClick={() => nonHoverActivation(index)}
+            onMouseEnter={() => hoverActivation(index)}
+            onMouseLeave={() => hoverActivation(-1)}
           >
             {item}
             <img src = {skillsImage[index]}/>

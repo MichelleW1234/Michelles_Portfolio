@@ -10,9 +10,11 @@ function SkillsExpandedCard({activeSkill, setActiveSkill}) {
     ["Implemented game logic and algorithms to manage scoring, player interactions, and overall game state (Arcade)", "Planned and executed interactive mini-games from concept to fully playable experiences (Arcade)", "Implemented scoring systems and win/loss mechanics to provide feedback and track player progres (Arcade)", "Collaborated with a team to develop a 2D game in Unity, implementing gameplay mechanics through a shared development workflow (UpDownTime)"]
   ]
 
+  const canHover = window.matchMedia("(hover: hover)").matches;
+
   return (
 
-    <div className = "skillsExpandedCardBackgroundContainer">
+    <div className = {`skillsExpandedCardBackgroundContainer ${canHover ? "skillsExpandedCardBackgroundContainer-Hoverable" : "skillsExpandedCardBackgroundContainer-Nonhoverable"}`}>
         <div className="skillExpandedCardBackgroundFlagContainer">
           <h3>Notable Applications: </h3>
 
@@ -22,7 +24,7 @@ function SkillsExpandedCard({activeSkill, setActiveSkill}) {
             ))}
           </div>
 
-          <button className = "conditionalButton skillExpandedCardBackgroundFlagCloseButton" onClick = {() => setActiveSkill(-1)}>Close</button>
+          <button className = {`conditionalButton ${canHover ? "skillExpandedCardBackgroundFlagCloseButtonHoverable" : "skillExpandedCardBackgroundFlagCloseButtonNonhoverable"}`} onClick = {() => setActiveSkill(-1)}>Close</button>
         </div>
     </div>
 

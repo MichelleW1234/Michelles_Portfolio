@@ -56,6 +56,9 @@ body{
   gap: 2rem;
   padding: 4rem;
 
+    animation: flagAppear 0.5s ease;
+
+
 }
 
 
@@ -350,6 +353,17 @@ p, button, a {
 
 
 /* Animations: */
+
+@keyframes flagAppear {
+
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+
+}
 
 @keyframes glowing-body {
 
