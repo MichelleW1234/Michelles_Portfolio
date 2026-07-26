@@ -99,9 +99,9 @@ function TritonTurnUpscreen() {
             <h2 className="sectionTitle"> Project Media: </h2>
             <div className = "projectSectionMediaContainer">
                 <h3 className="projectSectionSubsectionTitle"> Video Content: </h3>
-                <div className="projectSectionMediaSectionVideosExpandableContainer">
+                <div className="projectSectionMediaSectionVideosExpandableContainer scrollableContainer">
 
-                    <div className="projectSectionMediaSectionVideosExpandableEntryContainer projectSectionMediaSectionVideosExpandableEntryContainer-Even">
+                    <div className="projectSectionMediaSectionVideosExpandableEntryContainer projectSectionMediaSectionVideosExpandableEntryContainer-Even scrollableEntryContainer">
 
                          <video 
                             controls={!canHover}

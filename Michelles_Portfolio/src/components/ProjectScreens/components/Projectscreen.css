@@ -28,23 +28,14 @@
 }
 
 
-.projectSectionMediaContainer{
-
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-
-    gap: 4rem;
-    padding: 1rem;
-
-}
-
 .projectSectionDetailsContainer{
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
 
     gap: 4rem;
+    padding: 1rem;
 
 }
 
@@ -53,17 +44,6 @@
 }
 
 
-.projectSectionSubsectionTitle{
-
-    width: 100%;
-    text-align: center;
-
-    padding: 1rem;
-
-    color: rgb(var(--color-pink-dark-detail-light));
-    box-shadow: 0 0 10px 4px rgb(var(--color-pink-dark-detail-light));
-
-}
 
 
 .projectSectionDetailsSectionGeneralContainer{
@@ -76,14 +56,27 @@
 
 }
 
+.projectSectionSubsectionTitle{
+
+    width: 90%;
+    text-align: center;
+
+    padding: 1rem;
+
+    color: rgb(var(--color-pink-dark-detail-light));
+    box-shadow: 0 0 10px 4px rgb(var(--color-pink-dark-detail-light));
+
+}
+
+
 .projectSectionDetailsSectionGeneralContentContainer {
 
+    width: 80%;
     display: flex;
     flex-direction: column;
+    align-items: start;
 
     gap: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
 
     color: rgb(var(--color-blue-dark-detail-light));
 
@@ -152,6 +145,18 @@
 }
 
 
+.projectSectionMediaContainer{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 4rem;
+    padding: 1rem;
+
+}
+
+
 
 .projectSectionMediaSectionVideosExpandableContainer {
 
@@ -167,14 +172,12 @@
 
 .projectSectionMediaSectionVideosExpandableEntryContainer{
 
-    width: 100%;
     display: flex;
     align-items: center;
 
     gap: 5rem;
 
     color: rgb(var(--color-blue-dark-detail-light));
-
 
     video{
 
@@ -280,23 +283,8 @@
 
 @media(pointer: coarse){
 
-    .projectSectionMediaSectionVideosExpandableContainer{
-
-        flex-direction: row;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-        justify-content: start;
-
-        gap: 0rem;
-        
-    }
-
-
     .projectSectionMediaSectionVideosExpandableEntryContainer{
 
-        flex: 0 0 100%;
-        scroll-snap-align: start;
         gap: 3rem;
 
         video{
@@ -327,9 +315,6 @@
 
     }
 
-    .projectSectionMediaSectionVideosExpandableContainer::-webkit-scrollbar {
-        display: none;
-    }
 
 }
 
@@ -377,6 +362,8 @@
     }
 
 
+
+
     .projectSectionMediaSectionLinksEntryButton{
 
         padding: 1.7rem 2.2rem;
@@ -407,8 +394,7 @@
 
     .projectSectionDetailsSectionGeneralContentContainer {
 
-        padding-left: 0rem;
-        padding-right: 0rem;
+        width: 85%;
 
     }
 
@@ -471,10 +457,7 @@
 
     .projectSectionDetailsSectionGeneralContentContainer {
 
-        align-items: start;
-
-        padding-left: 0rem;
-        padding-right: 0rem;
+        width: 85%;
 
     }
 
