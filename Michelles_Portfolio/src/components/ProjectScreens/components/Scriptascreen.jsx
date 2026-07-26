@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import ScriptaDemo from "../../../../dist/assets/videos/Scripta.mp4";
+import ScriptaDemo from "../../../videos/Scripta.mp4";
 
 import { ScrollBackToTop } from "../helpers/Helpers";
 

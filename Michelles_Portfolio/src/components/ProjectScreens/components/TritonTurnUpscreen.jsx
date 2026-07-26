@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import TritonTurnUpDemo from "../../../../dist/assets/videos/TritonTurnUp.mp4";
+import TritonTurnUpDemo from "../../../videos/TritonTurnUp.mp4";
 
 import { ScrollBackToTop } from "../helpers/Helpers";
 
