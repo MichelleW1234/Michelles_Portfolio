@@ -137,7 +137,7 @@ function Arcadescreen() {
 
                                     index % 2 === 0 ? (
 
-                                       <div className="projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer-Even">
+                                       <div key = {index} className="projectSectionMediaSectionVideosExpandableEntryContainer projectSectionMediaSectionVideosExpandableEntryContainer-Even">
 
                                             <video 
                                                 controls={!canHover}
@@ -151,7 +151,7 @@ function Arcadescreen() {
                                                 Your browser does not support the video tag.
                                             </video>
 
-                                            <div className = "projectSectionMediaSectionVideosExpandableEntryButtonDescriptionInfoContainer">
+                                            <div className = "projectSectionMediaSectionVideosExpandableEntryInfoContainer">
                                                 <p>&#9654; {videoTitles[index]}</p>
                                                 <p>{videoSummaries[index]}</p>
                                             </div>
@@ -161,7 +161,7 @@ function Arcadescreen() {
 
                                     ) : (
 
-                                        <div className="projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer-Odd">
+                                        <div key = {index} className="projectSectionMediaSectionVideosExpandableEntryContainer projectSectionMediaSectionVideosExpandableEntryContainer-Odd">
 
                                             <video 
                                                 controls={!canHover}
@@ -176,7 +176,7 @@ function Arcadescreen() {
 
                                             </video>
 
-                                            <div className = "projectSectionMediaSectionVideosExpandableEntryButtonDescriptionInfoContainer">
+                                            <div className = "projectSectionMediaSectionVideosExpandableEntryInfoContainer">
                                                 <p>&#9654; {videoTitles[index]}</p>
                                                 <p>{videoSummaries[index]}</p>
                                             </div>
@@ -191,7 +191,7 @@ function Arcadescreen() {
 
                                         index % 2 === 0 ? (
 
-                                            <div className="projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer-Even">
+                                            <div key = {index} className="projectSectionMediaSectionVideosExpandableEntryContainer projectSectionMediaSectionVideosExpandableEntryContainer-Even">
 
                                                 <video 
                                                     controls={!canHover}
@@ -205,7 +205,7 @@ function Arcadescreen() {
                                                     Your browser does not support the video tag.
                                                 </video>
 
-                                                <div className = "projectSectionMediaSectionVideosExpandableEntryButtonDescriptionInfoContainer">
+                                                <div className = "projectSectionMediaSectionVideosExpandableEntryInfoContainer">
                                                     <p>&#9654; {videoTitles[index]}</p>
                                                     <p>{videoSummaries[index]}</p>
                                                 </div>
@@ -214,7 +214,7 @@ function Arcadescreen() {
 
                                         ) : (
 
-                                            <div className="projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer-Odd">
+                                            <div key = {index} className="projectSectionMediaSectionVideosExpandableEntryContainer projectSectionMediaSectionVideosExpandableEntryContainer-Odd">
 
                                                 <video 
                                                     controls={!canHover}
@@ -229,7 +229,7 @@ function Arcadescreen() {
                                                     
                                                 </video>
 
-                                                <div className = "projectSectionMediaSectionVideosExpandableEntryButtonDescriptionInfoContainer">
+                                                <div className = "projectSectionMediaSectionVideosExpandableEntryInfoContainer">
                                                     <p>&#9654; {videoTitles[index]}</p>
                                                     <p>{videoSummaries[index]}</p>
                                                 </div>

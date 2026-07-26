@@ -105,7 +105,7 @@ function TritonTurnUpscreen() {
                 <h3 className="projectSectionSubsectionTitle"> Video Content: </h3>
                 <div className="projectSectionMediaSectionVideosExpandableContainer">
 
-                    <div className="projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer-Even">
+                    <div className="projectSectionMediaSectionVideosExpandableEntryContainer projectSectionMediaSectionVideosExpandableEntryContainer-Even">
 
                          <video 
                             controls={!canHover}
@@ -118,7 +118,7 @@ function TritonTurnUpscreen() {
                             Your browser does not support the video tag.
                         </video>
 
-                        <div className = "projectSectionMediaSectionVideosExpandableEntryButtonDescriptionInfoContainer">
+                        <div className = "projectSectionMediaSectionVideosExpandableEntryInfoContainer">
                             <p>&#9654; Demo Video</p>
                             <p> Demonstration of our web application's core features, including user login, schedule-based filtering, entry browsing, and calendar integration. </p>
                         </div>

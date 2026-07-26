@@ -85,7 +85,7 @@ function Scriptascreen() {
                 <h3 className="projectSectionSubsectionTitle"> Video Content: </h3>
                 <div className="projectSectionMediaSectionVideosExpandableContainer">
 
-                    <div className="projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer-Even">
+                    <div className="projectSectionMediaSectionVideosExpandableEntryContainer projectSectionMediaSectionVideosExpandableEntryContainer-Even">
                     
                         <video 
                             controls={!canHover}
@@ -98,7 +98,7 @@ function Scriptascreen() {
                             Your browser does not support the video tag.
                         </video>
 
-                        <div className = "projectSectionMediaSectionVideosExpandableEntryButtonDescriptionInfoContainer">
+                        <div className = "projectSectionMediaSectionVideosExpandableEntryInfoContainer">
                             <p>&#9654; Demo Video</p>
                             <p> Demonstration of the app’s document system, including creating documents, editing content, adding text and importing images, saving files, using the search bar, and removing documents. </p>
                         </div>
