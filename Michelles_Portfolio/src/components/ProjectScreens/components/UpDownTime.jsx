@@ -47,8 +47,8 @@ function UpDownTimescreen() {
             <Link className = "teleportationButton projectPageJumpButton" to = "/home"> &lt; Back to Home </Link>
 
             <h2 className="sectionTitle"> Project Details:</h2>
-            <div className = "projectSectionContainer">
-                <div className="projectSectionDetailsRowContainer">
+            <div className = "projectSectionDetailsContainer">
+                
                     <div className="projectSectionDetailsSectionGeneralContainer">
                         <h3 className="projectSectionSubsectionTitle">Features:</h3>
                         <div className = "projectSectionDetailsSectionGeneralContentContainer"> 
@@ -70,9 +70,7 @@ function UpDownTimescreen() {
                             <p> &gt; Debugged and refined gameplay systems in preparation for public project showcases </p>
                         </div>
                     </div>
-                </div>
 
-                <div className="projectSectionDetailsRowContainer">
                     <div className="projectSectionDetailsSectionGeneralContainer">
                         <h3 className="projectSectionSubsectionTitle">Tools Used: </h3>
                         <div className = "projectSectionDetailsSectionGeneralContentContainer"> 
@@ -107,11 +105,10 @@ function UpDownTimescreen() {
                         </div>
                     </div>
 
-                </div>
             </div>
 
             <h2 className="sectionTitle"> Project Media: </h2>
-            <div className = "projectSectionContainer">
+            <div className = "projectSectionMediaContainer">
                 <h3 className="projectSectionSubsectionTitle"> External Links: </h3>
 
                 <div className = "projectSectionMediaSectionLinksContainer">

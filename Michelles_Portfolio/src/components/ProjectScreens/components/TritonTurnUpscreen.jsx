@@ -36,72 +36,68 @@ function TritonTurnUpscreen() {
             <Link className = "teleportationButton projectPageJumpButton" to = "/home"> &lt; Back to Home </Link>
 
             <h2 className="sectionTitle"> Project Details:</h2>
-            <div className = "projectSectionContainer">
-                <div className="projectSectionDetailsRowContainer">
-                    <div className="projectSectionDetailsSectionGeneralContainer">
-                        <h3 className="projectSectionSubsectionTitle">Features:</h3>
-                        <div className = "projectSectionDetailsSectionGeneralContentContainer"> 
-                            <p>&gt; Personalized calendar that aggregates user-selected events into a unified schedule </p>
-                            <p>&gt; Interactive event carousel displaying web-scraped UCSD events with options to save or dismiss events </p>
-                            <p>&gt; User authentication system supporting personalized calendars and schedule management </p>
-                            <p>&gt; Weekly availability interface that automatically filters incompatible events</p>
-                        </div>
-                    </div>
+            <div className = "projectSectionDetailsContainer">
 
-                    <div className="projectSectionDetailsSectionGeneralContainer">
-                        <h3 className="projectSectionSubsectionTitle">My Role:</h3>
-                        <div className = "projectSectionDetailsSectionGeneralContentContainer"> 
-                            <p> &gt; Collaborated in an Agile development team using GitHub for version control under faculty mentorship </p>
-                            <p> &gt; Contributed to planning, design, and development with a focus on UI/UX and front-end implementation</p>
-                            <p> &gt; Conducted user research and usability testing to understand user needs and improve product interactions </p>
-                        </div>
+                <div className="projectSectionDetailsSectionGeneralContainer">
+                    <h3 className="projectSectionSubsectionTitle">Features:</h3>
+                    <div className = "projectSectionDetailsSectionGeneralContentContainer"> 
+                        <p>&gt; Personalized calendar that aggregates user-selected events into a unified schedule </p>
+                        <p>&gt; Interactive event carousel displaying web-scraped UCSD events with options to save or dismiss events </p>
+                        <p>&gt; User authentication system supporting personalized calendars and schedule management </p>
+                        <p>&gt; Weekly availability interface that automatically filters incompatible events</p>
                     </div>
                 </div>
 
-                <div className="projectSectionDetailsRowContainer">
-                    <div className="projectSectionDetailsSectionGeneralContainer">
-                        <h3 className="projectSectionSubsectionTitle">Tools Used: </h3>
-                        <div className = "projectSectionDetailsSectionGeneralContentContainer"> 
-                            <h4> &gt; Core Frameworks & Libraries: </h4>
-                            <p> React, React Router, React Big Calendar </p>
-                            <h4> &gt; Programming Languages: </h4>
-                            <p> JavaScript, HTML, CSS, Python </p>
-                            <h4> &gt; Build & Packaging: </h4>
-                            <p> Vite, Node.js, npm </p>
-                            <h4> &gt; Authentication / APIs: </h4>
-                            <p> Google OAuth, Google APIs, JWT Authentication </p>
-                            <h4> &gt; Development Tools: </h4>
-                            <p> VSCode, GitHub</p>
-                        </div>
+                <div className="projectSectionDetailsSectionGeneralContainer">
+                    <h3 className="projectSectionSubsectionTitle">My Role:</h3>
+                    <div className = "projectSectionDetailsSectionGeneralContentContainer"> 
+                        <p> &gt; Collaborated in an Agile development team using GitHub for version control under faculty mentorship </p>
+                        <p> &gt; Contributed to planning, design, and development with a focus on UI/UX and front-end implementation</p>
+                        <p> &gt; Conducted user research and usability testing to understand user needs and improve product interactions </p>
                     </div>
-                    
-                    <div className="projectSectionDetailsSectionGeneralContainer">
-                        <h3 className="projectSectionSubsectionTitle"> Timeline: </h3>
-                        <div className = "projectSectionDetailsSectionGeneralContentContainer">
-                            <div className = "projectSectionDetailsSectionGeneralContentTimelineContainer"> 
-                               
-                                {timeLineDates.map((item, index) => (
+                </div>
 
-                                    <div className = "projectSectionDetailsSectionGeneralContentTimelineEntryContainer">
-                                        <div className="projectSectionDetailsSectionGeneralContentTimelineEntryDateContainer">
-                                            <p> {timeLineDates[index]} </p>
-                                            <div className="projectSectionDetailsSectionGeneralContentTimelineEntryVisualContainer"><div className = "projectSectionDetailsSectionGeneralContentTimelineEntryVisualPoint"></div><hr className = "projectSectionDetailsSectionGeneralContentTimelineEntryVisualLine"/></div> 
-                                        </div>
-                                        <p> {timeLineDescriptions[index]} </p>
+                <div className="projectSectionDetailsSectionGeneralContainer">
+                    <h3 className="projectSectionSubsectionTitle">Tools Used: </h3>
+                    <div className = "projectSectionDetailsSectionGeneralContentContainer"> 
+                        <h4> &gt; Core Frameworks & Libraries: </h4>
+                        <p> React, React Router, React Big Calendar </p>
+                        <h4> &gt; Programming Languages: </h4>
+                        <p> JavaScript, HTML, CSS, Python </p>
+                        <h4> &gt; Build & Packaging: </h4>
+                        <p> Vite, Node.js, npm </p>
+                        <h4> &gt; Authentication / APIs: </h4>
+                        <p> Google OAuth, Google APIs, JWT Authentication </p>
+                        <h4> &gt; Development Tools: </h4>
+                        <p> VSCode, GitHub</p>
+                    </div>
+                </div>
+                
+                <div className="projectSectionDetailsSectionGeneralContainer">
+                    <h3 className="projectSectionSubsectionTitle"> Timeline: </h3>
+                    <div className = "projectSectionDetailsSectionGeneralContentContainer">
+                        <div className = "projectSectionDetailsSectionGeneralContentTimelineContainer"> 
+                            
+                            {timeLineDates.map((item, index) => (
+
+                                <div className = "projectSectionDetailsSectionGeneralContentTimelineEntryContainer">
+                                    <div className="projectSectionDetailsSectionGeneralContentTimelineEntryDateContainer">
+                                        <p> {timeLineDates[index]} </p>
+                                        <div className="projectSectionDetailsSectionGeneralContentTimelineEntryVisualContainer"><div className = "projectSectionDetailsSectionGeneralContentTimelineEntryVisualPoint"></div><hr className = "projectSectionDetailsSectionGeneralContentTimelineEntryVisualLine"/></div> 
                                     </div>
+                                    <p> {timeLineDescriptions[index]} </p>
+                                </div>
 
-                                ))}
-
-                            </div>
+                            ))}
 
                         </div>
                     </div>
-
                 </div>
+                    
             </div>
 
             <h2 className="sectionTitle"> Project Media: </h2>
-            <div className = "projectSectionContainer">
+            <div className = "projectSectionMediaContainer">
                 <h3 className="projectSectionSubsectionTitle"> Video Content: </h3>
                 <div className="projectSectionMediaSectionVideosExpandableContainer">
 

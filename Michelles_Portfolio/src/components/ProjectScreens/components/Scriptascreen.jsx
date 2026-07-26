@@ -27,53 +27,50 @@ function Scriptascreen() {
             <Link className = "teleportationButton projectPageJumpButton" to = "/home"> &lt; Back to Home </Link>
 
             <h2 className="sectionTitle">Project Details:</h2>            
-            <div className = "projectSectionContainer">
-                <div className="projectSectionDetailsRowContainer">
-                    <div className="projectSectionDetailsSectionGeneralContainer">
-                        <h3 className="projectSectionSubsectionTitle">Features: </h3>
-                        <div className = "projectSectionDetailsSectionGeneralContentContainer"> 
-                            <p>&gt; Rich text editor with customizable fonts, sizes, colors, page backgrounds, and title styling </p>
-                            <p>&gt; Interactive image import system with adjustable image sizing within documents </p>
-                            <p>&gt; Document management system for creating, saving, reopening, searching, and deleting documents with trash support </p>
-                            <p>&gt; Keyboard input mapping for seamless application navigation and interaction </p>
-                        </div>
-                    </div>
-
-                    <div className="projectSectionDetailsSectionGeneralContainer">
-                        <h3 className="projectSectionSubsectionTitle">Tools Used: </h3>
-                        <div className = "projectSectionDetailsSectionGeneralContentContainer"> 
-                            <h4> &gt; Core Frameworks & Libraries: </h4>
-                            <p> React, Electron, React Router, React ContentEditable </p>
-                            <h4> &gt; Programming Languages: </h4>
-                            <p> JavaScript, HTML, CSS </p>
-                            <h4> &gt; Build & Packaging: </h4>
-                            <p> Vite, Node.js, npm, Electron Builder </p>
-                            <h4> &gt; Development Tools: </h4>
-                            <p> VSCode, GitHub</p>
-                        </div>
+            <div className = "projectSectionDetailsContainer">
+                
+                <div className="projectSectionDetailsSectionGeneralContainer">
+                    <h3 className="projectSectionSubsectionTitle">Features: </h3>
+                    <div className = "projectSectionDetailsSectionGeneralContentContainer"> 
+                        <p>&gt; Rich text editor with customizable fonts, sizes, colors, page backgrounds, and title styling </p>
+                        <p>&gt; Interactive image import system with adjustable image sizing within documents </p>
+                        <p>&gt; Document management system for creating, saving, reopening, searching, and deleting documents with trash support </p>
+                        <p>&gt; Keyboard input mapping for seamless application navigation and interaction </p>
                     </div>
                 </div>
 
-                <div className="projectSectionDetailsRowContainer">
-                    <div className="projectSectionDetailsSectionGeneralContainer">
-                        <h3 className="projectSectionSubsectionTitle"> Timeline: </h3>
-                        <div className = "projectSectionDetailsSectionGeneralContentContainer">
-                            <div className = "projectSectionDetailsSectionGeneralContentTimelineContainer"> 
-                                <div className = "projectSectionDetailsSectionGeneralContentTimelineEntryContainer">
-                                    <div className="projectSectionDetailsSectionGeneralContentTimelineEntryDateContainer">
-                                        <p> 10/2025 </p>
-                                        <div className="projectSectionDetailsSectionGeneralContentTimelineEntryVisualContainer"><div className = "projectSectionDetailsSectionGeneralContentTimelineEntryVisualPoint"></div><hr className = "projectSectionDetailsSectionGeneralContentTimelineEntryVisualLine"/></div> 
-                                    </div>
-                                    <p> Project started </p>
-                                </div>
+                <div className="projectSectionDetailsSectionGeneralContainer">
+                    <h3 className="projectSectionSubsectionTitle">Tools Used: </h3>
+                    <div className = "projectSectionDetailsSectionGeneralContentContainer"> 
+                        <h4> &gt; Core Frameworks & Libraries: </h4>
+                        <p> React, Electron, React Router, React ContentEditable </p>
+                        <h4> &gt; Programming Languages: </h4>
+                        <p> JavaScript, HTML, CSS </p>
+                        <h4> &gt; Build & Packaging: </h4>
+                        <p> Vite, Node.js, npm, Electron Builder </p>
+                        <h4> &gt; Development Tools: </h4>
+                        <p> VSCode, GitHub</p>
+                    </div>
+                </div>
 
-                                <div className = "projectSectionDetailsSectionGeneralContentTimelineEntryContainer">
-                                    <div className="projectSectionDetailsSectionGeneralContentTimelineEntryDateContainer">
-                                        <p> 12/2025 </p>
-                                        <div className="projectSectionDetailsSectionGeneralContentTimelineEntryVisualContainer"><div className = "projectSectionDetailsSectionGeneralContentTimelineEntryVisualPoint"></div><hr className = "projectSectionDetailsSectionGeneralContentTimelineEntryVisualLine"/></div> 
-                                    </div>
-                                    <p> First Github release (Scripta V1.0.0 for Mac) </p>
+                <div className="projectSectionDetailsSectionGeneralContainer">
+                    <h3 className="projectSectionSubsectionTitle"> Timeline: </h3>
+                    <div className = "projectSectionDetailsSectionGeneralContentContainer">
+                        <div className = "projectSectionDetailsSectionGeneralContentTimelineContainer"> 
+                            <div className = "projectSectionDetailsSectionGeneralContentTimelineEntryContainer">
+                                <div className="projectSectionDetailsSectionGeneralContentTimelineEntryDateContainer">
+                                    <p> 10/2025 </p>
+                                    <div className="projectSectionDetailsSectionGeneralContentTimelineEntryVisualContainer"><div className = "projectSectionDetailsSectionGeneralContentTimelineEntryVisualPoint"></div><hr className = "projectSectionDetailsSectionGeneralContentTimelineEntryVisualLine"/></div> 
                                 </div>
+                                <p> Project started </p>
+                            </div>
+
+                            <div className = "projectSectionDetailsSectionGeneralContentTimelineEntryContainer">
+                                <div className="projectSectionDetailsSectionGeneralContentTimelineEntryDateContainer">
+                                    <p> 12/2025 </p>
+                                    <div className="projectSectionDetailsSectionGeneralContentTimelineEntryVisualContainer"><div className = "projectSectionDetailsSectionGeneralContentTimelineEntryVisualPoint"></div><hr className = "projectSectionDetailsSectionGeneralContentTimelineEntryVisualLine"/></div> 
+                                </div>
+                                <p> First Github release (Scripta V1.0.0 for Mac) </p>
                             </div>
                         </div>
                     </div>
@@ -81,7 +78,7 @@ function Scriptascreen() {
             </div>
 
             <h2 className="sectionTitle"> Project Media: </h2>
-            <div className = "projectSectionContainer">
+            <div className = "projectSectionMediaContainer">
                 <h3 className="projectSectionSubsectionTitle"> Video Content: </h3>
                 <div className="projectSectionMediaSectionVideosExpandableContainer">
 

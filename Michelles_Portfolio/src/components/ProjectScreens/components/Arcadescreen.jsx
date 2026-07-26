@@ -66,128 +66,75 @@ function Arcadescreen() {
                 <Link className = "teleportationButton projectPageJumpButton" to = "/home"> &lt; Back to Home </Link>
 
                 <h2 className="sectionTitle"> Project Details:</h2>
-                <div className = "projectSectionContainer">
-                    <div className="projectSectionDetailsRowContainer">
-                        <div className="projectSectionDetailsSectionGeneralContainer">
-                            <h3 className="projectSectionSubsectionTitle">Features:</h3>
-                            <div className = "projectSectionDetailsSectionGeneralContentContainer">
-                                <p>&gt; Dynamic scoring system with action-based point rewards and penalties </p>
-                                <p>&gt; Player-driven point economy with prize redemption, claw machines, and gameplay purchases </p>
-                                <p>&gt; Multiple interactive mini-games featuring player-driven gameplay and dynamic outcomes </p>
-                                <p>&gt; Integrated audio systems for event-triggered sound effects and background music </p>
-                                <p>&gt; State-driven animations synchronized with gameplay events </p>
-                                <p>&gt; Persistent storage to save and restore user progress across sessions </p>
-                                <p>&gt; Keyboard input mapping for intuitive game navigation and controls </p>
-                            </div>
-                        </div>
-
-                        <div className="projectSectionDetailsSectionGeneralContainer">
-                            <h3 className="projectSectionSubsectionTitle">Tools Used: </h3>
-                            <div className = "projectSectionDetailsSectionGeneralContentContainer"> 
-                                <h4> &gt; Core Frameworks & Libraries: </h4>
-                                <p> React, Electron, React Router </p>
-                                <h4> &gt; Programming Languages: </h4>
-                                <p> JavaScript, HTML, CSS </p>
-                                <h4> &gt; Build & Packaging: </h4>
-                                <p> Vite, Node.js, npm, Electron Builder </p>
-                                <h4> &gt; Development Tools: </h4>
-                                <p> VSCode, GitHub</p>
-                            </div>
+                <div className = "projectSectionDetailsContainer">
+                    
+                    <div className="projectSectionDetailsSectionGeneralContainer">
+                        <h3 className="projectSectionSubsectionTitle">Features:</h3>
+                        <div className = "projectSectionDetailsSectionGeneralContentContainer">
+                            <p>&gt; Dynamic scoring system with action-based point rewards and penalties </p>
+                            <p>&gt; Player-driven point economy with prize redemption, claw machines, and gameplay purchases </p>
+                            <p>&gt; Multiple interactive mini-games featuring player-driven gameplay and dynamic outcomes </p>
+                            <p>&gt; Integrated audio systems for event-triggered sound effects and background music </p>
+                            <p>&gt; State-driven animations synchronized with gameplay events </p>
+                            <p>&gt; Persistent storage to save and restore user progress across sessions </p>
+                            <p>&gt; Keyboard input mapping for intuitive game navigation and controls </p>
                         </div>
                     </div>
 
-                    <div className="projectSectionDetailsRowContainer">
-                        <div className="projectSectionDetailsSectionGeneralContainer">
-                            <h3 className="projectSectionSubsectionTitle"> Timeline: </h3>
+                    <div className="projectSectionDetailsSectionGeneralContainer">
+                        <h3 className="projectSectionSubsectionTitle">Tools Used: </h3>
+                        <div className = "projectSectionDetailsSectionGeneralContentContainer"> 
+                            <h4> &gt; Core Frameworks & Libraries: </h4>
+                            <p> React, Electron, React Router </p>
+                            <h4> &gt; Programming Languages: </h4>
+                            <p> JavaScript, HTML, CSS </p>
+                            <h4> &gt; Build & Packaging: </h4>
+                            <p> Vite, Node.js, npm, Electron Builder </p>
+                            <h4> &gt; Development Tools: </h4>
+                            <p> VSCode, GitHub</p>
+                        </div>
+                    </div>
 
-                            <div className = "projectSectionDetailsSectionGeneralContentContainer">
+                    <div className="projectSectionDetailsSectionGeneralContainer">
+                        <h3 className="projectSectionSubsectionTitle"> Timeline: </h3>
 
-                                <div className = "projectSectionDetailsSectionGeneralContentTimelineContainer"> 
-                                    
-                                    {timeLineDates.map((item, index) => (
+                        <div className = "projectSectionDetailsSectionGeneralContentContainer">
 
-                                        <div className = "projectSectionDetailsSectionGeneralContentTimelineEntryContainer">
-                                            <div className="projectSectionDetailsSectionGeneralContentTimelineEntryDateContainer">
-                                                <p> {timeLineDates[index]} </p>
-                                                <div className="projectSectionDetailsSectionGeneralContentTimelineEntryVisualContainer"><div className = "projectSectionDetailsSectionGeneralContentTimelineEntryVisualPoint"></div><hr className = "projectSectionDetailsSectionGeneralContentTimelineEntryVisualLine"/></div> 
-                                            </div>
-                                            <p> {timeLineDescriptions[index]} </p>
+                            <div className = "projectSectionDetailsSectionGeneralContentTimelineContainer"> 
+                                
+                                {timeLineDates.map((item, index) => (
+
+                                    <div className = "projectSectionDetailsSectionGeneralContentTimelineEntryContainer">
+                                        <div className="projectSectionDetailsSectionGeneralContentTimelineEntryDateContainer">
+                                            <p> {timeLineDates[index]} </p>
+                                            <div className="projectSectionDetailsSectionGeneralContentTimelineEntryVisualContainer"><div className = "projectSectionDetailsSectionGeneralContentTimelineEntryVisualPoint"></div><hr className = "projectSectionDetailsSectionGeneralContentTimelineEntryVisualLine"/></div> 
                                         </div>
+                                        <p> {timeLineDescriptions[index]} </p>
+                                    </div>
 
-                                    ))}
+                                ))}
 
-                                </div>
-                            
                             </div>
                         
                         </div>
+                    
                     </div>
 
                 </div>
 
+
                 <h2 className="sectionTitle"> Project Media: </h2>
-                <div className = "projectSectionContainer">
+                <div className = "projectSectionMediaContainer">
                     <h3 className="projectSectionSubsectionTitle"> Video Content: </h3>
                     <div className="projectSectionMediaSectionVideosExpandableContainer">
 
-                        <div className="projectSectionMediaSectionVideosExpandableContainer">
-                            {videoTitles.map((video, index) => (
+                        {canHover ? (
 
-                                openFullVideoSection ? (
+                            <>
 
-                                    index % 2 === 0 ? (
+                                {videoTitles.map((video, index) => (
 
-                                       <div key = {index} className="projectSectionMediaSectionVideosExpandableEntryContainer projectSectionMediaSectionVideosExpandableEntryContainer-Even">
-
-                                            <video 
-                                                controls={!canHover}
-                                                muted
-                                                playsInline
-                                                onMouseEnter={canHover ? (e) => e.currentTarget.play() : undefined}
-                                                onMouseLeave={canHover ? (e) => e.currentTarget.pause() : undefined}
-                                            >
-
-                                                <source src={videoDownloads[index]} type="video/mp4" />
-                                                Your browser does not support the video tag.
-                                            </video>
-
-                                            <div className = "projectSectionMediaSectionVideosExpandableEntryInfoContainer">
-                                                <p>&#9654; {videoTitles[index]}</p>
-                                                <p>{videoSummaries[index]}</p>
-                                            </div>
-                                               
-                                        </div>
-
-
-                                    ) : (
-
-                                        <div key = {index} className="projectSectionMediaSectionVideosExpandableEntryContainer projectSectionMediaSectionVideosExpandableEntryContainer-Odd">
-
-                                            <video 
-                                                controls={!canHover}
-                                                muted
-                                                playsInline
-                                                onMouseEnter={canHover ? (e) => e.currentTarget.play() : undefined}
-                                                onMouseLeave={canHover ? (e) => e.currentTarget.pause() : undefined}
-                                            >
-
-                                                <source src={videoDownloads[index]} type="video/mp4" />
-                                                Your browser does not support the video tag.
-
-                                            </video>
-
-                                            <div className = "projectSectionMediaSectionVideosExpandableEntryInfoContainer">
-                                                <p>&#9654; {videoTitles[index]}</p>
-                                                <p>{videoSummaries[index]}</p>
-                                            </div>
-                                               
-                                        </div>
-
-                                    )
-
-                                ) : (
-
-                                    index < 3 ? (
+                                    openFullVideoSection ? (
 
                                         index % 2 === 0 ? (
 
@@ -209,8 +156,9 @@ function Arcadescreen() {
                                                     <p>&#9654; {videoTitles[index]}</p>
                                                     <p>{videoSummaries[index]}</p>
                                                 </div>
-                                                
+                                                    
                                             </div>
+
 
                                         ) : (
 
@@ -226,36 +174,119 @@ function Arcadescreen() {
 
                                                     <source src={videoDownloads[index]} type="video/mp4" />
                                                     Your browser does not support the video tag.
-                                                    
+
                                                 </video>
 
                                                 <div className = "projectSectionMediaSectionVideosExpandableEntryInfoContainer">
                                                     <p>&#9654; {videoTitles[index]}</p>
                                                     <p>{videoSummaries[index]}</p>
                                                 </div>
-                                                
+                                                    
                                             </div>
 
                                         )
 
                                     ) : (
 
-                                        null
+                                        index < 3 ? (
+
+                                            index % 2 === 0 ? (
+
+                                                <div key = {index} className="projectSectionMediaSectionVideosExpandableEntryContainer projectSectionMediaSectionVideosExpandableEntryContainer-Even">
+
+                                                    <video 
+                                                        controls={!canHover}
+                                                        muted
+                                                        playsInline
+                                                        onMouseEnter={canHover ? (e) => e.currentTarget.play() : undefined}
+                                                        onMouseLeave={canHover ? (e) => e.currentTarget.pause() : undefined}
+                                                    >
+
+                                                        <source src={videoDownloads[index]} type="video/mp4" />
+                                                        Your browser does not support the video tag.
+                                                    </video>
+
+                                                    <div className = "projectSectionMediaSectionVideosExpandableEntryInfoContainer">
+                                                        <p>&#9654; {videoTitles[index]}</p>
+                                                        <p>{videoSummaries[index]}</p>
+                                                    </div>
+                                                    
+                                                </div>
+
+                                            ) : (
+
+                                                <div key = {index} className="projectSectionMediaSectionVideosExpandableEntryContainer projectSectionMediaSectionVideosExpandableEntryContainer-Odd">
+
+                                                    <video 
+                                                        controls={!canHover}
+                                                        muted
+                                                        playsInline
+                                                        onMouseEnter={canHover ? (e) => e.currentTarget.play() : undefined}
+                                                        onMouseLeave={canHover ? (e) => e.currentTarget.pause() : undefined}
+                                                    >
+
+                                                        <source src={videoDownloads[index]} type="video/mp4" />
+                                                        Your browser does not support the video tag.
+                                                        
+                                                    </video>
+
+                                                    <div className = "projectSectionMediaSectionVideosExpandableEntryInfoContainer">
+                                                        <p>&#9654; {videoTitles[index]}</p>
+                                                        <p>{videoSummaries[index]}</p>
+                                                    </div>
+                                                    
+                                                </div>
+
+                                            )
+
+                                        ) : (
+
+                                            null
+
+                                        )
 
                                     )
+                        
+                                ))}
 
-                                )
-                    
-                            ))}
-                        </div>
+                                {openFullVideoSection ? (
 
-                        {openFullVideoSection ? (
+                                    <button className="conditionalButton projectPageExpansionButton" onClick = {() => setOpenFullVideoSection(false)}> Collapse All Videos &#9650; </button>
 
-                            <button className="conditionalButton projectPageExpansionButton" onClick = {() => setOpenFullVideoSection(false)}> Collapse All Videos &#9650; </button>
+                                ) : (
+
+                                    <button className="conditionalButton projectPageExpansionButton" onClick = {() => setOpenFullVideoSection(true)}> Expand All Videos &#9660; </button>
+
+                                )}
+
+                            </>
 
                         ) : (
 
-                            <button className="conditionalButton projectPageExpansionButton" onClick = {() => setOpenFullVideoSection(true)}> Expand All Videos &#9660; </button>
+                            videoTitles.map((video, index) => (
+
+                                <div key = {index} className="projectSectionMediaSectionVideosExpandableEntryContainer projectSectionMediaSectionVideosExpandableEntryContainer-Even">
+
+                                    <video 
+                                        controls={!canHover}
+                                        muted
+                                        playsInline
+                                        onMouseEnter={canHover ? (e) => e.currentTarget.play() : undefined}
+                                        onMouseLeave={canHover ? (e) => e.currentTarget.pause() : undefined}
+                                    >
+
+                                        <source src={videoDownloads[index]} type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                    </video>
+
+                                    <div className = "projectSectionMediaSectionVideosExpandableEntryInfoContainer">
+                                        <p>&#9654; {videoTitles[index]}</p>
+                                        <p>{videoSummaries[index]}</p>
+                                    </div>
+                                        
+                                </div>
+
+                            ))
 
                         )}
 
