@@ -187,7 +187,7 @@ function Arcadescreen() {
 
                                 ) : (
 
-                                    index < 4 ? (
+                                    index < 3 ? (
 
                                         index % 2 === 0 ? (
 
