@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
-import TritonTurnup from "../../../images/TritonTurnup.svg";
-import TritonTurnupDemo from "../../../images/TritonTurnupDemo.svg";
+import TritonTurnUpDemo from "../../../../dist/assets/videos/TritonTurnUp.mp4";
 
 import { ScrollBackToTop } from "../helpers/Helpers";
 
@@ -18,6 +17,8 @@ function TritonTurnUpscreen() {
                                     "First meeting with mentor to discuss progress",
                                     "Project deadline and submission"
                                 ];
+
+    const canHover = window.matchMedia("(hover: hover)").matches;
 
   return (
 
@@ -52,7 +53,7 @@ function TritonTurnUpscreen() {
                         <div className = "projectSectionDetailsSectionGeneralContentContainer"> 
                             <p> &gt; Collaborated in an Agile development team using GitHub for version control under faculty mentorship </p>
                             <p> &gt; Contributed to planning, design, and development with a focus on UI/UX and front-end implementation</p>
-                            <p> &gt; Conducted user research and usability projectSectionDetailsSectionGeneralContentTimelineEntryContainer to understand user needs and improve product interactions </p>
+                            <p> &gt; Conducted user research and usability testing to understand user needs and improve product interactions </p>
                         </div>
                     </div>
                 </div>
@@ -103,13 +104,27 @@ function TritonTurnUpscreen() {
             <div className = "projectSectionContainer">
                 <h3 className="projectSectionSubsectionTitle"> Video Content: </h3>
                 <div className="projectSectionMediaSectionVideosExpandableContainer">
-                    <a className = "teleportationButton projectSectionMediaSectionVideosExpandableEntryButton" href="https://drive.google.com/file/d/1bjoVWfcJ89o7ha2sFHtFunMhr9dIxjtt/view" target="_blank">
-                        <p>&#9654; Watch Demo Video </p> 
-                        <div className="projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer">
-                            <img src = {TritonTurnupDemo}/>
-                            <p> A demonstration of our web application's core features, including user login, schedule-based filtering, entry browsing, and calendar integration. </p>
+
+                    <div className="projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer-Even">
+
+                         <video 
+                            controls={!canHover}
+                            muted
+                            playsInline
+                            onMouseEnter={canHover ? (e) => e.currentTarget.play() : undefined}
+                            onMouseLeave={canHover ? (e) => e.currentTarget.pause() : undefined}
+                        >
+                            <source src={TritonTurnUpDemo} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+
+                        <div className = "projectSectionMediaSectionVideosExpandableEntryButtonDescriptionInfoContainer">
+                            <p>&#9654; Demo Video</p>
+                            <p> Demonstration of our web application's core features, including user login, schedule-based filtering, entry browsing, and calendar integration. </p>
                         </div>
-                    </a>
+
+                    </div>
+
                 </div>
 
                 <h3 className="projectSectionSubsectionTitle"> External Links: </h3>

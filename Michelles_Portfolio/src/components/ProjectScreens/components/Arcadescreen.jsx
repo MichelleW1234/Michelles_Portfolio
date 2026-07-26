@@ -1,17 +1,17 @@
 import { Link } from "react-router-dom";
 import {useState} from "react";
 
-import RPS from "../../../images/ArcadeMedia/RPS.svg";
-import TTT from "../../../images/ArcadeMedia/TTT.svg";
-import SNK from "../../../images/ArcadeMedia/SNK.svg";
-import SPIM2 from "../../../images/ArcadeMedia/SPIM2.svg";
-import SPIM4 from "../../../images/ArcadeMedia/SPIM4.svg";
-import ORB from "../../../images/ArcadeMedia/ORB.svg";
-import CBL from "../../../images/ArcadeMedia/CBL.svg";
-import BFR from "../../../images/ArcadeMedia/BFR.svg";
-import SMZ from "../../../images/ArcadeMedia/SMZ.svg";
-import CHC from "../../../images/ArcadeMedia/CHC.svg";
-import CWMCat from "../../../images/ArcadeMedia/CWMCat.svg";
+import RPS from "../../../../dist/assets/videos/RPS.mp4";
+import TTT from "../../../../dist/assets/videos/TTT.mp4";
+import SNK from "../../../../dist/assets/videos/SNK.mp4";
+import SPIM2 from "../../../../dist/assets/videos/SPIM2.mp4";
+import SPIM4 from "../../../../dist/assets/videos/SPIM4.mp4";
+import ORB from "../../../../dist/assets/videos/ORB.mp4";
+import CBL from "../../../../dist/assets/videos/CBL.mp4";
+import CWMCat from "../../../../dist/assets/videos/CWMCat.mp4";
+import BFR from "../../../../dist/assets/videos/BFR.mp4";
+import SMZ from "../../../../dist/assets/videos/SMZ.mp4";
+import CHC from "../../../../dist/assets/videos/CHC.mp4";
 
 import { ScrollBackToTop } from "../helpers/Helpers";
 
@@ -31,32 +31,22 @@ function Arcadescreen() {
 
     const videoTitles = ["Rock-Paper-Scissors", "Tic-Tac-Toe", "Snake", "Space Invasion (Mission 2)", "Space Invasion (Mission 4)",
                         "Orbit", "Color Blast", "Cat Claw Machine", "Balloon Frenzy", "Sky Maze", "Chicken Crossing"];
-    const videoImages = [RPS, TTT, SNK, SPIM2, SPIM4, ORB, CBL, CWMCat, BFR, SMZ, CHC];
-    const videoLinks = ["https://drive.google.com/file/d/1PKd1yokX2N8gwBfoBmrSXMd78LamrNe4/view?usp=drive_link", 
-                        "https://drive.google.com/file/d/1oC9cMNVnP8obfnl9CdFUADgZvoYY-Pr0/view?usp=drive_link", 
-                        "https://drive.google.com/file/d/1MKFG1TzGLh8Z7JxC_nQKQuNq6L0rY9En/view?usp=drive_link",
-                        "https://drive.google.com/file/d/19MIdDvHk1NA8qMBxPi1Nt79rWcKcn9B6/view?usp=drive_link",
-                        "https://drive.google.com/file/d/1tynR68oGVpyzWIjKWeJPbR9X2fhKHdCs/view?usp=drive_link",
-                        "https://drive.google.com/file/d/17g4-Q-iU4EJeOaiSFp-MUZ72ByeJZRs6/view?usp=drive_link",
-                        "https://drive.google.com/file/d/1OZeglTeHj6pRWC80RMbSqTUVOAuEoPHQ/view?usp=drive_link",
-                        "https://drive.google.com/file/d/1XQb_AFsKZTNP3dLgWG3g27lAoIngYN9t/view?usp=drive_link",
-                        "https://drive.google.com/file/d/1WbA9IL-9Gd6Jw6AEkmLVYZ8k-kchLq7Z/view?usp=drive_link",
-                        "https://drive.google.com/file/d/1npOK4lx2jSFZZAWbtdkZMMEEWV8ToRpx/view?usp=drive_link",
-                        "https://drive.google.com/file/d/1TPUmVp_TV3V_aWHpYJbx7BRTzsoLE8d7/view?usp=drive_link"];
-    const videoSummaries = ["A 10-round game of basic Rock-Paper-Scissors where players compete against the computer.",      
-                            "A standard 3×3 game of tic-tac-toe against the computer, with the first player determined by a coin flip and points awarded based on the outcome.",
-                            "Snake, where the user controls the snake using WASD to collect apples for points while avoiding an early exit penalty.",
-                            "The 2nd mission in Space Invasion, where the user attempts to eliminate an alien hive with two different variants before they reach them.",
-                            "The 4th and final mission in Space Invasion, where the user attempts to defeat the hive queen without triggering an explosion and before their flashlight battery runs out.",
-                            "Orbit, where the user projectSectionDetailsRowContainers their timing by stopping the moving indicator on the green zone.",
-                            "Color Blast, where the user projectSectionDetailsRowContainers their reflexes by clicking circles that match the target color to earn points while avoiding incorrect selections under a time limit.",
-                            "The Cat Claw Machine, where the user attempts to win a prize by timing their claw grabs based on where the green ball lands.",
-                            "Balloon Frenzy, where the user pops as many balloons as they can under a time limit while avoiding birds.",
-                            "Sky Maze, where the user uses WASD to guide the bird up and down to dodge incoming walls and travel as far as possible.",
-                            "Chicken Crossing, where the user uses WASD to navigate the chicken through traffic under a time limit, avoiding cars and using safe grassy zones.",
+    const videoDownloads = [RPS, TTT, SNK, SPIM2, SPIM4, ORB, CBL, CWMCat, BFR, SMZ, CHC];
+
+    const videoSummaries = ["Basic 10-round game where players compete against the computer.",      
+                            "Standard 3×3 game against the computer, with the first player determined by a coin flip and points awarded based on the outcome.",
+                            "User controls the snake using WASD to collect apples for points while avoiding an early exit penalty.",
+                            "2nd mission, where the user attempts to eliminate an alien hive with two different variants before they reach them.",
+                            "4th and final mission, where the user attempts to defeat the hive queen without triggering an explosion and before their flashlight battery runs out.",
+                            "User tests their reaction time by stopping the moving indicator on the green zone.",
+                            "User tests their reflexes by clicking circles that match the target color to earn points while avoiding incorrect selections under a time limit.",
+                            "User attempts to win a prize by timing their claw grabs based on where the green ball lands.",
+                            "User pops as many balloons as they can under a time limit while avoiding birds.",
+                            "User uses WASD to guide the bird up and down to dodge incoming walls and travel as far as possible.",
+                            "User uses WASD to navigate the chicken through traffic under a time limit, avoiding cars and using safe grassy zones.",
                         ];
 
-    
+    const canHover = window.matchMedia("(hover: hover)").matches;
 
     const [openFullVideoSection, setOpenFullVideoSection] = useState(false);
  
@@ -145,25 +135,108 @@ function Arcadescreen() {
 
                                 openFullVideoSection ? (
 
-                                    <a className = "teleportationButton projectSectionMediaSectionVideosExpandableEntryButton" href={videoLinks[index]} target="_blank">
-                                        <p> &#9654; Watch {videoTitles[index]}</p> 
-                                        <div className="projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer">
-                                            <img src={videoImages[index]}/>
-                                            <p>{videoSummaries[index]}</p>
+                                    index % 2 === 0 ? (
+
+                                       <div className="projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer-Even">
+
+                                            <video 
+                                                controls={!canHover}
+                                                muted
+                                                playsInline
+                                                onMouseEnter={canHover ? (e) => e.currentTarget.play() : undefined}
+                                                onMouseLeave={canHover ? (e) => e.currentTarget.pause() : undefined}
+                                            >
+
+                                                <source src={videoDownloads[index]} type="video/mp4" />
+                                                Your browser does not support the video tag.
+                                            </video>
+
+                                            <div className = "projectSectionMediaSectionVideosExpandableEntryButtonDescriptionInfoContainer">
+                                                <p>&#9654; {videoTitles[index]}</p>
+                                                <p>{videoSummaries[index]}</p>
+                                            </div>
+                                               
                                         </div>
-                                    </a>
+
+
+                                    ) : (
+
+                                        <div className="projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer-Odd">
+
+                                            <video 
+                                                controls={!canHover}
+                                                muted
+                                                playsInline
+                                                onMouseEnter={canHover ? (e) => e.currentTarget.play() : undefined}
+                                                onMouseLeave={canHover ? (e) => e.currentTarget.pause() : undefined}
+                                            >
+
+                                                <source src={videoDownloads[index]} type="video/mp4" />
+                                                Your browser does not support the video tag.
+
+                                            </video>
+
+                                            <div className = "projectSectionMediaSectionVideosExpandableEntryButtonDescriptionInfoContainer">
+                                                <p>&#9654; {videoTitles[index]}</p>
+                                                <p>{videoSummaries[index]}</p>
+                                            </div>
+                                               
+                                        </div>
+
+                                    )
 
                                 ) : (
 
                                     index < 4 ? (
 
-                                        <a className = "teleportationButton projectSectionMediaSectionVideosExpandableEntryButton" href={videoLinks[index]} target="_blank">
-                                            <p> &#9654; Watch {videoTitles[index]}</p> 
-                                            <div className="projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer">
-                                                <img src={videoImages[index]}/>
-                                                <p>{videoSummaries[index]}</p>
+                                        index % 2 === 0 ? (
+
+                                            <div className="projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer-Even">
+
+                                                <video 
+                                                    controls={!canHover}
+                                                    muted
+                                                    playsInline
+                                                    onMouseEnter={canHover ? (e) => e.currentTarget.play() : undefined}
+                                                    onMouseLeave={canHover ? (e) => e.currentTarget.pause() : undefined}
+                                                >
+
+                                                    <source src={videoDownloads[index]} type="video/mp4" />
+                                                    Your browser does not support the video tag.
+                                                </video>
+
+                                                <div className = "projectSectionMediaSectionVideosExpandableEntryButtonDescriptionInfoContainer">
+                                                    <p>&#9654; {videoTitles[index]}</p>
+                                                    <p>{videoSummaries[index]}</p>
+                                                </div>
+                                                
                                             </div>
-                                        </a>
+
+                                        ) : (
+
+                                            <div className="projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer-Odd">
+
+                                                <video 
+                                                    controls={!canHover}
+                                                    muted
+                                                    playsInline
+                                                    onMouseEnter={canHover ? (e) => e.currentTarget.play() : undefined}
+                                                    onMouseLeave={canHover ? (e) => e.currentTarget.pause() : undefined}
+                                                >
+
+                                                    <source src={videoDownloads[index]} type="video/mp4" />
+                                                    Your browser does not support the video tag.
+                                                    
+                                                </video>
+
+                                                <div className = "projectSectionMediaSectionVideosExpandableEntryButtonDescriptionInfoContainer">
+                                                    <p>&#9654; {videoTitles[index]}</p>
+                                                    <p>{videoSummaries[index]}</p>
+                                                </div>
+                                                
+                                            </div>
+
+                                        )
 
                                     ) : (
 

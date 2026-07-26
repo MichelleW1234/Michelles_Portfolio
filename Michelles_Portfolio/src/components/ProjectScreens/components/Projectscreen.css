@@ -159,6 +159,7 @@
     align-items: center;
     justify-content: center;
 
+    padding: 2rem 0rem;
     gap: 1rem;
 
 }
@@ -170,8 +171,7 @@
     justify-content: center;
     flex-wrap: wrap;
         
-    padding: 3rem 0rem;
-    gap: 2rem;
+    gap: 5rem;
     
 }
 
@@ -199,12 +199,60 @@
 
 .projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer{
 
+    width: 100%;
     display: flex;
-    flex-direction: row;
     align-items: center;
 
-    gap: 2rem;
-    padding: 1rem;
+    gap: 5rem;
+
+    color: rgb(var(--color-blue-dark-detail-light));
+
+
+    video{
+
+        width: 60%;
+
+        border-radius: 25px;
+
+        filter:
+            drop-shadow(0 0 3px rgba(var(--color-pink-dark-detail-light), 50%))
+            drop-shadow(0 0 6px rgba(var(--color-pink-dark-detail-light), 50%))
+            drop-shadow(0 0 9px rgba(var(--color-blue-dark-detail-light), 50%))
+            drop-shadow(0 0 12px rgba(var(--color-blue-dark-detail-light), 50%));
+
+    }
+
+    video:hover{
+
+        filter: 
+            drop-shadow(0 0 4px rgba(var(--color-pink-dark-detail-light), 50%))
+            drop-shadow(0 0 8px rgba(var(--color-pink-dark-detail-light), 50%))
+            drop-shadow(0 0 12px rgba(var(--color-blue-dark-detail-light), 50%))
+            drop-shadow(0 0 16px rgba(var(--color-blue-dark-detail-light), 50%));
+
+    }
+
+}
+
+.projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer-Even{
+
+    flex-direction: row;
+
+}
+
+.projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer-Odd{
+
+    flex-direction: row-reverse;
+
+}
+
+.projectSectionMediaSectionVideosExpandableEntryButtonDescriptionInfoContainer{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    gap: 1rem;
 
 }
 
@@ -298,6 +346,39 @@
 
     }
 
+    .projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer{
+
+        gap: 3rem;
+
+        video{
+
+            width: 80%;
+
+        }
+
+    }
+
+    .projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer-Even{
+
+        flex-direction: column;
+
+    }
+
+
+    .projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer-Odd{
+
+        flex-direction: column;
+
+    }
+
+    .projectSectionMediaSectionVideosExpandableEntryButtonDescriptionInfoContainer{
+
+        width: 80%;
+        align-items: center;
+
+    }
+
+
     .projectSectionMediaSectionLinksEntryButton{
 
         padding: 1.7rem 2.2rem;
@@ -331,6 +412,38 @@
         width: 100%;
 
         gap: 4rem;
+
+    }
+
+    .projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer{
+
+        gap: 3rem;
+
+        video{
+
+            width: 100%;
+
+        }
+
+    }
+
+    .projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer-Even{
+
+        flex-direction: column;
+
+    }
+
+
+    .projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer-Odd{
+
+        flex-direction: column;
+
+    }
+
+    .projectSectionMediaSectionVideosExpandableEntryButtonDescriptionInfoContainer{
+
+        width: 80%;
+        align-items: center;
 
     }
 
@@ -398,6 +511,18 @@
     .projectSectionMediaSectionVideosExpandableEntryButton {
 
         width: 100%;
+
+    }
+
+    .projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer{
+
+        gap: 2rem;
+
+        video {
+
+            width: 100%;
+                
+        }
 
     }
 

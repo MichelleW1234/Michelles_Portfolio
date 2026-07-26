@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import ScriptaDemo from "../../../images/ScriptaDemo.png";
+import ScriptaDemo from "../../../../dist/assets/videos/Scripta.mp4";
 
 import { ScrollBackToTop } from "../helpers/Helpers";
 
@@ -8,6 +8,8 @@ import "./Projectscreen.css";
 
 
 function Scriptascreen() {
+
+    const canHover = window.matchMedia("(hover: hover)").matches;
 
   return (
 
@@ -82,13 +84,27 @@ function Scriptascreen() {
             <div className = "projectSectionContainer">
                 <h3 className="projectSectionSubsectionTitle"> Video Content: </h3>
                 <div className="projectSectionMediaSectionVideosExpandableContainer">
-                    <a className = "teleportationButton projectSectionMediaSectionVideosExpandableEntryButton" href="https://drive.google.com/file/d/18kaJoc-IkkRINIQjO2polFLivxWjDAy5/view?usp=drive_link" target="_blank">
-                        <p>&#9654; Watch Demo Video </p> 
-                        <div className="projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer">
-                            <img src = {ScriptaDemo}/>
-                            <p> A demonstration of the app’s document system, including creating documents, editing content, adding text and importing images, saving files, using the search bar, and removing documents. </p>
+
+                    <div className="projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer projectSectionMediaSectionVideosExpandableEntryButtonDescriptionContainer-Even">
+                    
+                        <video 
+                            controls={!canHover}
+                            muted
+                            playsInline
+                            onMouseEnter={canHover ? (e) => e.currentTarget.play() : undefined}
+                            onMouseLeave={canHover ? (e) => e.currentTarget.pause() : undefined}
+                        >
+                            <source src={ScriptaDemo} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+
+                        <div className = "projectSectionMediaSectionVideosExpandableEntryButtonDescriptionInfoContainer">
+                            <p>&#9654; Demo Video</p>
+                            <p> Demonstration of the app’s document system, including creating documents, editing content, adding text and importing images, saving files, using the search bar, and removing documents. </p>
                         </div>
-                    </a>
+
+                    </div>
+                    
                 </div>
 
                 <h3 className="projectSectionSubsectionTitle"> External Links: </h3>
