@@ -42,7 +42,7 @@ function UpDownTimescreen() {
             <div className="bannerHorizontalLine"></div>
         </div>
 
-        <div className = "projectScreen">
+        <div className = "projectContainer">
 
             <Link className = "teleportationButton projectPageJumpButton" to = "/home"> &lt; Back to Home </Link>
 

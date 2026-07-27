@@ -140,16 +140,16 @@
 
     .projectsContainer{
 
-        width: 95%;
+        width: 100%;
 
-        padding: 2rem;
+        padding: 2rem 1rem;
 
     }
 
 
     .projectsEntryContainer {
 
-        gap: 2rem;
+        gap: 3rem;
 
     }
 
@@ -194,7 +194,7 @@
 
     .projectsEntryContainer {
 
-        gap: 2rem;
+        gap: 3rem;
 
     }
 
@@ -236,7 +236,6 @@
         width: 100%;
 
         padding: 2rem;
-
     }
 
 }

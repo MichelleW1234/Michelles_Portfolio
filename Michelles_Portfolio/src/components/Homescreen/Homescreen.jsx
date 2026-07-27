@@ -29,7 +29,7 @@ function Homescreen() {
         <div className="bannerHorizontalLine"></div>
       </div>
 
-      <main className="homeSwipingContainer">
+      <div className="homeSwipingContainer">
         
         <div className="homeNavContainer">
           <button className={ActiveSection === 0 ? "homeNavButtonActive" : "conditionalButton homeNavButton"} onClick = {() => setActiveSection(0)}> Introduction </button>
@@ -56,7 +56,7 @@ function Homescreen() {
           
         ): null}
 
-      </main>
+      </div>
 
       <div className="banner">
         <div className="bannerHorizontalLine"></div>

@@ -1,4 +1,4 @@
-.projectScreen {
+.projectContainer {
 
     display: flex;
     flex-direction: column;
@@ -156,7 +156,6 @@
     justify-content: center;
         
     gap: 5rem;
-    padding: 2rem;
     
 }
 
@@ -177,11 +176,14 @@
         border-radius: 25px;
 
         animation: glowing-video 3s infinite;
+        transition: transform 0.3s ease;
+
     }
 
     video:hover{
 
         animation: glowing-video-hover 3s infinite;
+        transform: scale(1.1);
 
     }
 
@@ -277,6 +279,21 @@
 
 @media(pointer: coarse){
 
+    .projectSectionMediaSectionVideosExpandableEntryContainer{
+
+        video {
+
+            transition: none;
+
+        }
+
+        video:hover {
+
+            transform: none;
+
+        }
+
+    }
 
     .projectSectionMediaSectionVideosExpandableEntryContainer-Even{
 
@@ -298,7 +315,7 @@
 /* Mobile adjustments */
 @media (max-device-width: 1024px) and (pointer: coarse){
 
-    .projectScreen {
+    .projectContainer {
 
         gap: 5rem;
 
@@ -310,6 +327,7 @@
 
     }
 
+
     .projectSectionDetailsContainer{
 
         display: flex;
@@ -317,6 +335,18 @@
         align-items: center;
         justify-content: center;
 
+    }
+
+    .projectSectionDetailsSectionContentContainer{
+
+        align-items: start;
+
+    }
+
+    .projectSectionMediaSectionVideosExpandableContainer {
+
+        padding: 2rem 1rem;
+        
     }
 
 
@@ -347,6 +377,7 @@
 
     }
 
+
 }
 
 
@@ -361,6 +392,12 @@
 
     }
 
+    .projectSectionDetailsSectionContentContainer{
+
+        align-items: start;
+
+    }
+
 
     .projectSectionMediaSectionVideosExpandableContainer {
             
@@ -371,11 +408,11 @@
 
     .projectSectionMediaSectionVideosExpandableEntryContainer{
 
-        gap: 2rem;
+        gap: 3rem;
 
         video{
 
-            width: 100%;
+            width: 90%;
 
             border-radius: 15px;
 
@@ -408,7 +445,7 @@
 
 @media (max-device-width: 600px) and (pointer: coarse){
 
-    .projectScreen {
+    .projectContainer {
 
         padding-top: 2rem;
         padding-bottom: 2rem;
@@ -422,10 +459,22 @@
 
     }
 
+    .projectSectionSubsectionGeneralContainer{
+
+        width: 100%;
+
+    }
+
+    .projectSectionDetailsSectionContentContainer{
+
+        width: 95%;
+
+    }
+
 
     .projectSectionMediaSectionVideosExpandableContainer {
             
-        padding: 1rem;
+        width: 100%;
 
     }
 
