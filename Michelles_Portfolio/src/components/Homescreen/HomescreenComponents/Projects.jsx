@@ -24,11 +24,11 @@ function Projects() {
         
       <h2 className = "sectionTitle"> My Projects: </h2>
 
-      <div className="projectsContainer">
-        
+      <div className="projectsContainer scrollableContainer">
+
         {cardNames.map((card, index) => (
 
-          <div key = {index} className = "projectsEntryContainer">
+          <div key = {index} className = "projectsEntryContainer scrollableEntryContainer">
             <div className = {`projectsEntryCardContainer projectsEntryCardContainer-${card}`}>
 
               <h3>{cardNames[index]}</h3>

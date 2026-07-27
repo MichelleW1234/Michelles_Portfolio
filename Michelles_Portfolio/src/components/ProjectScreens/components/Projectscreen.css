@@ -28,11 +28,38 @@
 }
 
 
+.projectSectionSubsectionGeneralContainer{
+
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 4rem;
+
+}
+
+
+.projectSectionSubsectionTitle{
+
+    width: 100%;
+    text-align: center;
+
+    padding: 1rem;
+
+    color: rgb(var(--color-pink-dark-detail-light));
+    box-shadow: 0 0 10px 4px rgb(var(--color-pink-dark-detail-light));
+
+}
+
+
+
 .projectSectionDetailsContainer{
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
+    justify-items: center;
 
     gap: 4rem;
     padding: 1rem;
@@ -44,37 +71,12 @@
 }
 
 
+.projectSectionDetailsSectionContentContainer {
 
-
-.projectSectionDetailsSectionGeneralContainer{
-
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    gap: 4rem;
-
-}
-
-.projectSectionSubsectionTitle{
-
-    width: 90%;
-    text-align: center;
-
-    padding: 1rem;
-
-    color: rgb(var(--color-pink-dark-detail-light));
-    box-shadow: 0 0 10px 4px rgb(var(--color-pink-dark-detail-light));
-
-}
-
-
-.projectSectionDetailsSectionGeneralContentContainer {
-
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
 
     gap: 2rem;
 
@@ -145,21 +147,10 @@
 }
 
 
-.projectSectionMediaContainer{
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    gap: 4rem;
-    padding: 1rem;
-
-}
-
-
 
 .projectSectionMediaSectionVideosExpandableContainer {
 
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -212,6 +203,7 @@
 
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
 
     gap: 1rem;
@@ -221,12 +213,14 @@
 
 .projectSectionMediaSectionLinksContainer {
 
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
 
     gap: 3rem;
+
 }
 
 
@@ -283,18 +277,6 @@
 
 @media(pointer: coarse){
 
-    .projectSectionMediaSectionVideosExpandableEntryContainer{
-
-        gap: 3rem;
-
-        video{
-
-            width: 90%;
-            border-radius: 20px;
-
-        }
-
-    }
 
     .projectSectionMediaSectionVideosExpandableEntryContainer-Even{
 
@@ -307,15 +289,7 @@
         flex-direction: column;
 
     }
-
-
-    .projectSectionMediaSectionVideosExpandableEntryInfoContainer{
-
-        width: 80%;
-
-    }
-
-
+    
 }
 
 
@@ -336,13 +310,6 @@
 
     }
 
-
-    .projectSectionMediaContainer{
-
-        width: 95%;
-
-    }
-
     .projectSectionDetailsContainer{
 
         display: flex;
@@ -353,15 +320,25 @@
     }
 
 
-    .projectSectionDetailsSectionGeneralContainer{
+    .projectSectionMediaSectionVideosExpandableEntryContainer{
 
-        width: 100%;
+        gap: 2rem;
 
-        gap: 4rem;
+        video{
+
+            width: 100%;
+
+            border-radius: 15px;
+
+        }
 
     }
 
+    .projectSectionMediaSectionVideosExpandableEntryInfoContainer{
 
+        width: 80%;
+
+    }
 
 
     .projectSectionMediaSectionLinksEntryButton{
@@ -384,30 +361,23 @@
 
     }
 
-    .projectSectionDetailsSectionGeneralContainer{
 
-        width: 100%;
-
+    .projectSectionMediaSectionVideosExpandableContainer {
+            
         gap: 4rem;
-
-    }
-
-    .projectSectionDetailsSectionGeneralContentContainer {
-
-        width: 85%;
-
+        
     }
 
 
     .projectSectionMediaSectionVideosExpandableEntryContainer{
 
-        gap: 3rem;
+        gap: 2rem;
 
         video{
 
             width: 100%;
 
-            border-radius: 20px;
+            border-radius: 15px;
 
         }
 
@@ -419,7 +389,6 @@
 
     }
 
-
     .projectSectionMediaSectionVideosExpandableEntryContainer-Odd{
 
         flex-direction: column;
@@ -429,7 +398,6 @@
     .projectSectionMediaSectionVideosExpandableEntryInfoContainer{
 
         width: 80%;
-        align-items: center;
 
     }
 
@@ -440,24 +408,10 @@
 
 @media (max-device-width: 600px) and (pointer: coarse){
 
-
     .projectScreen {
 
         padding-top: 2rem;
         padding-bottom: 2rem;
-
-    }
-
-    .projectSectionMediaContainer{
-
-        width: 100%;
-
-    }
-
-
-    .projectSectionDetailsSectionGeneralContentContainer {
-
-        width: 85%;
 
     }
 

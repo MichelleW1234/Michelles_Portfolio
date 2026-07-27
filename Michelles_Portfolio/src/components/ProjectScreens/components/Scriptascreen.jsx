@@ -26,12 +26,13 @@ function Scriptascreen() {
 
             <Link className = "teleportationButton projectPageJumpButton" to = "/home"> &lt; Back to Home </Link>
 
-            <h2 className="sectionTitle">Project Details:</h2>            
+            <h2 className="sectionTitle">Project Details:</h2>     
+
             <div className = "projectSectionDetailsContainer">
                 
-                <div className="projectSectionDetailsSectionGeneralContainer">
+                <div className="projectSectionSubsectionGeneralContainer">
                     <h3 className="projectSectionSubsectionTitle">Features: </h3>
-                    <div className = "projectSectionDetailsSectionGeneralContentContainer"> 
+                    <div className = "projectSectionDetailsSectionContentContainer"> 
                         <p>&gt; Rich text editor with customizable fonts, sizes, colors, page backgrounds, and title styling </p>
                         <p>&gt; Interactive image import system with adjustable image sizing within documents </p>
                         <p>&gt; Document management system for creating, saving, reopening, searching, and deleting documents with trash support </p>
@@ -39,9 +40,9 @@ function Scriptascreen() {
                     </div>
                 </div>
 
-                <div className="projectSectionDetailsSectionGeneralContainer">
+                <div className="projectSectionSubsectionGeneralContainer">
                     <h3 className="projectSectionSubsectionTitle">Tools Used: </h3>
-                    <div className = "projectSectionDetailsSectionGeneralContentContainer"> 
+                    <div className = "projectSectionDetailsSectionContentContainer"> 
                         <h4> &gt; Core Frameworks & Libraries: </h4>
                         <p> React, Electron, React Router, React ContentEditable </p>
                         <h4> &gt; Programming Languages: </h4>
@@ -53,9 +54,9 @@ function Scriptascreen() {
                     </div>
                 </div>
 
-                <div className="projectSectionDetailsSectionGeneralContainer">
+                <div className="projectSectionSubsectionGeneralContainer">
                     <h3 className="projectSectionSubsectionTitle"> Timeline: </h3>
-                    <div className = "projectSectionDetailsSectionGeneralContentContainer">
+                    <div className = "projectSectionDetailsSectionContentContainer">
                         <div className = "projectSectionDetailsSectionGeneralContentTimelineContainer"> 
                             <div className = "projectSectionDetailsSectionGeneralContentTimelineEntryContainer">
                                 <div className="projectSectionDetailsSectionGeneralContentTimelineEntryDateContainer">
@@ -64,7 +65,6 @@ function Scriptascreen() {
                                 </div>
                                 <p> Project started </p>
                             </div>
-
                             <div className = "projectSectionDetailsSectionGeneralContentTimelineEntryContainer">
                                 <div className="projectSectionDetailsSectionGeneralContentTimelineEntryDateContainer">
                                     <p> 12/2025 </p>
@@ -78,12 +78,11 @@ function Scriptascreen() {
             </div>
 
             <h2 className="sectionTitle"> Project Media: </h2>
-            <div className = "projectSectionMediaContainer">
+            
+            <div className="projectSectionSubsectionGeneralContainer">
                 <h3 className="projectSectionSubsectionTitle"> Video Content: </h3>
                 <div className="projectSectionMediaSectionVideosExpandableContainer scrollableContainer">
-
                     <div className="projectSectionMediaSectionVideosExpandableEntryContainer projectSectionMediaSectionVideosExpandableEntryContainer-Even scrollableEntryContainer">
-                    
                         <video 
                             controls={!canHover}
                             muted
@@ -94,16 +93,15 @@ function Scriptascreen() {
                             <source src={ScriptaDemo} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
-
                         <div className = "projectSectionMediaSectionVideosExpandableEntryInfoContainer">
                             <p>&#9654; Demo Video</p>
                             <p> Demonstration of the app’s document system, including creating documents, editing content, adding text and importing images, saving files, using the search bar, and removing documents. </p>
                         </div>
-
                     </div>
-                    
                 </div>
+            </div>
 
+            <div className="projectSectionSubsectionGeneralContainer">
                 <h3 className="projectSectionSubsectionTitle"> External Links: </h3>
                 <div className = "projectSectionMediaSectionLinksContainer">
                     <a className = "teleportationButton projectSectionMediaSectionLinksEntryButton" href="https://github.com/MichelleW1234/Scripta" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>

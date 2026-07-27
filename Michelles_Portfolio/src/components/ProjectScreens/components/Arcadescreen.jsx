@@ -66,11 +66,12 @@ function Arcadescreen() {
                 <Link className = "teleportationButton projectPageJumpButton" to = "/home"> &lt; Back to Home </Link>
 
                 <h2 className="sectionTitle"> Project Details:</h2>
+
                 <div className = "projectSectionDetailsContainer">
-                    
-                    <div className="projectSectionDetailsSectionGeneralContainer">
+
+                    <div className="projectSectionSubsectionGeneralContainer">
                         <h3 className="projectSectionSubsectionTitle">Features:</h3>
-                        <div className = "projectSectionDetailsSectionGeneralContentContainer">
+                        <div className = "projectSectionDetailsSectionContentContainer">
                             <p>&gt; Dynamic scoring system with action-based point rewards and penalties </p>
                             <p>&gt; Player-driven point economy with prize redemption, claw machines, and gameplay purchases </p>
                             <p>&gt; Multiple interactive mini-games featuring player-driven gameplay and dynamic outcomes </p>
@@ -81,9 +82,9 @@ function Arcadescreen() {
                         </div>
                     </div>
 
-                    <div className="projectSectionDetailsSectionGeneralContainer">
+                    <div className="projectSectionSubsectionGeneralContainer">
                         <h3 className="projectSectionSubsectionTitle">Tools Used: </h3>
-                        <div className = "projectSectionDetailsSectionGeneralContentContainer"> 
+                        <div className = "projectSectionDetailsSectionContentContainer"> 
                             <h4> &gt; Core Frameworks & Libraries: </h4>
                             <p> React, Electron, React Router </p>
                             <h4> &gt; Programming Languages: </h4>
@@ -95,11 +96,9 @@ function Arcadescreen() {
                         </div>
                     </div>
 
-                    <div className="projectSectionDetailsSectionGeneralContainer">
+                    <div className="projectSectionSubsectionGeneralContainer">
                         <h3 className="projectSectionSubsectionTitle"> Timeline: </h3>
-
-                        <div className = "projectSectionDetailsSectionGeneralContentContainer">
-
+                        <div className = "projectSectionDetailsSectionContentContainer">
                             <div className = "projectSectionDetailsSectionGeneralContentTimelineContainer"> 
                                 
                                 {timeLineDates.map((item, index) => (
@@ -115,16 +114,15 @@ function Arcadescreen() {
                                 ))}
 
                             </div>
-                        
                         </div>
-                    
                     </div>
 
                 </div>
 
 
                 <h2 className="sectionTitle"> Project Media: </h2>
-                <div className = "projectSectionMediaContainer">
+
+                <div className="projectSectionSubsectionGeneralContainer">
                     <h3 className="projectSectionSubsectionTitle"> Video Content: </h3>
                     <div className="projectSectionMediaSectionVideosExpandableContainer scrollableContainer">
 
@@ -291,14 +289,17 @@ function Arcadescreen() {
                         )}
 
                     </div>
+
+                </div>
                 
+
+                <div className="projectSectionSubsectionGeneralContainer">
                     <h3 className="projectSectionSubsectionTitle"> External Links: </h3>
                     <div className = "projectSectionMediaSectionLinksContainer">
                         <a className = "teleportationButton projectSectionMediaSectionLinksEntryButton" href="https://github.com/MichelleW1234/Arcade.git" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
                         <a className = "teleportationButton projectSectionMediaSectionLinksEntryButton" href="https://github.com/MichelleW1234/Arcade/releases/tag/v1.0.5" target="_blank" rel="noopener noreferrer"> Go to Arcade v1.0.5 </a>
                         <a className = "teleportationButton projectSectionMediaSectionLinksEntryButton" href="https://github.com/MichelleW1234/Arcade/releases" target="_blank" rel="noopener noreferrer"> Go to All Arcade Releases</a>
                     </div>
-
                 </div>
 
                 <button className = "teleportationButton projectPageJumpButton" onClick = {() => ScrollBackToTop()}> &#9650; Back to Top </button>

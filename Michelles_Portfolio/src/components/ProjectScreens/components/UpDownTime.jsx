@@ -47,11 +47,12 @@ function UpDownTimescreen() {
             <Link className = "teleportationButton projectPageJumpButton" to = "/home"> &lt; Back to Home </Link>
 
             <h2 className="sectionTitle"> Project Details:</h2>
+
             <div className = "projectSectionDetailsContainer">
                 
-                    <div className="projectSectionDetailsSectionGeneralContainer">
+                    <div className="projectSectionSubsectionGeneralContainer">
                         <h3 className="projectSectionSubsectionTitle">Features:</h3>
-                        <div className = "projectSectionDetailsSectionGeneralContentContainer"> 
+                        <div className = "projectSectionDetailsSectionContentContainer"> 
                             <p>&gt; Custom 2D game world featuring animations and environment design </p>
                             <p>&gt; Combat system supporting player attacks, enemy encounters, dodging mechanics, and keyboard-controlled movement </p>
                             <p>&gt; Enemy AI system with proximity-based player detection and chase mechanics </p>
@@ -61,9 +62,9 @@ function UpDownTimescreen() {
                         </div>
                     </div>
 
-                    <div className="projectSectionDetailsSectionGeneralContainer">
+                    <div className="projectSectionSubsectionGeneralContainer">
                         <h3 className="projectSectionSubsectionTitle">My Role:</h3>
-                        <div className = "projectSectionDetailsSectionGeneralContentContainer"> 
+                        <div className = "projectSectionDetailsSectionContentContainer"> 
                             <p> &gt; Served on the programming team, contributing to both the planning and development of the game </p>
                             <p> &gt; Collaborated during the planning phase to design dynamic environmental events and gameplay conditions</p>
                             <p> &gt; Developed gameplay systems in Unity using C# scripting and Unity's physics engine to implement core game mechanics </p>
@@ -71,9 +72,9 @@ function UpDownTimescreen() {
                         </div>
                     </div>
 
-                    <div className="projectSectionDetailsSectionGeneralContainer">
+                    <div className="projectSectionSubsectionGeneralContainer">
                         <h3 className="projectSectionSubsectionTitle">Tools Used: </h3>
-                        <div className = "projectSectionDetailsSectionGeneralContentContainer"> 
+                        <div className = "projectSectionDetailsSectionContentContainer"> 
                             <h4> &gt; Core Frameworks & Libraries: </h4>
                             <p> Unity, Unity Input System, Universal Render Pipeline (URP), Unity 2D Animation, Unity Tilemap </p>
                             <h4> &gt; Programming Languages: </h4>
@@ -83,11 +84,11 @@ function UpDownTimescreen() {
                         </div>
                     </div>
                     
-                    <div className="projectSectionDetailsSectionGeneralContainer">
+                    <div className="projectSectionSubsectionGeneralContainer">
                         <h3 className="projectSectionSubsectionTitle"> Timeline: </h3>
-                        <div className = "projectSectionDetailsSectionGeneralContentContainer">
+                        <div className = "projectSectionDetailsSectionContentContainer">
                             <div className = "projectSectionDetailsSectionGeneralContentTimelineContainer"> 
-                               
+                
                                 {timeLineDates.map((item, index) => (
 
                                     <div className = "projectSectionDetailsSectionGeneralContentTimelineEntryContainer">
@@ -101,16 +102,15 @@ function UpDownTimescreen() {
                                 ))}
 
                             </div>
-
                         </div>
                     </div>
 
             </div>
 
             <h2 className="sectionTitle"> Project Media: </h2>
-            <div className = "projectSectionMediaContainer">
-                <h3 className="projectSectionSubsectionTitle"> External Links: </h3>
 
+            <div className="projectSectionSubsectionGeneralContainer">
+                <h3 className="projectSectionSubsectionTitle"> External Links: </h3>
                 <div className = "projectSectionMediaSectionLinksContainer">
                     {linkSRCs.map((item, index) => (
 
@@ -118,7 +118,6 @@ function UpDownTimescreen() {
 
                     ))}
                 </div>
-               
             </div>
 
             <button className = "teleportationButton projectPageJumpButton" onClick = {() => ScrollBackToTop()}> &#9650; Back to Top </button>
