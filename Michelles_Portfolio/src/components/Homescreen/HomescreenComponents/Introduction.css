@@ -28,25 +28,25 @@
 
 }
 
+@media (max-width: 900px) and (pointer: fine){
+
+  .introductionContentContainer{
+
+    width: 95%;
+
+  }
+
+}
 
 
 @media (max-device-width: 600px) and (pointer: coarse){
 
   .introductionContentContainer{
 
-    width: 100%;
+    width: 95%;
 
   }
 
 }
 
-@media (max-width: 600px) and (pointer: fine){
-
-  .introductionContentContainer{
-
-    width: 100%;
-
-  }
-
-}
 

@@ -363,6 +363,7 @@ p, button, a {
     scroll-snap-type: x mandatory; 
     scroll-behavior: smooth;
     justify-content: start; 
+    align-items: start;
     
   } 
   
