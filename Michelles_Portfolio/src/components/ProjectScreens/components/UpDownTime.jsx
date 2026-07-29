@@ -1,8 +1,5 @@
 import { Link } from "react-router-dom";
 
-import TritonTurnup from "../../../images/TritonTurnup.svg";
-import TritonTurnupDemo from "../../../images/TritonTurnupDemo.svg";
-
 import { ScrollBackToTop } from "../helpers/Helpers";
 
 import "./Projectscreen.css";

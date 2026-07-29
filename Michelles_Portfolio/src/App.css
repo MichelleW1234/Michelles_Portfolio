@@ -166,6 +166,19 @@ p, button, a {
 }
 
 
+.bannerContentContainer-Petopia{
+
+  background-image: 
+      linear-gradient(rgb(0, 0, 0, 0.75), rgb(0, 0, 0, 0)),
+      url("./images/Petopia.png");
+
+  background-size: contain;
+  background-position: center;
+
+}
+
+
+
 .bannerContentContainer-Arcade{
 
   background-image:

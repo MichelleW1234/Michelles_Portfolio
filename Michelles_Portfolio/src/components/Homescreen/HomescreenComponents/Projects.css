@@ -39,6 +39,21 @@
 }
 
 
+
+
+.projectsEntryCardContainer-Petopia{
+
+    background-image: 
+        linear-gradient(rgba(var(--color-pink-bright-base), 0.75), rgba(var(--color-blue-bright-base), 0.75)),
+        url("../../../images/Petopia.png");
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
 .projectsEntryCardContainer-Arcade{
 
     background-image: 

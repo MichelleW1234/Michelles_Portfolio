@@ -107,6 +107,7 @@ function TritonTurnUpscreen() {
                             controls={!canHover}
                             muted
                             playsInline
+                            loop
                             onMouseEnter={canHover ? (e) => e.currentTarget.play() : undefined}
                             onMouseLeave={canHover ? (e) => e.currentTarget.pause() : undefined}
                         >

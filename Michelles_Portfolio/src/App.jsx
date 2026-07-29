@@ -1,6 +1,7 @@
 import {HashRouter, Routes, Route} from "react-router-dom";
 
 import Homescreen from "./components/Homescreen/Homescreen.jsx";
+import Petopiascreen from "./components/ProjectScreens/components/Petopiascreen.jsx";
 import Arcadescreen from "./components/ProjectScreens/components/Arcadescreen.jsx";
 import TritonTurnUpscreen from "./components/ProjectScreens/components/TritonTurnUpscreen.jsx";
 import Scriptascreen from "./components/ProjectScreens/components/Scriptascreen.jsx";
@@ -19,6 +20,7 @@ function App() {
         <Route index element={<Homescreen/>}/>
           
         <Route path="/home" element={<Homescreen />}/>
+        <Route path="/petopia" element={<Petopiascreen/>}/>
         <Route path="/arcade" element={<Arcadescreen/>}/>
         <Route path="/tritonturnup" element={<TritonTurnUpscreen/>}/>
         <Route path="/scripta" element={<Scriptascreen/>}/>
