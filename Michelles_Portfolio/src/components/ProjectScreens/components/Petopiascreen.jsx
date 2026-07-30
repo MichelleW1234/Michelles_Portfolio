@@ -38,6 +38,7 @@ function Petopiascreen() {
                         <p>&gt; A virtual pet system supporting up to three pets across multiple species, each with unique traits, behaviors, and needs </p>
                         <p>&gt; Interactive care activities that influence pet needs, health, and behaviors </p>
                         <p>&gt; A real-time simulation system where pet needs, health, and behaviors evolve over time, including offline progression </p>
+                        <p>&gt; A real-world day/night cycle where pets wake during the day and sleep at night </p>
                         <p>&gt; A save system that preserves pet progress, game state, and player data across sessions </p>
                         <p>&gt; Animated pixel-art visuals and interface animations for a retro-inspired experience </p>
                         <p>&gt; Sound effects and adjustable background music enhancing the game's atmosphere </p>
