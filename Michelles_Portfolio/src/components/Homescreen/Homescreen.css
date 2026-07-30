@@ -140,7 +140,7 @@ input{
     align-self: center;
     display: inline;
 
-    border-radius: 25px;
+    border-radius: 9999px;
 
     background-color: inherit;
 
@@ -153,9 +153,9 @@ input{
     -webkit-appearance: none;
 
     width: 25%;               
-    height: 1rem;
+    aspect-ratio: 2 / 1;
 
-    border-radius: 10rem;
+    border-radius: 9999px;
 
     box-shadow: 0 0 5px 2px rgb(var(--color-blue-dark-detail-light));
     background: linear-gradient(rgb(var(--color-blue-dark-base)), rgb(var(--color-blue-dark-layer)));

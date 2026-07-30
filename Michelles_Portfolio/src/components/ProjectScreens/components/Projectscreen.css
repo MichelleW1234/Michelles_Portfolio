@@ -23,7 +23,7 @@
 .projectPageJumpButton {
 
     padding: 1rem 1.5rem;
-    border-radius: 30px;
+    border-radius: 9999px;
 
 }
 
@@ -139,9 +139,9 @@
 .projectSectionDetailsSectionGeneralContentTimelineEntryVisualLine {
 
     width: 5rem;
-    border-radius: 0.1rem;
+    border-radius: 9999px;
 
-    border: 0.1rem solid rgb(var(--color-pink-dark-base));
+    border: 1px solid rgb(var(--color-pink-dark-base));
     filter: drop-shadow(0 0 2px rgb(var(--color-pink-dark-detail-light)));
 
 }
