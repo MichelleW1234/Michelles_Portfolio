@@ -158,7 +158,7 @@ input{
     border-radius: 10rem;
 
     box-shadow: 0 0 5px 2px rgb(var(--color-blue-dark-detail-light));
-    background: linear-gradient(rgb(var(--color-blue-bright-base)), rgb(var(--color-blue-bright-layer)));
+    background: linear-gradient(rgb(var(--color-blue-dark-base)), rgb(var(--color-blue-dark-layer)));
 
   }
 
