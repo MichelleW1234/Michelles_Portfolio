@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 
 import CatRoom from "../../../videos/Room.mp4";
-import DogFeeding from "../../../videos/Feeding.mp4";
+import CatFeeding from "../../../videos/Feeding.mp4";
+import DogSleeping from "../../../videos/Sleeping.mp4";
 
 import { ScrollBackToTop } from "../helpers/Helpers";
 
@@ -104,6 +105,7 @@ function Petopiascreen() {
                         </div>
                     </div>
 
+
                     <div className="projectSectionMediaSectionVideosExpandableEntryContainer projectSectionMediaSectionVideosExpandableEntryContainer-Odd scrollableEntryContainer">
                         <video 
                             controls={!canHover}
@@ -113,14 +115,35 @@ function Petopiascreen() {
                             onMouseEnter={canHover ? (e) => e.currentTarget.play() : undefined}
                             onMouseLeave={canHover ? (e) => e.currentTarget.pause() : undefined}
                         >
-                            <source src={DogFeeding} type="video/mp4" />
+                            <source src={CatFeeding} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                         <div className = "projectSectionMediaSectionVideosExpandableEntryInfoContainer">
-                            <p>&#9654; Feeding the Dog </p>
-                            <p> Demonstration of correctly feeding your pet when it's hungry</p>
+                            <p>&#9654; Feeding Activity </p>
+                            <p> Demonstration of correctly doing the feeding activity for your pet when it's hungry</p>
                         </div>
                     </div>
+
+                    <div className="projectSectionMediaSectionVideosExpandableEntryContainer projectSectionMediaSectionVideosExpandableEntryContainer-Even scrollableEntryContainer">
+                        <video 
+                            controls={!canHover}
+                            muted
+                            playsInline
+                            loop
+                            onMouseEnter={canHover ? (e) => e.currentTarget.play() : undefined}
+                            onMouseLeave={canHover ? (e) => e.currentTarget.pause() : undefined}
+                        >
+                            <source src={DogSleeping} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                        <div className = "projectSectionMediaSectionVideosExpandableEntryInfoContainer">
+                            <p>&#9654; Sleeping Pets </p>
+                            <p> Clip of nighttime pet behavior and animations </p>
+                        </div>
+                    </div>
+
+                    {/* insert evolved fish video here */}
+
                 </div>
             </div>
 
