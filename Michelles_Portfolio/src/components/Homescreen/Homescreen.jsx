@@ -17,6 +17,12 @@ function Homescreen() {
 
   const {ActiveSection, setActiveSection} = useActiveSection();
 
+  const test = (e) => {
+
+    console.log(e.target.value);
+    /*setActiveSection(e.target.value);*/
+
+  }
   
   return (
 
@@ -30,7 +36,16 @@ function Homescreen() {
       </div>
 
       <div className="homeSwipingContainer">
-        
+
+        <input
+          type="range"
+          min="0"
+          max="3"
+          step = "1"
+          value={ActiveSection}
+          onChange={(e) => setActiveSection(Number(e.target.value))}
+        />
+    
         <div className="homeNavContainer">
           <button className={ActiveSection === 0 ? "homeNavButtonActive" : "conditionalButton homeNavButton"} onClick = {() => setActiveSection(0)}> Introduction </button>
           <button className={ActiveSection === 1 ? "homeNavButtonActive" : "conditionalButton homeNavButton"} onClick = {() => setActiveSection(1)}> Projects </button>
@@ -55,8 +70,9 @@ function Homescreen() {
           <TechStack/>
           
         ): null}
-
+        
       </div>
+
 
       <div className="banner">
         <div className="bannerHorizontalLine"></div>

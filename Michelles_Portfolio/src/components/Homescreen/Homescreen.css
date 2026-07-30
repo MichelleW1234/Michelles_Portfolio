@@ -1,3 +1,10 @@
+input{
+
+  display: none;
+
+}
+
+
 .homeNavContainer{
 
   display: flex;
@@ -30,6 +37,7 @@
   transition: transform 0.25s ease;
 
 }
+
 
 
 .homeSwipingContainer {
@@ -123,9 +131,40 @@
 
 @media (max-device-width: 600px) and (pointer: coarse) {
 
+  input {
+
+    align-self: center;
+    display: inline;
+
+    -webkit-appearance: none;
+
+    width: 90%;           
+    height: 1rem;       
+    border-radius: 25px;
+
+    background-color: inherit;
+
+    animation: glowing-conditionalButton 3s infinite;
+
+  }
+
+  input::-webkit-slider-thumb{
+
+    -webkit-appearance: none;
+
+    width: 25%;               
+    height: 1rem;
+
+    border-radius: 10rem;
+
+    box-shadow: 0 0 10px 4px rgb(var(--color-blue-dark-detail-light));
+
+  }
+
   .homeNavContainer{
 
     flex-direction: column;
+    display: none;
 
   }
 

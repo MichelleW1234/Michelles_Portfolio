@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 import CatRoom from "../../../videos/Room.mp4";
+import DogFeeding from "../../../videos/Feeding.mp4";
 
 import { ScrollBackToTop } from "../helpers/Helpers";
 
@@ -100,6 +101,24 @@ function Petopiascreen() {
                         <div className = "projectSectionMediaSectionVideosExpandableEntryInfoContainer">
                             <p>&#9654; Cat Room </p>
                             <p> Layout of the cat room environment and some of its immersive elements </p>
+                        </div>
+                    </div>
+
+                    <div className="projectSectionMediaSectionVideosExpandableEntryContainer projectSectionMediaSectionVideosExpandableEntryContainer-Odd scrollableEntryContainer">
+                        <video 
+                            controls={!canHover}
+                            muted
+                            playsInline
+                            loop
+                            onMouseEnter={canHover ? (e) => e.currentTarget.play() : undefined}
+                            onMouseLeave={canHover ? (e) => e.currentTarget.pause() : undefined}
+                        >
+                            <source src={DogFeeding} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                        <div className = "projectSectionMediaSectionVideosExpandableEntryInfoContainer">
+                            <p>&#9654; Feeding the Dog </p>
+                            <p> Demonstration of correctly feeding your pet when it's hungry</p>
                         </div>
                     </div>
                 </div>
