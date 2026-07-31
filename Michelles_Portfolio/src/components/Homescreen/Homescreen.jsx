@@ -5,9 +5,9 @@ import Projects from "./HomescreenComponents/Projects.jsx";
 import Skills from "./HomescreenComponents/Skills.jsx";
 import TechStack from "./HomescreenComponents/TechStack.jsx";
 
-import Email from "../../images/Email.svg";
-import Linkedin from "../../images/Linkedin.svg";
-import GitHub from "../../images/GitHub.svg";
+import EmailContact from "../../images/Contacts/EmailContact.png";
+import LinkedinContact from "../../images/Contacts/LinkedinContact.png";
+import GitHubContact from "../../images/Contacts/GitHubContact.png";
 
 import {useActiveSection} from "../../providers/ActiveSectionProvider.jsx";
 
@@ -80,13 +80,13 @@ function Homescreen() {
           <h2>Let's Connect!</h2>
           <div className = "homeContactsContainer">
             <a className = "teleportationButton homeContactsButton" href="mailto: michellew1822@gmail.com"> 
-              <img src={Email}/>
+              <img src={EmailContact}/>
             </a>
             <a className = "teleportationButton homeContactsButton" href="https://www.linkedin.com/in/michelle-wee123/" target="_blank" rel="noopener noreferrer"> 
-              <img src={Linkedin}/>
+              <img src={LinkedinContact}/>
             </a>
             <a className = "teleportationButton homeContactsButton" href="https://github.com/MichelleW1234" target="_blank" rel="noopener noreferrer"> 
-              <img src={GitHub}/>
+              <img src={GitHubContact}/>
             </a>
           </div>
         </div>

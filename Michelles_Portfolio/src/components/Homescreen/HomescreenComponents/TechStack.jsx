@@ -1,15 +1,15 @@
 import {useState} from "react";
 
-import JS from "../../../images/JS.png";
-import React from "../../../images/React.png";
-import CSS from "../../../images/CSS.png";
-import HTML from "../../../images/HTML.png";
-import CSharp from "../../../images/CSharp.png";
-import Figma from "../../../images/Figma.png";
-import Github from "../../../images/Github.png";
-import Electron from "../../../images/Electron.png";
-import Unity from "../../../images/Unity.png";
-import VSCode from "../../../images/VSCode.png";
+import JS from "../../../images/TechStack/JS.png";
+import React from "../../../images/TechStack/React.png";
+import CSS from "../../../images/TechStack/CSS.png";
+import HTML from "../../../images/TechStack/HTML.png";
+import CSharp from "../../../images/TechStack/CSharp.png";
+import Figma from "../../../images/TechStack/Figma.png";
+import Github from "../../../images/TechStack/Github.png";
+import Electron from "../../../images/TechStack/Electron.png";
+import Unity from "../../../images/TechStack/Unity.png";
+import VSCode from "../../../images/TechStack/VSCode.png";
 
 import "./TechStack.css";
 

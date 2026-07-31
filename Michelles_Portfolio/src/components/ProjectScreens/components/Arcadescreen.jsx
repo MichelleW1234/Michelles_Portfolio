@@ -1,17 +1,17 @@
 import { Link } from "react-router-dom";
 import {useState} from "react";
 
-import RPS from "../../../videos/RPS.mp4";
-import TTT from "../../../videos/TTT.mp4";
-import SNK from "../../../videos/SNK.mp4";
-import SPIM2 from "../../../videos/SPIM2.mp4";
-import SPIM4 from "../../../videos/SPIM4.mp4";
-import ORB from "../../../videos/ORB.mp4";
-import CBL from "../../../videos/CBL.mp4";
-import CWMCat from "../../../videos/CWMCat.mp4";
-import BFR from "../../../videos/BFR.mp4";
-import SMZ from "../../..//videos/SMZ.mp4";
-import CHC from "../../../videos/CHC.mp4";
+import RPS from "../../../videos/Arcade/RPS.mp4";
+import TTT from "../../../videos/Arcade/TTT.mp4";
+import SNK from "../../../videos/Arcade/SNK.mp4";
+import SPIM2 from "../../../videos/Arcade/SPIM2.mp4";
+import SPIM4 from "../../../videos/Arcade/SPIM4.mp4";
+import ORB from "../../../videos/Arcade/ORB.mp4";
+import CBL from "../../../videos/Arcade/CBL.mp4";
+import CWMCat from "../../../videos/Arcade/CWMCat.mp4";
+import BFR from "../../../videos/Arcade/BFR.mp4";
+import SMZ from "../../..//videos/Arcade/SMZ.mp4";
+import CHC from "../../../videos/Arcade/CHC.mp4";
 
 import { ScrollBackToTop } from "../helpers/Helpers";
 

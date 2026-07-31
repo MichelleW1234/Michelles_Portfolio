@@ -45,7 +45,7 @@
 
     background-image: 
         linear-gradient(rgba(var(--color-pink-bright-base), 0.75), rgba(var(--color-blue-bright-base), 0.75)),
-        url("../../../images/Petopia.png");
+        url("../../../images/Projects/Petopia.png");
     
     background-size: contain;
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@
 
     background-image: 
         linear-gradient(rgba(var(--color-pink-bright-base), 0.75), rgba(var(--color-blue-bright-base), 0.75)),
-        url("../../../images/Arcade.png");
+        url("../../../images/Projects/Arcade.png");
 
     
     background-size: contain;
@@ -72,7 +72,7 @@
 
     background-image: 
         linear-gradient(rgba(var(--color-pink-bright-base), 0.75), rgba(var(--color-blue-bright-base), 0.75)),
-        url("../../../images/Scripta.png");
+        url("../../../images/Projects/Scripta.png");
     
     background-size: contain;
     background-repeat: no-repeat;
@@ -85,7 +85,7 @@
 
     background-image: 
         linear-gradient(rgba(var(--color-pink-bright-base), 0.75), rgba(var(--color-blue-bright-base), 0.75)),
-        url("../../../images/TritonTurnup.svg");
+        url("../../../images/Projects/TritonTurnUp.png");
 
     
     background-size: contain;
@@ -100,7 +100,7 @@
 
     background-image: 
         linear-gradient(rgba(var(--color-pink-bright-base), 0.75), rgba(var(--color-blue-bright-base), 0.75)),
-        url("../../../images/UpDownTime.png");
+        url("../../../images/Projects/UpDownTime.png");
 
     
     background-size: contain;

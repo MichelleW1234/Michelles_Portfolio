@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
-import CatRoom from "../../../videos/Room.mp4";
-import CatFeeding from "../../../videos/Feeding.mp4";
-import DogSleeping from "../../../videos/Sleeping.mp4";
+import CatRoom from "../../../videos/Petopia/Room.mp4";
+import CatFeeding from "../../../videos/Petopia/Feeding.mp4";
+import DogSleeping from "../../../videos/Petopia/Sleeping.mp4";
 
 import { ScrollBackToTop } from "../helpers/Helpers";
 

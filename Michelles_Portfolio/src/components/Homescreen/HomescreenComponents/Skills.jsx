@@ -2,11 +2,11 @@ import {useState} from "react";
 
 import SkillsExpandedCard from "./SkillsComponents/SkillsExpandedCard.jsx";
 
-import terminal from "../../../images/Terminal.png";
-import paint from "../../../images/Paint.png";
-import gear from "../../../images/Gear.png";
-import cursor from "../../../images/Cursor.png";
-import controller from "../../../images/Controller.png";
+import Terminal from "../../../images/Skills/Terminal.png";
+import Paint from "../../../images/Skills/Paint.png";
+import Gear from "../../../images/Skills/Gear.png";
+import Cursor from "../../../images/Skills/Cursor.png";
+import Controller from "../../../images/Skills/Controller.png";
 
 import "./Skills.css";
 
@@ -15,7 +15,7 @@ function Skills() {
   const [activeSkill, setActiveSkill] = useState(-1);
 
   const skillsList = ["Software Development", "Visual Design", "Software Engineering", "UI/UX", "Game Development"]; 
-  const skillsImage = [terminal, paint, gear, cursor, controller];
+  const skillsImage = [Terminal, Paint, Gear, Cursor, Controller];
 
   const canHover = window.matchMedia("(hover: hover)").matches;
 

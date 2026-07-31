@@ -170,7 +170,7 @@ p, button, a {
 
   background-image: 
       linear-gradient(rgb(0, 0, 0, 0.75), rgb(0, 0, 0, 0)),
-      url("./images/Petopia.png");
+      url("./images/Projects/Petopia.png");
 
   background-size: contain;
   background-position: center;
@@ -183,7 +183,7 @@ p, button, a {
 
   background-image:
       linear-gradient(rgb(0, 0, 0, 0.75), rgb(0, 0, 0, 0)),
-      url("./images/Arcade.png");
+      url("./images/Projects/Arcade.png");
 
   background-size: contain;
   background-position: center;
@@ -195,7 +195,7 @@ p, button, a {
 
   background-image:
       linear-gradient(rgb(0, 0, 0, 0.75), rgb(0, 0, 0, 0)),
-      url("./images/Scripta.png");
+      url("./images/Projects/Scripta.png");
 
   background-size: contain;
   background-position: center;
@@ -207,7 +207,7 @@ p, button, a {
 
   background-image: 
       linear-gradient(rgb(0, 0, 0, 0.75), rgb(0, 0, 0, 0)),
-      url("./images/TritonTurnup.svg");
+      url("./images/Projects/TritonTurnUp.png");
 
   background-size: contain;
   background-position: center;
@@ -219,7 +219,7 @@ p, button, a {
 
   background-image: 
       linear-gradient(rgb(0, 0, 0, 0.75), rgb(0, 0, 0, 0)),
-      url("./images/UpDownTime.png");
+      url("./images/Projects/UpDownTime.png");
 
   background-size: contain;
   background-position: center;
