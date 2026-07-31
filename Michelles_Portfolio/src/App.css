@@ -342,8 +342,6 @@ p, button, a {
  
 ::-webkit-scrollbar-track {
 
-  border-radius: 20px;
-
   background: #0a0034;
 
 }
