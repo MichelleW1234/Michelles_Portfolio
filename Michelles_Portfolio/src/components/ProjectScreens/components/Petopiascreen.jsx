@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+import {useState} from "react";
 
-import CatRoom from "../../../videos/Petopia/Room.mp4";
-import CatFeeding from "../../../videos/Petopia/Feeding.mp4";
-import DogSleeping from "../../../videos/Petopia/Sleeping.mp4";
+import Room from "../../../videos/Petopia/Room.mp4";
+import Feeding from "../../../videos/Petopia/Feeding.mp4";
+import Sleeping from "../../../videos/Petopia/Sleeping.mp4";
+import Evolution from "../../../videos/Petopia/Evolution.mp4";
 
 import { ScrollBackToTop } from "../helpers/Helpers";
 
@@ -11,7 +13,19 @@ import "./Projectscreen.css";
 
 function Petopiascreen() {
 
+    const videoTitles = ["Cat Room", "Feeding Activity", "Sleeping Pets", "Evolving Pets"];
+
+    const videoDownloads = [Room, Feeding, Sleeping, Evolution];
+
+    const videoSummaries = ["Layout of the cat room environment and some of its immersive elements",
+                            "Demonstration of correctly doing the feeding activity for your pet when it's hungry",
+                            "Clip of nighttime pet behavior and animations",
+                            "Appearance and health capacity of fish in its 2nd stage of evolution"
+                            ];
+
     const canHover = window.matchMedia("(hover: hover)").matches;
+
+    const [openFullVideoSection, setOpenFullVideoSection] = useState(false);
 
   return (
 
@@ -88,66 +102,177 @@ function Petopiascreen() {
             <div className="projectSectionSubsectionGeneralContainer">
                 <h3 className="projectSectionSubsectionTitle"> Video Content: </h3>
                 <div className="projectSectionMediaSectionVideosExpandableContainer scrollableContainer">
-                    <div className="projectSectionMediaSectionVideosExpandableEntryContainer projectSectionMediaSectionVideosExpandableEntryContainer-Even scrollableEntryContainer">
-                        <video 
-                            controls={!canHover}
-                            muted
-                            playsInline
-                            loop
-                            onMouseEnter={canHover ? (e) => e.currentTarget.play() : undefined}
-                            onMouseLeave={canHover ? (e) => e.currentTarget.pause() : undefined}
-                        >
-                            <source src={CatRoom} type="video/mp4" />
-                            Your browser does not support the video tag.
-                        </video>
-                        <div className = "projectSectionMediaSectionVideosExpandableEntryInfoContainer">
-                            <p>&#9654; Cat Room </p>
-                            <p> Layout of the cat room environment and some of its immersive elements </p>
-                        </div>
-                    </div>
+
+                    {canHover ? (
+
+                        <>
+
+                            {videoTitles.map((video, index) => (
+
+                                openFullVideoSection ? (
+
+                                    index % 2 === 0 ? (
+
+                                        <div key = {index} className="projectSectionMediaSectionVideosExpandableEntryContainer projectSectionMediaSectionVideosExpandableEntryContainer-Even">
+
+                                            <video 
+                                                controls={!canHover}
+                                                muted
+                                                playsInline
+                                                loop
+                                                onMouseEnter={canHover ? (e) => e.currentTarget.play() : undefined}
+                                                onMouseLeave={canHover ? (e) => e.currentTarget.pause() : undefined}
+                                            >
+
+                                                <source src={videoDownloads[index]} type="video/mp4" />
+                                                Your browser does not support the video tag.
+                                            </video>
+
+                                            <div className = "projectSectionMediaSectionVideosExpandableEntryInfoContainer">
+                                                <p>&#9654; {videoTitles[index]}</p>
+                                                <p>{videoSummaries[index]}</p>
+                                            </div>
+                                                
+                                        </div>
 
 
-                    <div className="projectSectionMediaSectionVideosExpandableEntryContainer projectSectionMediaSectionVideosExpandableEntryContainer-Odd scrollableEntryContainer">
-                        <video 
-                            controls={!canHover}
-                            muted
-                            playsInline
-                            loop
-                            onMouseEnter={canHover ? (e) => e.currentTarget.play() : undefined}
-                            onMouseLeave={canHover ? (e) => e.currentTarget.pause() : undefined}
-                        >
-                            <source src={CatFeeding} type="video/mp4" />
-                            Your browser does not support the video tag.
-                        </video>
-                        <div className = "projectSectionMediaSectionVideosExpandableEntryInfoContainer">
-                            <p>&#9654; Feeding Activity </p>
-                            <p> Demonstration of correctly doing the feeding activity for your pet when it's hungry</p>
-                        </div>
-                    </div>
+                                    ) : (
 
-                    <div className="projectSectionMediaSectionVideosExpandableEntryContainer projectSectionMediaSectionVideosExpandableEntryContainer-Even scrollableEntryContainer">
-                        <video 
-                            controls={!canHover}
-                            muted
-                            playsInline
-                            loop
-                            onMouseEnter={canHover ? (e) => e.currentTarget.play() : undefined}
-                            onMouseLeave={canHover ? (e) => e.currentTarget.pause() : undefined}
-                        >
-                            <source src={DogSleeping} type="video/mp4" />
-                            Your browser does not support the video tag.
-                        </video>
-                        <div className = "projectSectionMediaSectionVideosExpandableEntryInfoContainer">
-                            <p>&#9654; Sleeping Pets </p>
-                            <p> Clip of nighttime pet behavior and animations </p>
-                        </div>
-                    </div>
+                                        <div key = {index} className="projectSectionMediaSectionVideosExpandableEntryContainer projectSectionMediaSectionVideosExpandableEntryContainer-Odd">
 
-                    {/* insert evolved fish video here */}
+                                            <video 
+                                                controls={!canHover}
+                                                muted
+                                                playsInline
+                                                loop
+                                                onMouseEnter={canHover ? (e) => e.currentTarget.play() : undefined}
+                                                onMouseLeave={canHover ? (e) => e.currentTarget.pause() : undefined}
+                                            >
+
+                                                <source src={videoDownloads[index]} type="video/mp4" />
+                                                Your browser does not support the video tag.
+
+                                            </video>
+
+                                            <div className = "projectSectionMediaSectionVideosExpandableEntryInfoContainer">
+                                                <p>&#9654; {videoTitles[index]}</p>
+                                                <p>{videoSummaries[index]}</p>
+                                            </div>
+                                                
+                                        </div>
+
+                                    )
+
+                                ) : (
+
+                                    index < 3 ? (
+
+                                        index % 2 === 0 ? (
+
+                                            <div key = {index} className="projectSectionMediaSectionVideosExpandableEntryContainer projectSectionMediaSectionVideosExpandableEntryContainer-Even">
+
+                                                <video 
+                                                    controls={!canHover}
+                                                    muted
+                                                    playsInline
+                                                    loop
+                                                    onMouseEnter={canHover ? (e) => e.currentTarget.play() : undefined}
+                                                    onMouseLeave={canHover ? (e) => e.currentTarget.pause() : undefined}
+                                                >
+
+                                                    <source src={videoDownloads[index]} type="video/mp4" />
+                                                    Your browser does not support the video tag.
+                                                </video>
+
+                                                <div className = "projectSectionMediaSectionVideosExpandableEntryInfoContainer">
+                                                    <p>&#9654; {videoTitles[index]}</p>
+                                                    <p>{videoSummaries[index]}</p>
+                                                </div>
+                                                
+                                            </div>
+
+                                        ) : (
+
+                                            <div key = {index} className="projectSectionMediaSectionVideosExpandableEntryContainer projectSectionMediaSectionVideosExpandableEntryContainer-Odd">
+
+                                                <video 
+                                                    controls={!canHover}
+                                                    muted
+                                                    playsInline
+                                                    loop
+                                                    onMouseEnter={canHover ? (e) => e.currentTarget.play() : undefined}
+                                                    onMouseLeave={canHover ? (e) => e.currentTarget.pause() : undefined}
+                                                >
+
+                                                    <source src={videoDownloads[index]} type="video/mp4" />
+                                                    Your browser does not support the video tag.
+                                                    
+                                                </video>
+
+                                                <div className = "projectSectionMediaSectionVideosExpandableEntryInfoContainer">
+                                                    <p>&#9654; {videoTitles[index]}</p>
+                                                    <p>{videoSummaries[index]}</p>
+                                                </div>
+                                                
+                                            </div>
+
+                                        )
+
+                                    ) : (
+
+                                        null
+
+                                    )
+
+                                )
+                    
+                            ))}
+
+                            {openFullVideoSection ? (
+
+                                <button className="conditionalButton projectPageExpansionButton" onClick = {() => setOpenFullVideoSection(false)}> Collapse All Videos &#9650; </button>
+
+                            ) : (
+
+                                <button className="conditionalButton projectPageExpansionButton" onClick = {() => setOpenFullVideoSection(true)}> Expand All Videos &#9660; </button>
+
+                            )}
+
+                        </>
+
+                    ) : (
+
+                        videoTitles.map((video, index) => (
+
+                            <div key = {index} className="projectSectionMediaSectionVideosExpandableEntryContainer projectSectionMediaSectionVideosExpandableEntryContainer-Even scrollableEntryContainer">
+
+                                <video 
+                                    controls={!canHover}
+                                    muted
+                                    playsInline
+                                    loop
+                                    onMouseEnter={canHover ? (e) => e.currentTarget.play() : undefined}
+                                    onMouseLeave={canHover ? (e) => e.currentTarget.pause() : undefined}
+                                >
+
+                                    <source src={videoDownloads[index]} type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+
+                                <div className = "projectSectionMediaSectionVideosExpandableEntryInfoContainer">
+                                    <p>&#9654; {videoTitles[index]}</p>
+                                    <p>{videoSummaries[index]}</p>
+                                </div>
+                                    
+                            </div>
+
+                        ))
+
+                    )}
 
                 </div>
-            </div>
 
+            </div>
 
             <div className="projectSectionSubsectionGeneralContainer">
                 <h3 className="projectSectionSubsectionTitle"> External Links: </h3>
