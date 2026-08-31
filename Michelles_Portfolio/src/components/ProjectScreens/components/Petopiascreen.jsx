@@ -97,7 +97,7 @@ function Petopiascreen() {
                                     <p> 08/2026 </p>
                                     <div className="projectSectionDetailsSectionGeneralContentTimelineEntryVisualContainer"><div className = "projectSectionDetailsSectionGeneralContentTimelineEntryVisualPoint"></div><hr className = "projectSectionDetailsSectionGeneralContentTimelineEntryVisualLine"/></div> 
                                 </div>
-                                <p> Beta version for the Second Github release (Petopia V1.0.1-beta for Mac) </p>
+                                <p> Second Github release (Petopia V1.0.1 for Mac) — First feature-complete build, refactoring planned </p>
                             </div>
                         </div>
                     </div>
@@ -287,7 +287,7 @@ function Petopiascreen() {
                 <div className = "projectSectionMediaSectionLinksContainer">
                     <a className = "teleportationButton projectSectionMediaSectionLinksEntryButton" href="https://github.com/MichelleW1234/Petopia" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
                     <a className = "teleportationButton projectSectionMediaSectionLinksEntryButton" href="https://github.com/MichelleW1234/Petopia/releases/tag/v1.0.0" target="_blank" rel="noopener noreferrer"> Go to Petopia v1.0.0 </a>
-                    <a className = "teleportationButton projectSectionMediaSectionLinksEntryButton" href="https://github.com/MichelleW1234/Petopia/releases/tag/v1.0.1-beta" target="_blank" rel="noopener noreferrer"> Go to Petopia v1.0.1-beta </a>
+                    <a className = "teleportationButton projectSectionMediaSectionLinksEntryButton" href="https://github.com/MichelleW1234/Petopia/releases/tag/v1.0.1" target="_blank" rel="noopener noreferrer"> Go to Petopia v1.0.1 </a>
                 </div>
             </div>
 
