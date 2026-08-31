@@ -287,7 +287,7 @@ function Petopiascreen() {
                 <div className = "projectSectionMediaSectionLinksContainer">
                     <a className = "teleportationButton projectSectionMediaSectionLinksEntryButton" href="https://github.com/MichelleW1234/Petopia" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
                     <a className = "teleportationButton projectSectionMediaSectionLinksEntryButton" href="https://github.com/MichelleW1234/Petopia/releases/tag/v1.0.1" target="_blank" rel="noopener noreferrer"> Go to Petopia v1.0.1 </a>
-                    <a className = "teleportationButton projectSectionMediaSectionLinksEntryButton" href="https://github.com/MichelleW1234/Petopia/releases" target="_blank" rel="noopener noreferrer"> Go to GitHub Releases </a>
+                    <a className = "teleportationButton projectSectionMediaSectionLinksEntryButton" href="https://github.com/MichelleW1234/Petopia/releases" target="_blank" rel="noopener noreferrer"> Go to All Petopia Releases </a>
                 </div>
             </div>
 
