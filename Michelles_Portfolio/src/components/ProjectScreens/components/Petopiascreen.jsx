@@ -56,6 +56,7 @@ function Petopiascreen() {
                         <p>&gt; A save system that preserves pet progress, game state, and player data across sessions </p>
                         <p>&gt; Animated pixel-art visuals and interface animations for a retro-inspired experience </p>
                         <p>&gt; Sound effects and adjustable background music enhancing the game's atmosphere </p>
+                        <p>&gt; An inventory and decorations for customizing pets’ rooms, unlocked through achievements. </p>
                     </div>
                 </div>
 
@@ -90,6 +91,13 @@ function Petopiascreen() {
                                     <div className="projectSectionDetailsSectionGeneralContentTimelineEntryVisualContainer"><div className = "projectSectionDetailsSectionGeneralContentTimelineEntryVisualPoint"></div><hr className = "projectSectionDetailsSectionGeneralContentTimelineEntryVisualLine"/></div> 
                                 </div>
                                 <p> First Github release (Petopia V1.0.0 for Mac) </p>
+                            </div>
+                            <div className = "projectSectionDetailsSectionGeneralContentTimelineEntryContainer">
+                                <div className="projectSectionDetailsSectionGeneralContentTimelineEntryDateContainer">
+                                    <p> 08/2026 </p>
+                                    <div className="projectSectionDetailsSectionGeneralContentTimelineEntryVisualContainer"><div className = "projectSectionDetailsSectionGeneralContentTimelineEntryVisualPoint"></div><hr className = "projectSectionDetailsSectionGeneralContentTimelineEntryVisualLine"/></div> 
+                                </div>
+                                <p> Beta version for the Second Github release (Petopia V1.0.1-beta for Mac) </p>
                             </div>
                         </div>
                     </div>
@@ -279,6 +287,7 @@ function Petopiascreen() {
                 <div className = "projectSectionMediaSectionLinksContainer">
                     <a className = "teleportationButton projectSectionMediaSectionLinksEntryButton" href="https://github.com/MichelleW1234/Petopia" target="_blank" rel="noopener noreferrer"> Go to GitHub Repository </a>
                     <a className = "teleportationButton projectSectionMediaSectionLinksEntryButton" href="https://github.com/MichelleW1234/Petopia/releases/tag/v1.0.0" target="_blank" rel="noopener noreferrer"> Go to Petopia v1.0.0 </a>
+                    <a className = "teleportationButton projectSectionMediaSectionLinksEntryButton" href="https://github.com/MichelleW1234/Petopia/releases/tag/v1.0.1-beta" target="_blank" rel="noopener noreferrer"> Go to Petopia v1.0.1-beta </a>
                 </div>
             </div>
 
